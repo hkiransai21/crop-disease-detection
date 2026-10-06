@@ -1,0 +1,8 @@
+{
+  "onnx_model_path": "ml/models/efficientnet_b0_plantvillage.onnx",
+  "onnx_file_size_mb": 15.45,
+  "max_logit_difference": 1.52587890625e-05,
+  "mean_logit_difference": 3.3510702905914513e-06,
+  "max_probability_difference": 1.7285346984863281e-06,
+  "parity_verified": true
+}

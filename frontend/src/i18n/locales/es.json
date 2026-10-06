@@ -1,0 +1,73 @@
+{
+  "_comment": "Spanish translation for demo purposes. Requires native-speaker agronomic review.",
+  "app_title": "AgriShield AI",
+  "tagline": "Detección de Enfermedades de Cultivos y Riesgo Climático",
+  "nav": {
+    "diagnose": "Diagnosticar",
+    "history": "Mi Historial",
+    "diseases": "Guía de Enfermedades",
+    "about": "Modelo y Seguridad",
+    "login": "Iniciar Sesión",
+    "register": "Registrarse",
+    "logout": "Cerrar Sesión"
+  },
+  "hero": {
+    "title": "Proteja su Cosecha con Inteligencia Artificial y Predicción de Riesgo Climático",
+    "subtitle": "Suba una foto de la hoja. Obtenga diagnóstico instantáneo, evaluación de riesgo meteorológico y protocolos seguros.",
+    "cta_start": "Comenzar Diagnóstico Gratis",
+    "cta_guide": "Ver Guía de Enfermedades"
+  },
+  "analyze": {
+    "title": "Analizar Hoja de Cultivo",
+    "upload_instruction": "Tome una foto clara y bien iluminada de la hoja afectada",
+    "upload_btn": "Subir / Tomar Foto",
+    "camera_btn": "Usar Cámara",
+    "tips_title": "Consejos para Mejor Precisión",
+    "tip_1": "Enfoque una sola hoja con manchas o lesiones visibles",
+    "tip_2": "Asegure luz natural brillante sin sombras oscuras",
+    "tip_3": "Evite fotos borrosas o demasiado lejanas",
+    "location_title": "Telemetría Ambiental (Riesgo Meteorológico)",
+    "use_gps": "Usar Mi Ubicación",
+    "search_place": "Buscar Ciudad o Distrito",
+    "manual_weather": "Ingresar Clima Manualmente",
+    "submit_btn": "Ejecutar Diagnóstico y Evaluación de Riesgo",
+    "analyzing": "Analizando imagen y calculando riesgo ambiental..."
+  },
+  "result": {
+    "diagnosis_title": "Evaluación Diagnóstica",
+    "healthy_title": "Follaje Sano",
+    "confidence": "Confianza del Modelo",
+    "uncertain_warning": "Predicción Incierta",
+    "uncertain_desc": "La confianza del modelo está por debajo del umbral o las características son ambiguas. Consulte a su técnico agrícola local.",
+    "risk_title": "Riesgo de Brote Ambiental",
+    "risk_advisory": "Estimación consultiva basada en reglas agronómicas; no es un pronóstico de laboratorio.",
+    "actions_title": "Lista de Tratamiento y Prevención",
+    "cultural_tab": "Cultural y Sanidad",
+    "organic_tab": "Orgánico y Biológico",
+    "chemical_tab": "Protectores Químicos",
+    "safety_title": "Advertencia de Seguridad sobre Pesticidas",
+    "safety_note_1": "Lea y siga siempre la etiqueta del producto fitosanitario.",
+    "safety_note_2": "Use equipo de protección personal requerido (guantes, mascarilla, gafas).",
+    "feedback_btn": "¿Fue acertado este diagnóstico?",
+    "new_scan_btn": "Escanear Otra Hoja"
+  },
+  "feedback": {
+    "title": "Comentarios de Diagnóstico",
+    "prompt": "¿Coincide este diagnóstico con la condición real en campo?",
+    "yes_btn": "Sí, Correcto",
+    "no_btn": "No, Incorrecto",
+    "select_actual": "Seleccione la enfermedad correcta si la conoce",
+    "comments_label": "Notas u observaciones",
+    "consent_checkbox": "Doy mi consentimiento para contribuir con esta imagen para reentrenar y mejorar futuros modelos.",
+    "submit": "Enviar Comentarios",
+    "thank_you": "¡Gracias! Su aporte ayuda a proteger a agricultores."
+  },
+  "history": {
+    "title": "Historial de Diagnósticos",
+    "empty": "No hay diagnósticos previos. ¡Comience escaneando una hoja!",
+    "delete_confirm": "¿Está seguro de eliminar este registro?"
+  },
+  "footer": {
+    "disclaimer": "AgriShield AI es una herramienta de soporte consultivo. No sustituye la certificación agronómica profesional presencial."
+  }
+}

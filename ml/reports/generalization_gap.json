@@ -1,0 +1,9 @@
+{
+  "plantvillage_test_accuracy": 0.9422,
+  "plantvillage_test_macro_f1": 0.9232,
+  "plantdoc_cross_accuracy": 0.213,
+  "plantdoc_cross_macro_f1": 0.1492,
+  "accuracy_generalization_gap": 0.7292,
+  "macro_f1_generalization_gap": 0.774,
+  "analysis": "The lab-to-field generalization gap arises from complex background foliage, variable lighting, partial leaf occlusion, and multiple disease co-infections in field settings compared to lab conditions."
+}

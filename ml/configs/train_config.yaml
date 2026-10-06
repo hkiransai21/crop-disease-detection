@@ -1,0 +1,62 @@
+# Training configuration for Crop Disease Detection Model
+
+experiment_name: "crop_disease_efficientnet_b0"
+seed: 42
+
+# Model Architecture
+model:
+  architecture: "efficientnet_b0" # timm model identifier (or mobilenetv3_large_100)
+  pretrained: true
+  num_classes: 38
+  drop_rate: 0.3
+  drop_path_rate: 0.1
+
+# Dataset & Manifest
+data:
+  manifest_path: "ml/data/processed/split_manifest.csv"
+  plantdoc_root: "ml/data/raw/plantdoc"
+  plantdoc_mapping: "ml/configs/plantdoc_mapping.json"
+  image_size: 224
+  num_workers: 4
+  pin_memory: true
+
+# Two-Stage Training Hyperparameters
+training:
+  stage1:
+    description: "Stage 1: Train classification head with frozen backbone"
+    epochs: 5
+    lr: 0.001
+    weight_decay: 0.01
+    freeze_backbone: true
+    label_smoothing: 0.1
+
+  stage2:
+    description: "Stage 2: Fine-tune full model end-to-end with cosine annealing"
+    epochs: 15
+    lr: 0.0001
+    weight_decay: 0.01
+    freeze_backbone: false
+    label_smoothing: 0.1
+    min_lr: 0.000001
+
+  batch_size: 64 # automatically adjusted if GPU memory/CPU dictates
+  optimizer: "AdamW"
+  scheduler: "CosineAnnealingLR"
+  early_stopping_patience: 5
+  mixed_precision: true # Enabled if CUDA or MPS available
+  use_class_weights: true
+
+# Out of scope / Uncertainty rejection
+uncertainty:
+  confidence_threshold: 0.60
+  entropy_threshold: 2.20
+
+# Paths for saving artifacts
+artifacts:
+  checkpoint_dir: "ml/models"
+  best_model_path: "ml/models/best_model.pth"
+  onnx_model_path: "ml/models/efficientnet_b0_plantvillage.onnx"
+  quantized_model_path: "ml/models/efficientnet_b0_plantvillage_int8.onnx"
+  labels_path: "ml/models/labels.json"
+  model_version_path: "ml/models/model_version"
+  reports_dir: "ml/reports"
