@@ -1,0 +1,95 @@
+{
+  "default_language": "en",
+  "supported_languages": [
+    {
+      "code": "en",
+      "name": "English",
+      "native_name": "English",
+      "script_direction": "ltr",
+      "tts_voice": "en-IN-NeerjaNeural",
+      "tts_fallback_voice": "en-IN-PrabhatNeural",
+      "review_status": "expert_reviewed",
+      "is_active": true
+    },
+    {
+      "code": "hi",
+      "name": "Hindi",
+      "native_name": "हिन्दी",
+      "script_direction": "ltr",
+      "tts_voice": "hi-IN-SwaraNeural",
+      "tts_fallback_voice": "hi-IN-MadhurNeural",
+      "review_status": "expert_reviewed",
+      "is_active": true
+    },
+    {
+      "code": "te",
+      "name": "Telugu",
+      "native_name": "తెలుగు",
+      "script_direction": "ltr",
+      "tts_voice": "te-IN-ShrutiNeural",
+      "tts_fallback_voice": "te-IN-MohanNeural",
+      "review_status": "expert_reviewed",
+      "is_active": true
+    },
+    {
+      "code": "ta",
+      "name": "Tamil",
+      "native_name": "தமிழ்",
+      "script_direction": "ltr",
+      "tts_voice": "ta-IN-PallaviNeural",
+      "tts_fallback_voice": "ta-IN-ValluvarNeural",
+      "review_status": "expert_reviewed",
+      "is_active": true
+    },
+    {
+      "code": "kn",
+      "name": "Kannada",
+      "native_name": "ಕನ್ನಡ",
+      "script_direction": "ltr",
+      "tts_voice": "kn-IN-SapnaNeural",
+      "tts_fallback_voice": "kn-IN-GaganNeural",
+      "review_status": "expert_reviewed",
+      "is_active": true
+    },
+    {
+      "code": "ml",
+      "name": "Malayalam",
+      "native_name": "മലയാളം",
+      "script_direction": "ltr",
+      "tts_voice": "ml-IN-SobhanaNeural",
+      "tts_fallback_voice": "ml-IN-MidhunNeural",
+      "review_status": "expert_reviewed",
+      "is_active": true
+    },
+    {
+      "code": "mr",
+      "name": "Marathi",
+      "native_name": "मराठी",
+      "script_direction": "ltr",
+      "tts_voice": "mr-IN-AarohiNeural",
+      "tts_fallback_voice": "mr-IN-ManoharNeural",
+      "review_status": "expert_reviewed",
+      "is_active": true
+    },
+    {
+      "code": "bn",
+      "name": "Bengali",
+      "native_name": "বাংলা",
+      "script_direction": "ltr",
+      "tts_voice": "bn-IN-TanishaaNeural",
+      "tts_fallback_voice": "bn-IN-BashkarNeural",
+      "review_status": "expert_reviewed",
+      "is_active": true
+    },
+    {
+      "code": "es",
+      "name": "Spanish",
+      "native_name": "Español",
+      "script_direction": "ltr",
+      "tts_voice": "es-ES-ElviraNeural",
+      "tts_fallback_voice": "es-ES-AlvaroNeural",
+      "review_status": "expert_reviewed",
+      "is_active": true
+    }
+  ]
+}

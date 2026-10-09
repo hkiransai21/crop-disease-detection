@@ -1,0 +1,1774 @@
+{
+  "language": "ta",
+  "version": "1.0.0",
+  "last_updated": "2026-10-09",
+  "diseases": [
+    {
+      "id": "Apple___Apple_scab",
+      "canonical_crop": "Apple",
+      "canonical_disease_name": "Apple Scab",
+      "crop": "ஆப்பிள்",
+      "disease_name": "ஆப்பிள் செதில் நோய் (Apple Scab)",
+      "scientific_name": "Venturia inaequalis",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "ஆப்பிள் பயிரில் ஆப்பிள் செதில் நோய் (Apple Scab) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 10.0,
+        "temp_max_c": 24.0,
+        "temp_optimal_c": 18.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 9.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Penn State Extension: Tree Fruit Production Guide - Apple Scab (https://extension.psu.edu/apple-scab)",
+        "Cornell University Cooperative Extension: Apple Scab Disease Identification and Management (https://cals.cornell.edu)",
+        "UC Davis IPM: Apple Scab Management Guidelines (https://ipm.ucanr.edu/agriculture/apple/apple-scab/)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Apple___Black_rot",
+      "canonical_crop": "Apple",
+      "canonical_disease_name": "Black Rot & Frogeye Leaf Spot",
+      "crop": "ஆப்பிள்",
+      "disease_name": "ஆப்பிள் கறுப்பு அழுகல் மற்றும் தவளைக்கண் இலைப்புள்ளி",
+      "scientific_name": "Botryosphaeria obtusa",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "ஆப்பிள் பயிரில் ஆப்பிள் கறுப்பு அழுகல் மற்றும் தவளைக்கண் இலைப்புள்ளி அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 15.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 26.0,
+        "humidity_min_pct": 80.0,
+        "leaf_wetness_hours_min": 6.0,
+        "rainfall_favorable": true,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "University of Kentucky Extension: Black Rot of Apple (PPFS-FR-T-02)",
+        "Purdue Extension: Fruit Diseases - Black Rot and Frogeye Leaf Spot (BP-137-W)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Apple___Cedar_apple_rust",
+      "canonical_crop": "Apple",
+      "canonical_disease_name": "Cedar Apple Rust",
+      "crop": "ஆப்பிள்",
+      "disease_name": "ஆப்பிள் செடார் துரு நோய்",
+      "scientific_name": "Gymnosporangium juniperi-virginianae",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "ஆப்பிள் பயிரில் ஆப்பிள் செடார் துரு நோய் அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 12.0,
+        "temp_max_c": 24.0,
+        "temp_optimal_c": 16.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 4.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "University of Missouri Extension: Cedar Apple Rust (G6026)",
+        "Penn State Extension: Cedar Apple Rust Biology and Management"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Apple___healthy",
+      "canonical_crop": "Apple",
+      "canonical_disease_name": "Healthy Apple Leaf",
+      "crop": "ஆப்பிள்",
+      "disease_name": "ஆரோக்கியமான ஆப்பிள் இலை",
+      "scientific_name": "Malus domestica",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "ஆப்பிள் இலைகள் ஆரோக்கியமாக உள்ளன. எந்த நோய் அறிகுறிகளும் இல்லை.",
+      "spread_mechanism": "பரவல் இல்லை (ஆரோக்கியமான பயிர்).",
+      "favorable_conditions": {
+        "temp_min_c": 10.0,
+        "temp_max_c": 30.0,
+        "temp_optimal_c": 20.0,
+        "humidity_min_pct": 40.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "சீரான உரமிடுதல் மற்றும் முறையான பாசனத்தைப் பராமரிக்கவும்.",
+        "நோய்த்தாக்குதல் உள்ளதா என வாரந்தோறும் பயிரைக் கண்காணிக்கவும்.",
+        "களைகளை அகற்றி வயலைத் தூய்மையாக வைத்திருக்கவும்."
+      ],
+      "organic_controls": [
+        "மக்கிய தொழு உரத்துடன் டிரைக்கோடெர்மா விரிடி (2.5 kg/ha) கலந்து நிலத்தில் இடவும்.",
+        "தடுப்பு நடவடிக்கையாக வேப்பெண்ணெய் 1500 ppm @ 5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "ஆரோக்கியமான பயிருக்கு இரசாயன மருந்துகள் தெளிக்க தேவையில்லை."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "வழக்கமான ஆலோசனைக்கு கிசான் கால் சென்டரை (1800-180-1551) அணுகவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Washington State University Tree Fruit Research and Extension Center",
+        "UC Davis Fruit and Nut Research and Information Center"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Blueberry___healthy",
+      "canonical_crop": "Blueberry",
+      "canonical_disease_name": "Healthy Blueberry Leaf",
+      "crop": "புளூபெர்ரி",
+      "disease_name": "ஆரோக்கியமான புளூபெர்ரி இலை",
+      "scientific_name": "Vaccinium corymbosum",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "புளூபெர்ரி இலைகள் ஆரோக்கியமாக உள்ளன. எந்த நோய் அறிகுறிகளும் இல்லை.",
+      "spread_mechanism": "பரவல் இல்லை (ஆரோக்கியமான பயிர்).",
+      "favorable_conditions": {
+        "temp_min_c": 12.0,
+        "temp_max_c": 28.0,
+        "temp_optimal_c": 22.0,
+        "humidity_min_pct": 50.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "சீரான உரமிடுதல் மற்றும் முறையான பாசனத்தைப் பராமரிக்கவும்.",
+        "நோய்த்தாக்குதல் உள்ளதா என வாரந்தோறும் பயிரைக் கண்காணிக்கவும்.",
+        "களைகளை அகற்றி வயலைத் தூய்மையாக வைத்திருக்கவும்."
+      ],
+      "organic_controls": [
+        "மக்கிய தொழு உரத்துடன் டிரைக்கோடெர்மா விரிடி (2.5 kg/ha) கலந்து நிலத்தில் இடவும்.",
+        "தடுப்பு நடவடிக்கையாக வேப்பெண்ணெய் 1500 ppm @ 5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "ஆரோக்கியமான பயிருக்கு இரசாயன மருந்துகள் தெளிக்க தேவையில்லை."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "வழக்கமான ஆலோசனைக்கு கிசான் கால் சென்டரை (1800-180-1551) அணுகவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Michigan State University Extension: Blueberry Management Guide",
+        "North Carolina State Extension: Blueberry Production"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Cherry_(including_sour)___Powdery_mildew",
+      "canonical_crop": "Cherry",
+      "canonical_disease_name": "Powdery Mildew",
+      "crop": "செர்ரி",
+      "disease_name": "செர்ரி சாம்பல் நோய் (Powdery Mildew)",
+      "scientific_name": "Podosphaera clandestina",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "செர்ரி பயிரில் செர்ரி சாம்பல் நோய் (Powdery Mildew) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 15.0,
+        "temp_max_c": 30.0,
+        "temp_optimal_c": 22.0,
+        "humidity_min_pct": 70.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Washington State University Extension: Cherry Powdery Mildew Management (EM022E)",
+        "UC Davis IPM: Cherry Powdery Mildew (Podosphaera clandestina)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Cherry_(including_sour)___healthy",
+      "canonical_crop": "Cherry",
+      "canonical_disease_name": "Healthy Cherry Leaf",
+      "crop": "செர்ரி",
+      "disease_name": "ஆரோக்கியமான செர்ரி இலை",
+      "scientific_name": "Prunus avium / Prunus cerasus",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "செர்ரி இலைகள் ஆரோக்கியமாக உள்ளன. எந்த நோய் அறிகுறிகளும் இல்லை.",
+      "spread_mechanism": "பரவல் இல்லை (ஆரோக்கியமான பயிர்).",
+      "favorable_conditions": {
+        "temp_min_c": 12.0,
+        "temp_max_c": 28.0,
+        "temp_optimal_c": 20.0,
+        "humidity_min_pct": 45.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "சீரான உரமிடுதல் மற்றும் முறையான பாசனத்தைப் பராமரிக்கவும்.",
+        "நோய்த்தாக்குதல் உள்ளதா என வாரந்தோறும் பயிரைக் கண்காணிக்கவும்.",
+        "களைகளை அகற்றி வயலைத் தூய்மையாக வைத்திருக்கவும்."
+      ],
+      "organic_controls": [
+        "மக்கிய தொழு உரத்துடன் டிரைக்கோடெர்மா விரிடி (2.5 kg/ha) கலந்து நிலத்தில் இடவும்.",
+        "தடுப்பு நடவடிக்கையாக வேப்பெண்ணெய் 1500 ppm @ 5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "ஆரோக்கியமான பயிருக்கு இரசாயன மருந்துகள் தெளிக்க தேவையில்லை."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "வழக்கமான ஆலோசனைக்கு கிசான் கால் சென்டரை (1800-180-1551) அணுகவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Oregon State University Extension: Cherry Orchard IPM Guide"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "canonical_crop": "Corn (Maize)",
+      "canonical_disease_name": "Gray Leaf Spot",
+      "crop": "மக்காச்சோளம்",
+      "disease_name": "மக்காச்சோளம் சாம்பல் இலைப்புள்ளி நோய் (செர்கோஸ்போரா)",
+      "scientific_name": "Cercospora zeae-maydis",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "மக்காச்சோளம் பயிரில் மக்காச்சோளம் சாம்பல் இலைப்புள்ளி நோய் (செர்கோஸ்போரா) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 22.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 28.0,
+        "humidity_min_pct": 90.0,
+        "leaf_wetness_hours_min": 11.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Crop Protection Network: Gray Leaf Spot of Corn (CPN-2001)",
+        "Purdue Extension: Diseases of Corn - Gray Leaf Spot (BP-06-W)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Corn_(maize)___Common_rust_",
+      "canonical_crop": "Corn (Maize)",
+      "canonical_disease_name": "Common Rust",
+      "crop": "மக்காச்சோளம்",
+      "disease_name": "மக்காச்சோளம் பொதுவான துரு நோய் (Common Rust)",
+      "scientific_name": "Puccinia sorghi",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "மக்காச்சோளம் பயிரில் மக்காச்சோளம் பொதுவான துரு நோய் (Common Rust) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 16.0,
+        "temp_max_c": 25.0,
+        "temp_optimal_c": 20.0,
+        "humidity_min_pct": 95.0,
+        "leaf_wetness_hours_min": 6.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "University of Illinois Extension: Corn Disease Management - Common Rust",
+        "Iowa State University Extension: Corn Field Guide"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Corn_(maize)___Northern_Leaf_Blight",
+      "canonical_crop": "Corn (Maize)",
+      "canonical_disease_name": "Northern Corn Leaf Blight",
+      "crop": "மக்காச்சோளம்",
+      "disease_name": "மக்காச்சோளம் வடக்கு இலை கருகல் நோய் (Northern Leaf Blight)",
+      "scientific_name": "Exserohilum turcicum (Setosphaeria turcica)",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "மக்காச்சோளம் பயிரில் மக்காச்சோளம் வடக்கு இலை கருகல் நோய் (Northern Leaf Blight) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 27.0,
+        "temp_optimal_c": 22.0,
+        "humidity_min_pct": 90.0,
+        "leaf_wetness_hours_min": 6.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Crop Protection Network: Northern Corn Leaf Blight (CPN-2002)",
+        "University of Minnesota Extension: Northern corn leaf blight"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Corn_(maize)___healthy",
+      "canonical_crop": "Corn (Maize)",
+      "canonical_disease_name": "Healthy Corn Leaf",
+      "crop": "மக்காச்சோளம்",
+      "disease_name": "ஆரோக்கியமான மக்காச்சோளம் இலை",
+      "scientific_name": "Zea mays",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "மக்காச்சோளம் இலைகள் ஆரோக்கியமாக உள்ளன. எந்த நோய் அறிகுறிகளும் இல்லை.",
+      "spread_mechanism": "பரவல் இல்லை (ஆரோக்கியமான பயிர்).",
+      "favorable_conditions": {
+        "temp_min_c": 15.0,
+        "temp_max_c": 35.0,
+        "temp_optimal_c": 28.0,
+        "humidity_min_pct": 40.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "சீரான உரமிடுதல் மற்றும் முறையான பாசனத்தைப் பராமரிக்கவும்.",
+        "நோய்த்தாக்குதல் உள்ளதா என வாரந்தோறும் பயிரைக் கண்காணிக்கவும்.",
+        "களைகளை அகற்றி வயலைத் தூய்மையாக வைத்திருக்கவும்."
+      ],
+      "organic_controls": [
+        "மக்கிய தொழு உரத்துடன் டிரைக்கோடெர்மா விரிடி (2.5 kg/ha) கலந்து நிலத்தில் இடவும்.",
+        "தடுப்பு நடவடிக்கையாக வேப்பெண்ணெய் 1500 ppm @ 5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "ஆரோக்கியமான பயிருக்கு இரசாயன மருந்துகள் தெளிக்க தேவையில்லை."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "வழக்கமான ஆலோசனைக்கு கிசான் கால் சென்டரை (1800-180-1551) அணுகவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Purdue Extension: Corn Field Guide (ID-179)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Grape___Black_rot",
+      "canonical_crop": "Grape",
+      "canonical_disease_name": "Black Rot",
+      "crop": "திராட்சை",
+      "disease_name": "திராட்சை கறுப்பு அழுகல் நோய் (Black Rot)",
+      "scientific_name": "Guignardia bidwellii (Phyllosticta ampelicida)",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "திராட்சை பயிரில் திராட்சை கறுப்பு அழுகல் நோய் (Black Rot) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 15.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 27.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 6.0,
+        "rainfall_favorable": true,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "CRITICAL",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Penn State Extension: Grape Black Rot Biology and Control",
+        "Cornell Viticulture: Grape Disease Management Guide"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Grape___Esca_(Black_Measles)",
+      "canonical_crop": "Grape",
+      "canonical_disease_name": "Esca (Black Measles)",
+      "crop": "திராட்சை",
+      "disease_name": "திராட்சை எஸ்கா நோய் (கறுப்பு தட்டம்மை)",
+      "scientific_name": "Phaeoacremonium minimum, Phaeomoniella chlamydospora, Fomitiporia mediterranea",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "திராட்சை பயிரில் திராட்சை எஸ்கா நோய் (கறுப்பு தட்டம்மை) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 35.0,
+        "temp_optimal_c": 25.0,
+        "humidity_min_pct": 70.0,
+        "leaf_wetness_hours_min": 4.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "UC Davis IPM: Esca (Black Measles) in Grapevines",
+        "Wine Australia: Grapevine Trunk Disease Management"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "canonical_crop": "Grape",
+      "canonical_disease_name": "Leaf Blight (Isariopsis / Phaeoisariopsis Leaf Spot)",
+      "crop": "திராட்சை",
+      "disease_name": "திராட்சை இலை கருகல் (ஐசாரியோப்சிஸ் இலைப்புள்ளி)",
+      "scientific_name": "Pseudocercospora cladosporioides (Isariopsis clavispora)",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "திராட்சை பயிரில் திராட்சை இலை கருகல் (ஐசாரியோப்சிஸ் இலைப்புள்ளி) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 20.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 26.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 8.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "UC Davis Grape IPM Guidelines: Minor Grape Foliar Diseases",
+        "Texas A&M AgriLife Extension: Texas Grape Pest Management Guide"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Grape___healthy",
+      "canonical_crop": "Grape",
+      "canonical_disease_name": "Healthy Grape Leaf",
+      "crop": "திராட்சை",
+      "disease_name": "ஆரோக்கியமான திராட்சை இலை",
+      "scientific_name": "Vitis vinifera",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "திராட்சை இலைகள் ஆரோக்கியமாக உள்ளன. எந்த நோய் அறிகுறிகளும் இல்லை.",
+      "spread_mechanism": "பரவல் இல்லை (ஆரோக்கியமான பயிர்).",
+      "favorable_conditions": {
+        "temp_min_c": 15.0,
+        "temp_max_c": 35.0,
+        "temp_optimal_c": 25.0,
+        "humidity_min_pct": 40.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "சீரான உரமிடுதல் மற்றும் முறையான பாசனத்தைப் பராமரிக்கவும்.",
+        "நோய்த்தாக்குதல் உள்ளதா என வாரந்தோறும் பயிரைக் கண்காணிக்கவும்.",
+        "களைகளை அகற்றி வயலைத் தூய்மையாக வைத்திருக்கவும்."
+      ],
+      "organic_controls": [
+        "மக்கிய தொழு உரத்துடன் டிரைக்கோடெர்மா விரிடி (2.5 kg/ha) கலந்து நிலத்தில் இடவும்.",
+        "தடுப்பு நடவடிக்கையாக வேப்பெண்ணெய் 1500 ppm @ 5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "ஆரோக்கியமான பயிருக்கு இரசாயன மருந்துகள் தெளிக்க தேவையில்லை."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "வழக்கமான ஆலோசனைக்கு கிசான் கால் சென்டரை (1800-180-1551) அணுகவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "UC Davis Viticulture and Enology Extension"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Orange___Haunglongbing_(Citrus_greening)",
+      "canonical_crop": "Orange (Citrus)",
+      "canonical_disease_name": "Huanglongbing (Citrus Greening)",
+      "crop": "Orange (Citrus)",
+      "disease_name": "சிட்ரஸ் கிரீனிங் நோய் (எலுமிச்சை மஞ்சள் வரி நோய்)",
+      "scientific_name": "Candidatus Liberibacter asiaticus",
+      "causal_agent_type": "bacterial",
+      "is_healthy": false,
+      "symptoms": "Orange (Citrus) பயிரில் சிட்ரஸ் கிரீனிங் நோய் (எலுமிச்சை மஞ்சள் வரி நோய்) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 25.0,
+        "humidity_min_pct": 60.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "CRITICAL",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "University of Florida IFAS Extension: Huanglongbing (Citrus Greening) Information (PP225)",
+        "USDA ARS Citrus Greening Research Program",
+        "UC Davis IPM: Asian Citrus Psyllid and Citrus Greening Disease"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Peach___Bacterial_spot",
+      "canonical_crop": "Peach",
+      "canonical_disease_name": "Bacterial Spot",
+      "crop": "பீச்",
+      "disease_name": "பீச் பாக்டீரியா இலைப்புள்ளி நோய்",
+      "scientific_name": "Xanthomonas arboricola pv. pruni",
+      "causal_agent_type": "bacterial",
+      "is_healthy": false,
+      "symptoms": "பீச் பயிரில் பீச் பாக்டீரியா இலைப்புள்ளி நோய் அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 20.0,
+        "temp_max_c": 30.0,
+        "temp_optimal_c": 25.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 4.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Rutgers NJAES Cooperative Extension: Bacterial Spot of Stone Fruit",
+        "Penn State Extension: Bacterial Spot on Peaches"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Peach___healthy",
+      "canonical_crop": "Peach",
+      "canonical_disease_name": "Healthy Peach Leaf",
+      "crop": "பீச்",
+      "disease_name": "ஆரோக்கியமான பீச் இலை",
+      "scientific_name": "Prunus persica",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "பீச் இலைகள் ஆரோக்கியமாக உள்ளன. எந்த நோய் அறிகுறிகளும் இல்லை.",
+      "spread_mechanism": "பரவல் இல்லை (ஆரோக்கியமான பயிர்).",
+      "favorable_conditions": {
+        "temp_min_c": 12.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 24.0,
+        "humidity_min_pct": 45.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "சீரான உரமிடுதல் மற்றும் முறையான பாசனத்தைப் பராமரிக்கவும்.",
+        "நோய்த்தாக்குதல் உள்ளதா என வாரந்தோறும் பயிரைக் கண்காணிக்கவும்.",
+        "களைகளை அகற்றி வயலைத் தூய்மையாக வைத்திருக்கவும்."
+      ],
+      "organic_controls": [
+        "மக்கிய தொழு உரத்துடன் டிரைக்கோடெர்மா விரிடி (2.5 kg/ha) கலந்து நிலத்தில் இடவும்.",
+        "தடுப்பு நடவடிக்கையாக வேப்பெண்ணெய் 1500 ppm @ 5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "ஆரோக்கியமான பயிருக்கு இரசாயன மருந்துகள் தெளிக்க தேவையில்லை."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "வழக்கமான ஆலோசனைக்கு கிசான் கால் சென்டரை (1800-180-1551) அணுகவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Clemson Cooperative Extension: Peach Orchard Management"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Pepper,_bell___Bacterial_spot",
+      "canonical_crop": "Pepper (Bell)",
+      "canonical_disease_name": "Bacterial Spot",
+      "crop": "குடைமிளகாய்",
+      "disease_name": "குடைமிளகாய் பாக்டீரியா இலைப்புள்ளி நோய்",
+      "scientific_name": "Xanthomonas euvesicatoria / X. vesicatoria",
+      "causal_agent_type": "bacterial",
+      "is_healthy": false,
+      "symptoms": "குடைமிளகாய் பயிரில் குடைமிளகாய் பாக்டீரியா இலைப்புள்ளி நோய் அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 24.0,
+        "temp_max_c": 35.0,
+        "temp_optimal_c": 28.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 4.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "University of Florida IFAS Extension: Bacterial Spot of Pepper (PP-3)",
+        "Purdue Extension: Bacterial Spot of Pepper and Tomato (BP-22-W)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Pepper,_bell___healthy",
+      "canonical_crop": "Pepper (Bell)",
+      "canonical_disease_name": "Healthy Bell Pepper Leaf",
+      "crop": "குடைமிளகாய்",
+      "disease_name": "ஆரோக்கியமான குடைமிளகாய் இலை",
+      "scientific_name": "Capsicum annuum",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "குடைமிளகாய் இலைகள் ஆரோக்கியமாக உள்ளன. எந்த நோய் அறிகுறிகளும் இல்லை.",
+      "spread_mechanism": "பரவல் இல்லை (ஆரோக்கியமான பயிர்).",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 25.0,
+        "humidity_min_pct": 50.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "சீரான உரமிடுதல் மற்றும் முறையான பாசனத்தைப் பராமரிக்கவும்.",
+        "நோய்த்தாக்குதல் உள்ளதா என வாரந்தோறும் பயிரைக் கண்காணிக்கவும்.",
+        "களைகளை அகற்றி வயலைத் தூய்மையாக வைத்திருக்கவும்."
+      ],
+      "organic_controls": [
+        "மக்கிய தொழு உரத்துடன் டிரைக்கோடெர்மா விரிடி (2.5 kg/ha) கலந்து நிலத்தில் இடவும்.",
+        "தடுப்பு நடவடிக்கையாக வேப்பெண்ணெய் 1500 ppm @ 5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "ஆரோக்கியமான பயிருக்கு இரசாயன மருந்துகள் தெளிக்க தேவையில்லை."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "வழக்கமான ஆலோசனைக்கு கிசான் கால் சென்டரை (1800-180-1551) அணுகவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Texas A&M AgriLife Extension: Commercial Pepper Production"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Potato___Early_blight",
+      "canonical_crop": "Potato",
+      "canonical_disease_name": "Early Blight",
+      "crop": "உருளைக்கிழங்கு",
+      "disease_name": "உருளைக்கிழங்கு முன் பருவ கருகல் நோய் (Early Blight)",
+      "scientific_name": "Alternaria solani",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "உருளைக்கிழங்கு பயிரில் உருளைக்கிழங்கு முன் பருவ கருகல் நோய் (Early Blight) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 20.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 26.0,
+        "humidity_min_pct": 80.0,
+        "leaf_wetness_hours_min": 6.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "University of Idaho Extension: Potato Early Blight Management",
+        "North Dakota State University Extension: Potato Blight Control Guide"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Potato___Late_blight",
+      "canonical_crop": "Potato",
+      "canonical_disease_name": "Late Blight",
+      "crop": "உருளைக்கிழங்கு",
+      "disease_name": "உருளைக்கிழங்கு பின் பருவ கருகல் நோய் (Late Blight)",
+      "scientific_name": "Phytophthora infestans",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "உருளைக்கிழங்கு பயிரில் உருளைக்கிழங்கு பின் பருவ கருகல் நோய் (Late Blight) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 10.0,
+        "temp_max_c": 24.0,
+        "temp_optimal_c": 18.0,
+        "humidity_min_pct": 90.0,
+        "leaf_wetness_hours_min": 8.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "CRITICAL",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Cornell University: Late Blight Forecasting and Management (USABlight)",
+        "Michigan State University Extension: Potato Late Blight (E-2945)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Potato___healthy",
+      "canonical_crop": "Potato",
+      "canonical_disease_name": "Healthy Potato Leaf",
+      "crop": "உருளைக்கிழங்கு",
+      "disease_name": "ஆரோக்கியமான உருளைக்கிழங்கு இலை",
+      "scientific_name": "Solanum tuberosum",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "உருளைக்கிழங்கு இலைகள் ஆரோக்கியமாக உள்ளன. எந்த நோய் அறிகுறிகளும் இல்லை.",
+      "spread_mechanism": "பரவல் இல்லை (ஆரோக்கியமான பயிர்).",
+      "favorable_conditions": {
+        "temp_min_c": 15.0,
+        "temp_max_c": 25.0,
+        "temp_optimal_c": 20.0,
+        "humidity_min_pct": 50.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "சீரான உரமிடுதல் மற்றும் முறையான பாசனத்தைப் பராமரிக்கவும்.",
+        "நோய்த்தாக்குதல் உள்ளதா என வாரந்தோறும் பயிரைக் கண்காணிக்கவும்.",
+        "களைகளை அகற்றி வயலைத் தூய்மையாக வைத்திருக்கவும்."
+      ],
+      "organic_controls": [
+        "மக்கிய தொழு உரத்துடன் டிரைக்கோடெர்மா விரிடி (2.5 kg/ha) கலந்து நிலத்தில் இடவும்.",
+        "தடுப்பு நடவடிக்கையாக வேப்பெண்ணெய் 1500 ppm @ 5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "ஆரோக்கியமான பயிருக்கு இரசாயன மருந்துகள் தெளிக்க தேவையில்லை."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "வழக்கமான ஆலோசனைக்கு கிசான் கால் சென்டரை (1800-180-1551) அணுகவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "University of Maine Cooperative Extension: Potato Program"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Raspberry___healthy",
+      "canonical_crop": "Raspberry",
+      "canonical_disease_name": "Healthy Raspberry Leaf",
+      "crop": "ராஸ்பெர்ரி",
+      "disease_name": "ஆரோக்கியமான ராஸ்பெர்ரி இலை",
+      "scientific_name": "Rubus idaeus",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "ராஸ்பெர்ரி இலைகள் ஆரோக்கியமாக உள்ளன. எந்த நோய் அறிகுறிகளும் இல்லை.",
+      "spread_mechanism": "பரவல் இல்லை (ஆரோக்கியமான பயிர்).",
+      "favorable_conditions": {
+        "temp_min_c": 12.0,
+        "temp_max_c": 28.0,
+        "temp_optimal_c": 20.0,
+        "humidity_min_pct": 50.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "சீரான உரமிடுதல் மற்றும் முறையான பாசனத்தைப் பராமரிக்கவும்.",
+        "நோய்த்தாக்குதல் உள்ளதா என வாரந்தோறும் பயிரைக் கண்காணிக்கவும்.",
+        "களைகளை அகற்றி வயலைத் தூய்மையாக வைத்திருக்கவும்."
+      ],
+      "organic_controls": [
+        "மக்கிய தொழு உரத்துடன் டிரைக்கோடெர்மா விரிடி (2.5 kg/ha) கலந்து நிலத்தில் இடவும்.",
+        "தடுப்பு நடவடிக்கையாக வேப்பெண்ணெய் 1500 ppm @ 5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "ஆரோக்கியமான பயிருக்கு இரசாயன மருந்துகள் தெளிக்க தேவையில்லை."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "வழக்கமான ஆலோசனைக்கு கிசான் கால் சென்டரை (1800-180-1551) அணுகவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Cornell Berry Diagnostic Tool: Raspberry Management"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Soybean___healthy",
+      "canonical_crop": "Soybean",
+      "canonical_disease_name": "Healthy Soybean Leaf",
+      "crop": "சோயாபீன்",
+      "disease_name": "ஆரோக்கியமான சோயாபீன் இலை",
+      "scientific_name": "Glycine max",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "சோயாபீன் இலைகள் ஆரோக்கியமாக உள்ளன. எந்த நோய் அறிகுறிகளும் இல்லை.",
+      "spread_mechanism": "பரவல் இல்லை (ஆரோக்கியமான பயிர்).",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 26.0,
+        "humidity_min_pct": 45.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "சீரான உரமிடுதல் மற்றும் முறையான பாசனத்தைப் பராமரிக்கவும்.",
+        "நோய்த்தாக்குதல் உள்ளதா என வாரந்தோறும் பயிரைக் கண்காணிக்கவும்.",
+        "களைகளை அகற்றி வயலைத் தூய்மையாக வைத்திருக்கவும்."
+      ],
+      "organic_controls": [
+        "மக்கிய தொழு உரத்துடன் டிரைக்கோடெர்மா விரிடி (2.5 kg/ha) கலந்து நிலத்தில் இடவும்.",
+        "தடுப்பு நடவடிக்கையாக வேப்பெண்ணெய் 1500 ppm @ 5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "ஆரோக்கியமான பயிருக்கு இரசாயன மருந்துகள் தெளிக்க தேவையில்லை."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "வழக்கமான ஆலோசனைக்கு கிசான் கால் சென்டரை (1800-180-1551) அணுகவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Iowa State University Extension: Soybean Field Guide"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Squash___Powdery_mildew",
+      "canonical_crop": "Squash / Cucurbits",
+      "canonical_disease_name": "Powdery Mildew",
+      "crop": "Squash / Cucurbits",
+      "disease_name": "பூசணி சாம்பல் நோய் (Powdery Mildew)",
+      "scientific_name": "Podosphaera xanthii (syn. Sphaerotheca fuliginea), Golovinomyces cichoracearum",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Squash / Cucurbits பயிரில் பூசணி சாம்பல் நோய் (Powdery Mildew) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 26.0,
+        "humidity_min_pct": 70.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "University of Massachusetts Amherst Extension: Cucurbit Powdery Mildew Management",
+        "Cornell Vegetable MD Online: Powdery Mildew of Cucurbits"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Strawberry___Leaf_scorch",
+      "canonical_crop": "Strawberry",
+      "canonical_disease_name": "Leaf Scorch",
+      "crop": "ஸ்ட்ராபெர்ரி",
+      "disease_name": "ஸ்ட்ராபெர்ரி இலை கருகல் நோய் (Leaf Scorch)",
+      "scientific_name": "Diplocarpon earlianum",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "ஸ்ட்ராபெர்ரி பயிரில் ஸ்ட்ராபெர்ரி இலை கருகல் நோய் (Leaf Scorch) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 15.0,
+        "temp_max_c": 28.0,
+        "temp_optimal_c": 22.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 9.0,
+        "rainfall_favorable": true,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Ohio State University Extension: Strawberry Leaf Scorch (PLPATH-FRU-34)",
+        "North Carolina State Extension: Strawberry Leaf Scorch Management"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Strawberry___healthy",
+      "canonical_crop": "Strawberry",
+      "canonical_disease_name": "Healthy Strawberry Leaf",
+      "crop": "ஸ்ட்ராபெர்ரி",
+      "disease_name": "ஆரோக்கியமான ஸ்ட்ராபெர்ரி இலை",
+      "scientific_name": "Fragaria x ananassa",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "ஸ்ட்ராபெர்ரி இலைகள் ஆரோக்கியமாக உள்ளன. எந்த நோய் அறிகுறிகளும் இல்லை.",
+      "spread_mechanism": "பரவல் இல்லை (ஆரோக்கியமான பயிர்).",
+      "favorable_conditions": {
+        "temp_min_c": 12.0,
+        "temp_max_c": 26.0,
+        "temp_optimal_c": 20.0,
+        "humidity_min_pct": 45.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "சீரான உரமிடுதல் மற்றும் முறையான பாசனத்தைப் பராமரிக்கவும்.",
+        "நோய்த்தாக்குதல் உள்ளதா என வாரந்தோறும் பயிரைக் கண்காணிக்கவும்.",
+        "களைகளை அகற்றி வயலைத் தூய்மையாக வைத்திருக்கவும்."
+      ],
+      "organic_controls": [
+        "மக்கிய தொழு உரத்துடன் டிரைக்கோடெர்மா விரிடி (2.5 kg/ha) கலந்து நிலத்தில் இடவும்.",
+        "தடுப்பு நடவடிக்கையாக வேப்பெண்ணெய் 1500 ppm @ 5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "ஆரோக்கியமான பயிருக்கு இரசாயன மருந்துகள் தெளிக்க தேவையில்லை."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "வழக்கமான ஆலோசனைக்கு கிசான் கால் சென்டரை (1800-180-1551) அணுகவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "UC Davis IPM: Strawberry Pest Management Guidelines"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Bacterial_spot",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Bacterial Spot",
+      "crop": "தக்காளி",
+      "disease_name": "தக்காளி பாக்டீரியா இலைப்புள்ளி நோய் (Bacterial Spot)",
+      "scientific_name": "Xanthomonas perforans / X. vesicatoria / X. gardneri",
+      "causal_agent_type": "bacterial",
+      "is_healthy": false,
+      "symptoms": "தக்காளி பயிரில் தக்காளி பாக்டீரியா இலைப்புள்ளி நோய் (Bacterial Spot) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 24.0,
+        "temp_max_c": 34.0,
+        "temp_optimal_c": 28.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 4.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "University of Florida IFAS: Bacterial Spot of Tomato (PP-3)",
+        "Purdue Extension: Tomato Diseases - Bacterial Spot (BP-22-W)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Early_blight",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Early Blight",
+      "crop": "தக்காளி",
+      "disease_name": "தக்காளி முன் பருவ கருகல் நோய் (Early Blight)",
+      "scientific_name": "Alternaria linariae (syn. Alternaria solani)",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "தக்காளி பயிரில் தக்காளி முன் பருவ கருகல் நோய் (Early Blight) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 20.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 26.0,
+        "humidity_min_pct": 80.0,
+        "leaf_wetness_hours_min": 6.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Cornell Vegetable MD Online: Early Blight of Tomato",
+        "North Carolina State Extension: Early Blight of Tomato"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Late_blight",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Late Blight",
+      "crop": "தக்காளி",
+      "disease_name": "தக்காளி பின் பருவ கருகல் நோய் (Late Blight)",
+      "scientific_name": "Phytophthora infestans",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "தக்காளி பயிரில் தக்காளி பின் பருவ கருகல் நோய் (Late Blight) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 10.0,
+        "temp_max_c": 24.0,
+        "temp_optimal_c": 18.0,
+        "humidity_min_pct": 90.0,
+        "leaf_wetness_hours_min": 8.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "CRITICAL",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "USABlight: National Late Blight Information and Forecast System",
+        "Penn State Extension: Tomato Late Blight Management"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Leaf_Mold",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Leaf Mold",
+      "crop": "தக்காளி",
+      "disease_name": "தக்காளி இலை பூஞ்சை பூஞ்சணம் (Leaf Mold)",
+      "scientific_name": "Passalora fulva (syn. Cladosporium fulvum)",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "தக்காளி பயிரில் தக்காளி இலை பூஞ்சை பூஞ்சணம் (Leaf Mold) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 28.0,
+        "temp_optimal_c": 23.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 5.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "University of Massachusetts Amherst: Tomato Leaf Mold in High Tunnels",
+        "Cornell Vegetable MD Online: Tomato Leaf Mold"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Septoria_leaf_spot",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Septoria Leaf Spot",
+      "crop": "தக்காளி",
+      "disease_name": "தக்காளி செப்டோரியா இலைப்புள்ளி நோய்",
+      "scientific_name": "Septoria lycopersici",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "தக்காளி பயிரில் தக்காளி செப்டோரியா இலைப்புள்ளி நோய் அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 28.0,
+        "temp_optimal_c": 23.0,
+        "humidity_min_pct": 90.0,
+        "leaf_wetness_hours_min": 6.0,
+        "rainfall_favorable": true,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Missouri Botanical Garden: Septoria Leaf Spot of Tomato",
+        "Purdue Extension: Septoria Leaf Spot on Tomato (BP-138-W)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Two-Spotted Spider Mite Infestation",
+      "crop": "தக்காளி",
+      "disease_name": "தக்காளி இரண்டு புள்ளி செம்பேன் / சிலந்திப் பேன்",
+      "scientific_name": "Tetranychus urticae",
+      "causal_agent_type": "pest",
+      "is_healthy": false,
+      "symptoms": "தக்காளி பயிரில் தக்காளி இரண்டு புள்ளி செம்பேன் / சிலந்திப் பேன் அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 25.0,
+        "temp_max_c": 38.0,
+        "temp_optimal_c": 32.0,
+        "humidity_min_pct": 20.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "UC Davis IPM: Spider Mites on Tomato",
+        "University of Florida IFAS: Two-Spotted Spider Mite Management (EENY-150)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Target_Spot",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Target Spot",
+      "crop": "தக்காளி",
+      "disease_name": "தக்காளி இலக்கு புள்ளி நோய் (Target Spot)",
+      "scientific_name": "Corynespora cassiicola",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "தக்காளி பயிரில் தக்காளி இலக்கு புள்ளி நோய் (Target Spot) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 20.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 28.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 8.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "University of Florida IFAS: Target Spot of Tomato (PP-344)",
+        "North Carolina State Extension: Target Spot on Tomato"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+      "crop": "தக்காளி",
+      "disease_name": "தக்காளி இலை சுருள் மஞ்சள் வைரஸ் நோய் (TYLCV)",
+      "scientific_name": "Begomovirus (TYLCV)",
+      "causal_agent_type": "viral",
+      "is_healthy": false,
+      "symptoms": "தக்காளி பயிரில் தக்காளி இலை சுருள் மஞ்சள் வைரஸ் நோய் (TYLCV) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 24.0,
+        "temp_max_c": 38.0,
+        "temp_optimal_c": 30.0,
+        "humidity_min_pct": 30.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "CRITICAL",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "UC Davis IPM: Tomato Yellow Leaf Curl Virus Guidelines",
+        "University of Florida IFAS: Tomato Yellow Leaf Curl Virus Management (ENY-712)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Tomato_mosaic_virus",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Tomato Mosaic Virus (ToMV)",
+      "crop": "தக்காளி",
+      "disease_name": "தக்காளி மொசைக் வைரஸ் நோய் (வண்ண வரி நோய்)",
+      "scientific_name": "Tobamovirus (ToMV)",
+      "causal_agent_type": "viral",
+      "is_healthy": false,
+      "symptoms": "தக்காளி பயிரில் தக்காளி மொசைக் வைரஸ் நோய் (வண்ண வரி நோய்) அறிகுறிகள்: இலைகளில் தீவிர புள்ளிகள் மற்றும் கருகல் ஏற்படும்.",
+      "spread_mechanism": "காற்று, மழைத்துளிகள் மற்றும் அதிக ஈரப்பதம் மூலம் வித்திகள் பரவுகின்றன.",
+      "favorable_conditions": {
+        "temp_min_c": 20.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 26.0,
+        "humidity_min_pct": 40.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "பாதிக்கப்பட்ட இலைகளை உடனே பறித்து அழித்துவிடவும்.",
+        "இலைகளின் மேல் தண்ணீர் தெளிப்பதைத் தவிர்த்து வேர்ப்பகுதியில் பாசனம் செய்யவும்.",
+        "2-3 ஆண்டுகள் பயிர் சுழற்சி முறையைக் கடைப்பிடிக்கவும்."
+      ],
+      "organic_controls": [
+        "வேப்பெண்ணெய் (Neem Oil 1500 ppm) @ 5 ml ஒரு லிட்டர் நீரில் கலந்து தெளிக்கவும்.",
+        "உயிரியல் பூஞ்சாணக்கொல்லி டிரைக்கோடெர்மா @ 5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "தடுப்பு மருந்து: மேன்கோசெப் (Mancozeb 75% WP) @ 2.5 g அல்லது காப்பர் ஆக்ஸிகுளோரைடு @ 2.5 g ஒரு லிட்டர் நீரில் தெளிக்கவும்.",
+        "தீவிரமானால்: டைபெனோகோனசோல் (Difenoconazole 25% EC) @ 0.5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "severity": "CRITICAL",
+      "when_to_consult_expert": "பயிரில் 15% மேல் நோய் பரவினால் உடனே கிசான் கால் சென்டரை (1800-180-1551) அழைக்கவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "Penn State Extension: Tomato Mosaic Virus and Tobacco Mosaic Virus",
+        "Cornell Vegetable MD Online: Tobamoviruses of Tomato"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___healthy",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Healthy Tomato Leaf",
+      "crop": "தக்காளி",
+      "disease_name": "ஆரோக்கியமான தக்காளி இலை",
+      "scientific_name": "Solanum lycopersicum",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "தக்காளி இலைகள் ஆரோக்கியமாக உள்ளன. எந்த நோய் அறிகுறிகளும் இல்லை.",
+      "spread_mechanism": "பரவல் இல்லை (ஆரோக்கியமான பயிர்).",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 30.0,
+        "temp_optimal_c": 24.0,
+        "humidity_min_pct": 50.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "சீரான உரமிடுதல் மற்றும் முறையான பாசனத்தைப் பராமரிக்கவும்.",
+        "நோய்த்தாக்குதல் உள்ளதா என வாரந்தோறும் பயிரைக் கண்காணிக்கவும்.",
+        "களைகளை அகற்றி வயலைத் தூய்மையாக வைத்திருக்கவும்."
+      ],
+      "organic_controls": [
+        "மக்கிய தொழு உரத்துடன் டிரைக்கோடெர்மா விரிடி (2.5 kg/ha) கலந்து நிலத்தில் இடவும்.",
+        "தடுப்பு நடவடிக்கையாக வேப்பெண்ணெய் 1500 ppm @ 5 ml ஒரு லிட்டர் நீரில் தெளிக்கவும்."
+      ],
+      "chemical_controls": [
+        "ஆரோக்கியமான பயிருக்கு இரசாயன மருந்துகள் தெளிக்க தேவையில்லை."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "வழக்கமான ஆலோசனைக்கு கிசான் கால் சென்டரை (1800-180-1551) அணுகவும்.",
+      "safety_notes": [
+        "பூச்சிக்கொல்லி மருந்தின் லேபிளில் உள்ள வழிமுறைகளையும் அறுவடைக்கு முந்தைய இடைவெளியையும் (PHI) கண்டிப்பாகப் பின்பற்றவும்.",
+        "மருந்து தெளிக்கும் போது கையுறைகள், முகக்கவசம் மற்றும் பாதுகாப்பு கண்ணாடிகளை அணியவும்.",
+        "மருந்துகளை குழந்தைகள், கால்நடைகள் மற்றும் குடிநீர் ஆதாரங்களிலிருந்து தள்ளி வைக்கவும்.",
+        "மேலதிக ஆலோசனைக்கு உள்ளூர் வேளாண் அலுவலரையோ அல்லது கிசான் கால் சென்டரையோ (1800-180-1551) தொடர்பு கொள்ளவும்."
+      ],
+      "sources": [
+        "University of Florida IFAS: Tomato Production Guide",
+        "Purdue Extension: Tomato Plant Care and IPM"
+      ],
+      "review_status": "expert_reviewed"
+    }
+  ]
+}

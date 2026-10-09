@@ -1,0 +1,1774 @@
+{
+  "language": "es",
+  "version": "1.0.0",
+  "last_updated": "2026-10-09",
+  "diseases": [
+    {
+      "id": "Apple___Apple_scab",
+      "canonical_crop": "Apple",
+      "canonical_disease_name": "Apple Scab",
+      "crop": "Manzana",
+      "disease_name": "Sarna del manzano (Moteado)",
+      "scientific_name": "Venturia inaequalis",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Sarna del manzano (Moteado) en Manzana: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 10.0,
+        "temp_max_c": 24.0,
+        "temp_optimal_c": 18.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 9.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Penn State Extension: Tree Fruit Production Guide - Apple Scab (https://extension.psu.edu/apple-scab)",
+        "Cornell University Cooperative Extension: Apple Scab Disease Identification and Management (https://cals.cornell.edu)",
+        "UC Davis IPM: Apple Scab Management Guidelines (https://ipm.ucanr.edu/agriculture/apple/apple-scab/)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Apple___Black_rot",
+      "canonical_crop": "Apple",
+      "canonical_disease_name": "Black Rot & Frogeye Leaf Spot",
+      "crop": "Manzana",
+      "disease_name": "Podredumbre negra y mancha de ojo de rana",
+      "scientific_name": "Botryosphaeria obtusa",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Podredumbre negra y mancha de ojo de rana en Manzana: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 15.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 26.0,
+        "humidity_min_pct": 80.0,
+        "leaf_wetness_hours_min": 6.0,
+        "rainfall_favorable": true,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "University of Kentucky Extension: Black Rot of Apple (PPFS-FR-T-02)",
+        "Purdue Extension: Fruit Diseases - Black Rot and Frogeye Leaf Spot (BP-137-W)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Apple___Cedar_apple_rust",
+      "canonical_crop": "Apple",
+      "canonical_disease_name": "Cedar Apple Rust",
+      "crop": "Manzana",
+      "disease_name": "Roya del manzano y del enebro",
+      "scientific_name": "Gymnosporangium juniperi-virginianae",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Roya del manzano y del enebro en Manzana: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 12.0,
+        "temp_max_c": 24.0,
+        "temp_optimal_c": 16.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 4.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "University of Missouri Extension: Cedar Apple Rust (G6026)",
+        "Penn State Extension: Cedar Apple Rust Biology and Management"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Apple___healthy",
+      "canonical_crop": "Apple",
+      "canonical_disease_name": "Healthy Apple Leaf",
+      "crop": "Manzana",
+      "disease_name": "Follaje de manzano sano",
+      "scientific_name": "Malus domestica",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "Las hojas de Manzana están sanas y no muestran síntomas de enfermedades.",
+      "spread_mechanism": "Ninguno (Cultivo sano).",
+      "favorable_conditions": {
+        "temp_min_c": 10.0,
+        "temp_max_c": 30.0,
+        "temp_optimal_c": 20.0,
+        "humidity_min_pct": 40.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Mantenga una fertilización equilibrada y un riego adecuado.",
+        "Inspeccione semanalmente para detectar plagas o patógenos a tiempo.",
+        "Mantenga el campo libre de malas hierbas y agua estancada."
+      ],
+      "organic_controls": [
+        "Aplicación al suelo de Trichoderma viride (2.5 kg/ha) con compost orgánico.",
+        "Pulverización preventiva de aceite de Neem 1500 ppm @ 5 ml por litro."
+      ],
+      "chemical_controls": [
+        "No se requieren tratamientos químicos para hojas sanas."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "Consulte a su técnico agrario local para planes de abonado estacionales.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Washington State University Tree Fruit Research and Extension Center",
+        "UC Davis Fruit and Nut Research and Information Center"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Blueberry___healthy",
+      "canonical_crop": "Blueberry",
+      "canonical_disease_name": "Healthy Blueberry Leaf",
+      "crop": "Arándano",
+      "disease_name": "Follaje de arándano sano",
+      "scientific_name": "Vaccinium corymbosum",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "Las hojas de Arándano están sanas y no muestran síntomas de enfermedades.",
+      "spread_mechanism": "Ninguno (Cultivo sano).",
+      "favorable_conditions": {
+        "temp_min_c": 12.0,
+        "temp_max_c": 28.0,
+        "temp_optimal_c": 22.0,
+        "humidity_min_pct": 50.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Mantenga una fertilización equilibrada y un riego adecuado.",
+        "Inspeccione semanalmente para detectar plagas o patógenos a tiempo.",
+        "Mantenga el campo libre de malas hierbas y agua estancada."
+      ],
+      "organic_controls": [
+        "Aplicación al suelo de Trichoderma viride (2.5 kg/ha) con compost orgánico.",
+        "Pulverización preventiva de aceite de Neem 1500 ppm @ 5 ml por litro."
+      ],
+      "chemical_controls": [
+        "No se requieren tratamientos químicos para hojas sanas."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "Consulte a su técnico agrario local para planes de abonado estacionales.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Michigan State University Extension: Blueberry Management Guide",
+        "North Carolina State Extension: Blueberry Production"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Cherry_(including_sour)___Powdery_mildew",
+      "canonical_crop": "Cherry",
+      "canonical_disease_name": "Powdery Mildew",
+      "crop": "Cereza",
+      "disease_name": "Oídio del cerezo (Ceniza)",
+      "scientific_name": "Podosphaera clandestina",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Oídio del cerezo (Ceniza) en Cereza: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 15.0,
+        "temp_max_c": 30.0,
+        "temp_optimal_c": 22.0,
+        "humidity_min_pct": 70.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Washington State University Extension: Cherry Powdery Mildew Management (EM022E)",
+        "UC Davis IPM: Cherry Powdery Mildew (Podosphaera clandestina)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Cherry_(including_sour)___healthy",
+      "canonical_crop": "Cherry",
+      "canonical_disease_name": "Healthy Cherry Leaf",
+      "crop": "Cereza",
+      "disease_name": "Follaje de cerezo sano",
+      "scientific_name": "Prunus avium / Prunus cerasus",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "Las hojas de Cereza están sanas y no muestran síntomas de enfermedades.",
+      "spread_mechanism": "Ninguno (Cultivo sano).",
+      "favorable_conditions": {
+        "temp_min_c": 12.0,
+        "temp_max_c": 28.0,
+        "temp_optimal_c": 20.0,
+        "humidity_min_pct": 45.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Mantenga una fertilización equilibrada y un riego adecuado.",
+        "Inspeccione semanalmente para detectar plagas o patógenos a tiempo.",
+        "Mantenga el campo libre de malas hierbas y agua estancada."
+      ],
+      "organic_controls": [
+        "Aplicación al suelo de Trichoderma viride (2.5 kg/ha) con compost orgánico.",
+        "Pulverización preventiva de aceite de Neem 1500 ppm @ 5 ml por litro."
+      ],
+      "chemical_controls": [
+        "No se requieren tratamientos químicos para hojas sanas."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "Consulte a su técnico agrario local para planes de abonado estacionales.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Oregon State University Extension: Cherry Orchard IPM Guide"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "canonical_crop": "Corn (Maize)",
+      "canonical_disease_name": "Gray Leaf Spot",
+      "crop": "Maíz",
+      "disease_name": "Mancha gris de la hoja del maíz (Cercospora)",
+      "scientific_name": "Cercospora zeae-maydis",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Mancha gris de la hoja del maíz (Cercospora) en Maíz: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 22.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 28.0,
+        "humidity_min_pct": 90.0,
+        "leaf_wetness_hours_min": 11.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Crop Protection Network: Gray Leaf Spot of Corn (CPN-2001)",
+        "Purdue Extension: Diseases of Corn - Gray Leaf Spot (BP-06-W)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Corn_(maize)___Common_rust_",
+      "canonical_crop": "Corn (Maize)",
+      "canonical_disease_name": "Common Rust",
+      "crop": "Maíz",
+      "disease_name": "Roya común del maíz",
+      "scientific_name": "Puccinia sorghi",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Roya común del maíz en Maíz: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 16.0,
+        "temp_max_c": 25.0,
+        "temp_optimal_c": 20.0,
+        "humidity_min_pct": 95.0,
+        "leaf_wetness_hours_min": 6.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "University of Illinois Extension: Corn Disease Management - Common Rust",
+        "Iowa State University Extension: Corn Field Guide"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Corn_(maize)___Northern_Leaf_Blight",
+      "canonical_crop": "Corn (Maize)",
+      "canonical_disease_name": "Northern Corn Leaf Blight",
+      "crop": "Maíz",
+      "disease_name": "Tizón foliar del maíz (Helmintosporiosis norteña)",
+      "scientific_name": "Exserohilum turcicum (Setosphaeria turcica)",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Tizón foliar del maíz (Helmintosporiosis norteña) en Maíz: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 27.0,
+        "temp_optimal_c": 22.0,
+        "humidity_min_pct": 90.0,
+        "leaf_wetness_hours_min": 6.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Crop Protection Network: Northern Corn Leaf Blight (CPN-2002)",
+        "University of Minnesota Extension: Northern corn leaf blight"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Corn_(maize)___healthy",
+      "canonical_crop": "Corn (Maize)",
+      "canonical_disease_name": "Healthy Corn Leaf",
+      "crop": "Maíz",
+      "disease_name": "Follaje de maíz sano",
+      "scientific_name": "Zea mays",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "Las hojas de Maíz están sanas y no muestran síntomas de enfermedades.",
+      "spread_mechanism": "Ninguno (Cultivo sano).",
+      "favorable_conditions": {
+        "temp_min_c": 15.0,
+        "temp_max_c": 35.0,
+        "temp_optimal_c": 28.0,
+        "humidity_min_pct": 40.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Mantenga una fertilización equilibrada y un riego adecuado.",
+        "Inspeccione semanalmente para detectar plagas o patógenos a tiempo.",
+        "Mantenga el campo libre de malas hierbas y agua estancada."
+      ],
+      "organic_controls": [
+        "Aplicación al suelo de Trichoderma viride (2.5 kg/ha) con compost orgánico.",
+        "Pulverización preventiva de aceite de Neem 1500 ppm @ 5 ml por litro."
+      ],
+      "chemical_controls": [
+        "No se requieren tratamientos químicos para hojas sanas."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "Consulte a su técnico agrario local para planes de abonado estacionales.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Purdue Extension: Corn Field Guide (ID-179)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Grape___Black_rot",
+      "canonical_crop": "Grape",
+      "canonical_disease_name": "Black Rot",
+      "crop": "Uva",
+      "disease_name": "Podredumbre negra de la vid (Black rot)",
+      "scientific_name": "Guignardia bidwellii (Phyllosticta ampelicida)",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Podredumbre negra de la vid (Black rot) en Uva: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 15.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 27.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 6.0,
+        "rainfall_favorable": true,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "CRITICAL",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Penn State Extension: Grape Black Rot Biology and Control",
+        "Cornell Viticulture: Grape Disease Management Guide"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Grape___Esca_(Black_Measles)",
+      "canonical_crop": "Grape",
+      "canonical_disease_name": "Esca (Black Measles)",
+      "crop": "Uva",
+      "disease_name": "Yesca de la vid (Esca o sarampión negro)",
+      "scientific_name": "Phaeoacremonium minimum, Phaeomoniella chlamydospora, Fomitiporia mediterranea",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Yesca de la vid (Esca o sarampión negro) en Uva: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 35.0,
+        "temp_optimal_c": 25.0,
+        "humidity_min_pct": 70.0,
+        "leaf_wetness_hours_min": 4.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "UC Davis IPM: Esca (Black Measles) in Grapevines",
+        "Wine Australia: Grapevine Trunk Disease Management"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "canonical_crop": "Grape",
+      "canonical_disease_name": "Leaf Blight (Isariopsis / Phaeoisariopsis Leaf Spot)",
+      "crop": "Uva",
+      "disease_name": "Tizón de la hoja de la vid (Mancha por Isariopsis)",
+      "scientific_name": "Pseudocercospora cladosporioides (Isariopsis clavispora)",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Tizón de la hoja de la vid (Mancha por Isariopsis) en Uva: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 20.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 26.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 8.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "UC Davis Grape IPM Guidelines: Minor Grape Foliar Diseases",
+        "Texas A&M AgriLife Extension: Texas Grape Pest Management Guide"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Grape___healthy",
+      "canonical_crop": "Grape",
+      "canonical_disease_name": "Healthy Grape Leaf",
+      "crop": "Uva",
+      "disease_name": "Follaje de vid sano",
+      "scientific_name": "Vitis vinifera",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "Las hojas de Uva están sanas y no muestran síntomas de enfermedades.",
+      "spread_mechanism": "Ninguno (Cultivo sano).",
+      "favorable_conditions": {
+        "temp_min_c": 15.0,
+        "temp_max_c": 35.0,
+        "temp_optimal_c": 25.0,
+        "humidity_min_pct": 40.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Mantenga una fertilización equilibrada y un riego adecuado.",
+        "Inspeccione semanalmente para detectar plagas o patógenos a tiempo.",
+        "Mantenga el campo libre de malas hierbas y agua estancada."
+      ],
+      "organic_controls": [
+        "Aplicación al suelo de Trichoderma viride (2.5 kg/ha) con compost orgánico.",
+        "Pulverización preventiva de aceite de Neem 1500 ppm @ 5 ml por litro."
+      ],
+      "chemical_controls": [
+        "No se requieren tratamientos químicos para hojas sanas."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "Consulte a su técnico agrario local para planes de abonado estacionales.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "UC Davis Viticulture and Enology Extension"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Orange___Haunglongbing_(Citrus_greening)",
+      "canonical_crop": "Orange (Citrus)",
+      "canonical_disease_name": "Huanglongbing (Citrus Greening)",
+      "crop": "Orange (Citrus)",
+      "disease_name": "Huanglongbing de los cítricos (Citrus Greening)",
+      "scientific_name": "Candidatus Liberibacter asiaticus",
+      "causal_agent_type": "bacterial",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Huanglongbing de los cítricos (Citrus Greening) en Orange (Citrus): Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 25.0,
+        "humidity_min_pct": 60.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "CRITICAL",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "University of Florida IFAS Extension: Huanglongbing (Citrus Greening) Information (PP225)",
+        "USDA ARS Citrus Greening Research Program",
+        "UC Davis IPM: Asian Citrus Psyllid and Citrus Greening Disease"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Peach___Bacterial_spot",
+      "canonical_crop": "Peach",
+      "canonical_disease_name": "Bacterial Spot",
+      "crop": "Melocotón / Durazno",
+      "disease_name": "Mancha bacteriana del melocotonero",
+      "scientific_name": "Xanthomonas arboricola pv. pruni",
+      "causal_agent_type": "bacterial",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Mancha bacteriana del melocotonero en Melocotón / Durazno: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 20.0,
+        "temp_max_c": 30.0,
+        "temp_optimal_c": 25.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 4.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Rutgers NJAES Cooperative Extension: Bacterial Spot of Stone Fruit",
+        "Penn State Extension: Bacterial Spot on Peaches"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Peach___healthy",
+      "canonical_crop": "Peach",
+      "canonical_disease_name": "Healthy Peach Leaf",
+      "crop": "Melocotón / Durazno",
+      "disease_name": "Follaje de melocotonero sano",
+      "scientific_name": "Prunus persica",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "Las hojas de Melocotón / Durazno están sanas y no muestran síntomas de enfermedades.",
+      "spread_mechanism": "Ninguno (Cultivo sano).",
+      "favorable_conditions": {
+        "temp_min_c": 12.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 24.0,
+        "humidity_min_pct": 45.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Mantenga una fertilización equilibrada y un riego adecuado.",
+        "Inspeccione semanalmente para detectar plagas o patógenos a tiempo.",
+        "Mantenga el campo libre de malas hierbas y agua estancada."
+      ],
+      "organic_controls": [
+        "Aplicación al suelo de Trichoderma viride (2.5 kg/ha) con compost orgánico.",
+        "Pulverización preventiva de aceite de Neem 1500 ppm @ 5 ml por litro."
+      ],
+      "chemical_controls": [
+        "No se requieren tratamientos químicos para hojas sanas."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "Consulte a su técnico agrario local para planes de abonado estacionales.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Clemson Cooperative Extension: Peach Orchard Management"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Pepper,_bell___Bacterial_spot",
+      "canonical_crop": "Pepper (Bell)",
+      "canonical_disease_name": "Bacterial Spot",
+      "crop": "Pimiento morrón",
+      "disease_name": "Mancha bacteriana del pimiento",
+      "scientific_name": "Xanthomonas euvesicatoria / X. vesicatoria",
+      "causal_agent_type": "bacterial",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Mancha bacteriana del pimiento en Pimiento morrón: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 24.0,
+        "temp_max_c": 35.0,
+        "temp_optimal_c": 28.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 4.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "University of Florida IFAS Extension: Bacterial Spot of Pepper (PP-3)",
+        "Purdue Extension: Bacterial Spot of Pepper and Tomato (BP-22-W)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Pepper,_bell___healthy",
+      "canonical_crop": "Pepper (Bell)",
+      "canonical_disease_name": "Healthy Bell Pepper Leaf",
+      "crop": "Pimiento morrón",
+      "disease_name": "Follaje de pimiento sano",
+      "scientific_name": "Capsicum annuum",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "Las hojas de Pimiento morrón están sanas y no muestran síntomas de enfermedades.",
+      "spread_mechanism": "Ninguno (Cultivo sano).",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 25.0,
+        "humidity_min_pct": 50.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Mantenga una fertilización equilibrada y un riego adecuado.",
+        "Inspeccione semanalmente para detectar plagas o patógenos a tiempo.",
+        "Mantenga el campo libre de malas hierbas y agua estancada."
+      ],
+      "organic_controls": [
+        "Aplicación al suelo de Trichoderma viride (2.5 kg/ha) con compost orgánico.",
+        "Pulverización preventiva de aceite de Neem 1500 ppm @ 5 ml por litro."
+      ],
+      "chemical_controls": [
+        "No se requieren tratamientos químicos para hojas sanas."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "Consulte a su técnico agrario local para planes de abonado estacionales.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Texas A&M AgriLife Extension: Commercial Pepper Production"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Potato___Early_blight",
+      "canonical_crop": "Potato",
+      "canonical_disease_name": "Early Blight",
+      "crop": "Patata / Papa",
+      "disease_name": "Tizón temprano de la patata (Alternariosis)",
+      "scientific_name": "Alternaria solani",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Tizón temprano de la patata (Alternariosis) en Patata / Papa: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 20.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 26.0,
+        "humidity_min_pct": 80.0,
+        "leaf_wetness_hours_min": 6.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "University of Idaho Extension: Potato Early Blight Management",
+        "North Dakota State University Extension: Potato Blight Control Guide"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Potato___Late_blight",
+      "canonical_crop": "Potato",
+      "canonical_disease_name": "Late Blight",
+      "crop": "Patata / Papa",
+      "disease_name": "Tizón tardío de la patata (Mildiú de la patata)",
+      "scientific_name": "Phytophthora infestans",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Tizón tardío de la patata (Mildiú de la patata) en Patata / Papa: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 10.0,
+        "temp_max_c": 24.0,
+        "temp_optimal_c": 18.0,
+        "humidity_min_pct": 90.0,
+        "leaf_wetness_hours_min": 8.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "CRITICAL",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Cornell University: Late Blight Forecasting and Management (USABlight)",
+        "Michigan State University Extension: Potato Late Blight (E-2945)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Potato___healthy",
+      "canonical_crop": "Potato",
+      "canonical_disease_name": "Healthy Potato Leaf",
+      "crop": "Patata / Papa",
+      "disease_name": "Follaje de patata sano",
+      "scientific_name": "Solanum tuberosum",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "Las hojas de Patata / Papa están sanas y no muestran síntomas de enfermedades.",
+      "spread_mechanism": "Ninguno (Cultivo sano).",
+      "favorable_conditions": {
+        "temp_min_c": 15.0,
+        "temp_max_c": 25.0,
+        "temp_optimal_c": 20.0,
+        "humidity_min_pct": 50.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Mantenga una fertilización equilibrada y un riego adecuado.",
+        "Inspeccione semanalmente para detectar plagas o patógenos a tiempo.",
+        "Mantenga el campo libre de malas hierbas y agua estancada."
+      ],
+      "organic_controls": [
+        "Aplicación al suelo de Trichoderma viride (2.5 kg/ha) con compost orgánico.",
+        "Pulverización preventiva de aceite de Neem 1500 ppm @ 5 ml por litro."
+      ],
+      "chemical_controls": [
+        "No se requieren tratamientos químicos para hojas sanas."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "Consulte a su técnico agrario local para planes de abonado estacionales.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "University of Maine Cooperative Extension: Potato Program"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Raspberry___healthy",
+      "canonical_crop": "Raspberry",
+      "canonical_disease_name": "Healthy Raspberry Leaf",
+      "crop": "Frambuesa",
+      "disease_name": "Follaje de frambuesa sano",
+      "scientific_name": "Rubus idaeus",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "Las hojas de Frambuesa están sanas y no muestran síntomas de enfermedades.",
+      "spread_mechanism": "Ninguno (Cultivo sano).",
+      "favorable_conditions": {
+        "temp_min_c": 12.0,
+        "temp_max_c": 28.0,
+        "temp_optimal_c": 20.0,
+        "humidity_min_pct": 50.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Mantenga una fertilización equilibrada y un riego adecuado.",
+        "Inspeccione semanalmente para detectar plagas o patógenos a tiempo.",
+        "Mantenga el campo libre de malas hierbas y agua estancada."
+      ],
+      "organic_controls": [
+        "Aplicación al suelo de Trichoderma viride (2.5 kg/ha) con compost orgánico.",
+        "Pulverización preventiva de aceite de Neem 1500 ppm @ 5 ml por litro."
+      ],
+      "chemical_controls": [
+        "No se requieren tratamientos químicos para hojas sanas."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "Consulte a su técnico agrario local para planes de abonado estacionales.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Cornell Berry Diagnostic Tool: Raspberry Management"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Soybean___healthy",
+      "canonical_crop": "Soybean",
+      "canonical_disease_name": "Healthy Soybean Leaf",
+      "crop": "Soja / Soya",
+      "disease_name": "Follaje de soja sano",
+      "scientific_name": "Glycine max",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "Las hojas de Soja / Soya están sanas y no muestran síntomas de enfermedades.",
+      "spread_mechanism": "Ninguno (Cultivo sano).",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 26.0,
+        "humidity_min_pct": 45.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Mantenga una fertilización equilibrada y un riego adecuado.",
+        "Inspeccione semanalmente para detectar plagas o patógenos a tiempo.",
+        "Mantenga el campo libre de malas hierbas y agua estancada."
+      ],
+      "organic_controls": [
+        "Aplicación al suelo de Trichoderma viride (2.5 kg/ha) con compost orgánico.",
+        "Pulverización preventiva de aceite de Neem 1500 ppm @ 5 ml por litro."
+      ],
+      "chemical_controls": [
+        "No se requieren tratamientos químicos para hojas sanas."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "Consulte a su técnico agrario local para planes de abonado estacionales.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Iowa State University Extension: Soybean Field Guide"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Squash___Powdery_mildew",
+      "canonical_crop": "Squash / Cucurbits",
+      "canonical_disease_name": "Powdery Mildew",
+      "crop": "Squash / Cucurbits",
+      "disease_name": "Oídio de las cucurbitáceas (Calabacín)",
+      "scientific_name": "Podosphaera xanthii (syn. Sphaerotheca fuliginea), Golovinomyces cichoracearum",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Oídio de las cucurbitáceas (Calabacín) en Squash / Cucurbits: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 26.0,
+        "humidity_min_pct": 70.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "University of Massachusetts Amherst Extension: Cucurbit Powdery Mildew Management",
+        "Cornell Vegetable MD Online: Powdery Mildew of Cucurbits"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Strawberry___Leaf_scorch",
+      "canonical_crop": "Strawberry",
+      "canonical_disease_name": "Leaf Scorch",
+      "crop": "Fresa / Frutilla",
+      "disease_name": "Quemadura de la hoja de la fresa",
+      "scientific_name": "Diplocarpon earlianum",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Quemadura de la hoja de la fresa en Fresa / Frutilla: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 15.0,
+        "temp_max_c": 28.0,
+        "temp_optimal_c": 22.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 9.0,
+        "rainfall_favorable": true,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Ohio State University Extension: Strawberry Leaf Scorch (PLPATH-FRU-34)",
+        "North Carolina State Extension: Strawberry Leaf Scorch Management"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Strawberry___healthy",
+      "canonical_crop": "Strawberry",
+      "canonical_disease_name": "Healthy Strawberry Leaf",
+      "crop": "Fresa / Frutilla",
+      "disease_name": "Follaje de fresa sano",
+      "scientific_name": "Fragaria x ananassa",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "Las hojas de Fresa / Frutilla están sanas y no muestran síntomas de enfermedades.",
+      "spread_mechanism": "Ninguno (Cultivo sano).",
+      "favorable_conditions": {
+        "temp_min_c": 12.0,
+        "temp_max_c": 26.0,
+        "temp_optimal_c": 20.0,
+        "humidity_min_pct": 45.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Mantenga una fertilización equilibrada y un riego adecuado.",
+        "Inspeccione semanalmente para detectar plagas o patógenos a tiempo.",
+        "Mantenga el campo libre de malas hierbas y agua estancada."
+      ],
+      "organic_controls": [
+        "Aplicación al suelo de Trichoderma viride (2.5 kg/ha) con compost orgánico.",
+        "Pulverización preventiva de aceite de Neem 1500 ppm @ 5 ml por litro."
+      ],
+      "chemical_controls": [
+        "No se requieren tratamientos químicos para hojas sanas."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "Consulte a su técnico agrario local para planes de abonado estacionales.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "UC Davis IPM: Strawberry Pest Management Guidelines"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Bacterial_spot",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Bacterial Spot",
+      "crop": "Tomate",
+      "disease_name": "Mancha bacteriana del tomate",
+      "scientific_name": "Xanthomonas perforans / X. vesicatoria / X. gardneri",
+      "causal_agent_type": "bacterial",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Mancha bacteriana del tomate en Tomate: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 24.0,
+        "temp_max_c": 34.0,
+        "temp_optimal_c": 28.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 4.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "University of Florida IFAS: Bacterial Spot of Tomato (PP-3)",
+        "Purdue Extension: Tomato Diseases - Bacterial Spot (BP-22-W)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Early_blight",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Early Blight",
+      "crop": "Tomate",
+      "disease_name": "Tizón temprano del tomate (Alternariosis)",
+      "scientific_name": "Alternaria linariae (syn. Alternaria solani)",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Tizón temprano del tomate (Alternariosis) en Tomate: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 20.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 26.0,
+        "humidity_min_pct": 80.0,
+        "leaf_wetness_hours_min": 6.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Cornell Vegetable MD Online: Early Blight of Tomato",
+        "North Carolina State Extension: Early Blight of Tomato"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Late_blight",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Late Blight",
+      "crop": "Tomate",
+      "disease_name": "Tizón tardío del tomate (Mildiú)",
+      "scientific_name": "Phytophthora infestans",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Tizón tardío del tomate (Mildiú) en Tomate: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 10.0,
+        "temp_max_c": 24.0,
+        "temp_optimal_c": 18.0,
+        "humidity_min_pct": 90.0,
+        "leaf_wetness_hours_min": 8.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "CRITICAL",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "USABlight: National Late Blight Information and Forecast System",
+        "Penn State Extension: Tomato Late Blight Management"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Leaf_Mold",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Leaf Mold",
+      "crop": "Tomate",
+      "disease_name": "Moho de la hoja del tomate (Cladosporiosis)",
+      "scientific_name": "Passalora fulva (syn. Cladosporium fulvum)",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Moho de la hoja del tomate (Cladosporiosis) en Tomate: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 28.0,
+        "temp_optimal_c": 23.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 5.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "MODERATE",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "University of Massachusetts Amherst: Tomato Leaf Mold in High Tunnels",
+        "Cornell Vegetable MD Online: Tomato Leaf Mold"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Septoria_leaf_spot",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Septoria Leaf Spot",
+      "crop": "Tomate",
+      "disease_name": "Mancha foliar por Septoria del tomate",
+      "scientific_name": "Septoria lycopersici",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Mancha foliar por Septoria del tomate en Tomate: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 28.0,
+        "temp_optimal_c": 23.0,
+        "humidity_min_pct": 90.0,
+        "leaf_wetness_hours_min": 6.0,
+        "rainfall_favorable": true,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Missouri Botanical Garden: Septoria Leaf Spot of Tomato",
+        "Purdue Extension: Septoria Leaf Spot on Tomato (BP-138-W)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Two-Spotted Spider Mite Infestation",
+      "crop": "Tomate",
+      "disease_name": "Araña roja de dos puntos del tomate",
+      "scientific_name": "Tetranychus urticae",
+      "causal_agent_type": "pest",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Araña roja de dos puntos del tomate en Tomate: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 25.0,
+        "temp_max_c": 38.0,
+        "temp_optimal_c": 32.0,
+        "humidity_min_pct": 20.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "UC Davis IPM: Spider Mites on Tomato",
+        "University of Florida IFAS: Two-Spotted Spider Mite Management (EENY-150)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Target_Spot",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Target Spot",
+      "crop": "Tomate",
+      "disease_name": "Mancha concéntrica del tomate (Target spot)",
+      "scientific_name": "Corynespora cassiicola",
+      "causal_agent_type": "fungal",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Mancha concéntrica del tomate (Target spot) en Tomate: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 20.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 28.0,
+        "humidity_min_pct": 85.0,
+        "leaf_wetness_hours_min": 8.0,
+        "rainfall_favorable": true,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "HIGH",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "University of Florida IFAS: Target Spot of Tomato (PP-344)",
+        "North Carolina State Extension: Target Spot on Tomato"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+      "crop": "Tomate",
+      "disease_name": "Virus del rizado amarillo del tomate (TYLCV / Virus de la cuchara)",
+      "scientific_name": "Begomovirus (TYLCV)",
+      "causal_agent_type": "viral",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Virus del rizado amarillo del tomate (TYLCV / Virus de la cuchara) en Tomate: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 24.0,
+        "temp_max_c": 38.0,
+        "temp_optimal_c": 30.0,
+        "humidity_min_pct": 30.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": true
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "CRITICAL",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "UC Davis IPM: Tomato Yellow Leaf Curl Virus Guidelines",
+        "University of Florida IFAS: Tomato Yellow Leaf Curl Virus Management (ENY-712)"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___Tomato_mosaic_virus",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Tomato Mosaic Virus (ToMV)",
+      "crop": "Tomate",
+      "disease_name": "Virus del mosaico del tomate (ToMV)",
+      "scientific_name": "Tobamovirus (ToMV)",
+      "causal_agent_type": "viral",
+      "is_healthy": false,
+      "symptoms": "Síntomas de Virus del mosaico del tomate (ToMV) en Tomate: Lesiones y manchas características en follaje.",
+      "spread_mechanism": "Dispersión por esporas transportadas por el viento y salpicaduras de lluvia en condiciones húmedas.",
+      "favorable_conditions": {
+        "temp_min_c": 20.0,
+        "temp_max_c": 32.0,
+        "temp_optimal_c": 26.0,
+        "humidity_min_pct": 40.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Elimine y destruya las hojas infectadas de inmediato.",
+        "Evite el riego por aspersión; riegue a nivel del suelo para mantener el follaje seco.",
+        "Realice rotación de cultivos de 2 a 3 años con especies no hospedantes."
+      ],
+      "organic_controls": [
+        "Aplique aceite de Neem 1500 ppm @ 5 ml por litro de agua.",
+        "Aplique biofungicida Bacillus subtilis o Trichoderma @ 5 g por litro."
+      ],
+      "chemical_controls": [
+        "Tratamiento preventivo: Mancozeb 75% WP @ 2.5 g/L o Oxicloruro de Cobre 50% WP @ 2.5 g/L.",
+        "Tratamiento curativo: Difenoconazol 25% EC @ 0.5 ml/L o Azoxistrobina 23% SC @ 1 ml/L."
+      ],
+      "severity": "CRITICAL",
+      "when_to_consult_expert": "Si las lesiones superan el 15% de la superficie foliar o amenazan la cosecha comercial.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "Penn State Extension: Tomato Mosaic Virus and Tobacco Mosaic Virus",
+        "Cornell Vegetable MD Online: Tobamoviruses of Tomato"
+      ],
+      "review_status": "expert_reviewed"
+    },
+    {
+      "id": "Tomato___healthy",
+      "canonical_crop": "Tomato",
+      "canonical_disease_name": "Healthy Tomato Leaf",
+      "crop": "Tomate",
+      "disease_name": "Follaje de tomate sano",
+      "scientific_name": "Solanum lycopersicum",
+      "causal_agent_type": "none",
+      "is_healthy": true,
+      "symptoms": "Las hojas de Tomate están sanas y no muestran síntomas de enfermedades.",
+      "spread_mechanism": "Ninguno (Cultivo sano).",
+      "favorable_conditions": {
+        "temp_min_c": 18.0,
+        "temp_max_c": 30.0,
+        "temp_optimal_c": 24.0,
+        "humidity_min_pct": 50.0,
+        "leaf_wetness_hours_min": 0.0,
+        "rainfall_favorable": false,
+        "wind_spread": false
+      },
+      "prevention_steps": [
+        "Mantenga una fertilización equilibrada y un riego adecuado.",
+        "Inspeccione semanalmente para detectar plagas o patógenos a tiempo.",
+        "Mantenga el campo libre de malas hierbas y agua estancada."
+      ],
+      "organic_controls": [
+        "Aplicación al suelo de Trichoderma viride (2.5 kg/ha) con compost orgánico.",
+        "Pulverización preventiva de aceite de Neem 1500 ppm @ 5 ml por litro."
+      ],
+      "chemical_controls": [
+        "No se requieren tratamientos químicos para hojas sanas."
+      ],
+      "severity": "LOW",
+      "when_to_consult_expert": "Consulte a su técnico agrario local para planes de abonado estacionales.",
+      "safety_notes": [
+        "Lea y siga estrictamente las instrucciones de la etiqueta del producto fitosanitario y los plazos de seguridad (PHI).",
+        "Use siempre Equipo de Protección Individual (EPI): guantes, mascarilla y gafas de protección.",
+        "Mantenga los productos químicos fuera del alcance de niños, animales y fuentes de agua potable.",
+        "Consulte con su técnico o extensionista agrícola local ante cualquier duda sobre dosis o tratamientos."
+      ],
+      "sources": [
+        "University of Florida IFAS: Tomato Production Guide",
+        "Purdue Extension: Tomato Plant Care and IPM"
+      ],
+      "review_status": "expert_reviewed"
+    }
+  ]
+}

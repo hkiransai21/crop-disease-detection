@@ -22,6 +22,8 @@ pyyaml>=6.0.1
 pillow>=10.2.0
 numpy>=1.26.0
 onnxruntime>=1.17.1
+edge-tts>=7.0.0
+
 
 # Testing & Quality
 pytest>=8.1.0

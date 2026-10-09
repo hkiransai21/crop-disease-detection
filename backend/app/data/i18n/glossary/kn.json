@@ -1,0 +1,504 @@
+{
+  "language": "kn",
+  "language_name": "Kannada",
+  "diseases": {
+    "Apple___Apple_scab": {
+      "id": "Apple___Apple_scab",
+      "common_name": "ಸೇಬು ಕಜ್ಜಿ ರೋಗ (Apple Scab)",
+      "alt_names": [
+        "ಕಪ್ಪು ಮಚ್ಚೆ"
+      ],
+      "transliteration": "Apple Scab",
+      "scientific_name": "Venturia inaequalis",
+      "tts_text": "ಸೇಬು ಕಜ್ಜಿ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Apple___Black_rot": {
+      "id": "Apple___Black_rot",
+      "common_name": "ಸೇಬು ಕಪ್ಪು ಕೊಳೆ ರೋಗ & ಕಪ್ಪೆಗಣ್ಣು ಮಚ್ಚೆ",
+      "alt_names": [
+        "ಕಪ್ಪು ಕೊಳೆ"
+      ],
+      "transliteration": "Apple Black Rot",
+      "scientific_name": "Botryosphaeria obtusa",
+      "tts_text": "ಸೇಬು ಕಪ್ಪು ಕೊಳೆ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Apple___Cedar_apple_rust": {
+      "id": "Apple___Cedar_apple_rust",
+      "common_name": "ಸೇಬು ತುಕ್ಕು ರೋಗ (Cedar Apple Rust)",
+      "alt_names": [
+        "ಕಿತ್ತಳೆ ತುಕ್ಕು"
+      ],
+      "transliteration": "Cedar Apple Rust",
+      "scientific_name": "Gymnosporangium juniperi-virginianae",
+      "tts_text": "ಸೇಬು ತುಕ್ಕು ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Apple___healthy": {
+      "id": "Apple___healthy",
+      "common_name": "ಆರೋಗ್ಯಕರ ಸೇಬು ಎಲೆಗಳು",
+      "alt_names": [
+        "ಆರೋಗ್ಯಕರ ಎಲೆ"
+      ],
+      "transliteration": "Healthy Apple",
+      "scientific_name": "Malus domestica",
+      "tts_text": "ಸೇಬು ಎಲೆಗಳು ಆರೋಗ್ಯಕರವಾಗಿವೆ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Blueberry___healthy": {
+      "id": "Blueberry___healthy",
+      "common_name": "ಆರೋಗ್ಯಕರ ಬ್ಲೂಬೆರ್ರಿ ಎಲೆಗಳು",
+      "alt_names": [
+        "ಆರೋಗ್ಯಕರ ಎಲೆ"
+      ],
+      "transliteration": "Healthy Blueberry",
+      "scientific_name": "Vaccinium corymbosum",
+      "tts_text": "ಬ್ಲೂಬೆರ್ರಿ ಎಲೆಗಳು ಆರೋಗ್ಯಕರವಾಗಿವೆ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+      "id": "Cherry_(including_sour)___Powdery_mildew",
+      "common_name": "ಚೆರ್ರಿ ಬೂದಿ ರೋಗ (Powdery Mildew)",
+      "alt_names": [
+        "ಬಿಳಿ ಬೂದಿ"
+      ],
+      "transliteration": "Cherry Powdery Mildew",
+      "scientific_name": "Podosphaera clandestina",
+      "tts_text": "ಚೆರ್ರಿ ಬೂದಿ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Cherry_(including_sour)___healthy": {
+      "id": "Cherry_(including_sour)___healthy",
+      "common_name": "ಆರೋಗ್ಯಕರ ಚೆರ್ರಿ ಎಲೆಗಳು",
+      "alt_names": [
+        "ಆರೋಗ್ಯಕರ ಎಲೆ"
+      ],
+      "transliteration": "Healthy Cherry",
+      "scientific_name": "Prunus avium / Prunus cerasus",
+      "tts_text": "ಚೆರ್ರಿ ಎಲೆಗಳು ಆರೋಗ್ಯಕರವಾಗಿವೆ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+      "id": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "common_name": "ಮೆಕ್ಕೆಜೋಳ ಬೂದು ಎಲೆ ಮಚ್ಚೆ ರೋಗ (Cercospora)",
+      "alt_names": [
+        "ಬೂದು ಮಚ್ಚೆ"
+      ],
+      "transliteration": "Corn Gray Leaf Spot",
+      "scientific_name": "Cercospora zeae-maydis",
+      "tts_text": "ಮೆಕ್ಕೆಜೋಳ ಬೂದು ಎಲೆ ಮಚ್ಚೆ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Corn_(maize)___Common_rust_": {
+      "id": "Corn_(maize)___Common_rust_",
+      "common_name": "ಮೆಕ್ಕೆಜೋಳ ತುಕ್ಕು ರೋಗ (Common Rust)",
+      "alt_names": [
+        "ತುಕ್ಕು ರೋಗ"
+      ],
+      "transliteration": "Corn Common Rust",
+      "scientific_name": "Puccinia sorghi",
+      "tts_text": "ಮೆಕ್ಕೆಜೋಳ ತುಕ್ಕು ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+      "id": "Corn_(maize)___Northern_Leaf_Blight",
+      "common_name": "ಮೆಕ್ಕೆಜೋಳ ಉತ್ತರ ಎಲೆ ಸುಟ್ಟ ರೋಗ (Northern Leaf Blight)",
+      "alt_names": [
+        "ಎಲೆ ಸುಟ್ಟ ರೋಗ"
+      ],
+      "transliteration": "Corn Northern Leaf Blight",
+      "scientific_name": "Exserohilum turcicum (Setosphaeria turcica)",
+      "tts_text": "ಮೆಕ್ಕೆಜೋಳ ಉತ್ತರ ಎಲೆ ಸುಟ್ಟ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Corn_(maize)___healthy": {
+      "id": "Corn_(maize)___healthy",
+      "common_name": "ಆರೋಗ್ಯಕರ ಮೆಕ್ಕೆಜೋಳ ಎಲೆಗಳು",
+      "alt_names": [
+        "ಆರೋಗ್ಯಕರ ಎಲೆ"
+      ],
+      "transliteration": "Healthy Corn",
+      "scientific_name": "Zea mays",
+      "tts_text": "ಮೆಕ್ಕೆಜೋಳ ಎಲೆಗಳು ಆರೋಗ್ಯಕರವಾಗಿವೆ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Grape___Black_rot": {
+      "id": "Grape___Black_rot",
+      "common_name": "ದ್ರಾಕ್ಷಿ ಕಪ್ಪು ಕೊಳೆ ರೋಗ (Black Rot)",
+      "alt_names": [
+        "ಕಪ್ಪು ಕೊಳೆ"
+      ],
+      "transliteration": "Grape Black Rot",
+      "scientific_name": "Guignardia bidwellii (Phyllosticta ampelicida)",
+      "tts_text": "ದ್ರಾಕ್ಷಿ ಕಪ್ಪು ಕೊಳೆ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Grape___Esca_(Black_Measles)": {
+      "id": "Grape___Esca_(Black_Measles)",
+      "common_name": "ದ್ರಾಕ್ಷಿ ಎಸ್ಕಾ ರೋಗ (ಬ್ಲಾಕ್ ಮೀಸಲ್ಸ್)",
+      "alt_names": [
+        "ಹುಲಿ ಪಟ್ಟೆ ರೋಗ"
+      ],
+      "transliteration": "Grape Esca Black Measles",
+      "scientific_name": "Phaeoacremonium minimum, Phaeomoniella chlamydospora, Fomitiporia mediterranea",
+      "tts_text": "ದ್ರಾಕ್ಷಿ ಎಸ್ಕಾ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+      "id": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "common_name": "ದ್ರಾಕ್ಷಿ ಎಲೆ ಸುಟ್ಟ ರೋಗ (Isariopsis Spot)",
+      "alt_names": [
+        "ಎಲೆ ಮಚ್ಚೆ"
+      ],
+      "transliteration": "Grape Leaf Blight",
+      "scientific_name": "Pseudocercospora cladosporioides (Isariopsis clavispora)",
+      "tts_text": "ದ್ರಾಕ್ಷಿ ಎಲೆ ಸುಟ್ಟ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Grape___healthy": {
+      "id": "Grape___healthy",
+      "common_name": "ಆರೋಗ್ಯಕರ ದ್ರಾಕ್ಷಿ ಎಲೆಗಳು",
+      "alt_names": [
+        "ಆರೋಗ್ಯಕರ ಎಲೆ"
+      ],
+      "transliteration": "Healthy Grape",
+      "scientific_name": "Vitis vinifera",
+      "tts_text": "ದ್ರಾಕ್ಷಿ ಎಲೆಗಳು ಆರೋಗ್ಯಕರವಾಗಿವೆ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+      "id": "Orange___Haunglongbing_(Citrus_greening)",
+      "common_name": "ಕಿತ್ತಳೆ ಗ್ರೀನಿಂಗ್ ರೋಗ (Citrus Greening / HLB)",
+      "alt_names": [
+        "ಹಳದಿ ರೋಗ"
+      ],
+      "transliteration": "Citrus Greening Huanglongbing",
+      "scientific_name": "Candidatus Liberibacter asiaticus",
+      "tts_text": "ಕಿತ್ತಳೆ ಸಿಟ್ರಸ್ ಗ್ರೀನಿಂಗ್ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Peach___Bacterial_spot": {
+      "id": "Peach___Bacterial_spot",
+      "common_name": "ಪೀಚ್ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಮಚ್ಚೆ ರೋಗ",
+      "alt_names": [
+        "ರಂಧ್ರ ಮಚ್ಚೆ"
+      ],
+      "transliteration": "Peach Bacterial Spot",
+      "scientific_name": "Xanthomonas arboricola pv. pruni",
+      "tts_text": "ಪೀಚ್ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಮಚ್ಚೆ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Peach___healthy": {
+      "id": "Peach___healthy",
+      "common_name": "ಆರೋಗ್ಯಕರ ಪೀಚ್ ಎಲೆಗಳು",
+      "alt_names": [
+        "ಆರೋಗ್ಯಕರ ಎಲೆ"
+      ],
+      "transliteration": "Healthy Peach",
+      "scientific_name": "Prunus persica",
+      "tts_text": "ಪೀಚ್ ಎಲೆಗಳು ಆರೋಗ್ಯಕರವಾಗಿವೆ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Pepper,_bell___Bacterial_spot": {
+      "id": "Pepper,_bell___Bacterial_spot",
+      "common_name": "ದಪ್ಪ ಮೆಣಸಿನಕಾಯಿ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಮಚ್ಚೆ ರೋಗ",
+      "alt_names": [
+        "ಬ್ಯಾಕ್ಟೀರಿಯಾ ಕಲೆ"
+      ],
+      "transliteration": "Bell Pepper Bacterial Spot",
+      "scientific_name": "Xanthomonas euvesicatoria / X. vesicatoria",
+      "tts_text": "ದಪ್ಪ ಮೆಣಸಿನಕಾಯಿ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಮಚ್ಚೆ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Pepper,_bell___healthy": {
+      "id": "Pepper,_bell___healthy",
+      "common_name": "ಆರೋಗ್ಯಕರ ದಪ್ಪ ಮೆಣಸಿನಕಾಯಿ ಎಲೆಗಳು",
+      "alt_names": [
+        "ಆರೋಗ್ಯಕರ ಎಲೆ"
+      ],
+      "transliteration": "Healthy Bell Pepper",
+      "scientific_name": "Capsicum annuum",
+      "tts_text": "ದಪ್ಪ ಮೆಣಸಿನಕಾಯಿ ಎಲೆಗಳು ಆರೋಗ್ಯಕರವಾಗಿವೆ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Potato___Early_blight": {
+      "id": "Potato___Early_blight",
+      "common_name": "ಆಲೂಗಡ್ಡೆ ಮುಂಗಾರು ಎಲೆ ಸುಟ್ಟ ರೋಗ (Early Blight)",
+      "alt_names": [
+        "ಮುಂಗಾರು ಕರಗು ರೋಗ"
+      ],
+      "transliteration": "Potato Early Blight",
+      "scientific_name": "Alternaria solani",
+      "tts_text": "ಆಲೂಗಡ್ಡೆ ಮುಂಗಾರು ಎಲೆ ಸುಟ್ಟ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Potato___Late_blight": {
+      "id": "Potato___Late_blight",
+      "common_name": "ಆಲೂಗಡ್ಡೆ ಹಿಂಗಾರು ಎಲೆ ಸುಟ್ಟ ರೋಗ (Late Blight)",
+      "alt_names": [
+        "ಹಿಂಗಾರು ಕರಗು"
+      ],
+      "transliteration": "Potato Late Blight",
+      "scientific_name": "Phytophthora infestans",
+      "tts_text": "ಆಲೂಗಡ್ಡೆ ಹಿಂಗಾರು ಎಲೆ ಸುಟ್ಟ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Potato___healthy": {
+      "id": "Potato___healthy",
+      "common_name": "ಆರೋಗ್ಯಕರ ಆಲೂಗಡ್ಡೆ ಎಲೆಗಳು",
+      "alt_names": [
+        "ಆರೋಗ್ಯಕರ ಎಲೆ"
+      ],
+      "transliteration": "Healthy Potato",
+      "scientific_name": "Solanum tuberosum",
+      "tts_text": "ಆಲೂಗಡ್ಡೆ ಎಲೆಗಳು ಆರೋಗ್ಯಕರವಾಗಿವೆ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Raspberry___healthy": {
+      "id": "Raspberry___healthy",
+      "common_name": "ಆರೋಗ್ಯಕರ ರಾಸ್ಪ್ಬೆರಿ ಎಲೆಗಳು",
+      "alt_names": [
+        "ಆರೋಗ್ಯಕರ ಎಲೆ"
+      ],
+      "transliteration": "Healthy Raspberry",
+      "scientific_name": "Rubus idaeus",
+      "tts_text": "ರಾಸ್ಪ್ಬೆರಿ ಎಲೆಗಳು ಆರೋಗ್ಯಕರವಾಗಿವೆ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Soybean___healthy": {
+      "id": "Soybean___healthy",
+      "common_name": "ಆರೋಗ್ಯಕರ ಸೋಯಾಬೀನ್ ಎಲೆಗಳು",
+      "alt_names": [
+        "ಆರೋಗ್ಯಕರ ಎಲೆ"
+      ],
+      "transliteration": "Healthy Soybean",
+      "scientific_name": "Glycine max",
+      "tts_text": "ಸೋಯಾಬೀನ್ ಎಲೆಗಳು ಆರೋಗ್ಯಕರವಾಗಿವೆ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Squash___Powdery_mildew": {
+      "id": "Squash___Powdery_mildew",
+      "common_name": "ಕುಂಬಳಕಾಯಿ ಬೂದಿ ರೋಗ (Powdery Mildew)",
+      "alt_names": [
+        "ಬೂದಿ ರೋಗ"
+      ],
+      "transliteration": "Squash Powdery Mildew",
+      "scientific_name": "Podosphaera xanthii (syn. Sphaerotheca fuliginea), Golovinomyces cichoracearum",
+      "tts_text": "ಕುಂಬಳಕಾಯಿ ಬೂದಿ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Strawberry___Leaf_scorch": {
+      "id": "Strawberry___Leaf_scorch",
+      "common_name": "ಸ್ಟ್ರಾಬೆರಿ ಎಲೆ ಸುಟ್ಟ ರೋಗ (Leaf Scorch)",
+      "alt_names": [
+        "ಎಲೆ ಸುಟ್ಟ ಮಚ್ಚೆ"
+      ],
+      "transliteration": "Strawberry Leaf Scorch",
+      "scientific_name": "Diplocarpon earlianum",
+      "tts_text": "ಸ್ಟ್ರಾಬೆರಿ ಎಲೆ ಸುಟ್ಟ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Strawberry___healthy": {
+      "id": "Strawberry___healthy",
+      "common_name": "ಆರೋಗ್ಯಕರ ಸ್ಟ್ರಾಬೆರಿ ಎಲೆಗಳು",
+      "alt_names": [
+        "ಆರೋಗ್ಯಕರ ಎಲೆ"
+      ],
+      "transliteration": "Healthy Strawberry",
+      "scientific_name": "Fragaria x ananassa",
+      "tts_text": "ಸ್ಟ್ರಾಬೆರಿ ಎಲೆಗಳು ಆರೋಗ್ಯಕರವಾಗಿವೆ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Bacterial_spot": {
+      "id": "Tomato___Bacterial_spot",
+      "common_name": "ಟೊಮೇಟೊ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಮಚ್ಚೆ ರೋಗ (Bacterial Spot)",
+      "alt_names": [
+        "ಬ್ಯಾಕ್ಟೀರಿಯಾ ಕಲೆ"
+      ],
+      "transliteration": "Tomato Bacterial Spot",
+      "scientific_name": "Xanthomonas perforans / X. vesicatoria / X. gardneri",
+      "tts_text": "ಟೊಮೇಟೊ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಮಚ್ಚೆ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Early_blight": {
+      "id": "Tomato___Early_blight",
+      "common_name": "ಟೊಮೇಟೊ ಮುಂಗಾರು ಎಲೆ ಸುಟ್ಟ ರೋಗ (Early Blight)",
+      "alt_names": [
+        "ಮುಂಗಾರು ಸುಟ್ಟ ರೋಗ"
+      ],
+      "transliteration": "Tomato Early Blight",
+      "scientific_name": "Alternaria linariae (syn. Alternaria solani)",
+      "tts_text": "ಟೊಮೇಟೊ ಮುಂಗಾರು ಎಲೆ ಸುಟ್ಟ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Late_blight": {
+      "id": "Tomato___Late_blight",
+      "common_name": "ಟೊಮೇಟೊ ಹಿಂಗಾರು ಎಲೆ ಸುಟ್ಟ ರೋಗ (Late Blight)",
+      "alt_names": [
+        "ಹಿಂಗಾರು ಕರಗು"
+      ],
+      "transliteration": "Tomato Late Blight",
+      "scientific_name": "Phytophthora infestans",
+      "tts_text": "ಟೊಮೇಟೊ ಹಿಂಗಾರು ಎಲೆ ಸುಟ್ಟ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Leaf_Mold": {
+      "id": "Tomato___Leaf_Mold",
+      "common_name": "ಟೊಮೇಟೊ ಎಲೆ ಬೂజు ರೋಗ (Leaf Mold)",
+      "alt_names": [
+        "ಬೂಜು ರೋಗ"
+      ],
+      "transliteration": "Tomato Leaf Mold",
+      "scientific_name": "Passalora fulva (syn. Cladosporium fulvum)",
+      "tts_text": "ಟೊಮೇಟೊ ಎಲೆ ಬೂಜು ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Septoria_leaf_spot": {
+      "id": "Tomato___Septoria_leaf_spot",
+      "common_name": "ಟೊಮೇಟೊ ಸೆಪ್ಟೋರಿಯಾ ಎಲೆ ಮಚ್ಚೆ ರೋಗ",
+      "alt_names": [
+        "ಸೆಪ್ಟೋರಿಯಾ ಮಚ್ಚೆ"
+      ],
+      "transliteration": "Tomato Septoria Leaf Spot",
+      "scientific_name": "Septoria lycopersici",
+      "tts_text": "ಟೊಮೇಟೊ ಸೆಪ್ಟೋರಿಯಾ ಎಲೆ ಮಚ್ಚೆ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+      "id": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "common_name": "ಟೊಮೇಟೊ ಕೆಂಪು ಜಿಗ್ಗಿ / ಜೇಡ ನುಸಿ ಕೀಟ",
+      "alt_names": [
+        "ಕೆಂಪು ನುಸಿ"
+      ],
+      "transliteration": "Tomato Spider Mite",
+      "scientific_name": "Tetranychus urticae",
+      "tts_text": "ಟೊಮೇಟೊ ಕೆಂಪು ಜೇಡ ನುಸಿ ಕೀಟ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Target_Spot": {
+      "id": "Tomato___Target_Spot",
+      "common_name": "ಟೊಮೇಟೊ ಗುರಿ ಮಚ್ಚೆ ರೋಗ (Target Spot)",
+      "alt_names": [
+        "ಗುರಿ ಕಲೆ"
+      ],
+      "transliteration": "Tomato Target Spot",
+      "scientific_name": "Corynespora cassiicola",
+      "tts_text": "ಟೊಮೇಟೊ ಟಾರ್ಗೆಟ್ ಸ್ಪಾಟ್ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+      "id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "common_name": "ಟೊಮೇಟೊ ಎಲೆ ಸುರುಳಿ ಹಳದಿ ವೈರಸ್ ರೋಗ (TYLCV)",
+      "alt_names": [
+        "ಎಲೆ ಮುರುಟು ರೋಗ"
+      ],
+      "transliteration": "Tomato Yellow Leaf Curl Virus",
+      "scientific_name": "Begomovirus (TYLCV)",
+      "tts_text": "ಬಿಳಿ ನೊಣದಿಂದ ಹರಡುವ ಟೊಮೇಟೊ ಎಲೆ ಸುರುಳಿ ವೈರಸ್ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Tomato_mosaic_virus": {
+      "id": "Tomato___Tomato_mosaic_virus",
+      "common_name": "ಟೊಮೇಟೊ ಮೊಸಾಯಿಕ್ ವೈರಸ್ ರೋಗ (ಚಿತ್ರವಿಚಿತ್ರ ಕಲೆ ರೋಗ)",
+      "alt_names": [
+        "ಮೊಸಾಯಿಕ್ ರೋಗ"
+      ],
+      "transliteration": "Tomato Mosaic Virus",
+      "scientific_name": "Tobamovirus (ToMV)",
+      "tts_text": "ಟೊಮೇಟೊ ಮೊಸಾಯಿಕ್ ವೈರಸ್ ರೋಗ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___healthy": {
+      "id": "Tomato___healthy",
+      "common_name": "ಆರೋಗ್ಯಕರ ಟೊಮೇಟೊ ಎಲೆಗಳು",
+      "alt_names": [
+        "ಆರೋಗ್ಯಕರ ಎಲೆ"
+      ],
+      "transliteration": "Healthy Tomato",
+      "scientific_name": "Solanum lycopersicum",
+      "tts_text": "ಟೊಮೇಟೊ ಬೆಳೆ ಎಲೆಗಳು ಸಂಪೂರ್ಣವಾಗಿ ಆರೋಗ್ಯಕರವಾಗಿವೆ",
+      "source": "UAS Bangalore / UAS Dharwad",
+      "review_status": "expert_reviewed"
+    }
+  },
+  "agronomic_terms": {
+    "fungicide": {
+      "term_key": "fungicide",
+      "english": "Fungicide",
+      "localized_term": "ಶಿಲೀಂಧ್ರನಾಶಕ (Fungicide)",
+      "transliteration": "Shilandhranashaka",
+      "definition": "ಶಿಲೀಂಧ್ರ ರೋಗ ನಿಯಂತ್ರಕ ಔಷಧ",
+      "tts_text": "ಶಿಲೀಂಧ್ರನಾಶಕ ಔಷಧ"
+    },
+    "bactericide": {
+      "term_key": "bactericide",
+      "english": "Bactericide",
+      "localized_term": "ಬ್ಯಾಕ್ಟೀರಿಯಾನಾಶಕ",
+      "transliteration": "Bacterianashaka",
+      "definition": "ಬ್ಯಾಕ್ಟೀರಿಯಾ ರೋಗ ನಿಯಂತ್ರಕ ಔಷಧ",
+      "tts_text": "ಬ್ಯಾಕ್ಟೀರಿಯಾನಾಶಕ"
+    },
+    "crop_rotation": {
+      "term_key": "crop_rotation",
+      "english": "Crop Rotation",
+      "localized_term": "ಬೆಳೆ ಸರದಿ",
+      "transliteration": "Bele Saradi",
+      "definition": "ಒಂದೇ ಹೊಲದಲ್ಲಿ ಬೇರೆ ಬೇರೆ ಬೆಳೆಗಳನ್ನು ಬೆಳೆಯುವುದು",
+      "tts_text": "ಬೆಳೆ ಸರದಿ"
+    },
+    "spray_interval": {
+      "term_key": "spray_interval",
+      "english": "Spray Interval",
+      "localized_term": "ಸಿಂಪರಣಾ ಅಂತರ",
+      "transliteration": "Simparana Antara",
+      "definition": "ಎರಡು ಸಿಂಪರಣೆಗಳ ನಡುವಿನ ದಿನಗಳ ಅಂತರ",
+      "tts_text": "ಸಿಂಪರಣಾ ಅಂತರ"
+    },
+    "resistant_variety": {
+      "term_key": "resistant_variety",
+      "english": "Resistant Variety",
+      "localized_term": "ರೋಗ ನಿರೋಧಕ ತಳಿ",
+      "transliteration": "Roga Nirodhaka Tali",
+      "definition": "ರೋಗವನ್ನು ತಡೆದುಕೊಳ್ಳುವ ಬೆಳೆ ತಳಿ",
+      "tts_text": "ರೋಗ ನಿರೋಧಕ ತಳಿ"
+    }
+  }
+}

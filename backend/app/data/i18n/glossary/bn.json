@@ -1,0 +1,504 @@
+{
+  "language": "bn",
+  "language_name": "Bengali",
+  "diseases": {
+    "Apple___Apple_scab": {
+      "id": "Apple___Apple_scab",
+      "common_name": "আপেল স্ক্যাব বা খোস রোগ (Apple Scab)",
+      "alt_names": [
+        "কালো দাগ"
+      ],
+      "transliteration": "Apple Scab",
+      "scientific_name": "Venturia inaequalis",
+      "tts_text": "আপেল স্ক্যাব রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Apple___Black_rot": {
+      "id": "Apple___Black_rot",
+      "common_name": "আপেল ব্ল্যাক রট ও ব্যাঙের চোখের মতো পাতার দাগ",
+      "alt_names": [
+        "কালো পচন"
+      ],
+      "transliteration": "Apple Black Rot",
+      "scientific_name": "Botryosphaeria obtusa",
+      "tts_text": "আপেল ব্ল্যাক রট রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Apple___Cedar_apple_rust": {
+      "id": "Apple___Cedar_apple_rust",
+      "common_name": "আপেল সিডার মরিচা রোগ (Cedar Apple Rust)",
+      "alt_names": [
+        "হলুদ মরিচা"
+      ],
+      "transliteration": "Cedar Apple Rust",
+      "scientific_name": "Gymnosporangium juniperi-virginianae",
+      "tts_text": "আপেল মরিচা রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Apple___healthy": {
+      "id": "Apple___healthy",
+      "common_name": "সুস্থ ও নিরোগ আপেল পাতা",
+      "alt_names": [
+        "রোগমুক্ত পাতা"
+      ],
+      "transliteration": "Healthy Apple",
+      "scientific_name": "Malus domestica",
+      "tts_text": "আপেল পাতা সম্পূর্ণ সুস্থ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Blueberry___healthy": {
+      "id": "Blueberry___healthy",
+      "common_name": "সুস্থ ও নিরোগ ব্লুবেরি পাতা",
+      "alt_names": [
+        "রোগমুক্ত পাতা"
+      ],
+      "transliteration": "Healthy Blueberry",
+      "scientific_name": "Vaccinium corymbosum",
+      "tts_text": "ব্লুবেরি পাতা সম্পূর্ণ সুস্থ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+      "id": "Cherry_(including_sour)___Powdery_mildew",
+      "common_name": "চেরি পাউডারি মিলডিউ বা সাদা গুঁড়ো রোগ",
+      "alt_names": [
+        "সাদা পাউডার রোগ"
+      ],
+      "transliteration": "Cherry Powdery Mildew",
+      "scientific_name": "Podosphaera clandestina",
+      "tts_text": "চেরি পাউডারি মিলডিউ রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Cherry_(including_sour)___healthy": {
+      "id": "Cherry_(including_sour)___healthy",
+      "common_name": "সুস্থ ও নিরোগ চেরি পাতা",
+      "alt_names": [
+        "রোগমুক্ত পাতা"
+      ],
+      "transliteration": "Healthy Cherry",
+      "scientific_name": "Prunus avium / Prunus cerasus",
+      "tts_text": "চেরি পাতা সুস্থ ও রোগমুক্ত",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+      "id": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "common_name": "ভুট্টার ধূসর পাতার দাগ ও সারকোস্পোরা রোগ",
+      "alt_names": [
+        "ধূসর দাগ"
+      ],
+      "transliteration": "Corn Gray Leaf Spot",
+      "scientific_name": "Cercospora zeae-maydis",
+      "tts_text": "ভুট্টার ধূসর পাতার দাগ রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Corn_(maize)___Common_rust_": {
+      "id": "Corn_(maize)___Common_rust_",
+      "common_name": "ভুট্টার সাধারণ মরিচা রোগ (Common Rust)",
+      "alt_names": [
+        "মরিচা রোগ"
+      ],
+      "transliteration": "Corn Common Rust",
+      "scientific_name": "Puccinia sorghi",
+      "tts_text": "ভুট্টার সাধারণ মরিচা রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+      "id": "Corn_(maize)___Northern_Leaf_Blight",
+      "common_name": "ভুট্টার নর্দান লিফ ব্লাইট বা পাতার ঝলসানো রোগ",
+      "alt_names": [
+        "পাতা ঝলসানো"
+      ],
+      "transliteration": "Corn Northern Leaf Blight",
+      "scientific_name": "Exserohilum turcicum (Setosphaeria turcica)",
+      "tts_text": "ভুট্টার নর্দান লিফ ব্লাইট রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Corn_(maize)___healthy": {
+      "id": "Corn_(maize)___healthy",
+      "common_name": "সুস্থ ও নিরোগ ভুট্টা পাতা",
+      "alt_names": [
+        "রোগমুক্ত পাতা"
+      ],
+      "transliteration": "Healthy Corn",
+      "scientific_name": "Zea mays",
+      "tts_text": "ভুট্টা পাতা সুস্থ ও রোগমুক্ত",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Grape___Black_rot": {
+      "id": "Grape___Black_rot",
+      "common_name": "আঙ্গুর ব্ল্যাক রট বা কালো পচন রোগ",
+      "alt_names": [
+        "কালো পচন"
+      ],
+      "transliteration": "Grape Black Rot",
+      "scientific_name": "Guignardia bidwellii (Phyllosticta ampelicida)",
+      "tts_text": "আঙ্গুর ব্ল্যাক রট রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Grape___Esca_(Black_Measles)": {
+      "id": "Grape___Esca_(Black_Measles)",
+      "common_name": "আঙ্গুর এসকা বা ব্ল্যাক মিসেলস রোগ",
+      "alt_names": [
+        "এসকা রোগ"
+      ],
+      "transliteration": "Grape Esca Black Measles",
+      "scientific_name": "Phaeoacremonium minimum, Phaeomoniella chlamydospora, Fomitiporia mediterranea",
+      "tts_text": "আঙ্গুর এসকা রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+      "id": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "common_name": "আঙ্গুর পাতা ঝলসানো ও ইসারিওপসিস পাতার দাগ",
+      "alt_names": [
+        "পাতার দাগ"
+      ],
+      "transliteration": "Grape Leaf Blight",
+      "scientific_name": "Pseudocercospora cladosporioides (Isariopsis clavispora)",
+      "tts_text": "আঙ্গুর পাতা ঝলসানো রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Grape___healthy": {
+      "id": "Grape___healthy",
+      "common_name": "সুস্থ ও নিরোগ আঙ্গুর পাতা",
+      "alt_names": [
+        "রোগমুক্ত পাতা"
+      ],
+      "transliteration": "Healthy Grape",
+      "scientific_name": "Vitis vinifera",
+      "tts_text": "আঙ্গুর পাতা সুস্থ ও নিরোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+      "id": "Orange___Haunglongbing_(Citrus_greening)",
+      "common_name": "লেবুর সাইট্রাস গ্রিনিং রোগ (হুয়াংলংবিং)",
+      "alt_names": [
+        "হলুদ রোগ"
+      ],
+      "transliteration": "Citrus Greening Huanglongbing",
+      "scientific_name": "Candidatus Liberibacter asiaticus",
+      "tts_text": "লেবুর সাইট্রাস গ্রিনিং রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Peach___Bacterial_spot": {
+      "id": "Peach___Bacterial_spot",
+      "common_name": "পীচ ব্যাকটেরিয়াল পাতার দাগ রোগ",
+      "alt_names": [
+        "ছিদ্র দাগ"
+      ],
+      "transliteration": "Peach Bacterial Spot",
+      "scientific_name": "Xanthomonas arboricola pv. pruni",
+      "tts_text": "পীচ ব্যাকটেরিয়াল দাগ রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Peach___healthy": {
+      "id": "Peach___healthy",
+      "common_name": "সুস্থ ও নিরোগ পীচ পাতা",
+      "alt_names": [
+        "রোগমুক্ত পাতা"
+      ],
+      "transliteration": "Healthy Peach",
+      "scientific_name": "Prunus persica",
+      "tts_text": "পীচ পাতা সুস্থ ও রোগমুক্ত",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Pepper,_bell___Bacterial_spot": {
+      "id": "Pepper,_bell___Bacterial_spot",
+      "common_name": "ক্যাপসিকাম ব্যাকটেরিয়াল পাতার দাগ রোগ",
+      "alt_names": [
+        "ব্যাকটেরিয়াল দাগ"
+      ],
+      "transliteration": "Bell Pepper Bacterial Spot",
+      "scientific_name": "Xanthomonas euvesicatoria / X. vesicatoria",
+      "tts_text": "ক্যাপসিকাম ব্যাকটেরিয়াল পাতার দাগ রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Pepper,_bell___healthy": {
+      "id": "Pepper,_bell___healthy",
+      "common_name": "সুস্থ ও নিরোগ ক্যাপসিকাম পাতা",
+      "alt_names": [
+        "রোগমুক্ত পাতা"
+      ],
+      "transliteration": "Healthy Bell Pepper",
+      "scientific_name": "Capsicum annuum",
+      "tts_text": "ক্যাপসিকাম পাতা সম্পূর্ণ সুস্থ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Potato___Early_blight": {
+      "id": "Potato___Early_blight",
+      "common_name": "আলুর আগাম ধ্বসা বা আর্লি ব্লাইট রোগ",
+      "alt_names": [
+        "আগাম ধ্বসা"
+      ],
+      "transliteration": "Potato Early Blight",
+      "scientific_name": "Alternaria solani",
+      "tts_text": "আলুর আগাম ধ্বসা বা আর্লি ব্লাইট রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Potato___Late_blight": {
+      "id": "Potato___Late_blight",
+      "common_name": "আলুর নাবী ধ্বসা বা লেইট ব্লাইট রোগ",
+      "alt_names": [
+        "নাবী ধ্বসা"
+      ],
+      "transliteration": "Potato Late Blight",
+      "scientific_name": "Phytophthora infestans",
+      "tts_text": "আলুর নাবী ধ্বসা বা লেইট ব্লাইট রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Potato___healthy": {
+      "id": "Potato___healthy",
+      "common_name": "সুস্থ ও নিরোগ আলু পাতা",
+      "alt_names": [
+        "রোগমুক্ত পাতা"
+      ],
+      "transliteration": "Healthy Potato",
+      "scientific_name": "Solanum tuberosum",
+      "tts_text": "আলু পাতা সম্পূর্ণ সুস্থ ও রোগমুক্ত",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Raspberry___healthy": {
+      "id": "Raspberry___healthy",
+      "common_name": "সুস্থ ও নিরোগ রাস্পবেরি পাতা",
+      "alt_names": [
+        "রোগমুক্ত পাতা"
+      ],
+      "transliteration": "Healthy Raspberry",
+      "scientific_name": "Rubus idaeus",
+      "tts_text": "রাস্পবেরি পাতা সুস্থ ও রোগমুক্ত",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Soybean___healthy": {
+      "id": "Soybean___healthy",
+      "common_name": "সুস্থ ও নিরোগ সয়াবিন পাতা",
+      "alt_names": [
+        "রোগমুক্ত পাতা"
+      ],
+      "transliteration": "Healthy Soybean",
+      "scientific_name": "Glycine max",
+      "tts_text": "সয়াবিন পাতা সম্পূর্ণ সুস্থ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Squash___Powdery_mildew": {
+      "id": "Squash___Powdery_mildew",
+      "common_name": "মিষ্টি কুমড়ার পাউডারি মিলডিউ বা সাদা গুঁড়ো রোগ",
+      "alt_names": [
+        "পাউডারি মিলডিউ"
+      ],
+      "transliteration": "Squash Powdery Mildew",
+      "scientific_name": "Podosphaera xanthii (syn. Sphaerotheca fuliginea), Golovinomyces cichoracearum",
+      "tts_text": "মিষ্টি কুমড়ার পাউডারি মিলডিউ রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Strawberry___Leaf_scorch": {
+      "id": "Strawberry___Leaf_scorch",
+      "common_name": "স্ট্রবেরি পাতা ঝলসানো রোগ (Leaf Scorch)",
+      "alt_names": [
+        "পাতা পোড়া রোগ"
+      ],
+      "transliteration": "Strawberry Leaf Scorch",
+      "scientific_name": "Diplocarpon earlianum",
+      "tts_text": "স্ট্রবেরি পাতা ঝলসানো রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Strawberry___healthy": {
+      "id": "Strawberry___healthy",
+      "common_name": "সুস্থ ও নিরোগ স্ট্রবেরি পাতা",
+      "alt_names": [
+        "রোগমুক্ত পাতা"
+      ],
+      "transliteration": "Healthy Strawberry",
+      "scientific_name": "Fragaria x ananassa",
+      "tts_text": "স্ট্রবেরি পাতা সম্পূর্ণ সুস্থ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Bacterial_spot": {
+      "id": "Tomato___Bacterial_spot",
+      "common_name": "টমেটো ব্যাকটেরিয়াল পাতার দাগ রোগ (Bacterial Spot)",
+      "alt_names": [
+        "ব্যাকটেরিয়াল পাতার দাগ"
+      ],
+      "transliteration": "Tomato Bacterial Spot",
+      "scientific_name": "Xanthomonas perforans / X. vesicatoria / X. gardneri",
+      "tts_text": "টমেটো ব্যাকটেরিয়াল দাগ রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Early_blight": {
+      "id": "Tomato___Early_blight",
+      "common_name": "টমেটোর আগাম ধ্বসা বা আর্লি ব্লাইট রোগ",
+      "alt_names": [
+        "আগাম ধ্বসা"
+      ],
+      "transliteration": "Tomato Early Blight",
+      "scientific_name": "Alternaria linariae (syn. Alternaria solani)",
+      "tts_text": "টমেটোর আগাম ধ্বসা রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Late_blight": {
+      "id": "Tomato___Late_blight",
+      "common_name": "টমেটোর নাবী ধ্বসা বা লেইট ব্লাইট রোগ",
+      "alt_names": [
+        "নাবী ধ্বসা"
+      ],
+      "transliteration": "Tomato Late Blight",
+      "scientific_name": "Phytophthora infestans",
+      "tts_text": "টমেটোর নাবী ধ্বসা বা লেইট ব্লাইট রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Leaf_Mold": {
+      "id": "Tomato___Leaf_Mold",
+      "common_name": "টমেটো পাতার ছত্রাক বা লিফ মোল্ড রোগ",
+      "alt_names": [
+        "পাতার মোল্ড"
+      ],
+      "transliteration": "Tomato Leaf Mold",
+      "scientific_name": "Passalora fulva (syn. Cladosporium fulvum)",
+      "tts_text": "টমেটো লিফ মোল্ড রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Septoria_leaf_spot": {
+      "id": "Tomato___Septoria_leaf_spot",
+      "common_name": "টমেটো সেপপ্টোরিয়া পাতার দাগ রোগ",
+      "alt_names": [
+        "সেপপ্টোরিয়া দাগ"
+      ],
+      "transliteration": "Tomato Septoria Leaf Spot",
+      "scientific_name": "Septoria lycopersici",
+      "tts_text": "টমেটো সেপপ্টোরিয়া দাগ রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+      "id": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "common_name": "টমেটোর লাল মাকড় বা দুই-দাগযুক্ত লাল মাইট",
+      "alt_names": [
+        "লাল মাকড়"
+      ],
+      "transliteration": "Tomato Spider Mite",
+      "scientific_name": "Tetranychus urticae",
+      "tts_text": "টমেটোর লাল মাকড় পোকা",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Target_Spot": {
+      "id": "Tomato___Target_Spot",
+      "common_name": "টমেটো টার্গেট স্পট বা বৃত্তাকার দাগ রোগ",
+      "alt_names": [
+        "টার্গেট স্পট"
+      ],
+      "transliteration": "Tomato Target Spot",
+      "scientific_name": "Corynespora cassiicola",
+      "tts_text": "টমেটো টার্গেট স্পট রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+      "id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "common_name": "টমেটো পাতা কোঁকড়ানো হলুদ ভাইরাস রোগ (TYLCV)",
+      "alt_names": [
+        "পাতা কোঁকড়ানো রোগ"
+      ],
+      "transliteration": "Tomato Yellow Leaf Curl Virus",
+      "scientific_name": "Begomovirus (TYLCV)",
+      "tts_text": "সাদা মাছি বাহিত টমেটোর পাতা কোঁকড়ানো হলুদ ভাইরাস রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Tomato_mosaic_virus": {
+      "id": "Tomato___Tomato_mosaic_virus",
+      "common_name": "টমেটো মোজাইক ভাইরাস রোগ (ToMV)",
+      "alt_names": [
+        "মোজাইক রোগ"
+      ],
+      "transliteration": "Tomato Mosaic Virus",
+      "scientific_name": "Tobamovirus (ToMV)",
+      "tts_text": "টমেটো মোজাইক ভাইরাস রোগ",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___healthy": {
+      "id": "Tomato___healthy",
+      "common_name": "সুস্থ ও নিরোগ টমেটো পাতা",
+      "alt_names": [
+        "রোগমুক্ত পাতা"
+      ],
+      "transliteration": "Healthy Tomato",
+      "scientific_name": "Solanum lycopersicum",
+      "tts_text": "টমেটো গাছের পাতা সম্পূর্ণ সুস্থ ও রোগমুক্ত",
+      "source": "BCKV / BARI Extension",
+      "review_status": "expert_reviewed"
+    }
+  },
+  "agronomic_terms": {
+    "fungicide": {
+      "term_key": "fungicide",
+      "english": "Fungicide",
+      "localized_term": "ছত্রাকনাশক (Fungicide)",
+      "transliteration": "Chhatraknashak",
+      "definition": "ছত্রাকজনিত রোগ নিয়ন্ত্রণের ওষুধ",
+      "tts_text": "ছত্রাকনাশক ওষুধ"
+    },
+    "bactericide": {
+      "term_key": "bactericide",
+      "english": "Bactericide",
+      "localized_term": "জীবাণুনাশক",
+      "transliteration": "Jibanunashak",
+      "definition": "ব্যাকটেরিয়া সংক্রমণ রোধক ওষুধ",
+      "tts_text": "জীবাণুনাশক"
+    },
+    "crop_rotation": {
+      "term_key": "crop_rotation",
+      "english": "Crop Rotation",
+      "localized_term": "ফসল আবর্তন",
+      "transliteration": "Phasol Abartan",
+      "definition": "একই জমিতে পর্যায়ক্রমে ফসল চাষ",
+      "tts_text": "ফসল আবর্তন"
+    },
+    "spray_interval": {
+      "term_key": "spray_interval",
+      "english": "Spray Interval",
+      "localized_term": "স্প্রে করার ব্যবধান",
+      "transliteration": "Spray Korar Byabodhan",
+      "definition": "দুটি স্প্রে করার মধ্যবর্তী দিনের বিরতি",
+      "tts_text": "স্প্রে করার ব্যবধান"
+    },
+    "resistant_variety": {
+      "term_key": "resistant_variety",
+      "english": "Resistant Variety",
+      "localized_term": "রোগ প্রতিরোধী জাত",
+      "transliteration": "Rog Pratirodhi Jaat",
+      "definition": "রোগ প্রতিরোধ ক্ষমতাসম্পন্ন ফসলের জাত",
+      "tts_text": "রোগ প্রতিরোধী জাত"
+    }
+  }
+}

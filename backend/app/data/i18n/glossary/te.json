@@ -1,0 +1,506 @@
+{
+  "language": "te",
+  "language_name": "Telugu",
+  "diseases": {
+    "Apple___Apple_scab": {
+      "id": "Apple___Apple_scab",
+      "common_name": "యాపిల్ పొలుసు తెగులు (Apple Scab)",
+      "alt_names": [
+        "నల్ల మచ్చ"
+      ],
+      "transliteration": "Apple Scab",
+      "scientific_name": "Venturia inaequalis",
+      "tts_text": "యాపిల్ పొలుసు తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Apple___Black_rot": {
+      "id": "Apple___Black_rot",
+      "common_name": "యాపిల్ నల్ల కుళ్ళు & కప్పకన్ను మచ్చ తెగులు",
+      "alt_names": [
+        "నల్ల కుళ్ళు"
+      ],
+      "transliteration": "Apple Black Rot",
+      "scientific_name": "Botryosphaeria obtusa",
+      "tts_text": "యాపిల్ నల్ల కుళ్ళు తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Apple___Cedar_apple_rust": {
+      "id": "Apple___Cedar_apple_rust",
+      "common_name": "యాపిల్ సెడార్ రస్ట్ (తుప్పు తెగులు)",
+      "alt_names": [
+        "తుప్పు మచ్చలు"
+      ],
+      "transliteration": "Cedar Apple Rust",
+      "scientific_name": "Gymnosporangium juniperi-virginianae",
+      "tts_text": "యాపిల్ తుప్పు తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Apple___healthy": {
+      "id": "Apple___healthy",
+      "common_name": "ఆరోగ్యకరమైన యాపిల్ ఆకులు",
+      "alt_names": [
+        "ఆరోగ్యవంతమైన ఆకు"
+      ],
+      "transliteration": "Healthy Apple",
+      "scientific_name": "Malus domestica",
+      "tts_text": "యాపిల్ పంట ఆకులు ఆరోగ్యంగా ఉన్నాయి",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Blueberry___healthy": {
+      "id": "Blueberry___healthy",
+      "common_name": "ఆరోగ్యకరమైన బ్లూబెర్రీ ఆకులు",
+      "alt_names": [
+        "ఆరోగ్యవంతమైన ఆకు"
+      ],
+      "transliteration": "Healthy Blueberry",
+      "scientific_name": "Vaccinium corymbosum",
+      "tts_text": "బ్లూబెర్రీ పంట ఆకులు ఆరోగ్యంగా ఉన్నాయి",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+      "id": "Cherry_(including_sour)___Powdery_mildew",
+      "common_name": "చెర్రీ బూడిద తెగులు (Powdery Mildew)",
+      "alt_names": [
+        "తెల్ల బూడిద"
+      ],
+      "transliteration": "Cherry Powdery Mildew",
+      "scientific_name": "Podosphaera clandestina",
+      "tts_text": "చెర్రీ బూడిద తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Cherry_(including_sour)___healthy": {
+      "id": "Cherry_(including_sour)___healthy",
+      "common_name": "ఆరోగ్యకరమైన చెర్రీ ఆకులు",
+      "alt_names": [
+        "ఆరోగ్యవంతమైన ఆకు"
+      ],
+      "transliteration": "Healthy Cherry",
+      "scientific_name": "Prunus avium / Prunus cerasus",
+      "tts_text": "చెర్రీ ఆకులు ఆరోగ్యంగా ఉన్నాయి",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+      "id": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "common_name": "మొక్కజొన్న సర్కోస్పోరా బూడిద రంగు ఆకుమచ్చ తెగులు",
+      "alt_names": [
+        "బూడిద ఆకుమచ్చ"
+      ],
+      "transliteration": "Corn Gray Leaf Spot",
+      "scientific_name": "Cercospora zeae-maydis",
+      "tts_text": "మొక్కజొన్న సర్కోస్పోరా ఆకుమచ్చ తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Corn_(maize)___Common_rust_": {
+      "id": "Corn_(maize)___Common_rust_",
+      "common_name": "మొక్కజొన్న తుప్పు తెగులు (Common Rust)",
+      "alt_names": [
+        "తుప్పు మచ్చ"
+      ],
+      "transliteration": "Corn Common Rust",
+      "scientific_name": "Puccinia sorghi",
+      "tts_text": "మొక్కజొన్న తుప్పు తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+      "id": "Corn_(maize)___Northern_Leaf_Blight",
+      "common_name": "మొక్కజొన్న నార్తర్న్ ఆకు ఎండు తెగులు (బ్లైట్)",
+      "alt_names": [
+        "ఆకు ఎండు తెగులు"
+      ],
+      "transliteration": "Corn Northern Leaf Blight",
+      "scientific_name": "Exserohilum turcicum (Setosphaeria turcica)",
+      "tts_text": "మొక్కజొన్న నార్తర్న్ ఆకు ఎండు తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Corn_(maize)___healthy": {
+      "id": "Corn_(maize)___healthy",
+      "common_name": "ఆరోగ్యకరమైన మొక్కజొన్న ఆకులు",
+      "alt_names": [
+        "ఆరోగ్యకరమైన ఆకు"
+      ],
+      "transliteration": "Healthy Corn",
+      "scientific_name": "Zea mays",
+      "tts_text": "మొక్కజొన్న ఆకులు ఆరోగ్యంగా ఉన్నాయి",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Grape___Black_rot": {
+      "id": "Grape___Black_rot",
+      "common_name": "ద్రాక్ష నల్ల కుళ్ళు తెగులు (Black Rot)",
+      "alt_names": [
+        "నల్ల కుళ్ళు"
+      ],
+      "transliteration": "Grape Black Rot",
+      "scientific_name": "Guignardia bidwellii (Phyllosticta ampelicida)",
+      "tts_text": "ద్రాక్ష నల్ల కుళ్ళు తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Grape___Esca_(Black_Measles)": {
+      "id": "Grape___Esca_(Black_Measles)",
+      "common_name": "ద్రాక్ష ఎస్కా (నల్ల పొంగు తెగులు / బ్లాక్ మీజిల్స్)",
+      "alt_names": [
+        "పులి చారల మచ్చ"
+      ],
+      "transliteration": "Grape Esca Black Measles",
+      "scientific_name": "Phaeoacremonium minimum, Phaeomoniella chlamydospora, Fomitiporia mediterranea",
+      "tts_text": "ద్రాక్ష ఎస్కా తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+      "id": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "common_name": "ద్రాక్ష ఆకు ఎండు / ఇసారియోప్సిస్ ఆకుమచ్చ తెగులు",
+      "alt_names": [
+        "ఆకుమచ్చ"
+      ],
+      "transliteration": "Grape Leaf Blight",
+      "scientific_name": "Pseudocercospora cladosporioides (Isariopsis clavispora)",
+      "tts_text": "ద్రాక్ష ఆకు ఎండు తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Grape___healthy": {
+      "id": "Grape___healthy",
+      "common_name": "ఆరోగ్యకరమైన ద్రాక్ష ఆకులు",
+      "alt_names": [
+        "ఆరోగ్యకరమైన ఆకు"
+      ],
+      "transliteration": "Healthy Grape",
+      "scientific_name": "Vitis vinifera",
+      "tts_text": "ద్రాక్ష తోట ఆకులు ఆరోగ్యంగా ఉన్నాయి",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+      "id": "Orange___Haunglongbing_(Citrus_greening)",
+      "common_name": "బత్తాయి / నారింజ గ్రీనింగ్ తెగులు (Huanglongbing)",
+      "alt_names": [
+        "ఆకు పసుపు తెగులు"
+      ],
+      "transliteration": "Citrus Greening Huanglongbing",
+      "scientific_name": "Candidatus Liberibacter asiaticus",
+      "tts_text": "బత్తాయి సిట్రస్ గ్రీనింగ్ తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Peach___Bacterial_spot": {
+      "id": "Peach___Bacterial_spot",
+      "common_name": "పీచ్ బాక్టీరియా మచ్చ తెగులు (Bacterial Spot)",
+      "alt_names": [
+        "రంధ్రాల మచ్చ"
+      ],
+      "transliteration": "Peach Bacterial Spot",
+      "scientific_name": "Xanthomonas arboricola pv. pruni",
+      "tts_text": "పీచ్ బాక్టీరియా మచ్చ తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Peach___healthy": {
+      "id": "Peach___healthy",
+      "common_name": "ఆరోగ్యకరమైన పీచ్ ఆకులు",
+      "alt_names": [
+        "ఆరోగ్యకరమైన ఆకు"
+      ],
+      "transliteration": "Healthy Peach",
+      "scientific_name": "Prunus persica",
+      "tts_text": "పీచ్ ఆకులు ఆరోగ్యంగా ఉన్నాయి",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Pepper,_bell___Bacterial_spot": {
+      "id": "Pepper,_bell___Bacterial_spot",
+      "common_name": "క్యాప్సికం బాక్టీరియా మచ్చ తెగులు (Bacterial Spot)",
+      "alt_names": [
+        "బాక్టీరియా ఆకుమచ్చ"
+      ],
+      "transliteration": "Bell Pepper Bacterial Spot",
+      "scientific_name": "Xanthomonas euvesicatoria / X. vesicatoria",
+      "tts_text": "క్యాప్సికం బాక్టీరియా మచ్చ తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Pepper,_bell___healthy": {
+      "id": "Pepper,_bell___healthy",
+      "common_name": "ఆరోగ్యకరమైన క్యాప్సికం ఆకులు",
+      "alt_names": [
+        "ఆరోగ్యకరమైన ఆకు"
+      ],
+      "transliteration": "Healthy Bell Pepper",
+      "scientific_name": "Capsicum annuum",
+      "tts_text": "క్యాప్సికం ఆకులు ఆరోగ్యంగా ఉన్నాయి",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Potato___Early_blight": {
+      "id": "Potato___Early_blight",
+      "common_name": "బంగాళాదుంప ముందస్తు ఆకు ఎండు తెగులు (Early Blight)",
+      "alt_names": [
+        "ముందస్తు ఎండు తెగులు",
+        "వలయాల మచ్చ"
+      ],
+      "transliteration": "Potato Early Blight",
+      "scientific_name": "Alternaria solani",
+      "tts_text": "బంగాళాదుంప ముందస్తు ఆకు ఎండు తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Potato___Late_blight": {
+      "id": "Potato___Late_blight",
+      "common_name": "బంగాళాదుంప లేట్ బ్లైట్ (ఆలస్యపు ఆకు ఎండు తెగులు)",
+      "alt_names": [
+        "ఆలస్యపు ఎండు తెగులు"
+      ],
+      "transliteration": "Potato Late Blight",
+      "scientific_name": "Phytophthora infestans",
+      "tts_text": "బంగాళాదుంప లేట్ బ్లైట్ తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Potato___healthy": {
+      "id": "Potato___healthy",
+      "common_name": "ఆరోగ్యకరమైన బంగాళాదుంప ఆకులు",
+      "alt_names": [
+        "ఆరోగ్యకరమైన ఆకు"
+      ],
+      "transliteration": "Healthy Potato",
+      "scientific_name": "Solanum tuberosum",
+      "tts_text": "బంగాళాదుంప ఆకులు ఆరోగ్యంగా ఉన్నాయి",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Raspberry___healthy": {
+      "id": "Raspberry___healthy",
+      "common_name": "ఆరోగ్యకరమైన రాస్ప్‌బెర్రీ ఆకులు",
+      "alt_names": [
+        "ఆరోగ్యకరమైన ఆకు"
+      ],
+      "transliteration": "Healthy Raspberry",
+      "scientific_name": "Rubus idaeus",
+      "tts_text": "రాస్ప్‌బెర్రీ ఆకులు ఆరోగ్యంగా ఉన్నాయి",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Soybean___healthy": {
+      "id": "Soybean___healthy",
+      "common_name": "ఆరోగ్యకరమైన సోయాచిక్కుడు ఆకులు",
+      "alt_names": [
+        "ఆరోగ్యకరమైన ఆకు"
+      ],
+      "transliteration": "Healthy Soybean",
+      "scientific_name": "Glycine max",
+      "tts_text": "సోయాచిక్కుడు పంట ఆకులు ఆరోగ్యంగా ఉన్నాయి",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Squash___Powdery_mildew": {
+      "id": "Squash___Powdery_mildew",
+      "common_name": "గుమ్మడి / దోస బూడిద తెగులు (Powdery Mildew)",
+      "alt_names": [
+        "తెల్ల బూడిద తెగులు"
+      ],
+      "transliteration": "Squash Powdery Mildew",
+      "scientific_name": "Podosphaera xanthii (syn. Sphaerotheca fuliginea), Golovinomyces cichoracearum",
+      "tts_text": "గుమ్మడి బూడిద తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Strawberry___Leaf_scorch": {
+      "id": "Strawberry___Leaf_scorch",
+      "common_name": "స్ట్రాబెర్రీ ఆకు ఎండ తెగులు (Leaf Scorch)",
+      "alt_names": [
+        "ఆకు ఎండ తెగులు"
+      ],
+      "transliteration": "Strawberry Leaf Scorch",
+      "scientific_name": "Diplocarpon earlianum",
+      "tts_text": "స్ట్రాబెర్రీ ఆకు ఎండ తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Strawberry___healthy": {
+      "id": "Strawberry___healthy",
+      "common_name": "ఆరోగ్యకరమైన స్ట్రాబెర్రీ ఆకులు",
+      "alt_names": [
+        "ఆరోగ్యకరమైన ఆకు"
+      ],
+      "transliteration": "Healthy Strawberry",
+      "scientific_name": "Fragaria x ananassa",
+      "tts_text": "స్ట్రాబెర్రీ ఆకులు ఆరోగ్యంగా ఉన్నాయి",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Bacterial_spot": {
+      "id": "Tomato___Bacterial_spot",
+      "common_name": "టమోటా బాక్టీరియా మచ్చ తెగులు (Bacterial Spot)",
+      "alt_names": [
+        "బాక్టీరియా ఆకుమచ్చ"
+      ],
+      "transliteration": "Tomato Bacterial Spot",
+      "scientific_name": "Xanthomonas perforans / X. vesicatoria / X. gardneri",
+      "tts_text": "టమోటా బాక్టీరియా మచ్చ తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Early_blight": {
+      "id": "Tomato___Early_blight",
+      "common_name": "టమోటా ముందస్తు ఆకు ఎండు తెగులు (Early Blight)",
+      "alt_names": [
+        "ముందస్తు ఎండు తెగులు"
+      ],
+      "transliteration": "Tomato Early Blight",
+      "scientific_name": "Alternaria linariae (syn. Alternaria solani)",
+      "tts_text": "టమోటా ముందస్తు ఆకు ఎండు తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Late_blight": {
+      "id": "Tomato___Late_blight",
+      "common_name": "టమోటా లేట్ బ్లైట్ (ఆలస్యపు ఆకు ఎండు తెగులు)",
+      "alt_names": [
+        "ఆలస్యపు ఎండు తెగులు"
+      ],
+      "transliteration": "Tomato Late Blight",
+      "scientific_name": "Phytophthora infestans",
+      "tts_text": "టమోటా లేట్ బ్లైట్ తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Leaf_Mold": {
+      "id": "Tomato___Leaf_Mold",
+      "common_name": "టమోటా బూజు ఆకుమచ్చ తెగులు (Leaf Mold)",
+      "alt_names": [
+        "బూజు మచ్చ"
+      ],
+      "transliteration": "Tomato Leaf Mold",
+      "scientific_name": "Passalora fulva (syn. Cladosporium fulvum)",
+      "tts_text": "టమోటా బూజు ఆకుమచ్చ తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Septoria_leaf_spot": {
+      "id": "Tomato___Septoria_leaf_spot",
+      "common_name": "టమోటా సెప్టోరియా ఆకుమచ్చ తెగులు (Septoria Spot)",
+      "alt_names": [
+        "సెప్టోరియా మచ్చ"
+      ],
+      "transliteration": "Tomato Septoria Leaf Spot",
+      "scientific_name": "Septoria lycopersici",
+      "tts_text": "టమోటా సెప్టోరియా ఆకుమచ్చ తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+      "id": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "common_name": "టమోటా రెండు చుక్కల ఎర్ర నల్లి / ఎర్ర సాలీడు కీటకం",
+      "alt_names": [
+        "ఎర్ర నల్లి"
+      ],
+      "transliteration": "Tomato Spider Mite",
+      "scientific_name": "Tetranychus urticae",
+      "tts_text": "టమోటా ఎర్ర నల్లి లేదా సాలీడు కీటకం",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Target_Spot": {
+      "id": "Tomato___Target_Spot",
+      "common_name": "టమోటా టార్గెట్ స్పాట్ (లక్ష్య చక్ర ఆకుమచ్చ తెగులు)",
+      "alt_names": [
+        "వలయాల మచ్చ"
+      ],
+      "transliteration": "Tomato Target Spot",
+      "scientific_name": "Corynespora cassiicola",
+      "tts_text": "టమోటా టార్గెట్ స్పాట్ ఆకుమచ్చ తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+      "id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "common_name": "టమోటా ఆకు ముడత / పసుపు రంగు వైరస్ తెగులు (TYLCV)",
+      "alt_names": [
+        "ఆకు ముడత",
+        "జెమిని వైరస్"
+      ],
+      "transliteration": "Tomato Yellow Leaf Curl Virus",
+      "scientific_name": "Begomovirus (TYLCV)",
+      "tts_text": "తెల్లదోమ ద్వారా వ్యాపించే టమోటా ఆకు ముడత వైరస్ తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___Tomato_mosaic_virus": {
+      "id": "Tomato___Tomato_mosaic_virus",
+      "common_name": "టమోటా మొజాయిక్ వైరస్ తెగులు (చిత్రవర్ణ తెగులు)",
+      "alt_names": [
+        "చిత్రవర్ణ తెగులు"
+      ],
+      "transliteration": "Tomato Mosaic Virus",
+      "scientific_name": "Tobamovirus (ToMV)",
+      "tts_text": "టమోటా మొజాయిక్ వైరస్ తెగులు",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    },
+    "Tomato___healthy": {
+      "id": "Tomato___healthy",
+      "common_name": "ఆరోగ్యకరమైన టమోటా ఆకులు",
+      "alt_names": [
+        "ఆరోగ్యకరమైన ఆకు"
+      ],
+      "transliteration": "Healthy Tomato",
+      "scientific_name": "Solanum lycopersicum",
+      "tts_text": "టమోటా పంట ఆకులు సంపూర్ణ ఆరోగ్యంగా ఉన్నాయి",
+      "source": "PJTSAU / ANGRAU Extension",
+      "review_status": "expert_reviewed"
+    }
+  },
+  "agronomic_terms": {
+    "fungicide": {
+      "term_key": "fungicide",
+      "english": "Fungicide",
+      "localized_term": "శిలీంధ్రనాశిని (Fungicide)",
+      "transliteration": "Shilindhranashini",
+      "definition": "శిలీంధ్ర తెగుళ్లను అరికట్టే మందు",
+      "tts_text": "శిలీంధ్రనాశిని మందు"
+    },
+    "bactericide": {
+      "term_key": "bactericide",
+      "english": "Bactericide",
+      "localized_term": "బాక్టీరియా నాశిని",
+      "transliteration": "Bacterianashini",
+      "definition": "బాక్టీరియా తెగుళ్ల నివారణ మందు",
+      "tts_text": "బాక్టీరియా నాశిని మందు"
+    },
+    "crop_rotation": {
+      "term_key": "crop_rotation",
+      "english": "Crop Rotation",
+      "localized_term": "పంట మార్పిడి",
+      "transliteration": "Panta Marpidi",
+      "definition": "భూమిలో వేర్వేరు పంటలను వరుసగా సాగు చేయడం",
+      "tts_text": "పంట మార్పిడి"
+    },
+    "spray_interval": {
+      "term_key": "spray_interval",
+      "english": "Spray Interval",
+      "localized_term": "పిచికారీ విరామం",
+      "transliteration": "Pichikari Viramam",
+      "definition": "రెండు పిచికారీల మధ్య ఉండవలసిన రోజుల వ్యవధి",
+      "tts_text": "పిచికారీ విరామం"
+    },
+    "resistant_variety": {
+      "term_key": "resistant_variety",
+      "english": "Resistant Variety",
+      "localized_term": "తెగులు తట్టుకునే రకం",
+      "transliteration": "Tegulu Tattukune Rakam",
+      "definition": "తెగుళ్లను సహజంగా తట్టుకుని పెరిగే విత్తన రకం",
+      "tts_text": "తెగులు తట్టుకునే రకం"
+    }
+  }
+}
