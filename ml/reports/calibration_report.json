@@ -1,0 +1,7 @@
+{
+  "optimal_temperature": 0.413,
+  "uncalibrated_ece": 0.2571,
+  "calibrated_ece": 0.005,
+  "ece_reduction_pct": 98.07,
+  "n_bins": 15
+}

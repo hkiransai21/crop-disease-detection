@@ -1,0 +1,38 @@
+{
+  "hardware": {
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_count": 8
+  },
+  "fp32_model": {
+    "model_file": "efficientnet_b0_plantvillage.onnx",
+    "file_size_mb": 15.45,
+    "test_accuracy": 0.9422,
+    "test_macro_f1": 0.9232,
+    "num_runs": 100,
+    "latency_median_ms": 7.64,
+    "latency_mean_ms": 7.71,
+    "latency_p95_ms": 8.74,
+    "latency_p99_ms": 10.04,
+    "throughput_fps": 130.9
+  },
+  "int8_model": {
+    "model_file": "efficientnet_b0_plantvillage_int8.onnx",
+    "file_size_mb": 4.15,
+    "test_accuracy": 0.0287,
+    "test_macro_f1": 0.0095,
+    "num_runs": 100,
+    "latency_median_ms": 22.26,
+    "latency_mean_ms": 22.47,
+    "latency_p95_ms": 23.67,
+    "latency_p99_ms": 24.58,
+    "throughput_fps": 44.9
+  },
+  "comparison": {
+    "accuracy_drop": 0.9135,
+    "latency_speedup_factor": 0.34,
+    "size_reduction_pct": 73.14,
+    "recommendation": "Ship FP32 model due to quantization accuracy drop."
+  }
+}

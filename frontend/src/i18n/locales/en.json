@@ -1,0 +1,72 @@
+{
+  "app_title": "AgriShield AI",
+  "tagline": "AI Crop Disease Detection & Outbreak Risk System",
+  "nav": {
+    "diagnose": "Diagnose Crop",
+    "history": "My History",
+    "diseases": "Disease Guide",
+    "about": "Model & Safety",
+    "login": "Sign In",
+    "register": "Register",
+    "logout": "Sign Out"
+  },
+  "hero": {
+    "title": "Protect Your Harvest with AI-Powered Disease & Outbreak Risk Intelligence",
+    "subtitle": "Upload a photo of your leaf. Get instant diagnosis, local environmental outbreak risk prediction, and safe extension treatment protocols.",
+    "cta_start": "Start Free Diagnosis",
+    "cta_guide": "Explore Disease Guide"
+  },
+  "analyze": {
+    "title": "Analyze Crop Leaf",
+    "upload_instruction": "Take a clear, well-lit photo of the affected leaf",
+    "upload_btn": "Upload / Take Photo",
+    "camera_btn": "Use Camera",
+    "tips_title": "Photo Tips for Best Accuracy",
+    "tip_1": "Focus on a single leaf showing visible spots or lesions",
+    "tip_2": "Ensure natural, bright sunlight without deep shadows",
+    "tip_3": "Avoid blurry hands or extremely distant shots",
+    "location_title": "Environmental Telemetry (Weather Risk)",
+    "use_gps": "Use My Farm Location",
+    "search_place": "Search City or District",
+    "manual_weather": "Enter Weather Manually",
+    "submit_btn": "Run AI Diagnosis & Risk Evaluation",
+    "analyzing": "Analyzing leaf image and calculating environmental risk..."
+  },
+  "result": {
+    "diagnosis_title": "Diagnostic Assessment",
+    "healthy_title": "Healthy Crop Foliage",
+    "confidence": "Model Confidence",
+    "uncertain_warning": "Uncertain Prediction",
+    "uncertain_desc": "The model confidence is below the diagnostic threshold or leaf features are ambiguous. Please consult your local agricultural extension officer.",
+    "risk_title": "Environmental Outbreak Risk",
+    "risk_advisory": "Advisory estimate based on agronomic thresholds; not a laboratory forecast.",
+    "actions_title": "Treatment & Prevention Checklist",
+    "cultural_tab": "Cultural & Sanitation",
+    "organic_tab": "Organic & Biological",
+    "chemical_tab": "Chemical Protectants",
+    "safety_title": "Pesticide Safety Warning",
+    "safety_note_1": "Always read and strictly follow the chemical manufacturer product label.",
+    "safety_note_2": "Wear required Personal Protective Equipment (gloves, mask, eye protection).",
+    "feedback_btn": "Was this diagnosis accurate?",
+    "new_scan_btn": "Scan Another Leaf"
+  },
+  "feedback": {
+    "title": "Diagnostic Feedback",
+    "prompt": "Did this diagnosis match your crop's real field condition?",
+    "yes_btn": "Yes, Correct",
+    "no_btn": "No, Incorrect",
+    "select_actual": "Select the correct disease if known",
+    "comments_label": "Notes or field observations",
+    "consent_checkbox": "I consent to contributing this image and label to help retrain and improve future AI models.",
+    "submit": "Submit Feedback",
+    "thank_you": "Thank you! Your feedback helps protect farms worldwide."
+  },
+  "history": {
+    "title": "Diagnosis History",
+    "empty": "No past diagnoses found. Start by scanning a leaf!",
+    "delete_confirm": "Are you sure you want to delete this diagnosis record?"
+  },
+  "footer": {
+    "disclaimer": "AgriShield AI is an advisory decision-support tool. It is not a substitute for professional in-person agricultural extension certification."
+  }
+}

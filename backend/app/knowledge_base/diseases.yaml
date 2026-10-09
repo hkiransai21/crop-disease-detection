@@ -1,0 +1,1247 @@
+version: "1.0.0"
+last_updated: "2026-10-06"
+diseases:
+  # 1. Apple - Apple scab
+  - id: "Apple___Apple_scab"
+    crop: "Apple"
+    disease_name: "Apple Scab"
+    scientific_name: "Venturia inaequalis"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Olive-green to dark brown velvety spots on leaves, becoming corky and distorted. Scabby lesions on fruit surface leading to cracking."
+    spread_mechanism: "Ascospores released from overwintered leaves in leaf litter during spring rains, carried by air currents."
+    favorable_conditions:
+      temp_min_c: 10.0
+      temp_max_c: 24.0
+      temp_optimal_c: 18.0
+      humidity_min_pct: 85.0
+      leaf_wetness_hours_min: 9.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Rake and destroy fallen leaves in autumn or shred with a flail mower to speed decomposition."
+      - "Prune tree canopies to improve airflow and sunlight penetration."
+      - "Plant scab-resistant cultivars (e.g., Enterprise, GoldRush, Liberty, Prima)."
+    organic_controls:
+      - "Apply sulfur or liquid lime-sulfur sprays preventatively prior to rain events during primary infection season."
+      - "Apply Bacillus subtilis or potassium bicarbonate sprays."
+    chemical_controls:
+      - "Preventative protectants: Captan, Mancozeb (FRAC M04, M03)."
+      - "Systemic fungicides: DMI fungicides (FRAC 3, e.g., Myclobutanil) or SDHI fungicides (FRAC 7, e.g., Fluopyram) in rotation to avoid resistance."
+    severity: "HIGH"
+    when_to_consult_expert: "If leaf lesions cover more than 20% of the canopy before petal fall or if commercial fruit quality is at risk."
+    safety_notes:
+      - "Always read and strictly follow pesticide product label instructions and pre-harvest intervals (PHI)."
+      - "Wear appropriate Personal Protective Equipment (PPE) including chemical-resistant gloves, goggles, and respirator."
+      - "Rotate fungicide FRAC groups to prevent pathogen resistance development."
+      - "Consult local agricultural extension agents for regional spray advisory timings."
+    sources:
+      - "Penn State Extension: Tree Fruit Production Guide - Apple Scab (https://extension.psu.edu/apple-scab)"
+      - "Cornell University Cooperative Extension: Apple Scab Disease Identification and Management (https://cals.cornell.edu)"
+      - "UC Davis IPM: Apple Scab Management Guidelines (https://ipm.ucanr.edu/agriculture/apple/apple-scab/)"
+
+  # 2. Apple - Black rot
+  - id: "Apple___Black_rot"
+    crop: "Apple"
+    disease_name: "Black Rot & Frogeye Leaf Spot"
+    scientific_name: "Botryosphaeria obtusa"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Frogeye leaf spots (circular brown spots with purple margins). Firm brown rot on fruit starting near calyx, turning black with concentric rings."
+    spread_mechanism: "Spores splash from dead wood, mummified fruit, and bark cankers during warm rains."
+    favorable_conditions:
+      temp_min_c: 15.0
+      temp_max_c: 32.0
+      temp_optimal_c: 26.0
+      humidity_min_pct: 80.0
+      leaf_wetness_hours_min: 6.0
+      rainfall_favorable: true
+      wind_spread: false
+    prevention_steps:
+      - "Prune out dead branches, fire blight cankers, and remove all mummified fruit from the orchard."
+      - "Burn or dispose of pruned wood promptly rather than leaving brush piles near orchards."
+    organic_controls:
+      - "Copper-based fungicides applied during early season dormancy."
+      - "Sulfur sprays during early cover sprays."
+    chemical_controls:
+      - "Fungicides: Captan, Thiophanate-methyl, or strobilurin fungicides (FRAC 11) applied from silver tip through cover sprays."
+    severity: "MODERATE"
+    when_to_consult_expert: "If limb cankers girdle main scaffold branches or cause limb dieback."
+    safety_notes:
+      - "Follow label application rates and re-entry intervals (REI)."
+      - "Wear PPE and avoid spraying in high wind conditions."
+      - "Consult local university extension for regional disease forecasts."
+    sources:
+      - "University of Kentucky Extension: Black Rot of Apple (PPFS-FR-T-02)"
+      - "Purdue Extension: Fruit Diseases - Black Rot and Frogeye Leaf Spot (BP-137-W)"
+
+  # 3. Apple - Cedar apple rust
+  - id: "Apple___Cedar_apple_rust"
+    crop: "Apple"
+    disease_name: "Cedar Apple Rust"
+    scientific_name: "Gymnosporangium juniperi-virginianae"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Bright yellow-orange circular spots on upper leaf surfaces. Raised tubular structures (aecia) on leaf undersides and fruit."
+    spread_mechanism: "Obligate heteroecious fungus cycling between Eastern red cedar / juniper galls and apple foliage via windborne basidiospores."
+    favorable_conditions:
+      temp_min_c: 12.0
+      temp_max_c: 24.0
+      temp_optimal_c: 16.0
+      humidity_min_pct: 85.0
+      leaf_wetness_hours_min: 4.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Remove nearby Eastern red cedar / juniper trees within a 1-2 mile radius where feasible."
+      - "Remove rust galls (cedar apples) from adjacent landscape junipers before spring rains."
+      - "Plant rust-resistant apple varieties (e.g., Liberty, Freedom, Enterprise)."
+    organic_controls:
+      - "Liquid sulfur or sulfur-based sprays applied preventatively when cedar galls swell in spring."
+    chemical_controls:
+      - "Sterol inhibitor / DMI fungicides (FRAC 3, e.g., Myclobutanil, Tebuconazole) or Strobilurins (FRAC 11) from pink bud through third cover."
+    severity: "MODERATE"
+    when_to_consult_expert: "If premature defoliation exceeds 30% of tree canopy in consecutive seasons."
+    safety_notes:
+      - "Apply strictly according to label instructions."
+      - "Do not apply near aquatic environments."
+    sources:
+      - "University of Missouri Extension: Cedar Apple Rust (G6026)"
+      - "Penn State Extension: Cedar Apple Rust Biology and Management"
+
+  # 4. Apple - healthy
+  - id: "Apple___healthy"
+    crop: "Apple"
+    disease_name: "Healthy Apple Leaf"
+    scientific_name: "Malus domestica"
+    causal_agent_type: "none"
+    is_healthy: true
+    symptoms: "Uniform green leaf tissue with intact margins, no necrosis, chlorosis, lesions, or powdery fungal growth."
+    spread_mechanism: "None (healthy tissue)."
+    favorable_conditions:
+      temp_min_c: 10.0
+      temp_max_c: 30.0
+      temp_optimal_c: 20.0
+      humidity_min_pct: 40.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: false
+    prevention_steps:
+      - "Maintain balanced soil fertility according to regular soil and leaf tissue tests."
+      - "Ensure proper orchard floor management and drip irrigation."
+      - "Conduct routine canopy scouting for early pest and disease pressure."
+    organic_controls:
+      - "Apply preventative dormant horticultural oils to suppress overwintering mites and scale."
+    chemical_controls:
+      - "No chemical intervention needed for healthy foliage. Continue standard integrated pest management (IPM)."
+    severity: "LOW"
+    when_to_consult_expert: "Routine annual orchard health review with extension fruit specialist."
+    safety_notes:
+      - "No chemical controls needed. Follow standard farm worker protection standards."
+    sources:
+      - "Washington State University Tree Fruit Research and Extension Center"
+      - "UC Davis Fruit and Nut Research and Information Center"
+
+  # 5. Blueberry - healthy
+  - id: "Blueberry___healthy"
+    crop: "Blueberry"
+    disease_name: "Healthy Blueberry Leaf"
+    scientific_name: "Vaccinium corymbosum"
+    causal_agent_type: "none"
+    is_healthy: true
+    symptoms: "Glossy, uniform deep green leaves without spotting, chlorosis, or necrotic margins."
+    spread_mechanism: "None (healthy tissue)."
+    favorable_conditions:
+      temp_min_c: 12.0
+      temp_max_c: 28.0
+      temp_optimal_c: 22.0
+      humidity_min_pct: 50.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: false
+    prevention_steps:
+      - "Maintain soil pH between 4.5 and 5.2 using elemental sulfur."
+      - "Ensure drip irrigation under organic mulch (pine bark or wood chips)."
+    organic_controls:
+      - "Maintain pine bark mulch depth and apply mycorrhizal inoculants."
+    chemical_controls:
+      - "No chemical intervention needed. Monitor for mummy berry and anthracnose in spring."
+    severity: "LOW"
+    when_to_consult_expert: "If soil pH drifts above 5.5 leading to iron chlorosis."
+    safety_notes:
+      - "Maintain standard worker safety standards."
+    sources:
+      - "Michigan State University Extension: Blueberry Management Guide"
+      - "North Carolina State Extension: Blueberry Production"
+
+  # 6. Cherry - Powdery mildew
+  - id: "Cherry_(including_sour)___Powdery_mildew"
+    crop: "Cherry"
+    disease_name: "Powdery Mildew"
+    scientific_name: "Podosphaera clandestina"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "White, powdery patches of fungal mycelium and conidia on leaves and young shoots. Leaves become curled, distorted, and blistered."
+    spread_mechanism: "Conidia are wind-dispersed; fungus overwinters as chasmothecia in bark crevices and fallen leaves."
+    favorable_conditions:
+      temp_min_c: 15.0
+      temp_max_c: 30.0
+      temp_optimal_c: 22.0
+      humidity_min_pct: 70.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: true
+    prevention_steps:
+      - "Prune dense canopies to maximize light penetration and air circulation."
+      - "Avoid excessive nitrogen fertilization that promotes succulent susceptible flush."
+    organic_controls:
+      - "Wettable sulfur, horticultural oils (e.g., neem or stylet oil), or potassium bicarbonate."
+    chemical_controls:
+      - "FRAC 3 (DMI: Fenbuconazole, Tebuconazole), FRAC 7 (SDHI: Boscalid), or FRAC 11 (QoI: Trifloxystrobin) in rotation."
+    severity: "MODERATE"
+    when_to_consult_expert: "If mildew appears on green cherry fruit clusters prior to harvest."
+    safety_notes:
+      - "Do not apply horticultural oils within 14 days of sulfur applications to avoid severe phytotoxicity."
+      - "Always check label pre-harvest intervals."
+    sources:
+      - "Washington State University Extension: Cherry Powdery Mildew Management (EM022E)"
+      - "UC Davis IPM: Cherry Powdery Mildew (Podosphaera clandestina)"
+
+  # 7. Cherry - healthy
+  - id: "Cherry_(including_sour)___healthy"
+    crop: "Cherry"
+    disease_name: "Healthy Cherry Leaf"
+    scientific_name: "Prunus avium / Prunus cerasus"
+    causal_agent_type: "none"
+    is_healthy: true
+    symptoms: "Vibrant green leaves with serrated margins and no signs of spot, shot-hole, or mildew."
+    spread_mechanism: "None."
+    favorable_conditions:
+      temp_min_c: 12.0
+      temp_max_c: 28.0
+      temp_optimal_c: 20.0
+      humidity_min_pct: 45.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: false
+    prevention_steps:
+      - "Maintain annual pruning and orchard sanitation."
+      - "Scout weekly for spotted wing drosophila and fungal leaf spot."
+    organic_controls:
+      - "Dormant copper sprays for bacterial canker suppression."
+    chemical_controls:
+      - "No chemical treatment required."
+    severity: "LOW"
+    when_to_consult_expert: "Routine seasonal inspection."
+    safety_notes:
+      - "Follow standard farm worker protection practices."
+    sources:
+      - "Oregon State University Extension: Cherry Orchard IPM Guide"
+
+  # 8. Corn - Cercospora leaf spot Gray leaf spot
+  - id: "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot"
+    crop: "Corn (Maize)"
+    disease_name: "Gray Leaf Spot"
+    scientific_name: "Cercospora zeae-maydis"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Rectangular, brown-to-gray lesions restricted by leaf veins (blocky appearance), merging to cause extensive blighting."
+    spread_mechanism: "Windblown conidia from infected corn residue on the soil surface."
+    favorable_conditions:
+      temp_min_c: 22.0
+      temp_max_c: 32.0
+      temp_optimal_c: 28.0
+      humidity_min_pct: 90.0
+      leaf_wetness_hours_min: 11.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Plant resistant corn hybrids."
+      - "Rotate with non-host crops (soybean, wheat, alfalfa) for 1-2 years."
+      - "Practice residue management or conservation tillage to bury crop debris."
+    organic_controls:
+      - "Crop rotation and biofungicide seed treatments (Trichoderma spp.)."
+    chemical_controls:
+      - "Foliar fungicides applied at VT-R1 (tasseling to silking): Strobilurin (FRAC 11, Azoxystrobin, Pyraclostrobin) mixed with Triazole (FRAC 3, Propiconazole, Prothioconazole)."
+    severity: "HIGH"
+    when_to_consult_expert: "If lesions reach the ear leaf or two leaves below the ear leaf prior to VT/R1 stage."
+    safety_notes:
+      - "Observe aerial and ground spray buffer zones and ground-water advisory labels."
+    sources:
+      - "Crop Protection Network: Gray Leaf Spot of Corn (CPN-2001)"
+      - "Purdue Extension: Diseases of Corn - Gray Leaf Spot (BP-06-W)"
+
+  # 9. Corn - Common rust
+  - id: "Corn_(maize)___Common_rust_"
+    crop: "Corn (Maize)"
+    disease_name: "Common Rust"
+    scientific_name: "Puccinia sorghi"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Oval to elongate cinnamon-brown pustules (uredinia) scattered across both upper and lower leaf surfaces, rupturing epidermis with powdery spores."
+    spread_mechanism: "Urediniospores carried by southerly winds from tropical/subtropical regions in spring."
+    favorable_conditions:
+      temp_min_c: 16.0
+      temp_max_c: 25.0
+      temp_optimal_c: 20.0
+      humidity_min_pct: 95.0
+      leaf_wetness_hours_min: 6.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Plant resistant corn hybrids containing Rp genes."
+      - "Plant early in the season to avoid peak spore dispersal."
+    organic_controls:
+      - "Use resistant cultivars and encourage beneficial phyllosphere microbes."
+    chemical_controls:
+      - "Foliar fungicides: Triazoles (FRAC 3) or Strobilurins (FRAC 11) if pustules appear on upper leaves before silking on susceptible inbred lines."
+    severity: "MODERATE"
+    when_to_consult_expert: "If disease severity reaches 5-10% of leaf area on susceptible seed production or sweet corn fields."
+    safety_notes:
+      - "Follow chemical label guidelines and PPE requirements."
+    sources:
+      - "University of Illinois Extension: Corn Disease Management - Common Rust"
+      - "Iowa State University Extension: Corn Field Guide"
+
+  # 10. Corn - Northern Leaf Blight
+  - id: "Corn_(maize)___Northern_Leaf_Blight"
+    crop: "Corn (Maize)"
+    disease_name: "Northern Corn Leaf Blight"
+    scientific_name: "Exserohilum turcicum (Setosphaeria turcica)"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Long, elliptical, cigar-shaped grayish-green to tan lesions (2.5 to 15 cm long) on leaves, developing dark olivaceous spore masses in moist weather."
+    spread_mechanism: "Conidia rain-splashed and windblown from infested corn residue."
+    favorable_conditions:
+      temp_min_c: 18.0
+      temp_max_c: 27.0
+      temp_optimal_c: 22.0
+      humidity_min_pct: 90.0
+      leaf_wetness_hours_min: 6.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Plant resistant hybrids with qualitative Ht genes and quantitative multigenic resistance."
+      - "Rotate with non-host crops and manage residue."
+    organic_controls:
+      - "Resistant seed selection and balanced organic soil amendments."
+    chemical_controls:
+      - "Fungicides containing DMI (FRAC 3), QoI (FRAC 11), or SDHI (FRAC 7) chemistries applied at early blister (R2) if threshold met."
+    severity: "HIGH"
+    when_to_consult_expert: "If lesions appear on the third leaf below the ear or higher prior to silking."
+    safety_notes:
+      - "Follow label directions and rotate FRAC classes to mitigate fungicide resistance."
+    sources:
+      - "Crop Protection Network: Northern Corn Leaf Blight (CPN-2002)"
+      - "University of Minnesota Extension: Northern corn leaf blight"
+
+  # 11. Corn - healthy
+  - id: "Corn_(maize)___healthy"
+    crop: "Corn (Maize)"
+    disease_name: "Healthy Corn Leaf"
+    scientific_name: "Zea mays"
+    causal_agent_type: "none"
+    is_healthy: true
+    symptoms: "Broad, vibrant green leaves with parallel venation and no chlorosis, blight, or pustules."
+    spread_mechanism: "None."
+    favorable_conditions:
+      temp_min_c: 15.0
+      temp_max_c: 35.0
+      temp_optimal_c: 28.0
+      humidity_min_pct: 40.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: false
+    prevention_steps:
+      - "Maintain optimal soil fertility (N-P-K and micronutrients) and adequate plant population density."
+      - "Scout fields regularly at V6, VT, and R2 growth stages."
+    organic_controls:
+      - "Maintain soil health with cover crops (e.g., rye, clover)."
+    chemical_controls:
+      - "No chemical treatment required."
+    severity: "LOW"
+    when_to_consult_expert: "Routine agronomic scouting."
+    safety_notes:
+      - "Follow standard farm worker protection practices."
+    sources:
+      - "Purdue Extension: Corn Field Guide (ID-179)"
+
+  # 12. Grape - Black rot
+  - id: "Grape___Black_rot"
+    crop: "Grape"
+    disease_name: "Black Rot"
+    scientific_name: "Guignardia bidwellii (Phyllosticta ampelicida)"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Circular reddish-brown leaf spots with tiny black pycnidia dots inside the border. Berries turn brown, shrivel into hard black mummies."
+    spread_mechanism: "Ascospores and conidia rain-splashed from overwintered mummified berries and cane lesions."
+    favorable_conditions:
+      temp_min_c: 15.0
+      temp_max_c: 32.0
+      temp_optimal_c: 27.0
+      humidity_min_pct: 85.0
+      leaf_wetness_hours_min: 6.0
+      rainfall_favorable: true
+      wind_spread: false
+    prevention_steps:
+      - "Remove and destroy all mummified fruit clusters during dormant winter pruning."
+      - "Open vine canopies with shoot thinning and leaf pulling around fruit zones to enhance air movement."
+    organic_controls:
+      - "Copper-based fungicides applied from bud break through veraison."
+    chemical_controls:
+      - "FRAC 3 (Myclobutanil, Tebuconazole), FRAC 11 (Azoxystrobin), or protectants (Mancozeb, Ziram) from early bloom through 4 weeks post-bloom."
+    severity: "CRITICAL"
+    when_to_consult_expert: "If leaf spots appear before bloom or berry infection is detected."
+    safety_notes:
+      - "Adhere strictly to pre-harvest intervals and PPE requirements."
+    sources:
+      - "Penn State Extension: Grape Black Rot Biology and Control"
+      - "Cornell Viticulture: Grape Disease Management Guide"
+
+  # 13. Grape - Esca (Black Measles)
+  - id: "Grape___Esca_(Black_Measles)"
+    crop: "Grape"
+    disease_name: "Esca (Black Measles)"
+    scientific_name: "Phaeoacremonium minimum, Phaeomoniella chlamydospora, Fomitiporia mediterranea"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Tiger-stripe leaf pattern (interveinal yellowing and necrosis with green veins). Dark spots ('measles') on berry skin. Wood shows dark vascular streaking."
+    spread_mechanism: "Fungal spores enter through pruning wounds and propagate within mature vine wood."
+    favorable_conditions:
+      temp_min_c: 18.0
+      temp_max_c: 35.0
+      temp_optimal_c: 25.0
+      humidity_min_pct: 70.0
+      leaf_wetness_hours_min: 4.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Prune late in the dormant season when wound healing is rapid."
+      - "Apply pruning wound sealants (e.g., acrylic paint with fungicide or biocontrol Trichoderma)."
+      - "Avoid heavy water stress during hot summer periods."
+    organic_controls:
+      - "Biocontrol agent Trichoderma atroviride applied directly to fresh pruning wounds."
+    chemical_controls:
+      - "No curative foliar fungicide exists for internal wood rot. Protect pruning wounds with registered wound protectants (e.g., Thiophanate-methyl)."
+    severity: "HIGH"
+    when_to_consult_expert: "If apoplexy (sudden vine collapse) occurs on high-value vineyard blocks."
+    safety_notes:
+      - "Wound paint and paste applications must be applied according to label."
+    sources:
+      - "UC Davis IPM: Esca (Black Measles) in Grapevines"
+      - "Wine Australia: Grapevine Trunk Disease Management"
+
+  # 14. Grape - Leaf blight (Isariopsis Leaf Spot)
+  - id: "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"
+    crop: "Grape"
+    disease_name: "Leaf Blight (Isariopsis / Phaeoisariopsis Leaf Spot)"
+    scientific_name: "Pseudocercospora cladosporioides (Isariopsis clavispora)"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Irregular dark brown to black necrotic leaf patches with faint yellow halos, causing premature defoliation in late summer."
+    spread_mechanism: "Conidia splashed by rain and carried by wind currents."
+    favorable_conditions:
+      temp_min_c: 20.0
+      temp_max_c: 32.0
+      temp_optimal_c: 26.0
+      humidity_min_pct: 85.0
+      leaf_wetness_hours_min: 8.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Maintain canopy air circulation with shoot positioning and trellis management."
+      - "Collect and compost or bury fallen infected leaves in late autumn."
+    organic_controls:
+      - "Bordeaux mixture or copper hydroxide sprays applied in mid-to-late season."
+    chemical_controls:
+      - "Broad-spectrum protectant fungicides (Mancozeb, Chlorothalonil) or strobilurins (FRAC 11) in post-bloom applications."
+    severity: "MODERATE"
+    when_to_consult_expert: "If extensive defoliation occurs before berry sugar accumulation is complete."
+    safety_notes:
+      - "Check copper phytotoxicity warnings and obey re-entry intervals."
+    sources:
+      - "UC Davis Grape IPM Guidelines: Minor Grape Foliar Diseases"
+      - "Texas A&M AgriLife Extension: Texas Grape Pest Management Guide"
+
+  # 15. Grape - healthy
+  - id: "Grape___healthy"
+    crop: "Grape"
+    disease_name: "Healthy Grape Leaf"
+    scientific_name: "Vitis vinifera"
+    causal_agent_type: "none"
+    is_healthy: true
+    symptoms: "Healthy palmate green leaves without chlorosis, spots, powdery mold, or edge scorching."
+    spread_mechanism: "None."
+    favorable_conditions:
+      temp_min_c: 15.0
+      temp_max_c: 35.0
+      temp_optimal_c: 25.0
+      humidity_min_pct: 40.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: false
+    prevention_steps:
+      - "Maintain trellis training, canopy suckering, and balanced fertigation."
+      - "Scout weekly for powdery mildew and grapevine leafroll virus."
+    organic_controls:
+      - "Preventative organic canopy hygiene."
+    chemical_controls:
+      - "No chemical intervention needed."
+    severity: "LOW"
+    when_to_consult_expert: "Routine vineyard IPM consultations."
+    safety_notes:
+      - "Standard vineyard safety protocols."
+    sources:
+      - "UC Davis Viticulture and Enology Extension"
+
+  # 16. Orange - Haunglongbing (Citrus greening)
+  - id: "Orange___Haunglongbing_(Citrus_greening)"
+    crop: "Orange (Citrus)"
+    disease_name: "Huanglongbing (Citrus Greening)"
+    scientific_name: "Candidatus Liberibacter asiaticus"
+    causal_agent_type: "bacterial"
+    is_healthy: false
+    symptoms: "Asymmetrical blotchy mottle chlorosis on leaves, yellow shoots, vein corking. Small, lopsided, bitter fruit that stays green at the bottom."
+    spread_mechanism: "Transmitted by Asian citrus psyllid (Diaphorina citri) vector and grafting of infected budwood."
+    favorable_conditions:
+      temp_min_c: 18.0
+      temp_max_c: 32.0
+      temp_optimal_c: 25.0
+      humidity_min_pct: 60.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: true
+    prevention_steps:
+      - "Use certified disease-free nursery trees from enclosed screenhouses."
+      - "Eradicate confirmed infected trees promptly to remove pathogen reservoirs."
+      - "Control Asian citrus psyllid vector populations rigorously."
+    organic_controls:
+      - "Release parasitic wasps (Tamarixia radiata) for biological psyllid suppression."
+      - "Horticultural and citrus spray oils to deter psyllid egg-laying."
+    chemical_controls:
+      - "Systemic insecticides (e.g., Imidacloprid, Thiamethoxam - IRAC 4A) and foliar rotation (Pyrethroids, Spinetoram) targeting psyllid flushes."
+    severity: "CRITICAL"
+    when_to_consult_expert: "Immediately report suspected trees to state/national department of agriculture / local extension."
+    safety_notes:
+      - "Strict compliance with citrus quarantine laws and insecticide safety intervals is mandatory."
+    sources:
+      - "University of Florida IFAS Extension: Huanglongbing (Citrus Greening) Information (PP225)"
+      - "USDA ARS Citrus Greening Research Program"
+      - "UC Davis IPM: Asian Citrus Psyllid and Citrus Greening Disease"
+
+  # 17. Peach - Bacterial spot
+  - id: "Peach___Bacterial_spot"
+    crop: "Peach"
+    disease_name: "Bacterial Spot"
+    scientific_name: "Xanthomonas arboricola pv. pruni"
+    causal_agent_type: "bacterial"
+    is_healthy: false
+    symptoms: "Water-soaked polygonal angular spots on leaves turning purplish-brown, centers drop out giving a 'shot-hole' look. Pitted, gumming lesions on fruit."
+    spread_mechanism: "Bacteria splash from twig cankers during wind-driven rain and enter via stomata and wounds."
+    favorable_conditions:
+      temp_min_c: 20.0
+      temp_max_c: 30.0
+      temp_optimal_c: 25.0
+      humidity_min_pct: 85.0
+      leaf_wetness_hours_min: 4.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Plant resistant peach cultivars (e.g., Candor, Clayton, Reliance)."
+      - "Avoid excessive nitrogen fertilizers that stimulate susceptible young shoot growth."
+      - "Plant windbreaks to reduce windblown sand abrasions that facilitate bacterial entry."
+    organic_controls:
+      - "Dormant copper applications and low-rate copper hydroxide during early cover sprays."
+    chemical_controls:
+      - "Bactericides: Oxytetracycline (Mycoshield) and low-rate copper formulations applied from petal fall through cover sprays."
+    severity: "HIGH"
+    when_to_consult_expert: "If twig cankers proliferate or fruit drop exceeds 10%."
+    safety_notes:
+      - "Observe strict pre-harvest intervals for antibiotics and avoid copper phytotoxicity on stone fruit leaves."
+    sources:
+      - "Rutgers NJAES Cooperative Extension: Bacterial Spot of Stone Fruit"
+      - "Penn State Extension: Bacterial Spot on Peaches"
+
+  # 18. Peach - healthy
+  - id: "Peach___healthy"
+    crop: "Peach"
+    disease_name: "Healthy Peach Leaf"
+    scientific_name: "Prunus persica"
+    causal_agent_type: "none"
+    is_healthy: true
+    symptoms: "Smooth, lanceolate deep green leaves without shothole perforations, curl, or necrosis."
+    spread_mechanism: "None."
+    favorable_conditions:
+      temp_min_c: 12.0
+      temp_max_c: 32.0
+      temp_optimal_c: 24.0
+      humidity_min_pct: 45.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: false
+    prevention_steps:
+      - "Ensure annual winter pruning for open center / vase shape canopy."
+      - "Monitor soil moisture with tensiometers."
+    organic_controls:
+      - "Preventative dormant sprays for peach leaf curl."
+    chemical_controls:
+      - "No chemical treatment required."
+    severity: "LOW"
+    when_to_consult_expert: "Annual orchard nutrition and health review."
+    safety_notes:
+      - "Standard agricultural PPE."
+    sources:
+      - "Clemson Cooperative Extension: Peach Orchard Management"
+
+  # 19. Pepper bell - Bacterial spot
+  - id: "Pepper,_bell___Bacterial_spot"
+    crop: "Pepper (Bell)"
+    disease_name: "Bacterial Spot"
+    scientific_name: "Xanthomonas euvesicatoria / X. vesicatoria"
+    causal_agent_type: "bacterial"
+    is_healthy: false
+    symptoms: "Small, circular to irregular water-soaked spots on leaves turning dark brown with yellow halo. Blistered raised warty spots on fruit."
+    spread_mechanism: "Seedborne and splashing rain / overhead irrigation from plant to plant; enters through stomata and abrasions."
+    favorable_conditions:
+      temp_min_c: 24.0
+      temp_max_c: 35.0
+      temp_optimal_c: 28.0
+      humidity_min_pct: 85.0
+      leaf_wetness_hours_min: 4.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Use certified disease-free seed and resistant pepper varieties (races 1-10 resistance)."
+      - "Avoid overhead sprinkler irrigation; use drip irrigation underneath plastic mulch."
+      - "Rotate fields out of Solanaceous crops for at least 2 years."
+    organic_controls:
+      - "Copper bactericides combined with bio-fungicides (Bacillus amyloliquefaciens)."
+    chemical_controls:
+      - "Fixed copper formulations mixed with Mancozeb (to overcome copper tolerance) or acibenzolar-S-methyl (plant activator)."
+    severity: "HIGH"
+    when_to_consult_expert: "If rapid defoliation occurs during early flowering or fruit set."
+    safety_notes:
+      - "Follow all pesticide labels, re-entry intervals, and wear appropriate PPE."
+    sources:
+      - "University of Florida IFAS Extension: Bacterial Spot of Pepper (PP-3)"
+      - "Purdue Extension: Bacterial Spot of Pepper and Tomato (BP-22-W)"
+
+  # 20. Pepper bell - healthy
+  - id: "Pepper,_bell___healthy"
+    crop: "Pepper (Bell)"
+    disease_name: "Healthy Bell Pepper Leaf"
+    scientific_name: "Capsicum annuum"
+    causal_agent_type: "none"
+    is_healthy: true
+    symptoms: "Glossy, uniform green foliage with smooth margins, robust flowering and fruit set."
+    spread_mechanism: "None."
+    favorable_conditions:
+      temp_min_c: 18.0
+      temp_max_c: 32.0
+      temp_optimal_c: 25.0
+      humidity_min_pct: 50.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: false
+    prevention_steps:
+      - "Maintain consistent soil moisture and calcium fertility to prevent blossom end rot."
+      - "Scout weekly for aphids, thrips, and pepper weevils."
+    organic_controls:
+      - "Beneficial predatory mites and organic mulch."
+    chemical_controls:
+      - "No chemical intervention needed."
+    severity: "LOW"
+    when_to_consult_expert: "Routine crop scouting."
+    safety_notes:
+      - "Standard worker safety standards."
+    sources:
+      - "Texas A&M AgriLife Extension: Commercial Pepper Production"
+
+  # 21. Potato - Early blight
+  - id: "Potato___Early_blight"
+    crop: "Potato"
+    disease_name: "Early Blight"
+    scientific_name: "Alternaria solani"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Dark brown to black necrotic spots with characteristic concentric rings ('target-board' pattern) on older lower leaves, surrounded by yellow chlorotic halos."
+    spread_mechanism: "Airborne conidia and rain splash from infected crop debris and solanaceous weeds."
+    favorable_conditions:
+      temp_min_c: 20.0
+      temp_max_c: 32.0
+      temp_optimal_c: 26.0
+      humidity_min_pct: 80.0
+      leaf_wetness_hours_min: 6.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Rotate with non-solanaceous crops (cereals, legumes) on a 3-year cycle."
+      - "Maintain optimal nitrogen fertility (stressed, senescing plants are most vulnerable)."
+      - "Use drip irrigation or irrigate in the early morning to minimize nighttime leaf wetness."
+    organic_controls:
+      - "Copper sulfate, Bacillus subtilis, and potassium bicarbonate foliar sprays."
+    chemical_controls:
+      - "Protectants: Chlorothalonil, Mancozeb (FRAC M05, M03). Systemics: Boscalid (FRAC 7), Difenoconazole (FRAC 3), Azoxystrobin (FRAC 11) in rotation."
+    severity: "MODERATE"
+    when_to_consult_expert: "If lesions advance rapidly to upper leaves before tuber bulking is completed."
+    safety_notes:
+      - "Rotate FRAC classes to manage Alternaria fungicide resistance."
+      - "Strictly adhere to pre-harvest intervals (PHI)."
+    sources:
+      - "University of Idaho Extension: Potato Early Blight Management"
+      - "North Dakota State University Extension: Potato Blight Control Guide"
+
+  # 22. Potato - Late blight
+  - id: "Potato___Late_blight"
+    crop: "Potato"
+    disease_name: "Late Blight"
+    scientific_name: "Phytophthora infestans"
+    causal_agent_type: "fungal" # oomycete
+    is_healthy: false
+    symptoms: "Large, dark water-soaked lesions on leaves and stems that expand rapidly. White cottony fungal growth on leaf undersides in high humidity. Tubers develop dry brown rot."
+    spread_mechanism: "Sporangia and zoospores dispersed long distances by wind and rain splash from infected volunteer potatoes, cull piles, or seed tubers."
+    favorable_conditions:
+      temp_min_c: 10.0
+      temp_max_c: 24.0
+      temp_optimal_c: 18.0
+      humidity_min_pct: 90.0
+      leaf_wetness_hours_min: 8.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Plant certified disease-free seed tubers."
+      - "Destroy all potato cull piles and volunteer potato plants in surrounding areas."
+      - "Kill vines (haulm destruction) 2-3 weeks before harvest to prevent tuber contamination."
+    organic_controls:
+      - "Preventative copper sprays applied prior to high-risk weather events."
+    chemical_controls:
+      - "Protectants: Mancozeb, Chlorothalonil. Targeted oomycide systemics: Mandipropamid (FRAC 40), Fluopicolide (FRAC 43), Cyazofamid (FRAC 21), Propamocarb (FRAC 28)."
+    severity: "CRITICAL"
+    when_to_consult_expert: "Immediately notify local extension upon first sighting; late blight is an aggressive community-wide threat."
+    safety_notes:
+      - "Always follow label rates, buffer zones, and wear complete PPE."
+    sources:
+      - "Cornell University: Late Blight Forecasting and Management (USABlight)"
+      - "Michigan State University Extension: Potato Late Blight (E-2945)"
+
+  # 23. Potato - healthy
+  - id: "Potato___healthy"
+    crop: "Potato"
+    disease_name: "Healthy Potato Leaf"
+    scientific_name: "Solanum tuberosum"
+    causal_agent_type: "none"
+    is_healthy: true
+    symptoms: "Dark green, vibrant composite foliage with no spots, wilting, or stem lesions."
+    spread_mechanism: "None."
+    favorable_conditions:
+      temp_min_c: 15.0
+      temp_max_c: 25.0
+      temp_optimal_c: 20.0
+      humidity_min_pct: 50.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: false
+    prevention_steps:
+      - "Hilling and proper soil mounding to protect developing tubers."
+      - "Regular scouting using regional blight forecasting models (e.g., Blitecast)."
+    organic_controls:
+      - "Compost teas and preventative bio-stimulants."
+    chemical_controls:
+      - "No chemical intervention required."
+    severity: "LOW"
+    when_to_consult_expert: "Routine seasonal inspection."
+    safety_notes:
+      - "Standard worker safety standards."
+    sources:
+      - "University of Maine Cooperative Extension: Potato Program"
+
+  # 24. Raspberry - healthy
+  - id: "Raspberry___healthy"
+    crop: "Raspberry"
+    disease_name: "Healthy Raspberry Leaf"
+    scientific_name: "Rubus idaeus"
+    causal_agent_type: "none"
+    is_healthy: true
+    symptoms: "Pinnate green leaves with serrated edges, white-pubescent underside, free of yellowing or cane blight."
+    spread_mechanism: "None."
+    favorable_conditions:
+      temp_min_c: 12.0
+      temp_max_c: 28.0
+      temp_optimal_c: 20.0
+      humidity_min_pct: 50.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: false
+    prevention_steps:
+      - "Prune out spent floricanes immediately after harvest."
+      - "Maintain trellis support to promote air movement."
+    organic_controls:
+      - "Annual organic mulch and drip irrigation."
+    chemical_controls:
+      - "No chemical treatment required."
+    severity: "LOW"
+    when_to_consult_expert: "Routine berry health consultation."
+    safety_notes:
+      - "Standard worker safety protocols."
+    sources:
+      - "Cornell Berry Diagnostic Tool: Raspberry Management"
+
+  # 25. Soybean - healthy
+  - id: "Soybean___healthy"
+    crop: "Soybean"
+    disease_name: "Healthy Soybean Leaf"
+    scientific_name: "Glycine max"
+    causal_agent_type: "none"
+    is_healthy: true
+    symptoms: "Trifoliate deep green leaves with intact lamina and no signs of rust, frogeye, or bacterial pustule."
+    spread_mechanism: "None."
+    favorable_conditions:
+      temp_min_c: 18.0
+      temp_max_c: 32.0
+      temp_optimal_c: 26.0
+      humidity_min_pct: 45.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: false
+    prevention_steps:
+      - "Ensure Rhizobium inoculation at planting for optimal nitrogen fixation."
+      - "Scout for defoliating caterpillars and stink bugs at R3-R5 stages."
+    organic_controls:
+      - "Beneficial insect habitat and crop rotation."
+    chemical_controls:
+      - "No chemical intervention needed."
+    severity: "LOW"
+    when_to_consult_expert: "Routine agronomy consulting."
+    safety_notes:
+      - "Standard agricultural safety practices."
+    sources:
+      - "Iowa State University Extension: Soybean Field Guide"
+
+  # 26. Squash - Powdery mildew
+  - id: "Squash___Powdery_mildew"
+    crop: "Squash / Cucurbits"
+    disease_name: "Powdery Mildew"
+    scientific_name: "Podosphaera xanthii (syn. Sphaerotheca fuliginea), Golovinomyces cichoracearum"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "White talcum powder-like circular patches on both upper and lower leaf surfaces, petiole, and stems. Leaves turn chlorotic, senesce, and crisp up."
+    spread_mechanism: "Conidia are wind-dispersed; does not require free water to germinate, only high relative humidity."
+    favorable_conditions:
+      temp_min_c: 18.0
+      temp_max_c: 32.0
+      temp_optimal_c: 26.0
+      humidity_min_pct: 70.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: true
+    prevention_steps:
+      - "Plant powdery mildew-resistant cucurbit varieties (PMR cultivars)."
+      - "Provide adequate plant spacing to facilitate airflow within dense squash foliage."
+      - "Avoid excessive nitrogen application."
+    organic_controls:
+      - "Horticultural oils, potassium bicarbonate (Armicarb/MilStop), neem oil, or sulfur."
+    chemical_controls:
+      - "Targeted fungicides: Quinoxyfen (FRAC 13), Cyflufenamid (FRAC U06), Metrafenone (FRAC 50), DMI (FRAC 3, Difenoconazole) applied preventatively at first sign of white spots."
+    severity: "HIGH"
+    when_to_consult_expert: "If powdery mildew covers more than 15% of lower leaf surfaces during early fruit development."
+    safety_notes:
+      - "Rotate FRAC classes continuously; cucurbit powdery mildew develops fungicide resistance rapidly."
+    sources:
+      - "University of Massachusetts Amherst Extension: Cucurbit Powdery Mildew Management"
+      - "Cornell Vegetable MD Online: Powdery Mildew of Cucurbits"
+
+  # 27. Strawberry - Leaf scorch
+  - id: "Strawberry___Leaf_scorch"
+    crop: "Strawberry"
+    disease_name: "Leaf Scorch"
+    scientific_name: "Diplocarpon earlianum"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Numerous small, irregular purplish-red spots on leaves that coalesce, causing the leaf tissue between spots to turn brown, dry out, and curl up like scorched by fire."
+    spread_mechanism: "Conidia rain-splashed from infected overwintered leaves onto newly emerging foliage."
+    favorable_conditions:
+      temp_min_c: 15.0
+      temp_max_c: 28.0
+      temp_optimal_c: 22.0
+      humidity_min_pct: 85.0
+      leaf_wetness_hours_min: 9.0
+      rainfall_favorable: true
+      wind_spread: false
+    prevention_steps:
+      - "Plant certified disease-free strawberry plugs/runners of resistant cultivars (e.g., Allstar, Earliglow)."
+      - "Mow and incorporate strawberry foliage immediately after harvest (renovation)."
+      - "Use straw mulch to prevent soil splashing onto leaves and use drip irrigation."
+    organic_controls:
+      - "Copper fungicides applied post-renovation in early autumn or early spring."
+    chemical_controls:
+      - "Captan, Thiram, or QoI strobilurin fungicides (FRAC 11, Pyraclostrobin, Azoxystrobin) in spring prior to bloom."
+    severity: "MODERATE"
+    when_to_consult_expert: "If severe foliage scorching threatens runner production in nursery or perennial beds."
+    safety_notes:
+      - "Check bee toxicity warnings before applying any fungicide during strawberry flowering."
+    sources:
+      - "Ohio State University Extension: Strawberry Leaf Scorch (PLPATH-FRU-34)"
+      - "North Carolina State Extension: Strawberry Leaf Scorch Management"
+
+  # 28. Strawberry - healthy
+  - id: "Strawberry___healthy"
+    crop: "Strawberry"
+    disease_name: "Healthy Strawberry Leaf"
+    scientific_name: "Fragaria x ananassa"
+    causal_agent_type: "none"
+    is_healthy: true
+    symptoms: "Trifoliate deep green glossy leaves with distinct serrations, no purple spots or edge necrosis."
+    spread_mechanism: "None."
+    favorable_conditions:
+      temp_min_c: 12.0
+      temp_max_c: 26.0
+      temp_optimal_c: 20.0
+      humidity_min_pct: 45.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: false
+    prevention_steps:
+      - "Maintain plastic mulch bed cleanliness and drip fertigation."
+      - "Scout for two-spotted spider mites and Botrytis fruit rot."
+    organic_controls:
+      - "Release predatory mites (Phytoseiulus persimilis) for mite suppression."
+    chemical_controls:
+      - "No chemical treatment required."
+    severity: "LOW"
+    when_to_consult_expert: "Routine seasonal IPM check."
+    safety_notes:
+      - "Standard agricultural safety guidelines."
+    sources:
+      - "UC Davis IPM: Strawberry Pest Management Guidelines"
+
+  # 29. Tomato - Bacterial spot
+  - id: "Tomato___Bacterial_spot"
+    crop: "Tomato"
+    disease_name: "Bacterial Spot"
+    scientific_name: "Xanthomonas perforans / X. vesicatoria / X. gardneri"
+    causal_agent_type: "bacterial"
+    is_healthy: false
+    symptoms: "Small, greasy, water-soaked dark brown spots on leaves surrounded by yellow halos. Scabby, raised brown eruptions on tomato fruit."
+    spread_mechanism: "Splashing water, driving rain, contaminated seed, handling wet plants; enters via stomata and mechanical wounds."
+    favorable_conditions:
+      temp_min_c: 24.0
+      temp_max_c: 34.0
+      temp_optimal_c: 28.0
+      humidity_min_pct: 85.0
+      leaf_wetness_hours_min: 4.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Use hot-water treated or certified disease-free seed."
+      - "Do not work in tomato fields when leaves are wet from dew or rain."
+      - "Rotate with non-solanaceous crops on a 2-3 year cycle."
+    organic_controls:
+      - "Copper bactericides mixed with Bacillus subtilis or Bacillus amyloliquefaciens."
+    chemical_controls:
+      - "Fixed copper + Mancozeb tank mix; plant defense activators like Acibenzolar-S-methyl (Actigard)."
+    severity: "HIGH"
+    when_to_consult_expert: "If widespread defoliation causes fruit sunscald in commercial plantings."
+    safety_notes:
+      - "Adhere strictly to label directions and re-entry intervals."
+    sources:
+      - "University of Florida IFAS: Bacterial Spot of Tomato (PP-3)"
+      - "Purdue Extension: Tomato Diseases - Bacterial Spot (BP-22-W)"
+
+  # 30. Tomato - Early blight
+  - id: "Tomato___Early_blight"
+    crop: "Tomato"
+    disease_name: "Early Blight"
+    scientific_name: "Alternaria linariae (syn. Alternaria solani)"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Dark brown to black spots with concentric rings (target pattern) on older lower leaves, leaf yellowing around lesions, progressing upwards."
+    spread_mechanism: "Spores rain-splashed from infested soil and crop debris; windblown conidia."
+    favorable_conditions:
+      temp_min_c: 20.0
+      temp_max_c: 32.0
+      temp_optimal_c: 26.0
+      humidity_min_pct: 80.0
+      leaf_wetness_hours_min: 6.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Mulch heavily with straw or plastic to create a barrier between soil and lower leaves."
+      - "Stake or cage tomatoes and prune bottom 12-18 inches of leaves to prevent soil splash."
+      - "Rotate crops with non-solanaceous species."
+    organic_controls:
+      - "Copper octanoate, Bacillus subtilis, and bio-fungicides."
+    chemical_controls:
+      - "Protectants: Chlorothalonil, Mancozeb (FRAC M05, M03). Systemics: Difenoconazole, Azoxystrobin, Boscalid (FRAC 3, 11, 7)."
+    severity: "MODERATE"
+    when_to_consult_expert: "If early blight reaches mid-canopy before first fruit harvest."
+    safety_notes:
+      - "Observe pre-harvest intervals and rotate FRAC modes of action."
+    sources:
+      - "Cornell Vegetable MD Online: Early Blight of Tomato"
+      - "North Carolina State Extension: Early Blight of Tomato"
+
+  # 31. Tomato - Late blight
+  - id: "Tomato___Late_blight"
+    crop: "Tomato"
+    disease_name: "Late Blight"
+    scientific_name: "Phytophthora infestans"
+    causal_agent_type: "fungal" # oomycete
+    is_healthy: false
+    symptoms: "Large, irregular water-soaked pale green to dark brown oily lesions on leaves and stems. White fluffy mold on leaf undersides in humid mornings. Fruit develops greasy brown rot."
+    spread_mechanism: "Sporangia carried miles on cool, moist winds; rain-splashed zoospores."
+    favorable_conditions:
+      temp_min_c: 10.0
+      temp_max_c: 24.0
+      temp_optimal_c: 18.0
+      humidity_min_pct: 90.0
+      leaf_wetness_hours_min: 8.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Plant resistant varieties (e.g., Defiant, Mountain Magic, Iron Lady)."
+      - "Destroy infected plants immediately in plastic bags to avoid dispersing spores to neighbors."
+      - "Monitor regional late blight tracking maps (e.g., USABlight)."
+    organic_controls:
+      - "Preventative copper sprays applied prior to cool, rainy disease-favoring weather."
+    chemical_controls:
+      - "Mandipropamid (FRAC 40), Fluopicolide (FRAC 43), Cyazofamid (FRAC 21), Chlorothalonil (FRAC M05)."
+    severity: "CRITICAL"
+    when_to_consult_expert: "Immediately alert university extension or regional crop specialist upon identification."
+    safety_notes:
+      - "Follow all pesticide label safety regulations and environmental precautions."
+    sources:
+      - "USABlight: National Late Blight Information and Forecast System"
+      - "Penn State Extension: Tomato Late Blight Management"
+
+  # 32. Tomato - Leaf Mold
+  - id: "Tomato___Leaf_Mold"
+    crop: "Tomato"
+    disease_name: "Leaf Mold"
+    scientific_name: "Passalora fulva (syn. Cladosporium fulvum)"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Pale green to yellowish diffuse spots on upper leaf surface corresponding to velvety olive-green to brown fungal growth on the underside."
+    spread_mechanism: "Conidia airborne and rain-splashed; primarily a severe problem in high tunnels and greenhouses with high humidity."
+    favorable_conditions:
+      temp_min_c: 18.0
+      temp_max_c: 28.0
+      temp_optimal_c: 23.0
+      humidity_min_pct: 85.0
+      leaf_wetness_hours_min: 5.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Maximize high-tunnel and greenhouse ventilation using exhaust fans and horizontal airflow."
+      - "Increase plant spacing and prune lower suckers to open canopy."
+      - "Plant resistant varieties with Cf resistance genes."
+    organic_controls:
+      - "Copper fungicides, potassium bicarbonate, or hydrogen dioxide."
+    chemical_controls:
+      - "Chlorothalonil, Mancozeb, Difenoconazole, or Cyazofamid labeled for greenhouse/field tomatoes."
+    severity: "MODERATE"
+    when_to_consult_expert: "If greenhouse crop loses more than 25% photosynthesizing leaf area."
+    safety_notes:
+      - "Ensure proper PPE when spraying in enclosed greenhouses or high tunnels."
+    sources:
+      - "University of Massachusetts Amherst: Tomato Leaf Mold in High Tunnels"
+      - "Cornell Vegetable MD Online: Tomato Leaf Mold"
+
+  # 33. Tomato - Septoria leaf spot
+  - id: "Tomato___Septoria_leaf_spot"
+    crop: "Tomato"
+    disease_name: "Septoria Leaf Spot"
+    scientific_name: "Septoria lycopersici"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Numerous small, circular spots (1.5 - 3 mm) with dark brown borders and pale gray or tan centers containing tiny black specks (pycnidia)."
+    spread_mechanism: "Pycnidiospores extruded in gelatinous tendrils and rain-splashed from overwintered debris and weeds (horsenettle)."
+    favorable_conditions:
+      temp_min_c: 18.0
+      temp_max_c: 28.0
+      temp_optimal_c: 23.0
+      humidity_min_pct: 90.0
+      leaf_wetness_hours_min: 6.0
+      rainfall_favorable: true
+      wind_spread: false
+    prevention_steps:
+      - "Clean cultivation, weed control (destroy horsenettle and nightshade near fields)."
+      - "Mulch to prevent soil splash and drip irrigate exclusively."
+      - "Rotate away from solanaceous crops for 3 years."
+    organic_controls:
+      - "Copper octanoate or copper hydroxide applied at weekly intervals during wet weather."
+    chemical_controls:
+      - "Chlorothalonil, Mancozeb, or FRAC 11 (Azoxystrobin) / FRAC 7 (Boscalid) in rotation."
+    severity: "HIGH"
+    when_to_consult_expert: "If lower foliage defoliation progresses rapidly toward fruit clusters."
+    safety_notes:
+      - "Strictly follow label guidelines and re-entry intervals."
+    sources:
+      - "Missouri Botanical Garden: Septoria Leaf Spot of Tomato"
+      - "Purdue Extension: Septoria Leaf Spot on Tomato (BP-138-W)"
+
+  # 34. Tomato - Spider mites Two-spotted spider mite
+  - id: "Tomato___Spider_mites Two-spotted_spider_mite"
+    crop: "Tomato"
+    disease_name: "Two-Spotted Spider Mite Infestation"
+    scientific_name: "Tetranychus urticae"
+    causal_agent_type: "pest"
+    is_healthy: false
+    symptoms: "Fine yellow or white stippling on upper leaf surface, delicate fine webbing on leaf undersides, leaves turn bronze, dry out, and drop."
+    spread_mechanism: "Mites crawl between touching foliage and disperse by ballooning on silk threads in hot, dry, dusty wind."
+    favorable_conditions:
+      temp_min_c: 25.0
+      temp_max_c: 38.0
+      temp_optimal_c: 32.0
+      humidity_min_pct: 20.0 # Thrives in hot, dry weather!
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: true
+    prevention_steps:
+      - "Keep farm roadways and perimeters watered to reduce dust, which suppresses natural mite predators."
+      - "Avoid broad-spectrum synthetic pyrethroids and carbamates that kill beneficial predatory insects."
+      - "Maintain adequate crop irrigation to reduce plant water stress."
+    organic_controls:
+      - "Release predatory mites (Phytoseiulus persimilis, Neoseiulus californicus)."
+      - "Insecticidal soaps, horticultural mineral oil, or rosemary/neem oil emulsions."
+    chemical_controls:
+      - "Selective miticides: Bifenazate (Acramite), Spiromesifen (Oberon), Abamectin (Agri-Mek) with proper surfactant."
+    severity: "HIGH"
+    when_to_consult_expert: "If webbing appears on upper canopy or fruit clusters during hot dry spells."
+    safety_notes:
+      - "Apply miticides thoroughly to leaf undersides where mites feed; observe resistance management guidelines."
+    sources:
+      - "UC Davis IPM: Spider Mites on Tomato"
+      - "University of Florida IFAS: Two-Spotted Spider Mite Management (EENY-150)"
+
+  # 35. Tomato - Target Spot
+  - id: "Tomato___Target_Spot"
+    crop: "Tomato"
+    disease_name: "Target Spot"
+    scientific_name: "Corynespora cassiicola"
+    causal_agent_type: "fungal"
+    is_healthy: false
+    symptoms: "Brown, pinpoint lesions expanding into circular to irregular lesions with concentric light and dark brown rings. Fruit develops sunken brownish lesions."
+    spread_mechanism: "Conidia windblown and rain-splashed from crop debris and alternative weed hosts."
+    favorable_conditions:
+      temp_min_c: 20.0
+      temp_max_c: 32.0
+      temp_optimal_c: 28.0
+      humidity_min_pct: 85.0
+      leaf_wetness_hours_min: 8.0
+      rainfall_favorable: true
+      wind_spread: true
+    prevention_steps:
+      - "Increase row spacing to allow rapid canopy drying."
+      - "Prune lower leaves to minimize contact with humidity from soil."
+      - "Rotate with non-host crops."
+    organic_controls:
+      - "Copper fungicides and biological antagonists."
+    chemical_controls:
+      - "FRAC 7 (Fluxapyroxad), FRAC 3 (Difenoconazole), FRAC 11 (Pyraclostrobin), or Chlorothalonil."
+    severity: "HIGH"
+    when_to_consult_expert: "If fruit lesions exceed 5% of harvestable fruit."
+    safety_notes:
+      - "Rotate FRAC classes to mitigate chemical resistance."
+    sources:
+      - "University of Florida IFAS: Target Spot of Tomato (PP-344)"
+      - "North Carolina State Extension: Target Spot on Tomato"
+
+  # 36. Tomato - Tomato Yellow Leaf Curl Virus
+  - id: "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
+    crop: "Tomato"
+    disease_name: "Tomato Yellow Leaf Curl Virus (TYLCV)"
+    scientific_name: "Begomovirus (TYLCV)"
+    causal_agent_type: "viral"
+    is_healthy: false
+    symptoms: "Severe upward curling and cupping of leaf margins, prominent yellowing (chlorosis) of leaf margins, severe plant stunting, flower drop, and no fruit set."
+    spread_mechanism: "Transmitted persistently by the silverleaf whitefly (Bemisia tabaci); not seedborne or mechanically transmitted."
+    favorable_conditions:
+      temp_min_c: 24.0
+      temp_max_c: 38.0
+      temp_optimal_c: 30.0
+      humidity_min_pct: 30.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: true
+    prevention_steps:
+      - "Plant TYLCV-resistant tomato hybrids (e.g., Tygress, Charger, Red Bounty)."
+      - "Use 50-mesh insect screening on high tunnels/greenhouses to exclude whiteflies."
+      - "Use UV-reflective silver plastic mulch to repel migrating whiteflies."
+      - "Rogue out infected plants immediately upon early symptom development."
+    organic_controls:
+      - "Insecticidal soaps, horticultural oils, and release of predatory insects (Delphastus catalinae)."
+    chemical_controls:
+      - "Target the whitefly vector: Systemic neonicotinoids (Imidacloprid, Dinotefuran - IRAC 4A) at transplant, followed by Cyantraniliprole (IRAC 28), Spiromesifen (IRAC 23), or Pyriproxyfen."
+    severity: "CRITICAL"
+    when_to_consult_expert: "Report suspected outbreaks in new growing districts to agricultural extension."
+    safety_notes:
+      - "Strict compliance with pesticide regulations, pollinator protection standards, and label intervals."
+    sources:
+      - "UC Davis IPM: Tomato Yellow Leaf Curl Virus Guidelines"
+      - "University of Florida IFAS: Tomato Yellow Leaf Curl Virus Management (ENY-712)"
+
+  # 37. Tomato - Tomato mosaic virus
+  - id: "Tomato___Tomato_mosaic_virus"
+    crop: "Tomato"
+    disease_name: "Tomato Mosaic Virus (ToMV)"
+    scientific_name: "Tobamovirus (ToMV)"
+    causal_agent_type: "viral"
+    is_healthy: false
+    symptoms: "Mottled light and dark green mosaic patterns on leaves, leaf distortion, 'shoestring' or fern-like leaf narrowing, internal browning (brown wall) of fruit."
+    spread_mechanism: "Extremely stable virus transmitted mechanically by hands, pruning tools, trellis strings, contaminated seed, and worker clothing."
+    favorable_conditions:
+      temp_min_c: 20.0
+      temp_max_c: 32.0
+      temp_optimal_c: 26.0
+      humidity_min_pct: 40.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: false
+    prevention_steps:
+      - "Plant certified virus-free seed and resistant cultivars (Tm-2 or Tm-2^2 resistance)."
+      - "Disinfect hands and tools frequently in 20% non-fat dry milk solution or 10% trisodium phosphate (TSP)."
+      - "Strictly prohibit tobacco smoking/chewing near tomato plants (tobacco carries mosaic viruses)."
+      - "Rogue out and destroy infected plants immediately; do not compost."
+    organic_controls:
+      - "Strict sanitation, milk spray dips for tool and hand decontamination."
+    chemical_controls:
+      - "No chemical cure exists for viral infections. Manage through sanitation and genetics."
+    severity: "CRITICAL"
+    when_to_consult_expert: "If symptoms appear in seed-production or commercial greenhouse tomato operations."
+    safety_notes:
+      - "Careful handling of chemical disinfectants (TSP); wear protective gloves and eye protection."
+    sources:
+      - "Penn State Extension: Tomato Mosaic Virus and Tobacco Mosaic Virus"
+      - "Cornell Vegetable MD Online: Tobamoviruses of Tomato"
+
+  # 38. Tomato - healthy
+  - id: "Tomato___healthy"
+    crop: "Tomato"
+    disease_name: "Healthy Tomato Leaf"
+    scientific_name: "Solanum lycopersicum"
+    causal_agent_type: "none"
+    is_healthy: true
+    symptoms: "Deep green compound leaves with healthy glandular hairs, no spots, wilting, mosaic, or leaf curl."
+    spread_mechanism: "None."
+    favorable_conditions:
+      temp_min_c: 18.0
+      temp_max_c: 30.0
+      temp_optimal_c: 24.0
+      humidity_min_pct: 50.0
+      leaf_wetness_hours_min: 0.0
+      rainfall_favorable: false
+      wind_spread: false
+    prevention_steps:
+      - "Maintain consistent staking, drip irrigation, balanced N-P-K and calcium fertilizing."
+      - "Scout weekly for hornworms, fruitworms, and early foliar spots."
+    organic_controls:
+      - "Companion planting with marigolds/basil and organic compost mulching."
+    chemical_controls:
+      - "No chemical intervention needed."
+    severity: "LOW"
+    when_to_consult_expert: "Routine seasonal agronomy check."
+    safety_notes:
+      - "Standard worker protection standards."
+    sources:
+      - "University of Florida IFAS: Tomato Production Guide"
+      - "Purdue Extension: Tomato Plant Care and IPM"

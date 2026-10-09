@@ -1,0 +1,131 @@
+{
+  "dataset": "PlantDoc_Cross_Dataset",
+  "total_evaluated_samples": 216,
+  "overlapping_classes_count": 25,
+  "accuracy": 0.213,
+  "macro_f1": 0.1492,
+  "weighted_f1": 0.2041,
+  "most_common_errors": [
+    {
+      "plantdoc_class": "Apple Scab Leaf",
+      "ground_truth": "Apple___Apple_scab",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 0.6147289276123047
+    },
+    {
+      "plantdoc_class": "Apple Scab Leaf",
+      "ground_truth": "Apple___Apple_scab",
+      "predicted": "Cherry_(including_sour)___healthy",
+      "confidence": 0.5725735425949097
+    },
+    {
+      "plantdoc_class": "Apple Scab Leaf",
+      "ground_truth": "Apple___Apple_scab",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 0.4205930531024933
+    },
+    {
+      "plantdoc_class": "Apple Scab Leaf",
+      "ground_truth": "Apple___Apple_scab",
+      "predicted": "Potato___Early_blight",
+      "confidence": 0.43118491768836975
+    },
+    {
+      "plantdoc_class": "Apple Scab Leaf",
+      "ground_truth": "Apple___Apple_scab",
+      "predicted": "Apple___healthy",
+      "confidence": 0.4857204556465149
+    },
+    {
+      "plantdoc_class": "Apple Scab Leaf",
+      "ground_truth": "Apple___Apple_scab",
+      "predicted": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "confidence": 0.49226129055023193
+    },
+    {
+      "plantdoc_class": "Apple Scab Leaf",
+      "ground_truth": "Apple___Apple_scab",
+      "predicted": "Strawberry___Leaf_scorch",
+      "confidence": 0.7283296585083008
+    },
+    {
+      "plantdoc_class": "Apple Scab Leaf",
+      "ground_truth": "Apple___Apple_scab",
+      "predicted": "Apple___Cedar_apple_rust",
+      "confidence": 0.5124133229255676
+    },
+    {
+      "plantdoc_class": "Apple leaf",
+      "ground_truth": "Apple___healthy",
+      "predicted": "Blueberry___healthy",
+      "confidence": 0.18782281875610352
+    },
+    {
+      "plantdoc_class": "Apple leaf",
+      "ground_truth": "Apple___healthy",
+      "predicted": "Strawberry___healthy",
+      "confidence": 0.37253084778785706
+    },
+    {
+      "plantdoc_class": "Apple leaf",
+      "ground_truth": "Apple___healthy",
+      "predicted": "Blueberry___healthy",
+      "confidence": 0.30595460534095764
+    },
+    {
+      "plantdoc_class": "Apple leaf",
+      "ground_truth": "Apple___healthy",
+      "predicted": "Potato___healthy",
+      "confidence": 0.14478711783885956
+    },
+    {
+      "plantdoc_class": "Apple leaf",
+      "ground_truth": "Apple___healthy",
+      "predicted": "Soybean___healthy",
+      "confidence": 0.11290178447961807
+    },
+    {
+      "plantdoc_class": "Apple leaf",
+      "ground_truth": "Apple___healthy",
+      "predicted": "Blueberry___healthy",
+      "confidence": 0.24869336187839508
+    },
+    {
+      "plantdoc_class": "Apple leaf",
+      "ground_truth": "Apple___healthy",
+      "predicted": "Blueberry___healthy",
+      "confidence": 0.14731431007385254
+    },
+    {
+      "plantdoc_class": "Apple leaf",
+      "ground_truth": "Apple___healthy",
+      "predicted": "Potato___healthy",
+      "confidence": 0.41123008728027344
+    },
+    {
+      "plantdoc_class": "Apple rust leaf",
+      "ground_truth": "Apple___Cedar_apple_rust",
+      "predicted": "Potato___Early_blight",
+      "confidence": 0.395896852016449
+    },
+    {
+      "plantdoc_class": "Apple rust leaf",
+      "ground_truth": "Apple___Cedar_apple_rust",
+      "predicted": "Grape___Black_rot",
+      "confidence": 0.10687669366598129
+    },
+    {
+      "plantdoc_class": "Apple rust leaf",
+      "ground_truth": "Apple___Cedar_apple_rust",
+      "predicted": "Grape___Black_rot",
+      "confidence": 0.2756004333496094
+    },
+    {
+      "plantdoc_class": "Apple rust leaf",
+      "ground_truth": "Apple___Cedar_apple_rust",
+      "predicted": "Grape___Black_rot",
+      "confidence": 0.10824906826019287
+    }
+  ],
+  "total_misclassifications": 170
+}

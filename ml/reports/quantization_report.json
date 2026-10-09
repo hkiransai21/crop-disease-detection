@@ -1,0 +1,7 @@
+{
+  "fp32_path": "ml/models/efficientnet_b0_plantvillage.onnx",
+  "fp32_size_mb": 15.45,
+  "int8_path": "ml/models/efficientnet_b0_plantvillage_int8.onnx",
+  "int8_size_mb": 4.15,
+  "compression_ratio": 3.72
+}
