@@ -27,7 +27,7 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
 
     setLoading(true);
     api
-      .getHistory(100, i18n.language)
+      .getHistory(100, 0, i18n.language)
       .then((data) => setHistory(data))
       .catch((err) => setError(err.message || 'Failed to load diagnosis history.'))
       .finally(() => setLoading(false));
@@ -137,7 +137,7 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
             <Sprout className="w-7 h-7" />
           </div>
           <h3 className="text-base font-bold text-slate-800">{t('history.empty')}</h3>
-        </div>
+          <p className="text-xs text-slate-500 max-w-sm mx-auto">
             {searchQuery || filterCrop
               ? 'No diagnoses match your search filter criteria.'
               : 'You have not scanned any crop leaves yet.'}
@@ -147,7 +147,7 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
               to="/analyze"
               className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-brand-600 text-white text-xs font-bold"
             >
-              <span>Scan Your First Leaf</span>
+              <span>{t('nav.diagnose')}</span>
             </Link>
           </div>
         </div>
