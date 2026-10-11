@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useLocation, useNavigate, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {
@@ -36,26 +36,99 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const [analysis, setAnalysis] = useState<AnalysisResponse | null>(
-    (location.state as any)?.analysis || lastAnalysis || null
-  );
-  const [loading, setLoading] = useState(!analysis && !!id);
+  // Prefer in-memory navigation state, then prop, then sessionStorage backup
+  const [analysis, setAnalysis] = useState<AnalysisResponse | null>(() => {
+    const navAnalysis = (location.state as any)?.analysis;
+    if (navAnalysis && (!id || navAnalysis.id === id)) return navAnalysis;
+    if (lastAnalysis && (!id || lastAnalysis.id === id)) return lastAnalysis;
+    try {
+      const saved = sessionStorage.getItem('agrishield_last_analysis');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (!id || parsed.id === id) return parsed;
+      }
+    } catch {}
+    return null;
+  });
+
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
   const [feedbackDone, setFeedbackDone] = useState(false);
   const [isShareOpen, setIsShareOpen] = useState(false);
 
   const currentLang = i18n.language ? i18n.language.split('-')[0].split('_')[0] : 'en';
+  const prevLangRef = useRef(currentLang);
 
   useEffect(() => {
-    if (id) {
-      setLoading(true);
-      api
-        .getHistoryDetail(id, currentLang)
-        .then((res) => setAnalysis(res))
-        .catch((err) => setError(err.message || 'Failed to load diagnosis record.'))
-        .finally(() => setLoading(false));
+    if (!id) return;
+
+    const isGuest = id.startsWith('guest_');
+    const isLangChange = prevLangRef.current !== currentLang;
+    prevLangRef.current = currentLang;
+
+    // Case 1: We already have the analysis in memory for this ID
+    if (analysis && analysis.id === id) {
+      if (!isLangChange) {
+        // Initial mount or state transition: already loaded, do NOT fetch from API!
+        return;
+      }
+
+      // Language was changed while viewing:
+      if (isGuest || !api.getToken()) {
+        // Guest or unauthenticated user: re-localize disease details from public encyclopedia
+        if (analysis.predicted_label) {
+          api
+            .getDiseaseById(analysis.predicted_label, currentLang)
+            .then((entry) => {
+              setAnalysis((prev) =>
+                prev
+                  ? {
+                      ...prev,
+                      crop: entry.crop,
+                      disease_name: entry.disease_name,
+                      disease_details: entry,
+                    }
+                  : null
+              );
+            })
+            .catch(() => {});
+        }
+      } else {
+        // Authenticated user with saved analysis in DB: fetch fully localized record
+        api
+          .getHistoryDetail(id, currentLang)
+          .then((res) => setAnalysis(res))
+          .catch(() => {});
+      }
+      return;
     }
+
+    // Case 2: Analysis is not in memory (direct URL or refreshed guest without cache)
+    if (isGuest) {
+      setError('Guest diagnosis session expired. Please scan a new crop leaf sample.');
+      setLoading(false);
+      return;
+    }
+
+    // Case 3: Persistent analysis ID from database
+    if (!api.getToken()) {
+      setError('Please sign in to view this saved diagnosis record.');
+      setLoading(false);
+      return;
+    }
+
+    setLoading(true);
+    api
+      .getHistoryDetail(id, currentLang)
+      .then((res) => {
+        setAnalysis(res);
+        setError(null);
+      })
+      .catch((err) => {
+        setError(err.message || 'Failed to load diagnosis record.');
+      })
+      .finally(() => setLoading(false));
   }, [id, currentLang]);
 
   if (loading) {
@@ -68,6 +141,11 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
   }
 
   if (error || !analysis) {
+    const isAuthError =
+      error?.toLowerCase().includes('sign in') ||
+      error?.toLowerCase().includes('login') ||
+      error?.toLowerCase().includes('credential');
+
     return (
       <div className="max-w-md mx-auto py-16 text-center space-y-4">
         <div className="w-16 h-16 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center mx-auto">
@@ -75,13 +153,23 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
         </div>
         <h2 className="text-xl font-bold text-slate-900">{t('history.empty')}</h2>
         <p className="text-xs text-slate-500">{error || 'Please run a new diagnosis from the scanner.'}</p>
-        <Link
-          to="/analyze"
-          className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-brand-600 text-white text-xs font-bold shadow-md"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          <span>{t('result.scan_another')}</span>
-        </Link>
+        <div className="flex items-center justify-center gap-3 pt-2">
+          {isAuthError && (
+            <Link
+              to="/auth"
+              className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-brand-600 text-white text-xs font-bold shadow-md"
+            >
+              <span>{t('nav.login')}</span>
+            </Link>
+          )}
+          <Link
+            to="/analyze"
+            className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            <span>{t('result.scan_another')}</span>
+          </Link>
+        </div>
       </div>
     );
   }

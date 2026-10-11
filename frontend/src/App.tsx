@@ -13,8 +13,24 @@ import { User, AnalysisResponse } from './types';
 
 export const App: React.FC = () => {
   const [user, setUser] = useState<User | null>(null);
-  const [lastAnalysis, setLastAnalysis] = useState<AnalysisResponse | null>(null);
+  const [lastAnalysis, setLastAnalysis] = useState<AnalysisResponse | null>(() => {
+    try {
+      const cached = sessionStorage.getItem('agrishield_last_analysis');
+      return cached ? JSON.parse(cached) : null;
+    } catch {
+      return null;
+    }
+  });
   const [isInitializing, setIsInitializing] = useState(true);
+
+  const handleAnalysisComplete = (result: AnalysisResponse) => {
+    setLastAnalysis(result);
+    try {
+      sessionStorage.setItem('agrishield_last_analysis', JSON.stringify(result));
+    } catch {
+      // ignore quota errors
+    }
+  };
 
   useEffect(() => {
     const token = api.getToken();
@@ -54,7 +70,7 @@ export const App: React.FC = () => {
           <Route path="/" element={<LandingPage />} />
           <Route
             path="/analyze"
-            element={<AnalyzePage onAnalysisComplete={setLastAnalysis} />}
+            element={<AnalyzePage onAnalysisComplete={handleAnalysisComplete} />}
           />
           <Route
             path="/result/:id"
