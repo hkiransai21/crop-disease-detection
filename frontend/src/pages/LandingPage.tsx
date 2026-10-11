@@ -3,15 +3,9 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import {
   Sprout,
-  ShieldCheck,
-  CloudSun,
   BookOpen,
   ArrowRight,
-  CheckCircle2,
   AlertTriangle,
-  Zap,
-  Globe2,
-  Layers,
   Cpu
 } from 'lucide-react';
 
@@ -34,15 +28,15 @@ export const LandingPage: React.FC = () => {
         <div className="max-w-3xl space-y-6 relative z-10">
           <div className="inline-flex items-center space-x-2 px-3 py-1.5 rounded-full bg-brand-500/20 border border-brand-400/30 text-brand-300 text-xs font-bold uppercase tracking-wider backdrop-blur-md">
             <Cpu className="w-3.5 h-3.5" />
-            <span>AI Computer Vision + Environmental Weather Telemetry</span>
+            <span>{t('hero.badge')}</span>
           </div>
 
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
-            Protect Your Harvest with AI Disease Detection & Outbreak Risk Intelligence
+            {t('hero.title')}
           </h1>
 
           <p className="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
-            Upload a leaf photo from your field. Get instant computer-vision diagnostic identification, local environmental outbreak risk prediction, and safe extension-verified treatment guidance.
+            {t('hero.subtitle')}
           </p>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-4">
@@ -51,7 +45,7 @@ export const LandingPage: React.FC = () => {
               className="flex items-center justify-center space-x-2.5 px-6 py-4 rounded-2xl bg-brand-500 hover:bg-brand-400 text-slate-950 font-extrabold text-base shadow-lg shadow-brand-500/30 transition-all hover:scale-[1.02] active:scale-98"
             >
               <Sprout className="w-5 h-5 text-slate-950" />
-              <span>Start Free Diagnosis</span>
+              <span>{t('hero.cta_start')}</span>
               <ArrowRight className="w-4 h-4 text-slate-950" />
             </Link>
 
@@ -60,7 +54,7 @@ export const LandingPage: React.FC = () => {
               className="flex items-center justify-center space-x-2 px-6 py-4 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/15 text-white font-bold text-base transition-colors"
             >
               <BookOpen className="w-5 h-5 text-slate-300" />
-              <span>Explore 38 Disease Guides</span>
+              <span>{t('hero.cta_guide')}</span>
             </Link>
           </div>
         </div>
@@ -69,9 +63,9 @@ export const LandingPage: React.FC = () => {
       {/* How it Works (3-Step Farmer Flow) */}
       <section className="space-y-8">
         <div className="text-center max-w-2xl mx-auto space-y-2">
-          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">How AgriShield Works for Farmers</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-slate-900">{t('hero.how_title')}</h2>
           <p className="text-sm text-slate-500">
-            A 100% software-based agronomic decision support system requiring no expensive hardware sensors.
+            {t('hero.how_subtitle')}
           </p>
         </div>
 
@@ -80,9 +74,9 @@ export const LandingPage: React.FC = () => {
             <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center font-bold text-lg border border-brand-100">
               1
             </div>
-            <h3 className="text-lg font-bold text-slate-900">1. Snap Leaf Image</h3>
+            <h3 className="text-lg font-bold text-slate-900">{t('hero.step1_title')}</h3>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Take a photo of any damaged or suspicious crop foliage using your smartphone or tablet camera. The system strips EXIF metadata for total privacy.
+              {t('hero.step1_desc')}
             </p>
           </div>
 
@@ -90,9 +84,9 @@ export const LandingPage: React.FC = () => {
             <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-lg border border-amber-100">
               2
             </div>
-            <h3 className="text-lg font-bold text-slate-900">2. Real-Time Weather Sync</h3>
+            <h3 className="text-lg font-bold text-slate-900">{t('hero.step2_title')}</h3>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Open-Meteo telemetry syncs historical humidity, leaf wetness hours, and 7-day temperature forecasts to compute a transparent 0-100 outbreak risk score.
+              {t('hero.step2_desc')}
             </p>
           </div>
 
@@ -100,9 +94,9 @@ export const LandingPage: React.FC = () => {
             <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-lg border border-emerald-100">
               3
             </div>
-            <h3 className="text-lg font-bold text-slate-900">3. Actionable Protocols</h3>
+            <h3 className="text-lg font-bold text-slate-900">{t('hero.step3_title')}</h3>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Receive curated cultural, organic bio-controls, and generic active-ingredient protectants sourced directly from university agricultural extensions.
+              {t('hero.step3_desc')}
             </p>
           </div>
         </div>
@@ -138,9 +132,9 @@ export const LandingPage: React.FC = () => {
           <AlertTriangle className="w-6 h-6" />
         </div>
         <div className="space-y-1 text-xs">
-          <h4 className="font-bold text-amber-900 text-sm">Agronomic Safety Notice</h4>
+          <h4 className="font-bold text-amber-900 text-sm">Agronomic Advisory Notice</h4>
           <p className="leading-relaxed text-amber-900/90 text-[11px]">
-            AgriShield AI predictions and outbreak risk scores are advisory decision-support heuristics. Always consult your local university agricultural extension agent before applying chemical interventions, and strictly adhere to chemical product labels and regional pesticide regulations.
+            {t('footer.disclaimer')}
           </p>
         </div>
       </section>

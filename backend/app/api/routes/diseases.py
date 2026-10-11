@@ -1,23 +1,26 @@
 """Knowledge base disease encyclopedia endpoints."""
 from typing import List, Optional
-from fastapi import APIRouter, HTTPException, status, Query
+from fastapi import APIRouter, HTTPException, status, Query, Request
 from backend.app.knowledge_base.schema import DiseaseEntry
-from backend.app.services.risk import load_knowledge_base
+from backend.app.services.i18n import resolve_language, load_localized_knowledge_base, get_localized_disease_entry
 
 router = APIRouter(prefix="/diseases", tags=["Agronomic Knowledge Base"])
 
 
 @router.get("", response_model=List[DiseaseEntry])
 async def list_all_diseases(
+    request: Request,
     crop: Optional[str] = Query(None, description="Filter by crop name"),
-    causal_agent: Optional[str] = Query(None, description="Filter by pathogen type: fungal, bacterial, viral, pest, none")
+    causal_agent: Optional[str] = Query(None, description="Filter by pathogen type: fungal, bacterial, viral, pest, none"),
+    lang: Optional[str] = Query("en", description="Target language code (e.g. en, hi, te, ta, kn, ml, mr, bn, es)")
 ):
-    """List all 38 verified crop diseases and healthy conditions in the agronomic knowledge base."""
-    kb = load_knowledge_base()
+    """List all 38 verified crop diseases and healthy conditions in the agronomic knowledge base localized to requested language."""
+    resolved_lang = resolve_language(lang, request.headers.get("Accept-Language"))
+    kb = load_localized_knowledge_base(resolved_lang)
     entries = list(kb.values())
 
     if crop:
-        entries = [e for e in entries if crop.lower() in e.crop.lower()]
+        entries = [e for e in entries if crop.lower() in e.crop.lower() or (e.canonical_crop and crop.lower() in e.canonical_crop.lower())]
     if causal_agent:
         entries = [e for e in entries if causal_agent.lower() in e.causal_agent_type.lower()]
 
@@ -25,10 +28,14 @@ async def list_all_diseases(
 
 
 @router.get("/{disease_id}", response_model=DiseaseEntry)
-async def get_disease_by_id(disease_id: str):
-    """Fetch complete agronomic monograph, symptoms, favorable weather, organic/chemical controls, and cited sources."""
-    kb = load_knowledge_base()
-    entry = kb.get(disease_id)
+async def get_disease_by_id(
+    disease_id: str,
+    request: Request,
+    lang: Optional[str] = Query("en", description="Target language code (e.g. en, hi, te, ta, kn, ml, mr, bn, es)")
+):
+    """Fetch complete agronomic monograph, symptoms, favorable weather, organic/chemical controls, and cited sources in requested language."""
+    resolved_lang = resolve_language(lang, request.headers.get("Accept-Language"))
+    entry = get_localized_disease_entry(disease_id, resolved_lang)
 
     if not entry:
         raise HTTPException(
@@ -37,3 +44,4 @@ async def get_disease_by_id(disease_id: str):
         )
 
     return entry
+

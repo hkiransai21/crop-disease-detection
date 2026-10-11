@@ -219,13 +219,10 @@ for lang in LANGUAGES:
     for dis_id, en_entry in en_entries.items():
         d_info = DISEASE_DICTS[dis_id]
         crop_en = en_entry["crop"]
-        crop_loc = CROPS.get(crop_en, {}).get(lang, crop_en)
-        dis_name_loc = d_info["names"][lang]
-        
-        # Determine localized symptoms, prevention, controls
         is_healthy = en_entry.get("is_healthy", False)
-        
         if lang == "en":
+            crop_loc = en_entry["crop"]
+            dis_name_loc = en_entry["disease_name"]
             symptoms = en_entry["symptoms"]
             spread = en_entry["spread_mechanism"]
             prevention = en_entry["prevention_steps"]
@@ -233,6 +230,10 @@ for lang in LANGUAGES:
             chemical = en_entry["chemical_controls"]
             when_consult = en_entry["when_to_consult_expert"]
         else:
+            crop_loc = CROPS.get(crop_en, {}).get(lang, crop_en)
+            dis_name_loc = d_info["names"][lang]
+
+
             # High-quality localized guidance adhering to identical numbers and chemical actives
             if is_healthy:
                 symptoms = f"{crop_loc} foliage shows healthy vibrant green coloration with no visible spots, chlorosis, or necrotic lesions." if lang == "en" else f"{crop_loc} की पत्तियां पूरी तरह स्वस्थ और हरी-भरी हैं। कोई रोग के लक्षण नहीं हैं।" if lang == "hi" else f"{crop_loc} ఆకులు ఆరోగ్యంగా ఉన్నాయి. ఎటువంటి తెగులు మచ్చలు కనిపించలేదు." if lang == "te" else f"{crop_loc} இலைகள் ஆரோக்கியமாக உள்ளன. எந்த நோய் அறிகுறிகளும் இல்லை." if lang == "ta" else f"{crop_loc} ಎಲೆಗಳು ಸಂಪೂರ್ಣವಾಗಿ ಆರೋಗ್ಯಕರವಾಗಿವೆ. ಯಾವುದೇ ರೋಗದ ಲಕ್ಷಣಗಳಿಲ್ಲ." if lang == "kn" else f"{crop_loc} ഇലകൾ പൂർണ്ണ ആരോഗ്യത്തിലാണ്. രോഗലക്ഷണങ്ങളൊന്നുമില്ല." if lang == "ml" else f"{crop_loc} पाने पूर्णपणे निरोगी आणि तजेलदार आहेत." if lang == "mr" else f"{crop_loc} পাতা সম্পূর্ণ সুস্থ ও রোগমুক্ত।" if lang == "bn" else f"Las hojas de {crop_loc} están sanas y no muestran síntomas de enfermedades."

@@ -13,6 +13,7 @@ interface AnalyzePageProps {
 
 export const AnalyzePage: React.FC<AnalyzePageProps> = ({ onAnalysisComplete }) => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [locationData, setLocationData] = useState<{
@@ -37,7 +38,7 @@ export const AnalyzePage: React.FC<AnalyzePageProps> = ({ onAnalysisComplete }) 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!selectedFile) {
-      setError('Please take or upload a crop leaf image before running diagnosis.');
+      setError(t('analyze.upload_instruction'));
       return;
     }
 
@@ -68,13 +69,13 @@ export const AnalyzePage: React.FC<AnalyzePageProps> = ({ onAnalysisComplete }) 
       <div className="space-y-1">
         <div className="inline-flex items-center space-x-1.5 px-3 py-1 rounded-full bg-brand-100 text-brand-800 text-xs font-bold uppercase tracking-wider">
           <Sprout className="w-3.5 h-3.5 text-brand-600" />
-          <span>Automated Crop Diagnostic</span>
+          <span>{t('app_title')}</span>
         </div>
         <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-          Diagnose Crop Disease & Outbreak Risk
+          {t('analyze.title')}
         </h1>
         <p className="text-xs sm:text-sm text-slate-500">
-          Upload a clear photo of an affected leaf and connect environmental microclimate data.
+          {t('analyze.upload_instruction')}
         </p>
       </div>
 
@@ -109,12 +110,12 @@ export const AnalyzePage: React.FC<AnalyzePageProps> = ({ onAnalysisComplete }) 
           {isSubmitting ? (
             <>
               <Loader2 className="w-5 h-5 animate-spin" />
-              <span>Running AI Diagnosis & Outbreak Risk Evaluation...</span>
+              <span>{t('analyze.analyzing')}</span>
             </>
           ) : (
             <>
               <Sparkles className="w-5 h-5" />
-              <span>Run AI Diagnosis & Risk Evaluation</span>
+              <span>{t('analyze.submit_btn')}</span>
               <ArrowRight className="w-5 h-5 ml-1" />
             </>
           )}
@@ -123,3 +124,4 @@ export const AnalyzePage: React.FC<AnalyzePageProps> = ({ onAnalysisComplete }) 
     </div>
   );
 };
+

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { History, Trash2, Calendar, MapPin, AlertCircle, CheckCircle2, Search, Sprout, ArrowRight, ExternalLink } from 'lucide-react';
 import { api } from '../api/client';
 import { AnalysisHistoryItem, User } from '../types';
@@ -9,6 +10,7 @@ interface HistoryPageProps {
 }
 
 export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const [history, setHistory] = useState<AnalysisHistoryItem[]>([]);
   const [loading, setLoading] = useState(true);
@@ -25,11 +27,11 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
 
     setLoading(true);
     api
-      .getHistory(100)
+      .getHistory(100, i18n.language)
       .then((data) => setHistory(data))
       .catch((err) => setError(err.message || 'Failed to load diagnosis history.'))
       .finally(() => setLoading(false));
-  }, [user]);
+  }, [user, i18n.language]);
 
   const handleDelete = async (id: string, e: React.MouseEvent) => {
     e.stopPropagation();
@@ -48,16 +50,16 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
         <div className="w-16 h-16 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center mx-auto">
           <History className="w-8 h-8" />
         </div>
-        <h2 className="text-xl font-bold text-slate-900">Diagnosis History</h2>
+        <h2 className="text-xl font-bold text-slate-900">{t('history.title')}</h2>
         <p className="text-xs text-slate-500 leading-relaxed">
-          Sign in or register for a free farm account to store, track, and review your historical leaf analyses over time.
+          {t('history.subtitle')}
         </p>
         <div className="pt-2">
           <Link
             to="/auth"
             className="inline-flex items-center space-x-2 px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold shadow-md shadow-brand-600/20"
           >
-            <span>Sign In / Create Account</span>
+            <span>{t('nav.login')} / {t('nav.register')}</span>
             <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
@@ -81,8 +83,8 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
     <div className="max-w-5xl mx-auto py-6 space-y-6">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
-          <h1 className="text-2xl font-extrabold text-slate-900">My Diagnosis History</h1>
-          <p className="text-xs text-slate-500">Track disease progression across your fields and seasons</p>
+          <h1 className="text-2xl font-extrabold text-slate-900">{t('history.title')}</h1>
+          <p className="text-xs text-slate-500">{t('history.subtitle')}</p>
         </div>
 
         <Link
@@ -90,7 +92,7 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
           className="self-start sm:self-auto inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold shadow-sm"
         >
           <Sprout className="w-4 h-4" />
-          <span>New Diagnosis</span>
+          <span>{t('nav.diagnose')}</span>
         </Link>
       </div>
 
@@ -100,7 +102,7 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
           <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
           <input
             type="text"
-            placeholder="Search disease, crop, or place..."
+            placeholder={t('history.filter_placeholder')}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-9 pr-3 py-2 rounded-xl border border-slate-200 text-xs text-slate-900 focus:outline-none focus:border-brand-500 bg-slate-50"
@@ -113,7 +115,7 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
             onChange={(e) => setFilterCrop(e.target.value)}
             className="px-3 py-2 rounded-xl border border-slate-200 text-xs font-semibold text-slate-700 focus:outline-none focus:border-brand-500 bg-slate-50"
           >
-            <option value="">All Crops ({history.length})</option>
+            <option value="">{t('diseases_page.all_crops')} ({history.length})</option>
             {uniqueCrops.map((c) => (
               <option key={c} value={c}>
                 {c}
@@ -127,15 +129,15 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
       {loading ? (
         <div className="py-20 text-center space-y-2">
           <div className="w-10 h-10 border-4 border-brand-600 border-t-transparent rounded-full animate-spin mx-auto"></div>
-          <p className="text-xs font-semibold text-slate-500">Loading your farm records...</p>
+          <p className="text-xs font-semibold text-slate-500">{t('diseases_page.loading')}</p>
         </div>
       ) : filteredHistory.length === 0 ? (
         <div className="py-16 text-center space-y-3 bg-white rounded-3xl border border-slate-200 p-8">
           <div className="w-14 h-14 rounded-2xl bg-slate-100 text-slate-400 flex items-center justify-center mx-auto">
             <Sprout className="w-7 h-7" />
           </div>
-          <h3 className="text-base font-bold text-slate-800">No diagnosis records found</h3>
-          <p className="text-xs text-slate-500 max-w-sm mx-auto">
+          <h3 className="text-base font-bold text-slate-800">{t('history.empty')}</h3>
+        </div>
             {searchQuery || filterCrop
               ? 'No diagnoses match your search filter criteria.'
               : 'You have not scanned any crop leaves yet.'}

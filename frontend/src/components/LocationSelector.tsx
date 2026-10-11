@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { MapPin, Navigation, Search, Sliders, Cloud, Check, Loader2, AlertCircle } from 'lucide-react';
 import { api } from '../api/client';
 import { GeocodingResult } from '../types';
@@ -29,6 +30,7 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
   manualRain,
   onChange,
 }) => {
+  const { t } = useTranslation();
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState<GeocodingResult[]>([]);
   const [isSearching, setIsSearching] = useState(false);
@@ -106,7 +108,7 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <MapPin className="w-5 h-5 text-brand-600" />
-          <h4 className="text-sm font-bold text-slate-900">Farm Location & Environmental Risk Telemetry</h4>
+          <h4 className="text-sm font-bold text-slate-900">{t('analyze.location_title')}</h4>
         </div>
         <button
           type="button"
@@ -114,7 +116,7 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
           className="text-xs font-semibold text-brand-700 hover:text-brand-800 flex items-center space-x-1"
         >
           <Sliders className="w-3.5 h-3.5" />
-          <span>{showManual ? 'Auto GPS' : 'Manual Entry'}</span>
+          <span>{showManual ? t('analyze.use_gps') : t('analyze.manual_weather')}</span>
         </button>
       </div>
 
@@ -165,7 +167,7 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
                 className="flex-1 flex items-center justify-center space-x-2 px-4 py-2.5 rounded-xl bg-brand-50 hover:bg-brand-100 border border-brand-200 text-brand-800 text-xs font-bold transition-all"
               >
                 {isLocating ? <Loader2 className="w-4 h-4 animate-spin" /> : <Navigation className="w-4 h-4" />}
-                <span>{isLocating ? 'Acquiring GPS...' : 'Use Current Farm Location'}</span>
+                <span>{isLocating ? 'Acquiring GPS...' : t('analyze.use_gps')}</span>
               </button>
 
               {/* Search place input */}
@@ -176,7 +178,7 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
                     type="text"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
-                    placeholder="Search city / district name..."
+                    placeholder={t('analyze.search_place')}
                     className="w-full bg-transparent text-xs text-slate-900 focus:outline-none placeholder-slate-400"
                   />
                   {isSearching && <Loader2 className="w-3.5 h-3.5 animate-spin text-slate-400" />}
@@ -210,7 +212,7 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
         /* Manual Weather Input */
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 p-3 rounded-xl bg-slate-50 border border-slate-200 text-xs">
           <div>
-            <label className="block text-[11px] font-semibold text-slate-600 mb-1">Temperature (°C)</label>
+            <label className="block text-[11px] font-semibold text-slate-600 mb-1">{t('analyze.temp_label')}</label>
             <input
               type="number"
               placeholder="e.g. 24"
@@ -230,7 +232,7 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
           </div>
 
           <div>
-            <label className="block text-[11px] font-semibold text-slate-600 mb-1">Relative Humidity (%)</label>
+            <label className="block text-[11px] font-semibold text-slate-600 mb-1">{t('analyze.humidity_label')}</label>
             <input
               type="number"
               placeholder="e.g. 85"
@@ -250,7 +252,7 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
           </div>
 
           <div>
-            <label className="block text-[11px] font-semibold text-slate-600 mb-1">7-Day Rainfall (mm)</label>
+            <label className="block text-[11px] font-semibold text-slate-600 mb-1">{t('analyze.rainfall_label')}</label>
             <input
               type="number"
               placeholder="e.g. 15"

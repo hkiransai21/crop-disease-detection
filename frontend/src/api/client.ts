@@ -1,5 +1,6 @@
 /**
- * API client with automatic auth header injection, error parsing, and client-side image downscaling.
+ * API client with automatic auth header injection, error parsing, client-side image downscaling,
+ * and multilingual language negotiation.
  */
 import {
   User,
@@ -12,6 +13,7 @@ import {
   WeatherSummary,
   DiseaseEntry
 } from '../types';
+import i18n from '../i18n/i18n';
 
 const API_BASE = '/api/v1';
 
@@ -35,8 +37,13 @@ class ApiClient {
     return this.token;
   }
 
+  private getCurrentLang(): string {
+    return i18n.language ? i18n.language.split('-')[0].split('_')[0] : 'en';
+  }
+
   private async request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
     const headers: Record<string, string> = {
+      'Accept-Language': this.getCurrentLang(),
       ...(options.headers as Record<string, string>),
     };
 
@@ -154,6 +161,7 @@ class ApiClient {
       manual_temp_c?: number;
       manual_humidity_pct?: number;
       manual_rainfall_mm?: number;
+      lang?: string;
     } = {}
   ): Promise<AnalysisResponse> {
     const downscaledBlob = await this.downscaleImage(file, 1024);
@@ -166,6 +174,7 @@ class ApiClient {
     if (params.manual_temp_c !== undefined) formData.append('manual_temp_c', params.manual_temp_c.toString());
     if (params.manual_humidity_pct !== undefined) formData.append('manual_humidity_pct', params.manual_humidity_pct.toString());
     if (params.manual_rainfall_mm !== undefined) formData.append('manual_rainfall_mm', params.manual_rainfall_mm.toString());
+    formData.append('lang', params.lang || this.getCurrentLang());
 
     return this.request<AnalysisResponse>('/analyze', {
       method: 'POST',
@@ -174,12 +183,14 @@ class ApiClient {
   }
 
   // --- History ---
-  async getHistory(limit: number = 50, offset: number = 0): Promise<AnalysisHistoryItem[]> {
-    return this.request<AnalysisHistoryItem[]>(`/history?limit=${limit}&offset=${offset}`);
+  async getHistory(limit: number = 50, offset: number = 0, lang?: string): Promise<AnalysisHistoryItem[]> {
+    const targetLang = lang || this.getCurrentLang();
+    return this.request<AnalysisHistoryItem[]>(`/history?limit=${limit}&offset=${offset}&lang=${encodeURIComponent(targetLang)}`);
   }
 
-  async getHistoryDetail(id: string): Promise<AnalysisResponse> {
-    return this.request<AnalysisResponse>(`/history/${id}`);
+  async getHistoryDetail(id: string, lang?: string): Promise<AnalysisResponse> {
+    const targetLang = lang || this.getCurrentLang();
+    return this.request<AnalysisResponse>(`/history/${id}?lang=${encodeURIComponent(targetLang)}`);
   }
 
   async deleteHistory(id: string): Promise<void> {
@@ -206,16 +217,53 @@ class ApiClient {
   }
 
   // --- Diseases Knowledge Base ---
-  async getDiseases(crop?: string, causalAgent?: string): Promise<DiseaseEntry[]> {
+  async getDiseases(crop?: string, causalAgent?: string, lang?: string): Promise<DiseaseEntry[]> {
+    const targetLang = lang || this.getCurrentLang();
     const params = new URLSearchParams();
     if (crop) params.append('crop', crop);
     if (causalAgent) params.append('causal_agent', causalAgent);
-    const qs = params.toString() ? `?${params.toString()}` : '';
-    return this.request<DiseaseEntry[]>(`/diseases${qs}`);
+    params.append('lang', targetLang);
+    return this.request<DiseaseEntry[]>(`/diseases?${params.toString()}`);
   }
 
-  async getDiseaseById(id: string): Promise<DiseaseEntry> {
-    return this.request<DiseaseEntry>(`/diseases/${encodeURIComponent(id)}`);
+  async getDiseaseById(id: string, lang?: string): Promise<DiseaseEntry> {
+    const targetLang = lang || this.getCurrentLang();
+    return this.request<DiseaseEntry>(`/diseases/${encodeURIComponent(id)}?lang=${encodeURIComponent(targetLang)}`);
+  }
+
+  // --- Audio Narration ---
+  getAudioUrl(diseaseId: string, section: string, lang?: string, rate: number = 1.0): string {
+    const targetLang = lang || this.getCurrentLang();
+    return `${API_BASE}/audio/${encodeURIComponent(diseaseId)}/${encodeURIComponent(section)}?lang=${encodeURIComponent(targetLang)}&rate=${rate}`;
+  }
+
+  async getAudioLanguages(): Promise<any> {
+    return this.request<any>('/audio/languages');
+  }
+
+  async getGlossary(lang?: string): Promise<any> {
+    const targetLang = lang || this.getCurrentLang();
+    return this.request<any>(`/audio/glossary/${encodeURIComponent(targetLang)}`);
+  }
+
+  async synthesizeAudioBlob(text: string, lang?: string, rate: number = 1.0): Promise<Blob> {
+    const targetLang = lang || this.getCurrentLang();
+    const response = await fetch(`${API_BASE}/audio/synthesize`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept-Language': targetLang,
+      },
+      body: JSON.stringify({
+        text,
+        lang: targetLang,
+        rate,
+      }),
+    });
+    if (!response.ok) {
+      throw new Error('Failed to synthesize audio');
+    }
+    return response.blob();
   }
 
   // --- Model Metadata ---

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { BookOpen, Search, Filter, Leaf, Bug, FlaskConical, ExternalLink, ChevronRight, X, ShieldCheck } from 'lucide-react';
 import { api } from '../api/client';
 import { DiseaseEntry } from '../types';
 
 export const DiseasesPage: React.FC = () => {
+  const { t, i18n } = useTranslation();
   const [diseases, setDiseases] = useState<DiseaseEntry[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedCrop, setSelectedCrop] = useState('');
@@ -12,12 +14,13 @@ export const DiseasesPage: React.FC = () => {
   const [activeModalEntry, setActiveModalEntry] = useState<DiseaseEntry | null>(null);
 
   useEffect(() => {
+    setLoading(true);
     api
-      .getDiseases()
+      .getDiseases(i18n.language)
       .then((data) => setDiseases(data))
       .catch((err) => console.error(err))
       .finally(() => setLoading(false));
-  }, []);
+  }, [i18n.language]);
 
   const uniqueCrops = Array.from(new Set(diseases.map((d) => d.crop))).filter(Boolean);
   const uniqueAgents = ['fungal', 'bacterial', 'viral', 'pest', 'none'];
@@ -37,9 +40,9 @@ export const DiseasesPage: React.FC = () => {
   return (
     <div className="max-w-6xl mx-auto py-6 space-y-6">
       <div className="space-y-1">
-        <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900">Crop Disease Knowledge Base</h1>
+        <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900">{t('diseases_page.title')}</h1>
         <p className="text-xs sm:text-sm text-slate-500">
-          Curated agronomic reference encyclopedia covering all 38 diagnostic classes with verified extension protocols.
+          {t('diseases_page.subtitle')}
         </p>
       </div>
 
@@ -49,7 +52,7 @@ export const DiseasesPage: React.FC = () => {
           <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
           <input
             type="text"
-            placeholder="Search disease, pathogen, symptoms..."
+            placeholder={t('diseases_page.search_placeholder')}
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className="w-full pl-9 pr-3 py-2 rounded-xl border border-slate-200 text-xs text-slate-900 focus:outline-none focus:border-brand-500 bg-slate-50"
@@ -61,7 +64,7 @@ export const DiseasesPage: React.FC = () => {
           onChange={(e) => setSelectedCrop(e.target.value)}
           className="px-3 py-2 rounded-xl border border-slate-200 text-xs font-semibold text-slate-700 focus:outline-none focus:border-brand-500 bg-slate-50"
         >
-          <option value="">All Crops ({uniqueCrops.length})</option>
+          <option value="">{t('diseases_page.all_crops')} ({uniqueCrops.length})</option>
           {uniqueCrops.map((c) => (
             <option key={c} value={c}>
               {c}
@@ -74,7 +77,7 @@ export const DiseasesPage: React.FC = () => {
           onChange={(e) => setSelectedAgent(e.target.value)}
           className="px-3 py-2 rounded-xl border border-slate-200 text-xs font-semibold text-slate-700 focus:outline-none focus:border-brand-500 bg-slate-50"
         >
-          <option value="">All Pathogen Types</option>
+          <option value="">{t('diseases_page.all_agents')}</option>
           {uniqueAgents.map((a) => (
             <option key={a} value={a}>
               {a.toUpperCase()}
@@ -87,7 +90,7 @@ export const DiseasesPage: React.FC = () => {
       {loading ? (
         <div className="py-20 text-center space-y-2">
           <div className="w-10 h-10 border-4 border-brand-600 border-t-transparent rounded-full animate-spin mx-auto"></div>
-          <p className="text-xs font-semibold text-slate-500">Loading encyclopedia entries...</p>
+          <p className="text-xs font-semibold text-slate-500">{t('diseases_page.loading')}</p>
         </div>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">

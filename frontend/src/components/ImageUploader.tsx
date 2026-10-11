@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Camera, Upload, Image as ImageIcon, CheckCircle, Info, X, RefreshCw } from 'lucide-react';
 
 interface ImageUploaderProps {
@@ -7,6 +8,7 @@ interface ImageUploaderProps {
 }
 
 export const ImageUploader: React.FC<ImageUploaderProps> = ({ selectedFile, onFileSelect }) => {
+  const { t } = useTranslation();
   const fileInputRef = useRef<HTMLInputElement>(null);
   const cameraInputRef = useRef<HTMLInputElement>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
@@ -81,9 +83,9 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ selectedFile, onFi
             </div>
 
             <div>
-              <h3 className="text-base font-bold text-slate-900">Upload or Snap Leaf Photo</h3>
+              <h3 className="text-base font-bold text-slate-900">{t('analyze.upload_btn')}</h3>
               <p className="text-xs text-slate-500 mt-1">
-                Take a close-up picture of the diseased or suspicious crop leaf.
+                {t('analyze.upload_instruction')}
               </p>
             </div>
 
@@ -95,7 +97,7 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ selectedFile, onFi
                 className="w-full sm:w-auto flex items-center justify-center space-x-2 px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-bold shadow-md shadow-brand-600/20 transition-transform active:scale-95"
               >
                 <Camera className="w-4 h-4" />
-                <span>Take Photo (Camera)</span>
+                <span>{t('analyze.camera_btn')}</span>
               </button>
 
               <button
@@ -104,7 +106,7 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ selectedFile, onFi
                 className="w-full sm:w-auto flex items-center justify-center space-x-2 px-5 py-3 rounded-xl bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 text-sm font-bold shadow-sm transition-colors"
               >
                 <Upload className="w-4 h-4 text-slate-500" />
-                <span>Browse Gallery / Files</span>
+                <span>{t('analyze.choose_file')}</span>
               </button>
             </div>
 
@@ -115,7 +117,7 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ selectedFile, onFi
                 className="inline-flex items-center space-x-1 text-xs font-semibold text-brand-700 hover:text-brand-800 hover:underline"
               >
                 <Info className="w-3.5 h-3.5" />
-                <span>Tips for accurate leaf photography</span>
+                <span>{t('analyze.tips_title')}</span>
               </button>
             </div>
           </div>

@@ -34,6 +34,10 @@ jobs:
         run: |
           mypy backend/app ml/src/transforms.py ml/src/datasets.py --ignore-missing-imports
 
+      - name: Validate Multilingual Data & Numeric Parity
+        run: |
+          PYTHONPATH=. pytest backend/tests/test_i18n.py -v
+
       - name: Run Pytest Suite with Coverage
         run: |
           PYTHONPATH=. pytest backend/tests ml/tests --cov=backend/app --cov-report=term --cov-report=xml --cov-fail-under=80

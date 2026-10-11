@@ -49,6 +49,8 @@ ml/data/fixtures/
 !ml/data/fixtures/.gitkeep
 backend/app/static/uploads/*
 !backend/app/static/uploads/.gitkeep
+backend/app/static/audio_cache/*
+!backend/app/static/audio_cache/.gitkeep
 
 # MLflow
 mlruns/

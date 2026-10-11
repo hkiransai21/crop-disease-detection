@@ -10,8 +10,10 @@
 AgriShield is an end-to-end, **100% software-based** agricultural decision-support system designed to empower farmers and agricultural extension workers. Without requiring specialized hardware, IoT sensors, or physical probes, AgriShield combines:
 1. **Computer Vision Disease Classification**: Real-time foliar lesion identification across 38 crop disease classes using an optimized `EfficientNet-B0` model.
 2. **Environmental Outbreak Risk Engine**: Rule-based epidemiological modeling that fetches real-time weather from public meteorological APIs (Open-Meteo) to compute a transparent 0–100 Outbreak Spread Index.
-3. **University Extension Knowledge Base**: Curated, multi-tiered recommendations (cultural sanitation, organic remedies, and chemical interventions with EPA/Extension safety notes).
-4. **Offline-First Farmer Dashboard**: Mobile-optimized, bilingual (English & Spanish) PWA with client-side image downscaling, full history, and a voluntary feedback loop.
+3. **University Extension Knowledge Base**: Curated, multi-tiered recommendations (cultural sanitation, organic remedies, and chemical interventions with exact dosages and university safety notes).
+4. **Accurate Regional Multilingual Support**: Comprehensive translations across 9 languages (English, हिन्दी, తెలుగు, தமிழ், ಕನ್ನಡ, മലയാളം, मराठी, বাংলা, Español) covering all UI text, disease names, and extension protocols.
+5. **High-Quality Neural Audio Narration**: Natural-sounding regional voice narration with correct local disease names and agronomic terminology, powered by pluggable neural TTS (Microsoft Neural Edge / Cloud), offline PWA caching, and fallback speech synthesis.
+
 
 ---
 
@@ -166,6 +168,39 @@ PYTHONPATH=. pytest backend/tests ml/tests --cov=backend/app --cov-report=term-m
 cd frontend
 npm run test
 ```
+
+---
+
+## 🌐 Multilingual Regional Support & Kisan Audio Assistant
+
+AgriShield includes end-to-end regional language localization and neural speech narration across **9 languages**:
+
+- **Languages Supported:** English (`en`), Hindi (`hi`), Telugu (`te`), Tamil (`ta`), Kannada (`kn`), Malayalam (`ml`), Marathi (`mr`), Bengali (`bn`), and Spanish (`es`).
+- **Zero-Cost Neural Audio Narration:** Powered by `edge-tts` Microsoft Neural voices mapped to authentic regional speakers (e.g. `hi-IN-SwaraNeural`, `te-IN-ShrutiNeural`, `ta-IN-PallaviNeural`).
+- **Offline-First Audio Caching:** Pre-generated audio is stored with content-addressed hashes in `backend/app/static/audio_cache/` and cached for offline use in the PWA.
+- **Phonetic Pronunciation Lexicons:** Dedicated glossaries (`i18n/glossary/{lang}.json`) ensure plant pathology terms and dosages are pronounced correctly without robotic artifacts.
+- **Safety & Parity Gates:** Strict automated parity verification (`backend/tests/test_i18n.py`) checks that all active ingredients, chemical dosages (e.g., 2.5g/L, 5ml/L, 15L pumps), and emergency helpline numbers (1800-180-1551) match exactly.
+
+### Pre-generate Audio Narration Cache
+```bash
+# Pre-generate narration audio for all languages and sections
+python scripts/generate_audio.py --lang all
+
+# Pre-generate for a single language
+python scripts/generate_audio.py --lang te
+```
+
+### Agronomist Translation Review Workflow
+To export translations to CSV for university agronomists and re-import verified records:
+```bash
+# Export translations to CSV
+python scripts/export_translations_csv.py --lang all
+
+# Re-import reviewed CSV back into versioned JSON
+python scripts/import_translations_csv.py docs/reviews/translation_review_te.csv
+```
+Detailed instructions are documented in [docs/I18N.md](docs/I18N.md) and [docs/TRANSLATION_REVIEW.md](docs/TRANSLATION_REVIEW.md).
+
 
 ### Run End-to-End Smoke Test Journey
 ```bash

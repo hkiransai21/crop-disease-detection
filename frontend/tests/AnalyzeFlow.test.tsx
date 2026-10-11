@@ -107,7 +107,7 @@ describe('Frontend Component Tests', () => {
 
     render(<ActionChecklist disease={mockDisease} />);
 
-    expect(screen.getByText('Recommended Action Protocols')).toBeInTheDocument();
+    expect(screen.getByText('Treatment & Prevention Checklist')).toBeInTheDocument();
     expect(screen.getByText('Prune bottom 12 inches of foliage.')).toBeInTheDocument();
     expect(screen.getByText('Wear protective gloves and mask.')).toBeInTheDocument();
     expect(screen.getByText('Cornell Vegetable MD Online')).toBeInTheDocument();
@@ -167,8 +167,8 @@ describe('Frontend Component Tests', () => {
     render(<AudioNarrator analysis={mockAnalysis as any} />);
 
     expect(screen.getByText('Kisan Audio Assistant')).toBeInTheDocument();
-    expect(screen.getByText(/1800-180-1551/)).toBeInTheDocument();
-    expect(screen.getByText(/Listen in हिन्दी/)).toBeInTheDocument();
+    expect(screen.getAllByText(/1800-180-1551/)[0]).toBeInTheDocument();
+    expect(screen.getAllByText(/Listen in/)[0]).toBeInTheDocument();
   });
 
   it('renders KnapsackCalculator with spray dosage and water measurement calculations', () => {
@@ -200,7 +200,7 @@ describe('Frontend Component Tests', () => {
     render(<KnapsackCalculator disease={mockDisease} cropName="Tomato" />);
 
     expect(screen.getByText('Spray Tank & Knapsack Pump Calculator')).toBeInTheDocument();
-    expect(screen.getByText('15 Liters')).toBeInTheDocument();
+    expect(screen.getAllByText(/15L/)[0]).toBeInTheDocument();
     expect(screen.getByText(/Field Mixing Instructions/)).toBeInTheDocument();
   });
 

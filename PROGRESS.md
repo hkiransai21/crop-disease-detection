@@ -61,3 +61,29 @@
 - [x] Retraining workflow script (`ml/src/retrain.py`) strictly incorporating consented farmer feedback (`consent_for_retraining = true`).
 - [x] CI pipeline (`.github/workflows/ci.yml`).
 - [x] Comprehensive End-to-End in-process smoke test (`scripts/e2e_smoke_test.py`) validating all 8 user-journey stages.
+
+### Phase 6: Accurate Multilingual Support & High-Quality Regional Audio Narration
+- [x] **Discovery & Inventory**: Audited all hardcoded strings and verified canonical PlantVillage class invariance.
+- [x] **9 Languages Configured**: English (`en`), Hindi (`hi`), Telugu (`te`), Tamil (`ta`), Kannada (`kn`), Malayalam (`ml`), Marathi (`mr`), Bengali (`bn`), Spanish (`es`).
+- [x] **Curated Pathological Glossaries**: 9 glossaries (`backend/app/data/i18n/glossary/{lang}.json`) mapping all 38 classes with farmer vernacular names, alt names, Latin transliterations, unchanged scientific binomial names, phonetic `tts_text`, university citations, and review status.
+- [x] **Localized 38-Disease Databases**: Versioned JSON databases (`backend/app/data/i18n/{lang}/diseases.json`) with strict numerical parity for chemical dosages (e.g. 2.5g/L, 5ml/L, 15L spray tanks), temperature ranges, and mandatory protective safety labels.
+- [x] **Pluggable Neural TTS Engine**:
+  - Abstract `TTSProvider` with `EdgeTTSProvider` (zero-cost Microsoft Neural regional voices) and `MockTTSProvider` (testing).
+  - SHA-256 content-addressable audio cache in `backend/app/static/audio_cache/`.
+  - Audio endpoints: `/api/v1/audio/languages`, `/api/v1/audio/glossary/{lang}`, `/api/v1/audio/{disease_id}/{section}`, `/api/v1/audio/synthesize`.
+  - Offline pre-generation script: `scripts/generate_audio.py`.
+- [x] **Frontend Localization & UX**:
+  - 9 native-script language bundles in `frontend/src/i18n/locales/{lang}.json`.
+  - Prominent native script switcher in `Navbar.tsx` (e.g., "తెలుగు", "தமிழ்", "हिन्दी") with `localStorage` persistence.
+  - Section-by-section audio player in `AudioNarrator.tsx` (overview, treatment, prevention) with speed control (0.75x–1.25x), streaming audio, device Web Speech fallback, and Kisan Call Center (1800-180-1551) integration.
+  - Localized `AnalyzePage`, `ResultPage`, `DiseasesPage`, `HistoryPage`, `AboutPage`, `ImageUploader`, `LocationSelector`, `KnapsackCalculator`, `ActionChecklist`, and `FeedbackModal`.
+- [x] **Agronomist Reviewer Workflow & QA**:
+  - CSV export tool: `scripts/export_translations_csv.py` (generated in `docs/reviews/`).
+  - CSV re-import tool: `scripts/import_translations_csv.py`.
+  - 912-row listening QA checklist: `scripts/generate_audio_qa_checklist.py` -> `docs/audio_qa_checklist.csv`.
+  - Documentation: `docs/I18N.md` and `docs/TRANSLATION_REVIEW.md`.
+- [x] **Automated Testing & Quality Gates**:
+  - `backend/tests/test_i18n.py`: 17/17 tests passing (glossary completeness, schema validation, numeric dosage parity, language fallback, TTS provider mock, audio routes, and ONNX prediction byte-invariance).
+  - Overall backend test suite: 48/48 tests passing with 83% code coverage maintained.
+  - Frontend test suite: 18/18 vitest tests passing (`i18n.test.tsx` and `AnalyzeFlow.test.tsx`).
+  - CI pipeline updated in `.github/workflows/ci.yml`.

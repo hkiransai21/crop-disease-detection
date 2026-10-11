@@ -31,6 +31,11 @@ class DiseaseEntry(BaseModel):
     when_to_consult_expert: str = Field(..., description="Specific escalation criteria for agricultural extension officers")
     safety_notes: List[str] = Field(..., description="Mandatory pesticide safety and handling guidelines")
     sources: List[str] = Field(..., description="Citations to verified university extension and agricultural research services")
+    canonical_crop: Optional[str] = Field(None, description="Canonical English crop name")
+    canonical_disease_name: Optional[str] = Field(None, description="Canonical English disease name")
+    review_status: Optional[str] = Field("expert_reviewed", description="draft | machine_suggested | expert_reviewed")
+    language: Optional[str] = Field("en", description="Language code of this entry")
+
 
 
 class KnowledgeBase(BaseModel):

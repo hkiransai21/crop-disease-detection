@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useLocation, useNavigate, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import {
   Sprout,
   CheckCircle2,
@@ -30,6 +31,7 @@ interface ResultPageProps {
 }
 
 export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
+  const { t, i18n } = useTranslation();
   const { id } = useParams<{ id: string }>();
   const location = useLocation();
   const navigate = useNavigate();
@@ -43,22 +45,24 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
   const [feedbackDone, setFeedbackDone] = useState(false);
   const [isShareOpen, setIsShareOpen] = useState(false);
 
+  const currentLang = i18n.language ? i18n.language.split('-')[0].split('_')[0] : 'en';
+
   useEffect(() => {
-    if (!analysis && id) {
+    if (id) {
       setLoading(true);
       api
-        .getHistoryDetail(id)
+        .getHistoryDetail(id, currentLang)
         .then((res) => setAnalysis(res))
         .catch((err) => setError(err.message || 'Failed to load diagnosis record.'))
         .finally(() => setLoading(false));
     }
-  }, [id, analysis]);
+  }, [id, currentLang]);
 
   if (loading) {
     return (
       <div className="py-20 text-center space-y-3">
         <div className="w-12 h-12 border-4 border-brand-600 border-t-transparent rounded-full animate-spin mx-auto"></div>
-        <p className="text-sm font-semibold text-slate-600">Loading diagnosis details...</p>
+        <p className="text-sm font-semibold text-slate-600">{t('analyze.analyzing')}</p>
       </div>
     );
   }
@@ -69,14 +73,14 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
         <div className="w-16 h-16 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center mx-auto">
           <AlertTriangle className="w-8 h-8" />
         </div>
-        <h2 className="text-xl font-bold text-slate-900">Diagnosis Record Not Found</h2>
-        <p className="text-xs text-slate-500">{error || 'Please run a new diagnosis from the home screen.'}</p>
+        <h2 className="text-xl font-bold text-slate-900">{t('history.empty')}</h2>
+        <p className="text-xs text-slate-500">{error || 'Please run a new diagnosis from the scanner.'}</p>
         <Link
           to="/analyze"
           className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-brand-600 text-white text-xs font-bold shadow-md"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span>New Leaf Diagnosis</span>
+          <span>{t('result.scan_another')}</span>
         </Link>
       </div>
     );
@@ -93,7 +97,7 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
           className="inline-flex items-center space-x-1.5 text-xs font-bold text-slate-600 hover:text-slate-900"
         >
           <ArrowLeft className="w-4 h-4" />
-          <span>Back to Leaf Scanner</span>
+          <span>{t('result.back_btn')}</span>
         </Link>
 
         <div className="flex items-center space-x-2">
@@ -102,7 +106,7 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
             className="flex items-center space-x-1.5 px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow-sm shadow-emerald-600/20 transition-all active:scale-95"
           >
             <Share2 className="w-3.5 h-3.5" />
-            <span>Share on WhatsApp</span>
+            <span>{t('result.share_whatsapp')}</span>
           </button>
 
           <button
@@ -110,7 +114,7 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
             className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-slate-200 hover:bg-slate-50 text-xs font-semibold text-slate-700 transition-colors"
           >
             <MessageSquare className="w-3.5 h-3.5 text-brand-600" />
-            <span>{feedbackDone ? 'Feedback Submitted' : 'Submit Feedback'}</span>
+            <span>{feedbackDone ? t('result.feedback_done') : t('result.feedback_btn')}</span>
           </button>
         </div>
       </div>
@@ -141,7 +145,7 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
 
               {analysis.disease_details?.scientific_name && (
                 <p className="text-xs sm:text-sm text-slate-300 italic">
-                  Pathogen: {analysis.disease_details.scientific_name}
+                  {t('result.pathogen_label')}: {analysis.disease_details.scientific_name}
                 </p>
               )}
             </div>
@@ -165,7 +169,7 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
         <div className="px-6 py-3 bg-slate-50 border-b border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500 font-medium">
           <div className="flex items-center space-x-1.5">
             <Calendar className="w-3.5 h-3.5" />
-            <span>Diagnosed on {new Date(analysis.created_at).toLocaleDateString()}</span>
+            <span>{t('result.diagnosed_on')} {new Date(analysis.created_at).toLocaleDateString()}</span>
           </div>
 
           {analysis.location_name && (
@@ -235,14 +239,14 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
           className="w-full sm:w-auto flex items-center justify-center space-x-2 px-6 py-3.5 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white text-sm font-bold shadow-md shadow-brand-600/20"
         >
           <RefreshCw className="w-4 h-4" />
-          <span>Scan Another Leaf Sample</span>
+          <span>{t('result.scan_another')}</span>
         </Link>
 
         <Link
           to="/history"
           className="w-full sm:w-auto flex items-center justify-center space-x-2 px-6 py-3.5 rounded-2xl bg-white hover:bg-slate-50 border border-slate-200 text-slate-800 text-sm font-bold"
         >
-          <span>View My Diagnosis History</span>
+          <span>{t('result.view_history')}</span>
         </Link>
       </div>
 

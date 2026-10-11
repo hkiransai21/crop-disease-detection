@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, Info, AlertTriangle, Cpu, Database, CheckCircle2, Layers, BookOpen, Lock } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+import { Shield, Info, AlertTriangle, Cpu, Database, CheckCircle2, Layers, BookOpen, Lock, PhoneCall } from 'lucide-react';
 import { api } from '../api/client';
 
 export const AboutPage: React.FC = () => {
+  const { t } = useTranslation();
   const [modelInfo, setModelInfo] = useState<any>(null);
 
   useEffect(() => {
@@ -20,10 +22,10 @@ export const AboutPage: React.FC = () => {
           <Shield className="w-6 h-6" />
         </div>
         <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900">
-          Model Card, Safety & Transparency
+          {t('about_page.title')}
         </h1>
         <p className="text-xs sm:text-sm text-slate-500">
-          Complete disclosure on data sources, neural architecture, limitations, and safety protocols.
+          {t('about_page.subtitle')}
         </p>
       </div>
 

@@ -14,6 +14,7 @@ from backend.app.api.deps import get_optional_current_user, get_current_user, li
 from backend.app.services.image_storage import validate_and_process_image
 from backend.app.services.weather import fetch_weather_summary
 from backend.app.services.risk import evaluate_disease_risk, load_knowledge_base
+from backend.app.services.i18n import resolve_language, get_localized_disease_entry, load_localized_knowledge_base, localize_risk_assessment
 from backend.app.ml.inference import predict_disease
 
 router = APIRouter(tags=["Crop Disease Analysis"])
@@ -30,6 +31,7 @@ async def analyze_crop_image(
     manual_temp_c: Optional[float] = Form(None, description="Manual temperature fallback"),
     manual_humidity_pct: Optional[float] = Form(None, description="Manual relative humidity fallback"),
     manual_rainfall_mm: Optional[float] = Form(None, description="Manual 7-day rainfall fallback"),
+    lang: Optional[str] = Form(None, description="Target language code (e.g. en, hi, te, ta, kn, ml, mr, bn, es)"),
     current_user: Optional[User] = Depends(get_optional_current_user),
     db: AsyncSession = Depends(get_db)
 ):
@@ -84,9 +86,28 @@ async def analyze_crop_image(
     # 4. Outbreak Risk Assessment
     risk_assessment = evaluate_disease_risk(pred_result["predicted_label"], weather_summary)
 
-    # 5. Knowledge Base details
-    kb = load_knowledge_base()
-    disease_entry = kb.get(pred_result["predicted_label"])
+    # 5. Multilingual Localization
+    resolved_lang = resolve_language(lang, request.headers.get("Accept-Language"))
+    localized_entry = get_localized_disease_entry(pred_result["predicted_label"], resolved_lang)
+    localized_risk = localize_risk_assessment(risk_assessment, resolved_lang)
+
+    # Localize crop and disease name
+    crop_name = localized_entry.crop if localized_entry else pred_result["crop"]
+    disease_display_name = localized_entry.disease_name if localized_entry else pred_result["disease_name"]
+
+    # Localize Top-K items
+    localized_kb = load_localized_knowledge_base(resolved_lang)
+    top_k_localized = []
+    for item in pred_result["top_k"]:
+        loc_d = localized_kb.get(item["class_id"])
+        top_k_localized.append(PredictionItem(
+            class_id=item["class_id"],
+            crop=loc_d.crop if loc_d else item["crop"],
+            disease_name=loc_d.disease_name if loc_d else item["disease_name"],
+            confidence=item["confidence"],
+            confidence_percentage=item["confidence_percentage"],
+            is_healthy=item["is_healthy"]
+        ))
 
     # Build image URL
     file_rel = saved_path.replace("\\", "/").replace("./backend/app", "").replace("backend/app", "")
@@ -94,7 +115,7 @@ async def analyze_crop_image(
         file_rel = "/" + file_rel
     image_url = f"/static{file_rel}" if not file_rel.startswith("/static") else file_rel
 
-    # 6. Persist to Database if user is authenticated
+    # 6. Persist to Database if user is authenticated (raw canonical prediction persisted)
     analysis_id = "guest_" + pred_result["model_version"]
     if current_user:
         analysis_record = Analysis(
@@ -121,20 +142,21 @@ async def analyze_crop_image(
     return AnalysisResponse(
         id=analysis_id,
         predicted_label=pred_result["predicted_label"],
-        crop=pred_result["crop"],
-        disease_name=pred_result["disease_name"],
+        crop=crop_name,
+        disease_name=disease_display_name,
         confidence=pred_result["confidence"],
         confidence_display=pred_result["confidence_display"],
         is_uncertain=pred_result["is_uncertain"],
         uncertainty_reason=pred_result["uncertainty_reason"],
-        top_k=[PredictionItem(**item) for item in pred_result["top_k"]],
+        top_k=top_k_localized,
         model_version=pred_result["model_version"],
         image_url=image_url,
         location_name=location_name,
         latitude=latitude,
         longitude=longitude,
         weather_summary=weather_summary,
-        risk_assessment=risk_assessment,
-        disease_details=disease_entry,
+        risk_assessment=localized_risk,
+        disease_details=localized_entry,
         created_at=datetime.now(timezone.utc)
     )
+

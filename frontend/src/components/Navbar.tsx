@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Sprout, History, BookOpen, Info, LogIn, LogOut, Menu, X, Globe, User as UserIcon } from 'lucide-react';
+import { Sprout, History, BookOpen, Info, LogIn, LogOut, Menu, X, Globe, User as UserIcon, Check } from 'lucide-react';
 import { User } from '../types';
+import { SUPPORTED_LANGUAGES } from '../i18n/i18n';
 
 interface NavbarProps {
   user: User | null;
@@ -12,13 +13,29 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({ user, onLogout }) => {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const [isLangOpen, setIsLangOpen] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
+  const langDropdownRef = useRef<HTMLDivElement>(null);
 
-  const toggleLanguage = () => {
-    const nextLang = i18n.language.startsWith('es') ? 'en' : 'es';
-    i18n.changeLanguage(nextLang);
+  const currentLang = i18n.language ? i18n.language.split('-')[0].split('_')[0] : 'en';
+  const currentLangObj = SUPPORTED_LANGUAGES.find((l) => l.code === currentLang) || SUPPORTED_LANGUAGES[0];
+
+  const handleSelectLanguage = (code: string) => {
+    i18n.changeLanguage(code);
+    localStorage.setItem('agrishield_language', code);
+    setIsLangOpen(false);
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (langDropdownRef.current && !langDropdownRef.current.contains(event.target as Node)) {
+        setIsLangOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
 
   const navLinks = [
     { path: '/analyze', label: t('nav.diagnose'), icon: Sprout },
@@ -28,7 +45,7 @@ export const Navbar: React.FC<NavbarProps> = ({ user, onLogout }) => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-emerald-100 shadow-sm">
+    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-emerald-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Brand Logo */}
@@ -69,15 +86,48 @@ export const Navbar: React.FC<NavbarProps> = ({ user, onLogout }) => {
 
           {/* Right Actions */}
           <div className="hidden md:flex items-center space-x-3">
-            {/* Language Switcher */}
-            <button
-              onClick={toggleLanguage}
-              className="flex items-center space-x-1 px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-700 hover:bg-slate-50 transition-colors"
-              title="Change Language"
-            >
-              <Globe className="w-3.5 h-3.5 text-slate-500" />
-              <span>{i18n.language.startsWith('es') ? 'Español' : 'English'}</span>
-            </button>
+            {/* Multilingual Selector Dropdown */}
+            <div className="relative" ref={langDropdownRef}>
+              <button
+                onClick={() => setIsLangOpen(!isLangOpen)}
+                className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-xs font-bold text-slate-800 shadow-sm transition-all"
+                title="Select Language"
+              >
+                <Globe className="w-3.5 h-3.5 text-brand-600" />
+                <span>{currentLangObj.nativeLabel}</span>
+                <span className="text-[10px] text-slate-400 font-normal">({currentLangObj.code.toUpperCase()})</span>
+              </button>
+
+              {isLangOpen && (
+                <div className="absolute right-0 mt-2 w-56 bg-white rounded-2xl shadow-xl border border-slate-150 py-2 z-50 animate-in fade-in zoom-in-95 duration-100">
+                  <div className="px-3 py-1.5 text-[11px] font-bold text-slate-400 uppercase tracking-wider border-b border-slate-100">
+                    {t('nav.select_language')}
+                  </div>
+                  <div className="max-h-72 overflow-y-auto py-1">
+                    {SUPPORTED_LANGUAGES.map((lang) => {
+                      const isSelected = lang.code === currentLang;
+                      return (
+                        <button
+                          key={lang.code}
+                          onClick={() => handleSelectLanguage(lang.code)}
+                          className={`w-full flex items-center justify-between px-3.5 py-2 text-left text-xs transition-colors ${
+                            isSelected
+                              ? 'bg-brand-50 text-brand-800 font-bold'
+                              : 'text-slate-700 hover:bg-slate-50 font-medium'
+                          }`}
+                        >
+                          <div className="flex items-center space-x-2">
+                            <span className="text-sm font-semibold">{lang.nativeLabel}</span>
+                            <span className="text-[11px] text-slate-400 font-normal">({lang.label})</span>
+                          </div>
+                          {isSelected && <Check className="w-4 h-4 text-brand-600 shrink-0" />}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
 
             {/* Auth Buttons */}
             {user ? (
@@ -107,12 +157,17 @@ export const Navbar: React.FC<NavbarProps> = ({ user, onLogout }) => {
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center space-x-2">
-            <button
-              onClick={toggleLanguage}
-              className="p-2 rounded-lg border border-slate-200 text-xs font-semibold text-slate-700"
+            <select
+              value={currentLang}
+              onChange={(e) => handleSelectLanguage(e.target.value)}
+              className="px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs font-bold text-slate-800 bg-white"
             >
-              <Globe className="w-4 h-4 text-slate-600" />
-            </button>
+              {SUPPORTED_LANGUAGES.map((lang) => (
+                <option key={lang.code} value={lang.code}>
+                  {lang.nativeLabel}
+                </option>
+              ))}
+            </select>
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none"
