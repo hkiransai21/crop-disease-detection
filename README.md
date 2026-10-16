@@ -11,7 +11,7 @@ AgriShield is an end-to-end, **100% software-based** agricultural decision-suppo
 1. **Computer Vision Disease Classification**: Real-time foliar lesion identification across 38 crop disease classes using an optimized `EfficientNet-B0` model.
 2. **Environmental Outbreak Risk Engine**: Rule-based epidemiological modeling that fetches real-time weather from public meteorological APIs (Open-Meteo) to compute a transparent 0–100 Outbreak Spread Index.
 3. **University Extension Knowledge Base**: Curated, multi-tiered recommendations (cultural sanitation, organic remedies, and chemical interventions with exact dosages and university safety notes).
-4. **Accurate Regional Multilingual Support**: Comprehensive translations across 9 languages (English, हिन्दी, తెలుగు, தமிழ், ಕನ್ನಡ, മലയാളം, मराठी, বাংলা, Español) covering all UI text, disease names, and extension protocols.
+4. **Regional Multilingual Support**: English, Hindi, Tamil, Telugu, and Kannada UI and narration.
 5. **High-Quality Neural Audio Narration**: Natural-sounding regional voice narration with correct local disease names and agronomic terminology, powered by pluggable neural TTS (Microsoft Neural Edge / Cloud), offline PWA caching, and fallback speech synthesis.
 
 
@@ -173,21 +173,16 @@ npm run test
 
 ## 🌐 Multilingual Regional Support & Kisan Audio Assistant
 
-AgriShield includes end-to-end regional language localization and neural speech narration across **9 languages**:
+AgriShield supports only English (`en`), Hindi (`hi`), Tamil (`ta`), Telugu (`te`), and Kannada (`kn`). Narration uses bundled static MP3 files first, followed by a bounded dynamic endpoint and matching browser voices. Offline audio downloads are explicit opt-in.
 
-- **Languages Supported:** English (`en`), Hindi (`hi`), Telugu (`te`), Tamil (`ta`), Kannada (`kn`), Malayalam (`ml`), Marathi (`mr`), Bengali (`bn`), and Spanish (`es`).
-- **Zero-Cost Neural Audio Narration:** Powered by `edge-tts` Microsoft Neural voices mapped to authentic regional speakers (e.g. `hi-IN-SwaraNeural`, `te-IN-ShrutiNeural`, `ta-IN-PallaviNeural`).
-- **Offline-First Audio Caching:** Pre-generated audio is stored with content-addressed hashes in `backend/app/static/audio_cache/` and cached for offline use in the PWA.
-- **Phonetic Pronunciation Lexicons:** Dedicated glossaries (`i18n/glossary/{lang}.json`) ensure plant pathology terms and dosages are pronounced correctly without robotic artifacts.
-- **Safety & Parity Gates:** Strict automated parity verification (`backend/tests/test_i18n.py`) checks that all active ingredients, chemical dosages (e.g., 2.5g/L, 5ml/L, 15L pumps), and emergency helpline numbers (1800-180-1551) match exactly.
+See [the root-cause report](docs/audio-root-cause.md), [audio setup and maintenance](docs/AUDIO.md), and [recorded verification output](docs/audio-proof.md).
 
-### Pre-generate Audio Narration Cache
+### Generate and verify narration
 ```bash
-# Pre-generate narration audio for all languages and sections
-python scripts/generate_audio.py --lang all
-
-# Pre-generate for a single language
-python scripts/generate_audio.py --lang te
+# Default development provider; verify the live voice list first
+python scripts/generate_audio.py --verify-voices
+# Set TTS_PROVIDER=google for Google Cloud, or TTS_PROVIDER=gtts as a last resort.
+python scripts/verify_audio.py
 ```
 
 ### Agronomist Translation Review Workflow

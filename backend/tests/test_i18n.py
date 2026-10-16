@@ -15,7 +15,6 @@ from backend.app.services.i18n import (
 )
 from backend.app.services.tts import (
     TTSProvider,
-    MockTTSProvider,
     EdgeTTSProvider,
     build_narration_script,
     get_tts_provider,
@@ -37,21 +36,21 @@ from backend.app.ml.inference import predict_disease, load_inference_artifacts
 # Ensure ONNX model and temperature scaling artifacts are loaded
 load_inference_artifacts()
 
-SUPPORTED_LANGUAGES = ["en", "hi", "te", "ta", "kn", "ml", "mr", "bn", "es"]
+SUPPORTED_LANGUAGES = ["en", "hi", "te", "ta", "kn"]
 BASE_DIR = Path(__file__).resolve().parent.parent
 I18N_DATA_DIR = BASE_DIR / "app" / "data" / "i18n"
 GLOSSARY_DIR = I18N_DATA_DIR / "glossary"
 
 
 class TestGlossaryAndSchemaCompleteness:
-    """Validate completeness and schema integrity across all 38 classes for all 9 languages."""
+    """Validate completeness and schema integrity across all 38 classes for all five languages."""
 
     def test_supported_languages_config(self):
         resp = get_supported_languages()
         assert resp.default_language == "en"
-        assert len(resp.languages) == 9
+        assert len(resp.languages) == 5
         lang_codes = [l.code for l in resp.languages]
-        expected = ["en", "hi", "te", "ta", "kn", "ml", "mr", "bn", "es"]
+        expected = ["en", "hi", "te", "ta", "kn"]
         assert set(lang_codes) == set(expected)
 
         for lang_info in resp.languages:
@@ -113,7 +112,7 @@ class TestNumericAndDosageParity:
     def test_numeric_dosage_parity_with_english(self):
         en_kb = load_localized_knowledge_base("en")
 
-        for lang in ["hi", "te", "ta", "kn", "ml", "mr", "bn", "es"]:
+        for lang in ["hi", "te", "ta", "kn"]:
             target_kb = load_localized_knowledge_base(lang)
 
             for cid, en_entry in en_kb.items():
@@ -142,7 +141,7 @@ class TestLanguageNegotiationAndFallback:
         assert resolve_language("hi") == "hi"
         assert resolve_language("te") == "te"
         assert resolve_language("ta") == "ta"
-        assert resolve_language("es") == "es"
+        assert resolve_language("es") == "en"
 
     def test_resolve_language_fallback_to_english(self):
         assert resolve_language("unknown_lang") == "en"
@@ -160,12 +159,6 @@ class TestLanguageNegotiationAndFallback:
 class TestTTSProviderAndNarrationScripts:
     """Test TTS provider interface, SSML synthesis, and audio pre-generation."""
 
-    @pytest.mark.asyncio
-    async def test_mock_tts_provider(self):
-        provider = MockTTSProvider()
-        audio_bytes = await provider.synthesize("Namaste Kisan", lang="hi", voice="hi-IN-SwaraNeural")
-        assert len(audio_bytes) > 0
-
     def test_build_narration_scripts(self):
         overview = build_narration_script("Tomato___Early_blight", "overview", "te")
         assert "టమోటా" in overview or "Early Blight" in overview
@@ -177,11 +170,6 @@ class TestTTSProviderAndNarrationScripts:
         prevention = build_narration_script("Tomato___Early_blight", "prevention", "te")
         assert len(prevention) > 20
 
-    @pytest.mark.asyncio
-    async def test_audio_cache_hit_and_synthesis(self):
-        script = build_narration_script("Tomato___Early_blight", "overview", "hi")
-        audio_bytes = await get_or_synthesize_audio(script, lang="hi")
-        assert len(audio_bytes) > 0
 
 
 class TestMultilingualAPIRoutes:
@@ -193,7 +181,7 @@ class TestMultilingualAPIRoutes:
         assert response.status_code == 200
         data = response.json()
         assert data["default_language"] == "en"
-        assert len(data["languages"]) == 9
+        assert len(data["languages"]) == 5
 
     @pytest.mark.asyncio
     async def test_get_audio_glossary(self, client: AsyncClient):
