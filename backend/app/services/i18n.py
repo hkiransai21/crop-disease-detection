@@ -6,7 +6,7 @@ from backend.app.knowledge_base.schema import DiseaseEntry, KnowledgeBase
 from backend.app.schemas.i18n import LanguageConfig, SupportedLanguagesResponse
 from backend.app.schemas.risk import RiskAssessment, ContributingFactor
 
-_I18N_BASE_DIR = Path("backend/app/data/i18n")
+_I18N_BASE_DIR = Path(__file__).resolve().parents[1] / "data/i18n"
 _CONFIG_CACHE: Optional[Dict[str, Any]] = None
 _KB_LANG_CACHE: Dict[str, Dict[str, DiseaseEntry]] = {}
 _GLOSSARY_CACHE: Dict[str, Dict[str, Any]] = {}
@@ -29,10 +29,6 @@ def get_i18n_config() -> Dict[str, Any]:
                 {"code": "te", "name": "Telugu", "native_name": "తెలుగు", "script_direction": "ltr", "tts_voice": "te-IN-ShrutiNeural", "review_status": "expert_reviewed", "is_active": True},
                 {"code": "ta", "name": "Tamil", "native_name": "தமிழ்", "script_direction": "ltr", "tts_voice": "ta-IN-PallaviNeural", "review_status": "expert_reviewed", "is_active": True},
                 {"code": "kn", "name": "Kannada", "native_name": "ಕನ್ನಡ", "script_direction": "ltr", "tts_voice": "kn-IN-SapnaNeural", "review_status": "expert_reviewed", "is_active": True},
-                {"code": "ml", "name": "Malayalam", "native_name": "മലയാളം", "script_direction": "ltr", "tts_voice": "ml-IN-SobhanaNeural", "review_status": "expert_reviewed", "is_active": True},
-                {"code": "mr", "name": "Marathi", "native_name": "मराठी", "script_direction": "ltr", "tts_voice": "mr-IN-AarohiNeural", "review_status": "expert_reviewed", "is_active": True},
-                {"code": "bn", "name": "Bengali", "native_name": "বাংলা", "script_direction": "ltr", "tts_voice": "bn-IN-TanishaaNeural", "review_status": "expert_reviewed", "is_active": True},
-                {"code": "es", "name": "Spanish", "native_name": "Español", "script_direction": "ltr", "tts_voice": "es-ES-ElviraNeural", "review_status": "expert_reviewed", "is_active": True}
             ]
         }
         return _CONFIG_CACHE
@@ -55,7 +51,7 @@ def get_supported_languages() -> SupportedLanguagesResponse:
 def resolve_language(lang: Optional[str] = None, accept_language: Optional[str] = None) -> str:
     """
     Resolve requested language code against supported languages.
-    Supports RFC-5646 codes (e.g. 'hi-IN' -> 'hi', 'es-MX' -> 'es') and Accept-Language header.
+    Supports RFC-5646 codes (e.g. 'hi-IN' -> 'hi') and Accept-Language header.
     Defaults to 'en'.
     """
     cfg = get_i18n_config()

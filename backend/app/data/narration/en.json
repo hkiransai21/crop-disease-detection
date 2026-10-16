@@ -1,0 +1,261 @@
+{
+  "language": "en",
+  "version": 1,
+  "diseases": {
+    "Apple___Apple_scab": {
+      "diagnosis": "The image suggests Apple Scab. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Olive green to dark brown velvety spots on leaves, becoming corky and distorted. Scabby lesions on fruit surface leading to cracking.",
+      "treatment": "Treatment advice. Apply sulfur or liquid lime sulfur sprays preventatively prior to rain events during primary infection season. Apply Bacillus subtilis or potassium bicarbonate sprays. Preventative protectants. Captan, Mancozeb . Systemic fungicides. DMI fungicides or SDHI fungicides in rotation to avoid resistance. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Rake and destroy fallen leaves in autumn or shred with a flail mower to speed decomposition. Prune tree canopies to improve airflow and sunlight penetration. Plant scab resistant cultivars ."
+    },
+    "Apple___Black_rot": {
+      "diagnosis": "The image suggests Black Rot and Frogeye Leaf Spot. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Frogeye leaf spots . Firm brown rot on fruit starting near calyx, turning black with concentric rings.",
+      "treatment": "Treatment advice. Copper based fungicides applied during early season dormancy. Sulfur sprays during early cover sprays. Fungicides. Captan, Thiophanate methyl, or strobilurin fungicides applied from silver tip through cover sprays. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Prune out dead branches, fire blight cankers, and remove all mummified fruit from the orchard. Burn or dispose of pruned wood promptly rather than leaving brush piles near orchards."
+    },
+    "Apple___Cedar_apple_rust": {
+      "diagnosis": "The image suggests Cedar Apple Rust. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Bright yellow orange circular spots on upper leaf surfaces. Raised tubular structures on leaf undersides and fruit.",
+      "treatment": "Treatment advice. Liquid sulfur or sulfur based sprays applied preventatively when cedar galls swell in spring. Sterol inhibitor per DMI fungicides or Strobilurins from pink bud through third cover. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Remove nearby Eastern red cedar per juniper trees within a one to two mile radius where feasible. Remove rust galls from adjacent landscape junipers before spring rains. Plant rust resistant apple varieties ."
+    },
+    "Apple___healthy": {
+      "diagnosis": "The leaves appear healthy. Continue regular crop care.",
+      "symptoms": "Signs to look for. Uniform green leaf tissue with intact margins, no necrosis, chlorosis, lesions, or powdery fungal growth.",
+      "treatment": "Treatment advice. Apply preventative dormant horticultural oils to suppress overwintering mites and scale. No chemical intervention needed for healthy foliage. Continue standard integrated pest management . Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Maintain balanced soil fertility according to regular soil and leaf tissue tests. Ensure proper orchard floor management and drip irrigation. Conduct routine canopy scouting for early pest and disease pressure."
+    },
+    "Blueberry___healthy": {
+      "diagnosis": "The leaves appear healthy. Continue regular crop care.",
+      "symptoms": "Signs to look for. Glossy, uniform deep green leaves without spotting, chlorosis, or necrotic margins.",
+      "treatment": "Treatment advice. Maintain pine bark mulch depth and apply mycorrhizal inoculants. No chemical intervention needed. Monitor for mummy berry and anthracnose in spring. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Maintain soil pH between four . five and five . two using elemental sulfur. Ensure drip irrigation under organic mulch ."
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+      "diagnosis": "The image suggests Powdery Mildew. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. White, powdery patches of fungal mycelium and conidia on leaves and young shoots. Leaves become curled, distorted, and blistered.",
+      "treatment": "Treatment advice. Wettable sulfur, horticultural oils , or potassium bicarbonate. FRAC three , FRAC seven , or FRAC one one in rotation. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Prune dense canopies to maximize light penetration and air circulation. Avoid excessive nitrogen fertilization that promotes succulent susceptible flush."
+    },
+    "Cherry_(including_sour)___healthy": {
+      "diagnosis": "The leaves appear healthy. Continue regular crop care.",
+      "symptoms": "Signs to look for. Vibrant green leaves with serrated margins and no signs of spot, shot hole, or mildew.",
+      "treatment": "Treatment advice. Dormant copper sprays for bacterial canker suppression. No chemical treatment required. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Maintain annual pruning and orchard sanitation. Scout weekly for spotted wing drosophila and fungal leaf spot."
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+      "diagnosis": "The image suggests Gray Leaf Spot. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Rectangular, brown to gray lesions restricted by leaf veins , merging to cause extensive blighting.",
+      "treatment": "Treatment advice. Crop rotation and biofungicide seed treatments . Foliar fungicides applied at VT R one . Strobilurin mixed with Triazole . Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Plant resistant corn hybrids. Rotate with non host crops for one to two years. Practice residue management or conservation tillage to bury crop debris."
+    },
+    "Corn_(maize)___Common_rust_": {
+      "diagnosis": "The image suggests Common Rust. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Oval to elongate cinnamon brown pustules scattered across both upper and lower leaf surfaces, rupturing epidermis with powdery spores.",
+      "treatment": "Treatment advice. Use resistant cultivars and encourage beneficial phyllosphere microbes. Foliar fungicides. Triazoles or Strobilurins if pustules appear on upper leaves before silking on susceptible inbred lines. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Plant resistant corn hybrids containing Rp genes. Plant early in the season to avoid peak spore dispersal."
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+      "diagnosis": "The image suggests Northern Corn Leaf Blight. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Long, elliptical, cigar shaped grayish green to tan lesions on leaves, developing dark olivaceous spore masses in moist weather.",
+      "treatment": "Treatment advice. Resistant seed selection and balanced organic soil amendments. Fungicides containing DMI , QoI , or SDHI chemistries applied at early blister if threshold met. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Plant resistant hybrids with qualitative Ht genes and quantitative multigenic resistance. Rotate with non host crops and manage residue."
+    },
+    "Corn_(maize)___healthy": {
+      "diagnosis": "The leaves appear healthy. Continue regular crop care.",
+      "symptoms": "Signs to look for. Broad, vibrant green leaves with parallel venation and no chlorosis, blight, or pustules.",
+      "treatment": "Treatment advice. Maintain soil health with cover crops . No chemical treatment required. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Maintain optimal soil fertility and adequate plant population density. Scout fields regularly at V six , VT, and R two growth stages."
+    },
+    "Grape___Black_rot": {
+      "diagnosis": "The image suggests Black Rot. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Circular reddish brown leaf spots with tiny black pycnidia dots inside the border. Berries turn brown, shrivel into hard black mummies.",
+      "treatment": "Treatment advice. Copper based fungicides applied from bud break through veraison. FRAC three , FRAC one one , or protectants from early bloom through four weeks post bloom. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Remove and destroy all mummified fruit clusters during dormant winter pruning. Open vine canopies with shoot thinning and leaf pulling around fruit zones to enhance air movement."
+    },
+    "Grape___Esca_(Black_Measles)": {
+      "diagnosis": "The image suggests Esca. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Tiger stripe leaf pattern . Dark spots on berry skin. Wood shows dark vascular streaking.",
+      "treatment": "Treatment advice. Biocontrol agent Trichoderma atroviride applied directly to fresh pruning wounds. No curative foliar fungicide exists for internal wood rot. Protect pruning wounds with registered wound protectants . Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Prune late in the dormant season when wound healing is rapid. Apply pruning wound sealants . Avoid heavy water stress during hot summer periods."
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+      "diagnosis": "The image suggests Leaf Blight. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Irregular dark brown to black necrotic leaf patches with faint yellow halos, causing premature defoliation in late summer.",
+      "treatment": "Treatment advice. Bordeaux mixture or copper hydroxide sprays applied in mid to late season. Broad spectrum protectant fungicides or strobilurins in post bloom applications. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Maintain canopy air circulation with shoot positioning and trellis management. Collect and compost or bury fallen infected leaves in late autumn."
+    },
+    "Grape___healthy": {
+      "diagnosis": "The leaves appear healthy. Continue regular crop care.",
+      "symptoms": "Signs to look for. Healthy palmate green leaves without chlorosis, spots, powdery mold, or edge scorching.",
+      "treatment": "Treatment advice. Preventative organic canopy hygiene. No chemical intervention needed. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Maintain trellis training, canopy suckering, and balanced fertigation. Scout weekly for powdery mildew and grapevine leafroll virus."
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+      "diagnosis": "The image suggests Huanglongbing. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Asymmetrical blotchy mottle chlorosis on leaves, yellow shoots, vein corking. Small, lopsided, bitter fruit that stays green at the bottom.",
+      "treatment": "Treatment advice. Release parasitic wasps for biological psyllid suppression. Horticultural and citrus spray oils to deter psyllid egg laying. Systemic insecticides and foliar rotation targeting psyllid flushes. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Use certified disease free nursery trees from enclosed screenhouses. Eradicate confirmed infected trees promptly to remove pathogen reservoirs. Control Asian citrus psyllid vector populations rigorously."
+    },
+    "Peach___Bacterial_spot": {
+      "diagnosis": "The image suggests Bacterial Spot. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Water soaked polygonal angular spots on leaves turning purplish brown, centers drop out giving a shot hole look. Pitted, gumming lesions on fruit.",
+      "treatment": "Treatment advice. Dormant copper applications and low rate copper hydroxide during early cover sprays. Bactericides. Oxytetracycline and low rate copper formulations applied from petal fall through cover sprays. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Plant resistant peach cultivars . Avoid excessive nitrogen fertilizers that stimulate susceptible young shoot growth. Plant windbreaks to reduce windblown sand abrasions that facilitate bacterial entry."
+    },
+    "Peach___healthy": {
+      "diagnosis": "The leaves appear healthy. Continue regular crop care.",
+      "symptoms": "Signs to look for. Smooth, lanceolate deep green leaves without shothole perforations, curl, or necrosis.",
+      "treatment": "Treatment advice. Preventative dormant sprays for peach leaf curl. No chemical treatment required. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Ensure annual winter pruning for open center per vase shape canopy. Monitor soil moisture with tensiometers."
+    },
+    "Pepper,_bell___Bacterial_spot": {
+      "diagnosis": "The image suggests Bacterial Spot. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Small, circular to irregular water soaked spots on leaves turning dark brown with yellow halo. Blistered raised warty spots on fruit.",
+      "treatment": "Treatment advice. Copper bactericides combined with bio fungicides . Fixed copper formulations mixed with Mancozeb or acibenzolar S methyl . Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Use certified disease free seed and resistant pepper varieties . Avoid overhead sprinkler irrigation. use drip irrigation underneath plastic mulch. Rotate fields out of Solanaceous crops for at least two years."
+    },
+    "Pepper,_bell___healthy": {
+      "diagnosis": "The leaves appear healthy. Continue regular crop care.",
+      "symptoms": "Signs to look for. Glossy, uniform green foliage with smooth margins, robust flowering and fruit set.",
+      "treatment": "Treatment advice. Beneficial predatory mites and organic mulch. No chemical intervention needed. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Maintain consistent soil moisture and calcium fertility to prevent blossom end rot. Scout weekly for aphids, thrips, and pepper weevils."
+    },
+    "Potato___Early_blight": {
+      "diagnosis": "The image suggests Early Blight. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Dark brown to black necrotic spots with characteristic concentric rings on older lower leaves, surrounded by yellow chlorotic halos.",
+      "treatment": "Treatment advice. Copper sulfate, Bacillus subtilis, and potassium bicarbonate foliar sprays. Protectants. Chlorothalonil, Mancozeb . Systemics. Boscalid , Difenoconazole , Azoxystrobin in rotation. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Rotate with non solanaceous crops on a three year cycle. Maintain optimal nitrogen fertility . Use drip irrigation or irrigate in the early morning to minimize nighttime leaf wetness."
+    },
+    "Potato___Late_blight": {
+      "diagnosis": "The image suggests Late Blight. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Large, dark water soaked lesions on leaves and stems that expand rapidly. White cottony fungal growth on leaf undersides in high humidity. Tubers develop dry brown rot.",
+      "treatment": "Treatment advice. Preventative copper sprays applied prior to high risk weather events. Protectants. Mancozeb, Chlorothalonil. Targeted oomycide systemics. Mandipropamid , Fluopicolide , Cyazofamid , Propamocarb . Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Plant certified disease free seed tubers. Destroy all potato cull piles and volunteer potato plants in surrounding areas. Kill vines two to three weeks before harvest to prevent tuber contamination."
+    },
+    "Potato___healthy": {
+      "diagnosis": "The leaves appear healthy. Continue regular crop care.",
+      "symptoms": "Signs to look for. Dark green, vibrant composite foliage with no spots, wilting, or stem lesions.",
+      "treatment": "Treatment advice. Compost teas and preventative bio stimulants. No chemical intervention required. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Hilling and proper soil mounding to protect developing tubers. Regular scouting using regional blight forecasting models ."
+    },
+    "Raspberry___healthy": {
+      "diagnosis": "The leaves appear healthy. Continue regular crop care.",
+      "symptoms": "Signs to look for. Pinnate green leaves with serrated edges, white pubescent underside, free of yellowing or cane blight.",
+      "treatment": "Treatment advice. Annual organic mulch and drip irrigation. No chemical treatment required. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Prune out spent floricanes immediately after harvest. Maintain trellis support to promote air movement."
+    },
+    "Soybean___healthy": {
+      "diagnosis": "The leaves appear healthy. Continue regular crop care.",
+      "symptoms": "Signs to look for. Trifoliate deep green leaves with intact lamina and no signs of rust, frogeye, or bacterial pustule.",
+      "treatment": "Treatment advice. Beneficial insect habitat and crop rotation. No chemical intervention needed. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Ensure Rhizobium inoculation at planting for optimal nitrogen fixation. Scout for defoliating caterpillars and stink bugs at R three R five stages."
+    },
+    "Squash___Powdery_mildew": {
+      "diagnosis": "The image suggests Powdery Mildew. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. White talcum powder like circular patches on both upper and lower leaf surfaces, petiole, and stems. Leaves turn chlorotic, senesce, and crisp up.",
+      "treatment": "Treatment advice. Horticultural oils, potassium bicarbonate , neem oil, or sulfur. Targeted fungicides. Quinoxyfen , Cyflufenamid , Metrafenone , DMI applied preventatively at first sign of white spots. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Plant powdery mildew resistant cucurbit varieties . Provide adequate plant spacing to facilitate airflow within dense squash foliage. Avoid excessive nitrogen application."
+    },
+    "Strawberry___Leaf_scorch": {
+      "diagnosis": "The image suggests Leaf Scorch. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Numerous small, irregular purplish red spots on leaves that coalesce, causing the leaf tissue between spots to turn brown, dry out, and curl up like scorched by fire.",
+      "treatment": "Treatment advice. Copper fungicides applied post renovation in early autumn or early spring. Captan, Thiram, or QoI strobilurin fungicides in spring prior to bloom. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Plant certified disease free strawberry plugs per runners of resistant cultivars . Mow and incorporate strawberry foliage immediately after harvest . Use straw mulch to prevent soil splashing onto leaves and use drip irrigation."
+    },
+    "Strawberry___healthy": {
+      "diagnosis": "The leaves appear healthy. Continue regular crop care.",
+      "symptoms": "Signs to look for. Trifoliate deep green glossy leaves with distinct serrations, no purple spots or edge necrosis.",
+      "treatment": "Treatment advice. Release predatory mites for mite suppression. No chemical treatment required. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Maintain plastic mulch bed cleanliness and drip fertigation. Scout for two spotted spider mites and Botrytis fruit rot."
+    },
+    "Tomato___Bacterial_spot": {
+      "diagnosis": "The image suggests Bacterial Spot. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Small, greasy, water soaked dark brown spots on leaves surrounded by yellow halos. Scabby, raised brown eruptions on tomato fruit.",
+      "treatment": "Treatment advice. Copper bactericides mixed with Bacillus subtilis or Bacillus amyloliquefaciens. Fixed copper Mancozeb tank mix. plant defense activators like Acibenzolar S methyl . Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Use hot water treated or certified disease free seed. Do not work in tomato fields when leaves are wet from dew or rain. Rotate with non solanaceous crops on a two to three year cycle."
+    },
+    "Tomato___Early_blight": {
+      "diagnosis": "The image suggests Early Blight. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Dark brown to black spots with concentric rings on older lower leaves, leaf yellowing around lesions, progressing upwards.",
+      "treatment": "Treatment advice. Copper octanoate, Bacillus subtilis, and bio fungicides. Protectants. Chlorothalonil, Mancozeb . Systemics. Difenoconazole, Azoxystrobin, Boscalid . Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Mulch heavily with straw or plastic to create a barrier between soil and lower leaves. Stake or cage tomatoes and prune bottom one two to one eight inches of leaves to prevent soil splash. Rotate crops with non solanaceous species."
+    },
+    "Tomato___Late_blight": {
+      "diagnosis": "The image suggests Late Blight. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Large, irregular water soaked pale green to dark brown oily lesions on leaves and stems. White fluffy mold on leaf undersides in humid mornings. Fruit develops greasy brown rot.",
+      "treatment": "Treatment advice. Preventative copper sprays applied prior to cool, rainy disease favoring weather. Mandipropamid , Fluopicolide , Cyazofamid , Chlorothalonil . Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Plant resistant varieties . Destroy infected plants immediately in plastic bags to avoid dispersing spores to neighbors. Monitor regional late blight tracking maps ."
+    },
+    "Tomato___Leaf_Mold": {
+      "diagnosis": "The image suggests Leaf Mold. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Pale green to yellowish diffuse spots on upper leaf surface corresponding to velvety olive green to brown fungal growth on the underside.",
+      "treatment": "Treatment advice. Copper fungicides, potassium bicarbonate, or hydrogen dioxide. Chlorothalonil, Mancozeb, Difenoconazole, or Cyazofamid labeled for greenhouse per field tomatoes. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Maximize high tunnel and greenhouse ventilation using exhaust fans and horizontal airflow. Increase plant spacing and prune lower suckers to open canopy. Plant resistant varieties with Cf resistance genes."
+    },
+    "Tomato___Septoria_leaf_spot": {
+      "diagnosis": "The image suggests Septoria Leaf Spot. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Numerous small, circular spots with dark brown borders and pale gray or tan centers containing tiny black specks .",
+      "treatment": "Treatment advice. Copper octanoate or copper hydroxide applied at weekly intervals during wet weather. Chlorothalonil, Mancozeb, or FRAC one one per FRAC seven in rotation. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Clean cultivation, weed control . Mulch to prevent soil splash and drip irrigate exclusively. Rotate away from solanaceous crops for three years."
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+      "diagnosis": "The image suggests Two Spotted Spider Mite Infestation. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Fine yellow or white stippling on upper leaf surface, delicate fine webbing on leaf undersides, leaves turn bronze, dry out, and drop.",
+      "treatment": "Treatment advice. Release predatory mites . Insecticidal soaps, horticultural mineral oil, or rosemary per neem oil emulsions. Selective miticides. Bifenazate , Spiromesifen , Abamectin with proper surfactant. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Keep farm roadways and perimeters watered to reduce dust, which suppresses natural mite predators. Avoid broad spectrum synthetic pyrethroids and carbamates that kill beneficial predatory insects. Maintain adequate crop irrigation to reduce plant water stress."
+    },
+    "Tomato___Target_Spot": {
+      "diagnosis": "The image suggests Target Spot. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Brown, pinpoint lesions expanding into circular to irregular lesions with concentric light and dark brown rings. Fruit develops sunken brownish lesions.",
+      "treatment": "Treatment advice. Copper fungicides and biological antagonists. FRAC seven , FRAC three , FRAC one one , or Chlorothalonil. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Increase row spacing to allow rapid canopy drying. Prune lower leaves to minimize contact with humidity from soil. Rotate with non host crops."
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+      "diagnosis": "The image suggests Tomato Yellow Leaf Curl Virus. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Severe upward curling and cupping of leaf margins, prominent yellowing of leaf margins, severe plant stunting, flower drop, and no fruit set.",
+      "treatment": "Treatment advice. Insecticidal soaps, horticultural oils, and release of predatory insects . Target the whitefly vector. Systemic neonicotinoids at transplant, followed by Cyantraniliprole , Spiromesifen , or Pyriproxyfen. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Plant TYLCV resistant tomato hybrids . Use five zero mesh insect screening on high tunnels per greenhouses to exclude whiteflies. Use UV reflective silver plastic mulch to repel migrating whiteflies. Rogue out infected plants immediately upon early symptom development."
+    },
+    "Tomato___Tomato_mosaic_virus": {
+      "diagnosis": "The image suggests Tomato Mosaic Virus. Check the symptoms before choosing a treatment.",
+      "symptoms": "Signs to look for. Mottled light and dark green mosaic patterns on leaves, leaf distortion, shoestring or fern like leaf narrowing, internal browning of fruit.",
+      "treatment": "Treatment advice. Strict sanitation, milk spray dips for tool and hand decontamination. No chemical cure exists for viral infections. Manage through sanitation and genetics. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Plant certified virus free seed and resistant cultivars . Disinfect hands and tools frequently in two zero percent non fat dry milk solution or one zero percent trisodium phosphate . Strictly prohibit tobacco smoking per chewing near tomato plants . Rogue out and destroy infected plants immediately. do not compost."
+    },
+    "Tomato___healthy": {
+      "diagnosis": "The leaves appear healthy. Continue regular crop care.",
+      "symptoms": "Signs to look for. Deep green compound leaves with healthy glandular hairs, no spots, wilting, mosaic, or leaf curl.",
+      "treatment": "Treatment advice. Companion planting with marigolds per basil and organic compost mulching. No chemical intervention needed. Follow the product label. Ask a local agricultural adviser before applying a chemical.",
+      "prevention": "Prevention advice. Maintain consistent staking, drip irrigation, balanced N P K and calcium fertilizing. Scout weekly for hornworms, fruitworms, and early foliar spots."
+    }
+  },
+  "prompts": {
+    "welcome": "Welcome. Choose a clear photograph of one affected leaf.",
+    "diagnosis_ready": "Your diagnosis is ready. Listen to each section for the next steps.",
+    "unavailable": "Audio not available, please read the text.. Your diagnosis is ready. Listen to each section for the next steps.",
+    "title": "Kisan Audio Assistant. Your diagnosis is ready. Listen to each section for the next steps.",
+    "badge": "Voice Narration. Your diagnosis is ready. Listen to each section for the next steps.",
+    "subtitle": "Listen to complete diagnosis and treatment steps in your local language. Your diagnosis is ready. Listen to each section for the next steps.",
+    "playing": "Playing Audio.... Your diagnosis is ready. Listen to each section for the next steps.",
+    "paused": "Audio Paused. Your diagnosis is ready. Listen to each section for the next steps.",
+    "ready": "Ready to Play. Your diagnosis is ready. Listen to each section for the next steps.",
+    "resume": "Resume Audio. Your diagnosis is ready. Listen to each section for the next steps.",
+    "pause": "Pause. Your diagnosis is ready. Listen to each section for the next steps.",
+    "stop": "Stop. Your diagnosis is ready. Listen to each section for the next steps.",
+    "speed": "Speed. Your diagnosis is ready. Listen to each section for the next steps.",
+    "fallback_notice": "Playing via device speech synthesis. Your diagnosis is ready. Listen to each section for the next steps.",
+    "section_overview": "Overview and Diagnosis. Your diagnosis is ready. Listen to each section for the next steps.",
+    "section_treatment": "Immediate Treatment. Your diagnosis is ready. Listen to each section for the next steps.",
+    "section_prevention": "Seasonal Prevention. Your diagnosis is ready. Listen to each section for the next steps.",
+    "download": "Download audio for offline use. Your diagnosis is ready. Listen to each section for the next steps.",
+    "downloaded": "Audio downloaded for offline use. Your diagnosis is ready. Listen to each section for the next steps.",
+    "download_error": "Audio download failed. Please try again.. Your diagnosis is ready. Listen to each section for the next steps.",
+    "tap_play": "Tap play to continue audio. Your diagnosis is ready. Listen to each section for the next steps.",
+    "section_diagnosis": "Diagnosis. Your diagnosis is ready. Listen to each section for the next steps.",
+    "section_symptoms": "Symptoms. Your diagnosis is ready. Listen to each section for the next steps.",
+    "replay": "Replay. Your diagnosis is ready. Listen to each section for the next steps.",
+    "loading": "Loading audio. Please wait."
+  }
+}

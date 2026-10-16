@@ -40,7 +40,7 @@ RUN useradd -m -u 1001 appuser && \
     chown -R appuser:appuser /app
 
 # Copy application source code
-COPY backend/app /app/backend/app
+COPY --chown=appuser:appuser backend/app /app/backend/app
 COPY ml/models /app/ml/models
 COPY ml/reports /app/ml/reports
 

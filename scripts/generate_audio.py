@@ -1,71 +1,77 @@
-"""Script to pre-generate and cache compressed neural audio for all 38 diseases and sections across regional languages."""
-import asyncio
+﻿"""Generate deployment MP3s from the separate narration catalog.
+
+TTS_PROVIDER=edge (default), google, or gtts. Optional TTS_FALLBACK_PROVIDER=gtts.
+Run from any directory. Failures produce a nonzero exit status, never fake audio.
+"""
 import argparse
+import asyncio
+import json
+import subprocess
 import sys
 from pathlib import Path
-
-BASE_DIR = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(BASE_DIR))
-
-from backend.app.services.i18n import get_i18n_config, load_localized_knowledge_base
-from backend.app.services.tts import build_narration_script, get_or_synthesize_audio, AUDIO_CACHE_DIR
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from backend.app.services.tts import (AUDIO_DIR, LANGUAGES, VOICES, catalog, get_or_synthesize_audio, atomic_write, validate_audio)
 
 
-async def pregenerate_all_audio(
-    target_languages=None,
-    dry_run: bool = False,
-    force: bool = False
-):
-    """Pre-generate and cache MP3 audio files for 38 classes × sections × languages."""
-    cfg = get_i18n_config()
-    supported_langs = [l["code"] for l in cfg.get("supported_languages", []) if l.get("is_active", True)]
-    
-    langs_to_process = target_languages or supported_langs
-    sections = ["overview", "treatment", "prevention"]
-    
-    print(f"Starting audio pre-generation for {len(langs_to_process)} languages: {langs_to_process}")
-    print(f"Target Cache Directory: {AUDIO_CACHE_DIR}")
-    
-    total_generated = 0
-    total_skipped = 0
-    
-    for lang in langs_to_process:
-        kb = load_localized_knowledge_base(lang)
-        print(f"\nProcessing language: '{lang}' ({len(kb)} classes)...")
-        
-        for disease_id in kb.keys():
-            for section in sections:
-                script = build_narration_script(disease_id, section, lang)
-                
-                if dry_run:
-                    print(f"  [DRY-RUN] {lang} | {disease_id} | {section} -> Script length: {len(script)} chars")
-                    total_generated += 1
-                    continue
-                
-                try:
-                    audio_bytes = await get_or_synthesize_audio(
-                        text=script,
-                        lang=lang,
-                        rate=1.0,
-                        force_refresh=force
-                    )
-                    total_generated += 1
-                except Exception as e:
-                    print(f"  [ERROR] Failed to synthesize {disease_id}/{section} in {lang}: {e}")
-                    
-    print(f"\nAudio generation completed! Total files generated/cached: {total_generated}")
+def compress(data):
+    import imageio_ffmpeg
+    result = subprocess.run([imageio_ffmpeg.get_ffmpeg_exe(), '-hide_banner', '-loglevel', 'error', '-i', 'pipe:0', '-ac', '1', '-ar', '24000', '-codec:a', 'libmp3lame', '-b:a', '40k', '-f', 'mp3', 'pipe:1'], input=data, capture_output=True, check=True)
+    validate_audio(result.stdout)
+    return result.stdout
 
 
-def main():
-    parser = argparse.ArgumentParser(description="AgriShield Audio Narration Pre-Generator")
-    parser.add_argument("--lang", type=str, help="Specific language code (e.g. hi, te, ta, kn, ml, mr, bn, es, en)")
-    parser.add_argument("--dry-run", action="store_true", help="Print scripts without making TTS network calls")
-    parser.add_argument("--force", action="store_true", help="Force re-generation and overwrite existing cache")
-    args = parser.parse_args()
+async def generate(args):
+    if args.verify_voices:
+        import edge_tts
+        available = {v['ShortName'] for v in await edge_tts.list_voices()}
+        for voice in VOICES.values():
+            if voice not in available:
+                raise RuntimeError(f'Voice missing: {voice}')
+            print(f'Verified {voice}', flush=True)
+    jobs = []
+    for lang in ([args.lang] if args.lang else LANGUAGES):
+        data = catalog(lang)
+        for key, sections in data['diseases'].items():
+            if args.disease and key != args.disease:
+                continue
+            jobs.extend((lang, key, section, text) for section, text in sections.items())
+        if not args.disease:
+            jobs.extend((lang, '_common', key, text) for key, text in data['prompts'].items())
+    if args.dry_run:
+        print(f'Expected {len(jobs)} MP3 files in {AUDIO_DIR}')
+        return
+    semaphore = asyncio.Semaphore(args.jobs)
+    counts = {'generated': 0, 'existing': 0, 'failed': 0}
+    async def one(job):
+        lang, key, section, text = job
+        path = AUDIO_DIR / lang / key / f'{section}.mp3'
+        async with semaphore:
+            try:
+                if path.exists() and not args.force:
+                    validate_audio(path.read_bytes())
+                    counts['existing'] += 1
+                    return
+                data = await get_or_synthesize_audio(text, lang, force_refresh=args.force)
+                data = await asyncio.to_thread(compress, data)
+                atomic_write(path, data)
+                counts['generated'] += 1
+            except Exception as exc:
+                counts['failed'] += 1
+                print(f'FAIL {lang}/{key}/{section}: {type(exc).__name__}: {str(exc).split("url=")[0]}', flush=True)
+            if sum(counts.values()) % 25 == 0:
+                print(json.dumps(counts), flush=True)
+    await asyncio.gather(*(one(job) for job in jobs))
+    print(json.dumps(counts), flush=True)
+    if counts['failed']:
+        raise SystemExit(1)
 
-    target_langs = [args.lang] if args.lang else None
-    asyncio.run(pregenerate_all_audio(target_languages=target_langs, dry_run=args.dry_run, force=args.force))
 
-
-if __name__ == "__main__":
-    main()
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--lang', choices=LANGUAGES)
+    parser.add_argument('--disease')
+    parser.add_argument('--jobs', type=int, choices=range(1, 9), default=3)
+    parser.add_argument('--force', action='store_true')
+    parser.add_argument('--dry-run', action='store_true')
+    parser.add_argument('--verify-voices', action='store_true')
+    asyncio.run(generate(parser.parse_args()))

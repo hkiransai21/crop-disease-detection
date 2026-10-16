@@ -25,6 +25,8 @@ services:
     restart: unless-stopped
     environment:
       ENVIRONMENT: production
+      TTS_PROVIDER: ${TTS_PROVIDER:-edge}
+      TTS_FALLBACK_PROVIDER: ${TTS_FALLBACK_PROVIDER:-}
       DATABASE_URL: postgresql+asyncpg://${POSTGRES_USER:-crop_user}:${POSTGRES_PASSWORD:-crop_secure_password_123}@postgres:5432/${POSTGRES_DB:-crop_disease_db}
       SECRET_KEY: ${SECRET_KEY:-crop_ai_super_secret_production_key_change_in_real_deployment_2026}
       BACKEND_CORS_ORIGINS: '["http://localhost", "http://localhost:80", "http://localhost:3000", "http://localhost:5173"]'

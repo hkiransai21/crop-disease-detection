@@ -50,46 +50,6 @@
       "tts_fallback_voice": "kn-IN-GaganNeural",
       "review_status": "expert_reviewed",
       "is_active": true
-    },
-    {
-      "code": "ml",
-      "name": "Malayalam",
-      "native_name": "മലയാളം",
-      "script_direction": "ltr",
-      "tts_voice": "ml-IN-SobhanaNeural",
-      "tts_fallback_voice": "ml-IN-MidhunNeural",
-      "review_status": "expert_reviewed",
-      "is_active": true
-    },
-    {
-      "code": "mr",
-      "name": "Marathi",
-      "native_name": "मराठी",
-      "script_direction": "ltr",
-      "tts_voice": "mr-IN-AarohiNeural",
-      "tts_fallback_voice": "mr-IN-ManoharNeural",
-      "review_status": "expert_reviewed",
-      "is_active": true
-    },
-    {
-      "code": "bn",
-      "name": "Bengali",
-      "native_name": "বাংলা",
-      "script_direction": "ltr",
-      "tts_voice": "bn-IN-TanishaaNeural",
-      "tts_fallback_voice": "bn-IN-BashkarNeural",
-      "review_status": "expert_reviewed",
-      "is_active": true
-    },
-    {
-      "code": "es",
-      "name": "Spanish",
-      "native_name": "Español",
-      "script_direction": "ltr",
-      "tts_voice": "es-ES-ElviraNeural",
-      "tts_fallback_voice": "es-ES-AlvaroNeural",
-      "review_status": "expert_reviewed",
-      "is_active": true
     }
   ]
 }

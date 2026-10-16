@@ -1,106 +1,67 @@
-"""Multilingual Audio Narration and TTS API Endpoints."""
-from typing import Optional
-from fastapi import APIRouter, HTTPException, status, Query, Response, Request, Depends
-from backend.app.schemas.i18n import SupportedLanguagesResponse, AudioSynthesizeRequest
-from backend.app.services.i18n import get_supported_languages, resolve_language, get_localized_disease_entry, get_localized_glossary
-from backend.app.services.tts import get_or_synthesize_audio, build_narration_script
+﻿"""Static narration delivery and bounded dynamic TTS fallback."""
+import logging
+from typing import Literal
+from fastapi import APIRouter, HTTPException, Query, Request, Response
+from fastapi.responses import FileResponse
 from backend.app.api.deps import limiter
-from backend.app.core.config import settings
+from backend.app.services.i18n import get_supported_languages, get_localized_glossary
+from backend.app.services.tts import AUDIO_DIR, catalog, get_or_synthesize_audio
 
-router = APIRouter(prefix="/audio", tags=["Multilingual Audio Narration"])
+Language = Literal['en', 'hi', 'ta', 'te', 'kn']
+router = APIRouter(prefix='/audio', tags=['Audio'])
+logger = logging.getLogger(__name__)
 
 
-@router.get("/languages", response_model=SupportedLanguagesResponse)
-async def list_supported_audio_languages():
-    """Retrieve all configured regional languages, native labels, and neural voice models."""
+@router.get('/languages')
+async def languages():
     return get_supported_languages()
 
 
-@router.get("/glossary/{lang}")
-async def get_language_glossary(lang: str):
-    """Retrieve curated disease names and agronomic terminology glossary for a language."""
-    glossary = get_localized_glossary(lang)
-    if not glossary:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Glossary not found for language '{lang}'."
-        )
-    return glossary
+@router.get('/glossary/{lang}')
+async def glossary(lang: Language):
+    return get_localized_glossary(lang)
 
 
-@router.get("/{disease_id}/{section}")
-async def get_disease_section_audio(
-    disease_id: str,
-    section: str,
-    lang: Optional[str] = Query("en", description="Language code (e.g. en, hi, te, ta, kn, ml, mr, bn, es)"),
-    rate: float = Query(1.0, ge=0.5, le=2.0, description="Speech rate multiplier (0.5 to 2.0)"),
-    force_refresh: bool = Query(False, description="Bypass cache and force re-synthesis")
-):
-    """
-    Fetch pre-rendered or on-demand synthesized spoken audio narration for a specific disease section.
-    Sections: 'overview', 'treatment', 'prevention'.
-    Returns streaming MP3 audio with long-lived browser cache headers.
-    """
-    resolved_lang = resolve_language(lang)
-    if section not in ("overview", "treatment", "prevention"):
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Invalid section. Must be one of: overview, treatment, prevention."
-        )
-
-    entry = get_localized_disease_entry(disease_id, resolved_lang)
-    if not entry:
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND,
-            detail=f"Disease '{disease_id}' not found in knowledge base."
-        )
-
-    narration_text = build_narration_script(disease_id, section, resolved_lang)
-    audio_bytes = await get_or_synthesize_audio(
-        text=narration_text,
-        lang=resolved_lang,
-        rate=rate,
-        force_refresh=force_refresh
-    )
-
-    return Response(
-        content=audio_bytes,
-        media_type="audio/mpeg",
-        headers={
-            "Content-Disposition": f'inline; filename="{disease_id}_{section}_{resolved_lang}.mp3"',
-            "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800",
-            "X-Language-Code": resolved_lang,
-            "X-Audio-Section": section
-        }
-    )
+@router.get('/catalog/{lang}')
+async def narration_catalog(lang: Language):
+    return catalog(lang)
 
 
-@router.post("/synthesize")
-@limiter.limit("30/minute")
-async def synthesize_dynamic_text(
-    request: Request,
-    payload: AudioSynthesizeRequest
-):
-    """
-    Synthesize arbitrary farmer advisory or risk text into natural neural audio with rate limiting.
-    """
-    if not payload.text or len(payload.text.strip()) == 0:
-        raise HTTPException(status_code=400, detail="Text cannot be empty.")
+@router.get('/manifest/{lang}')
+async def manifest(lang: Language):
+    data = catalog(lang)
+    paths = [f'{key}/{section}' for key, sections in data['diseases'].items() for section in sections]
+    paths += [f'_common/{key}' for key in data['prompts']]
+    return {'language': lang, 'files': [f'/api/v1/audio/files/{lang}/{path}.mp3' for path in paths]}
 
-    resolved_lang = resolve_language(payload.lang)
-    audio_bytes = await get_or_synthesize_audio(
-        text=payload.text,
-        lang=resolved_lang,
-        voice=payload.voice,
-        rate=payload.rate
-    )
 
-    return Response(
-        content=audio_bytes,
-        media_type="audio/mpeg",
-        headers={
-            "Content-Disposition": 'inline; filename="dynamic_narration.mp3"',
-            "Cache-Control": "public, max-age=3600",
-            "X-Language-Code": resolved_lang
-        }
-    )
+@router.get('/files/{lang}/{disease_id}/{filename}')
+async def static_audio(lang: Language, disease_id: str, filename: str):
+    data = catalog(lang)
+    sections = data['prompts'] if disease_id == '_common' else data['diseases'].get(disease_id, {})
+    if not filename.endswith('.mp3') or filename[:-4] not in sections:
+        raise HTTPException(404, 'Unknown narration')
+    path = AUDIO_DIR / lang / disease_id / filename
+    if not path.is_file():
+        raise HTTPException(404, 'Audio has not been generated')
+    return FileResponse(path, media_type='audio/mpeg', headers={'Cache-Control': 'no-store'})
+
+
+@router.get('/tts')
+@limiter.limit('10/minute')
+async def dynamic_tts(request: Request, text: str = Query(..., min_length=1, max_length=2000), lang: Language = 'en'):
+    if not text.strip() or len(text.encode('utf-8')) > 4500:
+        raise HTTPException(422, 'Text is empty or exceeds 4500 UTF-8 bytes; split into shorter sections')
+    try:
+        data = await get_or_synthesize_audio(text, lang)
+    except Exception as exc:
+        logger.error('TTS failed for %s: %s: %s', lang, type(exc).__name__, str(exc).split('url=')[0])
+        raise HTTPException(503, 'Audio synthesis unavailable', headers={'Cache-Control': 'no-store'}) from exc
+    return Response(data, media_type='audio/mpeg', headers={'Cache-Control': 'no-store'})
+
+
+@router.get('/{disease_id}/{section}')
+async def legacy_static_audio(disease_id: str, section: str, lang: Language = 'en'):
+    # Existing bookmarks can still play, but never synthesize on this route.
+    section = 'diagnosis' if section == 'overview' else section
+    return await static_audio(lang, disease_id, f'{section}.mp3')
