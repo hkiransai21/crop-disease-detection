@@ -1,8 +1,8 @@
 """Full i18n data generator for AgriShield AI.
 Generates:
-1. backend/app/data/i18n/glossary/{lang}.json (for en, hi, te, ta, kn, ml, mr, bn, es)
-2. backend/app/data/i18n/{lang}/diseases.json (for en, hi, te, ta, kn, ml, mr, bn, es)
-3. frontend/src/i18n/locales/{lang}.json (for en, hi, te, ta, kn, ml, mr, bn, es)
+1. backend/app/data/i18n/glossary/{lang}.json (for en, hi, te, ta, kn)
+2. backend/app/data/i18n/{lang}/diseases.json (for en, hi, te, ta, kn)
+3. frontend/src/i18n/locales/{lang}.json (for en, hi, te, ta, kn)
 """
 import json
 import os
@@ -14,18 +14,12 @@ BACKEND_I18N = BASE_DIR / "backend" / "app" / "data" / "i18n"
 GLOSSARY_DIR = BACKEND_I18N / "glossary"
 FRONTEND_LOCALES = BASE_DIR / "frontend" / "src" / "i18n" / "locales"
 
-LANGUAGES = ["en", "hi", "te", "ta", "kn", "ml", "mr", "bn", "es"]
-LANG_NAMES = {
-    "en": "English",
-    "hi": "Hindi (हिन्दी)",
-    "te": "Telugu (తెలుగు)",
-    "ta": "Tamil (தமிழ்)",
-    "kn": "Kannada (ಕನ್ನಡ)",
-    "ml": "Malayalam (മലയാളം)",
-    "mr": "Marathi (मराठी)",
-    "bn": "Bengali (বাংলা)",
-    "es": "Spanish (Español)"
-}
+LANGUAGES = ["en", "hi", "te", "ta", "kn"]
+LANG_NAMES = {'en': 'English',
+ 'hi': 'Hindi (हिन्दी)',
+ 'te': 'Telugu (తెలుగు)',
+ 'ta': 'Tamil (தமிழ்)',
+ 'kn': 'Kannada (ಕನ್ನಡ)'}
 
 # 38 PlantVillage Classes Definitions & Translations
 DISEASE_TRANSLATIONS = {

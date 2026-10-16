@@ -1,7 +1,7 @@
 """Comprehensive 38-class multilingual generator for AgriShield AI.
 Includes:
 - Complete glossary per language
-- Complete 38 disease monographs per language (en, hi, te, ta, kn, ml, mr, bn, es)
+- Complete 38 disease monographs per language (en, hi, te, ta, kn)
 - Complete UI locale dictionaries for React frontend
 - Numeric and chemical dosage validation
 """

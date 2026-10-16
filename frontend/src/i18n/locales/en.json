@@ -101,7 +101,16 @@
     "fallback_notice": "Playing via device speech synthesis (Server voice offline)",
     "section_overview": "Overview & Diagnosis",
     "section_treatment": "Immediate Treatment",
-    "section_prevention": "Seasonal Prevention"
+    "section_prevention": "Seasonal Prevention",
+    "unavailable": "Audio not available, please read the text.",
+    "download": "Download audio for offline use",
+    "downloaded": "Audio downloaded for offline use",
+    "download_error": "Audio download failed. Please try again.",
+    "tap_play": "Tap play to continue audio",
+    "section_diagnosis": "Diagnosis",
+    "section_symptoms": "Symptoms",
+    "replay": "Replay",
+    "loading": "Loading audio. Please wait."
   },
   "feedback": {
     "title": "Diagnostic Feedback",

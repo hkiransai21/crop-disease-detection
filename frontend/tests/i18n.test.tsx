@@ -5,17 +5,13 @@ import hi from '../src/i18n/locales/hi.json';
 import te from '../src/i18n/locales/te.json';
 import ta from '../src/i18n/locales/ta.json';
 import kn from '../src/i18n/locales/kn.json';
-import ml from '../src/i18n/locales/ml.json';
-import mr from '../src/i18n/locales/mr.json';
-import bn from '../src/i18n/locales/bn.json';
-import es from '../src/i18n/locales/es.json';
 
 describe('Frontend i18n Localization Integrity', () => {
-  const bundles: Record<string, any> = { en, hi, te, ta, kn, ml, mr, bn, es };
+  const bundles: Record<string, any> = { en, hi, te, ta, kn };
   const languages = Object.keys(bundles);
 
-  it('supports all 9 regional and international languages', () => {
-    expect(languages).toEqual(['en', 'hi', 'te', 'ta', 'kn', 'ml', 'mr', 'bn', 'es']);
+  it('supports only five supported languages', () => {
+    expect(languages).toEqual(['en', 'hi', 'te', 'ta', 'kn']);
   });
 
   function getKeys(obj: any, prefix = ''): string[] {

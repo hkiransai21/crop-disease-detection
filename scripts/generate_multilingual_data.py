@@ -28,19 +28,15 @@ with open(BASE_DIR / "backend" / "app" / "knowledge_base" / "diseases.yaml", "r"
     en_kb = yaml.safe_load(f)
 
 en_entries = {d["id"]: d for d in en_kb["diseases"]}
-LANGUAGES = ["en", "hi", "te", "ta", "kn", "ml", "mr", "bn", "es"]
+LANGUAGES = ["en", "hi", "te", "ta", "kn"]
 
-LANG_META = {
-    "en": {"name": "English", "native": "English", "source": "Penn State / Cornell / UC Davis Extension"},
-    "hi": {"name": "Hindi", "native": "हिन्दी", "source": "ICAR-IARI / GBPUAT Extension"},
-    "te": {"name": "Telugu", "native": "తెలుగు", "source": "PJTSAU / ANGRAU Extension"},
-    "ta": {"name": "Tamil", "native": "தமிழ்", "source": "TNAU Agritech Portal"},
-    "kn": {"name": "Kannada", "native": "ಕನ್ನಡ", "source": "UAS Bangalore / UAS Dharwad"},
-    "ml": {"name": "Malayalam", "native": "മലയാളം", "source": "Kerala Agricultural University"},
-    "mr": {"name": "Marathi", "native": "मराठी", "source": "MPKV Rahuri Extension"},
-    "bn": {"name": "Bengali", "native": "বাংলা", "source": "BCKV / BARI Extension"},
-    "es": {"name": "Spanish", "native": "Español", "source": "FAO / INTA Guías Agrícolas"}
-}
+LANG_META = {'en': {'name': 'English',
+        'native': 'English',
+        'source': 'Penn State / Cornell / UC Davis Extension'},
+ 'hi': {'name': 'Hindi', 'native': 'हिन्दी', 'source': 'ICAR-IARI / GBPUAT Extension'},
+ 'te': {'name': 'Telugu', 'native': 'తెలుగు', 'source': 'PJTSAU / ANGRAU Extension'},
+ 'ta': {'name': 'Tamil', 'native': 'தமிழ்', 'source': 'TNAU Agritech Portal'},
+ 'kn': {'name': 'Kannada', 'native': 'ಕನ್ನಡ', 'source': 'UAS Bangalore / UAS Dharwad'}}
 
 # Agronomic common terms
 AGRONOMIC_TERMS = {
@@ -723,8 +719,8 @@ UI_TRANSLATIONS = {
     }
 }
 
-# Regional UI translations mapping logic for te, ta, kn, ml, mr, bn, es
-for lang in ["te", "ta", "kn", "ml", "mr", "bn", "es"]:
+# Regional UI translations mapping logic for te, ta, kn
+for lang in ["te", "ta", "kn"]:
     native_n = LANG_META[lang]["native"]
     name_n = LANG_META[lang]["name"]
     

@@ -232,9 +232,9 @@ class ApiClient {
   }
 
   // --- Audio Narration ---
-  getAudioUrl(diseaseId: string, section: string, lang?: string, rate: number = 1.0): string {
+  getAudioUrl(diseaseId: string, section: string, lang?: string): string {
     const targetLang = lang || this.getCurrentLang();
-    return `${API_BASE}/audio/${encodeURIComponent(diseaseId)}/${encodeURIComponent(section)}?lang=${encodeURIComponent(targetLang)}&rate=${rate}`;
+    return `${API_BASE}/audio/files/${encodeURIComponent(targetLang)}/${encodeURIComponent(diseaseId)}/${encodeURIComponent(section === 'overview' ? 'diagnosis' : section)}.mp3`;
   }
 
   async getAudioLanguages(): Promise<any> {
@@ -246,20 +246,9 @@ class ApiClient {
     return this.request<any>(`/audio/glossary/${encodeURIComponent(targetLang)}`);
   }
 
-  async synthesizeAudioBlob(text: string, lang?: string, rate: number = 1.0): Promise<Blob> {
+  async synthesizeAudioBlob(text: string, lang?: string): Promise<Blob> {
     const targetLang = lang || this.getCurrentLang();
-    const response = await fetch(`${API_BASE}/audio/synthesize`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept-Language': targetLang,
-      },
-      body: JSON.stringify({
-        text,
-        lang: targetLang,
-        rate,
-      }),
-    });
+    const response = await fetch(`${API_BASE}/audio/tts?${new URLSearchParams({ text, lang: targetLang })}`);
     if (!response.ok) {
       throw new Error('Failed to synthesize audio');
     }

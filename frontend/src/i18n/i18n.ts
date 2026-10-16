@@ -7,10 +7,6 @@ import hi from './locales/hi.json';
 import te from './locales/te.json';
 import ta from './locales/ta.json';
 import kn from './locales/kn.json';
-import ml from './locales/ml.json';
-import mr from './locales/mr.json';
-import bn from './locales/bn.json';
-import es from './locales/es.json';
 
 export interface LanguageOption {
   code: string;
@@ -25,10 +21,6 @@ export const SUPPORTED_LANGUAGES: LanguageOption[] = [
   { code: 'te', label: 'Telugu', nativeLabel: 'తెలుగు', voiceLang: 'te-IN' },
   { code: 'ta', label: 'Tamil', nativeLabel: 'தமிழ்', voiceLang: 'ta-IN' },
   { code: 'kn', label: 'Kannada', nativeLabel: 'ಕನ್ನಡ', voiceLang: 'kn-IN' },
-  { code: 'ml', label: 'Malayalam', nativeLabel: 'മലയാളം', voiceLang: 'ml-IN' },
-  { code: 'mr', label: 'Marathi', nativeLabel: 'मराठी', voiceLang: 'mr-IN' },
-  { code: 'bn', label: 'Bengali', nativeLabel: 'বাংলা', voiceLang: 'bn-IN' },
-  { code: 'es', label: 'Spanish', nativeLabel: 'Español', voiceLang: 'es-ES' },
 ];
 
 i18n
@@ -41,12 +33,10 @@ i18n
       te: { translation: te },
       ta: { translation: ta },
       kn: { translation: kn },
-      ml: { translation: ml },
-      mr: { translation: mr },
-      bn: { translation: bn },
-      es: { translation: es },
     },
     fallbackLng: 'en',
+    supportedLngs: ['en', 'hi', 'ta', 'te', 'kn'],
+    load: 'languageOnly',
     detection: {
       order: ['localStorage', 'navigator'],
       lookupLocalStorage: 'agrishield_language',

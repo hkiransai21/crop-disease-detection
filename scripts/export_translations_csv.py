@@ -75,7 +75,7 @@ def main():
     parser.add_argument("--lang", default="all", help="Target language code or 'all'")
     args = parser.parse_args()
 
-    languages = ["hi", "te", "ta", "kn", "ml", "mr", "bn", "es"] if args.lang == "all" else [args.lang]
+    languages = ["hi", "te", "ta", "kn"] if args.lang == "all" else [args.lang]
 
     for lang in languages:
         csv_file = OUTPUT_DIR / f"translation_review_{lang}.csv"

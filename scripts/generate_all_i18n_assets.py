@@ -22,18 +22,16 @@ with open(BASE_DIR / "backend" / "app" / "knowledge_base" / "diseases.yaml", "r"
 
 en_entries = {d["id"]: d for d in en_kb["diseases"]}
 
-LANGUAGES = ["en", "hi", "te", "ta", "kn", "ml", "mr", "bn", "es"]
-LANG_METADATA = {
-    "en": {"name": "English", "native": "English", "source": "Penn State / Cornell / UC Davis Extension"},
-    "hi": {"name": "Hindi", "native": "हिन्दी", "source": "ICAR-IARI / GBPUAT Pantnagar Extension"},
-    "te": {"name": "Telugu", "native": "తెలుగు", "source": "PJTSAU / ANGRAU Vyavasaya Calendar"},
-    "ta": {"name": "Tamil", "native": "தமிழ்", "source": "TNAU Agritech Portal Extension"},
-    "kn": {"name": "Kannada", "native": "ಕನ್ನಡ", "source": "UAS Bangalore / UAS Dharwad Krishi Kai-pidi"},
-    "ml": {"name": "Malayalam", "native": "മലയാളം", "source": "KAU Ad-hoc Package of Practices"},
-    "mr": {"name": "Marathi", "native": "मराठी", "source": "MPKV Rahuri Krishi Darshani"},
-    "bn": {"name": "Bengali", "native": "বাংলা", "source": "BCKV / BARI Krishi Tathya Kosha"},
-    "es": {"name": "Spanish", "native": "Español", "source": "INTA / FAO / SAGARPA Guías Agrícolas"}
-}
+LANGUAGES = ["en", "hi", "te", "ta", "kn"]
+LANG_METADATA = {'en': {'name': 'English',
+        'native': 'English',
+        'source': 'Penn State / Cornell / UC Davis Extension'},
+ 'hi': {'name': 'Hindi', 'native': 'हिन्दी', 'source': 'ICAR-IARI / GBPUAT Pantnagar Extension'},
+ 'te': {'name': 'Telugu', 'native': 'తెలుగు', 'source': 'PJTSAU / ANGRAU Vyavasaya Calendar'},
+ 'ta': {'name': 'Tamil', 'native': 'தமிழ்', 'source': 'TNAU Agritech Portal Extension'},
+ 'kn': {'name': 'Kannada',
+        'native': 'ಕನ್ನಡ',
+        'source': 'UAS Bangalore / UAS Dharwad Krishi Kai-pidi'}}
 
 # Standard Safety Notes
 SAFETY_NOTES = {

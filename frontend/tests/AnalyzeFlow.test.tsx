@@ -1,3 +1,4 @@
+import { MemoryRouter } from 'react-router-dom';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import React from 'react';
@@ -164,10 +165,10 @@ describe('Frontend Component Tests', () => {
       }
     };
 
-    render(<AudioNarrator analysis={mockAnalysis as any} />);
+    render(<MemoryRouter><AudioNarrator analysis={mockAnalysis as any} /></MemoryRouter>);
 
     expect(screen.getByText('Kisan Audio Assistant')).toBeInTheDocument();
-    expect(screen.getAllByText(/1800-180-1551/)[0]).toBeInTheDocument();
+    expect(screen.getByText('Download audio for offline use')).toBeInTheDocument();
     expect(screen.getAllByText(/Listen in/)[0]).toBeInTheDocument();
   });
 

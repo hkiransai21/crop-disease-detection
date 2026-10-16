@@ -432,8 +432,8 @@ UI_TRANSLATIONS = {
     }
 }
 
-# For other languages (kn, ml, mr, bn, es), build from comprehensive localized maps
-# Let's populate kn, ml, mr, bn, es with proper script
+# For other languages (kn), build from comprehensive localized maps
+# Let's populate kn with proper script
 KANNADA_UI = {
     "app_title": "AgriShield AI",
     "tagline": "AI ಬೆಳೆ ರೋಗ ಪತ್ತೆ ಮತ್ತು ಹರಡುವಿಕೆ ಅಪಾಯ ಮುನ್ಸೂಚನೆ",
@@ -442,45 +442,11 @@ KANNADA_UI = {
     "audio": {"title": "ಕಿಸಾನ್ ಆಡಿಯೋ ಸಹಾಯಕ", "badge": "ಧ್ವನಿ ನಿರೂಪಣೆ", "subtitle": "ನಿಮ್ಮ ಸ್ಥಳೀಯ ಭಾಷೆಯಲ್ಲಿ ರೋಗ ನಿರ್ಣಯ ಮತ್ತು ಚಿಕಿತ್ಸಾ ಕ್ರಮಗಳನ್ನು ಕೇಳಿ", "listen_btn": "ಕನ್ನಡದಲ್ಲಿ ಕೇಳಿ", "playing": "ಆಡಿಯೋ ಪ್ಲೇ ಆಗುತ್ತಿದೆ...", "paused": "ಆಡಿಯೋ ವಿರಾಮಗೊಳಿಸಲಾಗಿದೆ", "ready": "ಕೇಳಲು ಸಿದ್ಧ", "resume": "ಮುಂದುವರಿಸಿ", "pause": "ವಿರಾಮ", "stop": "ನಿಲ್ಲಿಸಿ", "speed": "ವೇಗ", "helpline_text": "ಕಿಸಾನ್ ಕಾಲ್ ಸೆಂಟರ್ (ಉಚಿತ ಸರ್ಕಾರಿ ಸಹಾಯವಾಣಿ):", "call_btn": "1800-180-1551 ಗೆ ಕರೆ ಮಾಡಿ", "fallback_notice": "ಸಾಧನ ಭಾಷಣ ಸಂಶ್ಲೇಷಣೆ ಮೂಲಕ ಪ್ಲೇ ಆಗುತ್ತಿದೆ", "section_overview": "ಅವಲೋಕನ ಮತ್ತು ರೋಗ ನಿರ್ಣಯ", "section_treatment": "ತಕ್ಷಣದ ಚಿಕಿತ್ಸಾ ಕ್ರಮಗಳು", "section_prevention": "ಋತುಮಾನದ ಮುನ್ನೆಚ್ಚರಿಕೆ"}
 }
 
-MALAYALAM_UI = {
-    "app_title": "AgriShield AI",
-    "tagline": "AI വിള രോഗനിർണ്ണയവും കാലാവസ്ഥാ വ്യാപന സാധ്യത മുന്നറിയിപ്പും",
-    "nav": {"diagnose": "വിള പരിശോധന", "history": "എന്റെ ചരിത്രം", "diseases": "രോഗ ഗൈഡ്", "about": "മോഡലും സുരക്ഷയും", "login": "ലോഗിൻ", "register": "രജിസ്റ്റർ ചെയ്യുക", "logout": "ലോഗ് ഔട്ട്", "select_language": "ഭാഷ മാറ്റുക", "offline_ready": "ഓഡിയോ ഓഫ്‌ലൈനിൽ ലഭ്യമാണ്"},
-    "analyze": {"title": "വിള ഇല പരിശോധിക്കുക", "upload_instruction": "രോഗബാധയുള്ള ഇലയുടെ വ്യക്തമായ ഫോട്ടോ എടുക്കുക", "upload_btn": "ഫോട്ടോ അപ്‌ലോഡ് ചെയ്യുക / എടുക്കുക", "camera_btn": "ക്യാമറ തുറക്കുക", "choose_file": "ഗാലറിയിൽ നിന്ന് തിരഞ്ഞെടുക്കുക", "drag_drop": "അല്ലെങ്കിൽ ഇലയുടെ ഫോട്ടോ ഇവിടെ ഇടുക", "tips_title": "കൃത്യമായ ഫോട്ടോ എടുക്കാനുള്ള നുറുങ്ങുകൾ", "tip_1": "ലക്ഷണങ്ങൾ കാണുന്ന ഒരൊറ്റ ഇലയിൽ കേന്ദ്രീകരിക്കുക", "tip_2": "നല്ല പകൽ വെളിച്ചത്തിൽ ഫോട്ടോ എടുക്കുക", "tip_3": "മങ്ങിയ ഫോട്ടോകൾ ഒഴിവാക്കുക", "location_title": "കാലാവസ്ഥാ രോഗസാധ്യത ടെലിമെട്രി", "use_gps": "എന്റെ കൃഷിയിട സ്ഥലം ഉപയോഗിക്കുക", "search_place": "നഗരം അല്ലെങ്കിൽ ജില്ല തിരയുക", "manual_weather": "കാലാവസ്ഥ സ്വയം രേഖപ്പെടുത്തുക", "temp_label": "താപനില (°C)", "humidity_label": "ഈർപ്പം (%)", "rainfall_label": "7 ദിവസത്തെ മഴ (mm)", "submit_btn": "AI രോഗനിർണ്ണയവും സാധ്യതയും പരിശോധിക്കുക", "analyzing": "ഇല പരിശോധിക്കുന്നു..."},
-    "audio": {"title": "കിസാൻ ഓഡിയോ അസിസ്റ്റന്റ്", "badge": "ശബ്ദ വിവരണം", "subtitle": "നിങ്ങളുടെ മാതൃഭാഷയിൽ പൂർണ്ണ രോഗനിർണ്ണയവും ചികിത്സാ ഘട്ടങ്ങളും കേൾക്കുക", "listen_btn": "മലയാളത്തിൽ കേൾക്കുക", "playing": "ഓഡിയോ പ്ലേ ചെയ്യുന്നു...", "paused": "ഓഡിയോ താൽക്കാലികമായി നിർത്തി", "ready": "കേൾക്കാൻ തയ്യാറാണ്", "resume": "തുടരുക", "pause": "താൽക്കാലികമായി നിർത്തുക", "stop": "നിർത്തുക", "speed": "വേഗത", "helpline_text": "കിസാൻ കോൾ സെന്റർ (ടോൾ ഫ്രീ സർക്കാർ ഹെൽപ്പ് ലൈൻ):", "call_btn": "1800-180-1551 ലേക്ക് വിളിക്കുക", "fallback_notice": "ഡിവൈസ് സ്പീച്ച് സിന്തസിസ് വഴി പ്ലേ ചെയ്യുന്നു", "section_overview": "അവലോകനവും രോഗനിർണ്ണയവും", "section_treatment": "ഉടനടി ചെയ്യേണ്ട ചികിത്സകൾ", "section_prevention": "കാലാനുസൃത പ്രതിരോധം"}
-}
 
-MARATHI_UI = {
-    "app_title": "AgriShield AI",
-    "tagline": "एआय पीक रोग निदान आणि प्रादुर्भाव जोखीम अंदाज",
-    "nav": {"diagnose": "पीक तपासणी", "history": "माझा इतिहास", "diseases": "रोग मार्गदर्शिका", "about": "मॉडेल आणि सुरक्षा", "login": "लॉग इन", "register": "नोंदणी करा", "logout": "लॉग आउट", "select_language": "भाषा बदला", "offline_ready": "ऑडिओ ऑफलाइन उपलब्ध आहे"},
-    "analyze": {"title": "पीक पानाचे विश्लेषण करा", "upload_instruction": "रोगट पानाचा स्पष्ट आणि चांगल्या प्रकाशातील फोटो घ्या", "upload_btn": "फोटो अपलोड करा / घ्या", "camera_btn": "कॅमेरा वापरा", "choose_file": "गॅलरीतून निवडा", "drag_drop": "किंवा पानाचा फोटो येथे टाका", "tips_title": "अचूक फोटोसाठी टिप्स", "tip_1": "डाग असलेल्या एकाच पानावर लक्ष केंद्रित करा", "tip_2": "नैसर्गिक प्रकाशात फोटो घ्या, सावली टाळा", "tip_3": "अस्पष्ट फोटो टाळा", "location_title": "हवामान जोखीम टेलिमेट्री", "use_gps": "शेताचे स्थान वापरा", "search_place": "शहर किंवा जिल्हा शोधा", "manual_weather": "हवामान स्वतः प्रविष्ट करा", "temp_label": "तापमान (°C)", "humidity_label": "आर्द्रता (%)", "rainfall_label": "7 दिवसांचा पाऊस (mm)", "submit_btn": "एआय रोग निदान आणि जोखीम मूल्यांकन चालवा", "analyzing": "पानाचे विश्लेषण आणि हवामान जोखीम मोजत आहे..."},
-    "audio": {"title": "किसान ऑडिओ सहाय्यक", "badge": "आवाज वर्णन", "subtitle": "आपल्या भाषेत संपूर्ण रोग निदान आणि उपचार पायऱ्या ऐका", "listen_btn": "मराठीत ऐका", "playing": "ऑडिओ वाजत आहे...", "paused": "ऑडिओ थांबवला आहे", "ready": "ऐकण्यासाठी तयार", "resume": "पुन्हा सुरू करा", "pause": "थांबवा", "stop": "बंद करा", "speed": "वेग", "helpline_text": "किसान कॉल सेंटर (टोल-फ्री सरकारी हेल्पलाइन):", "call_btn": "1800-180-1551 वर कॉल करा", "fallback_notice": "डिव्हाइस स्पीच सिंथेसिस द्वारे प्ले होत आहे", "section_overview": "आढावा आणि निदान", "section_treatment": "तात्काळ उपचार उपाय", "section_prevention": "हंगामी प्रतिबंध"}
-}
 
-BENGALI_UI = {
-    "app_title": "AgriShield AI",
-    "tagline": "এআই ফসল রোগ শনাক্তকরণ ও প্রাদুর্ভাব ঝুঁকি পূর্বাভাস",
-    "nav": {"diagnose": "ফসল রোগ পরীক্ষা", "history": "আমার ইতিহাস", "diseases": "রোগ নির্দেশিকা", "about": "মডেল ও সুরক্ষা", "login": "লগইন", "register": "নিবন্ধন করুন", "logout": "লগআউট", "select_language": "ভাষা পরিবর্তন করুন", "offline_ready": "অডিও অফলাইনে উপলব্ধ"},
-    "analyze": {"title": "ফসলের পাতা বিশ্লেষণ করুন", "upload_instruction": "আক্রান্ত পাতার একটি পরিষ্কার ছবি তুলুন বা আপলোড করুন", "upload_btn": "ছবি আপলোড / তুলুন", "camera_btn": "ক্যামেরা খুলুন", "choose_file": "গ্যালারি থেকে নির্বাচন করুন", "drag_drop": "অথবা পাতার ছবি এখানে টেনে আনুন", "tips_title": "সঠিক ছবির জন্য পরামর্শ", "tip_1": "দাগযুক্ত একক পাতার উপর ফোকাস করুন", "tip_2": "দিনের আলোতে ছবি তুলুন, ছায়া এড়িয়ে চলুন", "tip_3": "ঝাপসা বা দূরবর্তী ছবি এড়িয়ে চলুন", "location_title": "আবহাওয়া ঝুঁকি টেলিমেট্রি", "use_gps": "আমার খামারের অবস্থান ব্যবহার করুন", "search_place": "শহর বা জেলা খুঁজুন", "manual_weather": "আবহাওয়ার তথ্য নিজে লিখুন", "temp_label": "তাপমাত্রা (°C)", "humidity_label": "আর্দ্রতা (%)", "rainfall_label": "৭ দিনের বৃষ্টিপাত (mm)", "submit_btn": "এআই রোগ নির্ণয় ও ঝুঁকি মূল্যায়ন শুরু করুন", "analyzing": "পাতা বিশ্লেষণ এবং আবহাওয়া ঝুঁকি গণনা করা হচ্ছে..."},
-    "audio": {"title": "কিষাণ অডিও সহকারী", "badge": "ভয়েস বিবরণ", "subtitle": "আপনার মাতৃভাষায় সম্পূর্ণ রোগ নির্ণয় ও প্রতিকার শুনুন", "listen_btn": "বাংলায় শুনুন", "playing": "অডিও বাজছে...", "paused": "অডিও বিরতি দেওয়া হয়েছে", "ready": "শোনার জন্য প্রস্তুত", "resume": "চালিয়ে যান", "pause": "বিরতি", "stop": "বন্ধ করুন", "speed": "গতি", "helpline_text": "কিষাণ কল সেন্টার (টোল-ফ্রি সরকারি হেল্পলাইন):", "call_btn": "1800-180-1551 নম্বরে কল করুন", "fallback_notice": "ডিভাইস স্পিচ সিন্থেসিসের মাধ্যমে বাজছে", "section_overview": "সারসংক্ষেপ ও নির্ণয়", "section_treatment": "জরুরি চিকিৎসা পদক্ষেপ", "section_prevention": "মৌসুমি প্রতিরোধ"}
-}
 
-SPANISH_UI = {
-    "app_title": "AgriShield AI",
-    "tagline": "Detección de enfermedades en cultivos con IA y riesgo de brote",
-    "nav": {"diagnose": "Diagnosticar cultivo", "history": "Mi historial", "diseases": "Guía de enfermedades", "about": "Modelo y seguridad", "login": "Iniciar sesión", "register": "Registrarse", "logout": "Cerrar sesión", "select_language": "Cambiar idioma", "offline_ready": "Audio disponible sin conexión"},
-    "analyze": {"title": "Analizar hoja de cultivo", "upload_instruction": "Tome una foto clara y bien iluminada de la hoja afectada", "upload_btn": "Subir / Tomar foto", "camera_btn": "Usar cámara", "choose_file": "Elegir de galería", "drag_drop": "o arrastre la foto de la hoja aquí", "tips_title": "Consejos para mayor precisión", "tip_1": "Enfoque una sola hoja con manchas o lesiones visibles", "tip_2": "Asegure luz natural brillante sin sombras oscuras", "tip_3": "Evite fotos borrosas o tomas muy lejanas", "location_title": "Telemetría de riesgo climático", "use_gps": "Usar ubicación de mi finca", "search_place": "Buscar ciudad o distrito", "manual_weather": "Ingresar clima manualmente", "temp_label": "Temperatura (°C)", "humidity_label": "Humedad relativa (%)", "rainfall_label": "Lluvia en 7 días (mm)", "submit_btn": "Ejecutar diagnóstico IA y evaluación de riesgo", "analyzing": "Analizando imagen de hoja y calculando riesgo ambiental..."},
-    "audio": {"title": "Asistente de Audio Agrícola", "badge": "Narración de voz", "subtitle": "Escuche el diagnóstico completo y los pasos de tratamiento en su idioma", "listen_btn": "Escuchar en español", "playing": "Reproduciendo audio...", "paused": "Audio en pausa", "ready": "Listo para reproducir", "resume": "Reanudar", "pause": "Pausar", "stop": "Detener", "speed": "Velocidad", "helpline_text": "Línea de Asistencia Agrícola (Gobierno):", "call_btn": "Llamar al 1800-180-1551", "fallback_notice": "Reproduciendo mediante síntesis de voz del dispositivo", "section_overview": "Resumen y diagnóstico", "section_treatment": "Tratamiento inmediato", "section_prevention": "Prevención estacional"}
-}
 
-EXTRA_MAPS = {
-    "kn": KANNADA_UI,
-    "ml": MALAYALAM_UI,
-    "mr": MARATHI_UI,
-    "bn": BENGALI_UI,
-    "es": SPANISH_UI
-}
+EXTRA_MAPS = {"kn": KANNADA_UI}
 
 def deep_merge(base, override):
     result = dict(base)
@@ -491,7 +457,7 @@ def deep_merge(base, override):
             result[k] = v
     return result
 
-# Compile and write all 9 languages
+# Compile and write all five languages
 for lang, overrides in UI_TRANSLATIONS.items():
     merged = deep_merge(en, overrides)
     with open(LOCALES_DIR / f"{lang}.json", "w", encoding="utf-8") as f:
@@ -504,4 +470,4 @@ for lang, overrides in EXTRA_MAPS.items():
     with open(LOCALES_DIR / f"{lang}.json", "w", encoding="utf-8") as f:
         json.dump(merged, f, ensure_ascii=False, indent=2)
 
-print("UI Locales generated successfully for all 9 languages.")
+print("UI Locales generated successfully for all five languages.")
