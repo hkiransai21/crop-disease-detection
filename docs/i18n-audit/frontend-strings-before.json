@@ -1,0 +1,1269 @@
+[
+  {
+    "file": "src/api/client.ts",
+    "line": 68,
+    "kind": "literal",
+    "text": "An unexpected network error occurred",
+    "key": "ui.s_18fca6cbf7"
+  },
+  {
+    "file": "src/api/client.ts",
+    "line": 253,
+    "kind": "error",
+    "text": "Failed to synthesize audio",
+    "key": "ui.s_9a128b52f5"
+  },
+  {
+    "file": "src/App.tsx",
+    "line": 101,
+    "kind": "jsx-text",
+    "text": "AgriShield AI • AI Crop Disease Detection & Outbreak Risk Prediction System",
+    "key": "ui.s_260c166567"
+  },
+  {
+    "file": "src/App.tsx",
+    "line": 104,
+    "kind": "jsx-text",
+    "text": "Advisory decision-support tool. Always consult your regional agricultural extension officer before applying chemical crop protectants.",
+    "key": "ui.s_71d376d100"
+  },
+  {
+    "file": "src/components/ActionChecklist.tsx",
+    "line": 22,
+    "kind": "jsx-text",
+    "text": "Curated University Guidance",
+    "key": "ui.s_8ab0919883"
+  },
+  {
+    "file": "src/components/AudioNarrator.tsx",
+    "line": 25,
+    "kind": "error",
+    "text": "Catalog unavailable",
+    "key": "ui.s_033863e5c3"
+  },
+  {
+    "file": "src/components/AudioNarrator.tsx",
+    "line": 39,
+    "kind": "error",
+    "text": "Offline audio unsupported",
+    "key": "ui.s_5c6a5ce6e9"
+  },
+  {
+    "file": "src/components/AudioNarrator.tsx",
+    "line": 44,
+    "kind": "error",
+    "text": "Download timed out",
+    "key": "ui.s_ac8642a983"
+  },
+  {
+    "file": "src/components/AudioNarrator.tsx",
+    "line": 71,
+    "kind": "jsx-text",
+    "text": "x",
+    "key": "ui.s_11f6ad8ec5"
+  },
+  {
+    "file": "src/components/ConfidenceBar.tsx",
+    "line": 34,
+    "kind": "jsx-text",
+    "text": "Diagnostic Confidence",
+    "key": "ui.s_f64c4b4ad5"
+  },
+  {
+    "file": "src/components/ConfidenceBar.tsx",
+    "line": 44,
+    "kind": "jsx-text",
+    "text": "Uncertain Diagnostic",
+    "key": "ui.s_ec37d96984"
+  },
+  {
+    "file": "src/components/ConfidenceBar.tsx",
+    "line": 49,
+    "kind": "jsx-text",
+    "text": "High Reliability",
+    "key": "ui.s_62ae978c37"
+  },
+  {
+    "file": "src/components/ConfidenceBar.tsx",
+    "line": 67,
+    "kind": "jsx-text",
+    "text": "Advisory Notice: Retake or Confirm with Expert",
+    "key": "ui.s_4bc272f4c0"
+  },
+  {
+    "file": "src/components/ConfidenceBar.tsx",
+    "line": 70,
+    "kind": "literal",
+    "text": "The leaf image lacks strong characteristic diagnostic markers. Please verify under natural lighting or show to a local agricultural extension officer.",
+    "key": "ui.s_fa7ce1be7e"
+  },
+  {
+    "file": "src/components/ConfidenceBar.tsx",
+    "line": 82,
+    "kind": "jsx-text",
+    "text": "View Alternative Match Possibilities (",
+    "key": "ui.s_385417f121"
+  },
+  {
+    "file": "src/components/ConfidenceBar.tsx",
+    "line": 92,
+    "kind": "expression",
+    "text": "(Healthy)",
+    "key": "ui.s_5a9148a85b"
+  },
+  {
+    "file": "src/components/ConfidenceBar.tsx",
+    "line": 92,
+    "kind": "expression",
+    "text": "(Pathogen)",
+    "key": "ui.s_e7ba41d164"
+  },
+  {
+    "file": "src/components/FeedbackModal.tsx",
+    "line": 35,
+    "kind": "literal",
+    "text": "Please select whether the diagnosis was correct or incorrect.",
+    "key": "ui.s_0e60e944e4"
+  },
+  {
+    "file": "src/components/FeedbackModal.tsx",
+    "line": 55,
+    "kind": "literal",
+    "text": "Failed to submit feedback. Please ensure you are logged in.",
+    "key": "ui.s_d53daebde2"
+  },
+  {
+    "file": "src/components/FeedbackModal.tsx",
+    "line": 128,
+    "kind": "attribute",
+    "text": "e.g. Tomato Early Blight",
+    "key": "ui.s_f27ffcbc35"
+  },
+  {
+    "file": "src/components/FeedbackModal.tsx",
+    "line": 141,
+    "kind": "attribute",
+    "text": "Notes...",
+    "key": "ui.s_fee3c9ab67"
+  },
+  {
+    "file": "src/components/FeedbackModal.tsx",
+    "line": 169,
+    "kind": "jsx-text",
+    "text": "Cancel",
+    "key": "ui.s_77dfd2135f"
+  },
+  {
+    "file": "src/components/ImageUploader.tsx",
+    "line": 130,
+    "kind": "attribute",
+    "text": "Selected leaf preview",
+    "key": "ui.s_bb1286afa5"
+  },
+  {
+    "file": "src/components/ImageUploader.tsx",
+    "line": 139,
+    "kind": "attribute",
+    "text": "Retake Photo",
+    "key": "ui.s_9c96df4efa"
+  },
+  {
+    "file": "src/components/ImageUploader.tsx",
+    "line": 147,
+    "kind": "attribute",
+    "text": "Remove Image",
+    "key": "ui.s_3568c5bdd3"
+  },
+  {
+    "file": "src/components/ImageUploader.tsx",
+    "line": 166,
+    "kind": "jsx-text",
+    "text": "How to take a high-precision leaf photo:",
+    "key": "ui.s_120d7dc017"
+  },
+  {
+    "file": "src/components/ImageUploader.tsx",
+    "line": 173,
+    "kind": "jsx-text",
+    "text": "Single Leaf:",
+    "key": "ui.s_aa3acd3635"
+  },
+  {
+    "file": "src/components/ImageUploader.tsx",
+    "line": 173,
+    "kind": "jsx-text",
+    "text": "Keep the leaf centered against a plain or natural background.",
+    "key": "ui.s_ba3ba05464"
+  },
+  {
+    "file": "src/components/ImageUploader.tsx",
+    "line": 174,
+    "kind": "jsx-text",
+    "text": "Sharp Focus:",
+    "key": "ui.s_1019d8c191"
+  },
+  {
+    "file": "src/components/ImageUploader.tsx",
+    "line": 174,
+    "kind": "jsx-text",
+    "text": "Tap your screen to focus on the yellow spots, powdery mold, or lesions.",
+    "key": "ui.s_619bed077f"
+  },
+  {
+    "file": "src/components/ImageUploader.tsx",
+    "line": 175,
+    "kind": "jsx-text",
+    "text": "Good Lighting:",
+    "key": "ui.s_f82b38d6a0"
+  },
+  {
+    "file": "src/components/ImageUploader.tsx",
+    "line": 175,
+    "kind": "jsx-text",
+    "text": "Take photos in bright daylight. Avoid heavy shadows or flashlight glare.",
+    "key": "ui.s_0e0a4f316d"
+  },
+  {
+    "file": "src/components/ImageUploader.tsx",
+    "line": 176,
+    "kind": "jsx-text",
+    "text": "Orientation:",
+    "key": "ui.s_518d43c0a4"
+  },
+  {
+    "file": "src/components/ImageUploader.tsx",
+    "line": 176,
+    "kind": "jsx-text",
+    "text": "Photograph both upper surface spots and leaf undersides if mold is present.",
+    "key": "ui.s_6a7848d6f5"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 79,
+    "kind": "jsx-text",
+    "text": "Dosage Helper",
+    "key": "ui.s_a0c45dab33"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 96,
+    "kind": "jsx-text",
+    "text": "Eco-Friendly",
+    "key": "ui.s_8715117fb5"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 100,
+    "kind": "jsx-text",
+    "text": "Neem Oil (1500ppm) @ 5ml / Liter",
+    "key": "ui.s_23383e3d71"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 115,
+    "kind": "jsx-text",
+    "text": "Standard",
+    "key": "ui.s_2dfa66079d"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 119,
+    "kind": "jsx-text",
+    "text": "Mancozeb 75% WP or Copper Oxychloride @ 2.5g / Liter",
+    "key": "ui.s_11105abe04"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 143,
+    "kind": "jsx-text",
+    "text": "L",
+    "key": "ui.s_d160e0986a"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 144,
+    "kind": "jsx-text",
+    "text": "(Standard)",
+    "key": "ui.s_1658824264"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 158,
+    "kind": "literal",
+    "text": "≈ 1 Acre Coverage",
+    "key": "ui.s_a2288e0402"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 173,
+    "kind": "literal",
+    "text": "8 (1 Acre)",
+    "key": "ui.s_06d864448f"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 188,
+    "kind": "jsx-text",
+    "text": "per 1 Liter",
+    "key": "ui.s_23fcd0a963"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 195,
+    "kind": "jsx-text",
+    "text": "L)",
+    "key": "ui.s_263d460dd5"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 200,
+    "kind": "jsx-text",
+    "text": "tablespoons",
+    "key": "ui.s_550e98f139"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 208,
+    "kind": "jsx-text",
+    "text": "Liters",
+    "key": "ui.s_e7eccafdec"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 211,
+    "kind": "jsx-text",
+    "text": "full tank",
+    "key": "ui.s_1fdc846ece"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 222,
+    "kind": "jsx-text",
+    "text": "For all",
+    "key": "ui.s_6eed66056e"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 222,
+    "kind": "jsx-text",
+    "text": "tanks",
+    "key": "ui.s_423a593c8e"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 234,
+    "kind": "jsx-text",
+    "text": "Take 1 Liter of clean water in a separate bucket.",
+    "key": "ui.s_b2d62d4a60"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 235,
+    "kind": "jsx-text",
+    "text": "Add",
+    "key": "ui.s_61cc55aa04"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 235,
+    "kind": "jsx-text",
+    "text": "and stir thoroughly until completely dissolved.",
+    "key": "ui.s_849a959283"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 236,
+    "kind": "jsx-text",
+    "text": "Fill the",
+    "key": "ui.s_ade9e23a0e"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 236,
+    "kind": "jsx-text",
+    "text": "L sprayer half-full with clean water, then pour the pre-mixed solution through the strainer.",
+    "key": "ui.s_cbd8d35fe8"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 237,
+    "kind": "jsx-text",
+    "text": "Top up with clean water to the",
+    "key": "ui.s_a50fffcdbf"
+  },
+  {
+    "file": "src/components/KnapsackCalculator.tsx",
+    "line": 237,
+    "kind": "jsx-text",
+    "text": "L mark and mix gently before spraying.",
+    "key": "ui.s_901389972e"
+  },
+  {
+    "file": "src/components/LocationSelector.tsx",
+    "line": 65,
+    "kind": "literal",
+    "text": "GPS Geolocation is not supported by your browser.",
+    "key": "ui.s_f3e1416adb"
+  },
+  {
+    "file": "src/components/LocationSelector.tsx",
+    "line": 78,
+    "kind": "literal",
+    "text": "My Farm (GPS Coordinates)",
+    "key": "ui.s_1a5712e514"
+  },
+  {
+    "file": "src/components/LocationSelector.tsx",
+    "line": 138,
+    "kind": "literal",
+    "text": "Farm Location",
+    "key": "ui.s_9786edfe4c"
+  },
+  {
+    "file": "src/components/LocationSelector.tsx",
+    "line": 140,
+    "kind": "jsx-text",
+    "text": "Lat:",
+    "key": "ui.s_46cc95041a"
+  },
+  {
+    "file": "src/components/LocationSelector.tsx",
+    "line": 140,
+    "kind": "jsx-text",
+    "text": ", Lon:",
+    "key": "ui.s_ad72300a9f"
+  },
+  {
+    "file": "src/components/LocationSelector.tsx",
+    "line": 158,
+    "kind": "jsx-text",
+    "text": "Change",
+    "key": "ui.s_64fbd995d3"
+  },
+  {
+    "file": "src/components/LocationSelector.tsx",
+    "line": 170,
+    "kind": "literal",
+    "text": "Acquiring GPS...",
+    "key": "ui.s_aa9d35245b"
+  },
+  {
+    "file": "src/components/LocationSelector.tsx",
+    "line": 218,
+    "kind": "attribute",
+    "text": "e.g. 24",
+    "key": "ui.s_77026bd31e"
+  },
+  {
+    "file": "src/components/LocationSelector.tsx",
+    "line": 224,
+    "kind": "literal",
+    "text": "Manual Weather Entry",
+    "key": "ui.s_e6465317e1"
+  },
+  {
+    "file": "src/components/LocationSelector.tsx",
+    "line": 238,
+    "kind": "attribute",
+    "text": "e.g. 85",
+    "key": "ui.s_873c3e53aa"
+  },
+  {
+    "file": "src/components/LocationSelector.tsx",
+    "line": 244,
+    "kind": "literal",
+    "text": "Manual Weather Entry",
+    "key": "ui.s_e6465317e1"
+  },
+  {
+    "file": "src/components/LocationSelector.tsx",
+    "line": 258,
+    "kind": "attribute",
+    "text": "e.g. 15",
+    "key": "ui.s_3cfcdb32cc"
+  },
+  {
+    "file": "src/components/LocationSelector.tsx",
+    "line": 264,
+    "kind": "literal",
+    "text": "Manual Weather Entry",
+    "key": "ui.s_e6465317e1"
+  },
+  {
+    "file": "src/components/Navbar.tsx",
+    "line": 58,
+    "kind": "jsx-text",
+    "text": "AgriShield",
+    "key": "ui.s_7b519bfdc3"
+  },
+  {
+    "file": "src/components/Navbar.tsx",
+    "line": 61,
+    "kind": "jsx-text",
+    "text": "AI",
+    "key": "ui.s_560040c54a"
+  },
+  {
+    "file": "src/components/Navbar.tsx",
+    "line": 94,
+    "kind": "attribute",
+    "text": "Select Language",
+    "key": "ui.s_17d647c6c1"
+  },
+  {
+    "file": "src/components/RiskGauge.tsx",
+    "line": 32,
+    "kind": "jsx-text",
+    "text": "Environmental Outbreak Risk",
+    "key": "ui.s_76e8dd73b6"
+  },
+  {
+    "file": "src/components/RiskGauge.tsx",
+    "line": 34,
+    "kind": "jsx-text",
+    "text": "Based on local microclimate weather & agronomic disease models",
+    "key": "ui.s_8f42b43891"
+  },
+  {
+    "file": "src/components/RiskGauge.tsx",
+    "line": 39,
+    "kind": "jsx-text",
+    "text": "RISK (",
+    "key": "ui.s_bfb2d1611e"
+  },
+  {
+    "file": "src/components/RiskGauge.tsx",
+    "line": 39,
+    "kind": "jsx-text",
+    "text": "/100)",
+    "key": "ui.s_33d0bb0afe"
+  },
+  {
+    "file": "src/components/RiskGauge.tsx",
+    "line": 72,
+    "kind": "jsx-text",
+    "text": "Score",
+    "key": "ui.s_489f487724"
+  },
+  {
+    "file": "src/components/RiskGauge.tsx",
+    "line": 75,
+    "kind": "jsx-text",
+    "text": "0 = Minimal • 100 = Severe",
+    "key": "ui.s_59d4376cf9"
+  },
+  {
+    "file": "src/components/RiskGauge.tsx",
+    "line": 90,
+    "kind": "jsx-text",
+    "text": "Key Environmental Contributing Factors",
+    "key": "ui.s_de54ff9d31"
+  },
+  {
+    "file": "src/components/RiskGauge.tsx",
+    "line": 126,
+    "kind": "jsx-text",
+    "text": "7-Day Outbreak Risk Forecast",
+    "key": "ui.s_7ac9842940"
+  },
+  {
+    "file": "src/components/RiskGauge.tsx",
+    "line": 150,
+    "kind": "jsx-text",
+    "text": "Highest Weather Risks for this Crop",
+    "key": "ui.s_e71e14953a"
+  },
+  {
+    "file": "src/components/WhatsAppShareModal.tsx",
+    "line": 37,
+    "kind": "literal",
+    "text": "Prune visibly infected leaves",
+    "key": "ui.s_a51f99d872"
+  },
+  {
+    "file": "src/components/WhatsAppShareModal.tsx",
+    "line": 38,
+    "kind": "literal",
+    "text": "Neem oil solution (5ml/L)",
+    "key": "ui.s_35b9833efb"
+  },
+  {
+    "file": "src/components/WhatsAppShareModal.tsx",
+    "line": 39,
+    "kind": "literal",
+    "text": "Mancozeb 75% WP (2.5g/L)",
+    "key": "ui.s_221d8af390"
+  },
+  {
+    "file": "src/components/WhatsAppShareModal.tsx",
+    "line": 103,
+    "kind": "jsx-text",
+    "text": "Share Report on WhatsApp",
+    "key": "ui.s_67397f8ee7"
+  },
+  {
+    "file": "src/components/WhatsAppShareModal.tsx",
+    "line": 104,
+    "kind": "jsx-text",
+    "text": "Send summary to Agri Shopkeeper or Krishi Officer",
+    "key": "ui.s_db0795048a"
+  },
+  {
+    "file": "src/components/WhatsAppShareModal.tsx",
+    "line": 118,
+    "kind": "jsx-text",
+    "text": "Report Language:",
+    "key": "ui.s_639c897120"
+  },
+  {
+    "file": "src/components/WhatsAppShareModal.tsx",
+    "line": 128,
+    "kind": "jsx-text",
+    "text": "हिन्दी (Hindi)",
+    "key": "ui.s_7d97875dba"
+  },
+  {
+    "file": "src/components/WhatsAppShareModal.tsx",
+    "line": 138,
+    "kind": "jsx-text",
+    "text": "English",
+    "key": "ui.s_649df08a44"
+  },
+  {
+    "file": "src/components/WhatsAppShareModal.tsx",
+    "line": 155,
+    "kind": "jsx-text",
+    "text": "Open in WhatsApp",
+    "key": "ui.s_c556defcfb"
+  },
+  {
+    "file": "src/components/WhatsAppShareModal.tsx",
+    "line": 165,
+    "kind": "jsx-text",
+    "text": "Copied to Clipboard!",
+    "key": "ui.s_8482112e55"
+  },
+  {
+    "file": "src/components/WhatsAppShareModal.tsx",
+    "line": 170,
+    "kind": "jsx-text",
+    "text": "Copy Summary Text",
+    "key": "ui.s_d648d5ef59"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 36,
+    "kind": "jsx-text",
+    "text": "Neural Network Architecture & Optimization",
+    "key": "ui.s_acaf6737da"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 41,
+    "kind": "jsx-text",
+    "text": "Base Backbone",
+    "key": "ui.s_c5c821ded7"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 42,
+    "kind": "jsx-text",
+    "text": "EfficientNet-B0",
+    "key": "ui.s_b5789ad0bc"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 43,
+    "kind": "jsx-text",
+    "text": "ImageNet Pretrained",
+    "key": "ui.s_be3c2126e9"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 47,
+    "kind": "jsx-text",
+    "text": "Deployment Runtime",
+    "key": "ui.s_fe961af9d8"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 48,
+    "kind": "jsx-text",
+    "text": "ONNX Runtime CPU",
+    "key": "ui.s_17aaea2858"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 49,
+    "kind": "jsx-text",
+    "text": "Dynamic INT8 Quantized",
+    "key": "ui.s_177075af3d"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 53,
+    "kind": "jsx-text",
+    "text": "Classes Covered",
+    "key": "ui.s_cdca30cf0d"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 54,
+    "kind": "jsx-text",
+    "text": "38 Diagnostic Classes",
+    "key": "ui.s_40bfb032d0"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 55,
+    "kind": "jsx-text",
+    "text": "14 Agricultural Crops",
+    "key": "ui.s_0e1171b474"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 59,
+    "kind": "jsx-text",
+    "text": "Calibration",
+    "key": "ui.s_f5ed075f00"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 60,
+    "kind": "jsx-text",
+    "text": "Temperature Scaled",
+    "key": "ui.s_0dca369ebf"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 61,
+    "kind": "jsx-text",
+    "text": "ECE Reliability Optimized",
+    "key": "ui.s_960d84092e"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 67,
+    "kind": "jsx-text",
+    "text": "Active Model Version:",
+    "key": "ui.s_79b990023f"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 69,
+    "kind": "jsx-text",
+    "text": "Trained using two-stage fine-tuning with AdamW optimizer, cosine annealing, and heavy data augmentation to combat laboratory background shortcut learning.",
+    "key": "ui.s_7c150d36b4"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 79,
+    "kind": "jsx-text",
+    "text": "Dataset Sources & The Field Generalization Gap",
+    "key": "ui.s_8f0c87a7dd"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 84,
+    "kind": "jsx-text",
+    "text": "Primary Training Set (PlantVillage):",
+    "key": "ui.s_2a0f13695d"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 84,
+    "kind": "jsx-text",
+    "text": "54,305 controlled laboratory images across 38 classes. While providing rich morphological coverage, lab images feature uniform single-color backgrounds that can cause models to learn background shortcuts.",
+    "key": "ui.s_ab877d07e7"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 87,
+    "kind": "jsx-text",
+    "text": "Cross-Dataset Evaluation (PlantDoc):",
+    "key": "ui.s_ee08245b74"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 87,
+    "kind": "jsx-text",
+    "text": "Evaluated against real-world field photographs taken in orchards and farms under variable weather, complex background foliage, and varying light conditions.",
+    "key": "ui.s_7afc59bed1"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 90,
+    "kind": "jsx-text",
+    "text": "Honest Generalization Gap Disclosure:",
+    "key": "ui.s_5cc6fd5a0b"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 92,
+    "kind": "jsx-text",
+    "text": "Accuracy on clean lab test sets is typically higher than real-world field images due to overlapping leaves, motion blur, and co-infections in nature. Our model implements explicit confidence thresholding and Shannon entropy rejection to flag ambiguous field samples as 'Uncertain' rather than making false confident predictions.",
+    "key": "ui.s_5a59600e77"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 102,
+    "kind": "jsx-text",
+    "text": "Farmer Data Privacy & EXIF Stripping",
+    "key": "ui.s_7d4bcff067"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 105,
+    "kind": "jsx-text",
+    "text": "All image uploads are immediately stripped of embedded EXIF camera and GPS metadata on our server before persistence. Coordinates for weather telemetry are processed in-memory or stored with anonymized user accounts only. Retraining datasets are generated strictly with voluntary farmer opt-in consent.",
+    "key": "ui.s_2ff168e676"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 113,
+    "kind": "jsx-text",
+    "text": "Agricultural Safety Disclaimer & Limitations",
+    "key": "ui.s_f93a83907c"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 116,
+    "kind": "jsx-text",
+    "text": "Advisory Decision-Support:",
+    "key": "ui.s_da1d761402"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 116,
+    "kind": "jsx-text",
+    "text": "This software is an informational tool and does not substitute for certified in-person crop consultants or government plant pathology laboratories.",
+    "key": "ui.s_825462fc16"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 117,
+    "kind": "jsx-text",
+    "text": "Pesticide Regulations:",
+    "key": "ui.s_639e4ef1fd"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 117,
+    "kind": "jsx-text",
+    "text": "Pesticide active ingredients and controls listed are generic categories. Chemical registrations vary by state and nation. Always read the physical chemical product label and observe Pre-Harvest Intervals (PHI) and Re-Entry Intervals (REI).",
+    "key": "ui.s_77db47a730"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 118,
+    "kind": "jsx-text",
+    "text": "Environmental Weather Risk:",
+    "key": "ui.s_47709278f3"
+  },
+  {
+    "file": "src/pages/AboutPage.tsx",
+    "line": 118,
+    "kind": "jsx-text",
+    "text": "Outbreak risk scores are transparent agronomic heuristics combining temperature windows, high-humidity hours, and rainfall proxies. They are advisory estimates, not guaranteed forecasts.",
+    "key": "ui.s_8a70460c60"
+  },
+  {
+    "file": "src/pages/AnalyzePage.tsx",
+    "line": 61,
+    "kind": "literal",
+    "text": "Diagnosis failed. Please check your network connection and retry.",
+    "key": "ui.s_a8e0832194"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 40,
+    "kind": "literal",
+    "text": "Authentication failed. Please verify credentials.",
+    "key": "ui.s_558fa253eb"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 53,
+    "kind": "literal",
+    "text": "Create Farmer Account",
+    "key": "ui.s_f5884fa3e2"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 53,
+    "kind": "literal",
+    "text": "Welcome Back",
+    "key": "ui.s_1c9089485a"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 57,
+    "kind": "literal",
+    "text": "Track your crop disease diagnoses and risk history over seasons",
+    "key": "ui.s_828e7fd67b"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 58,
+    "kind": "literal",
+    "text": "Sign in to access your past diagnoses and personalized alerts",
+    "key": "ui.s_f20933fe08"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 75,
+    "kind": "jsx-text",
+    "text": "Sign In",
+    "key": "ui.s_f8492cc1de"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 87,
+    "kind": "jsx-text",
+    "text": "Register",
+    "key": "ui.s_d672995a14"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 101,
+    "kind": "jsx-text",
+    "text": "Full Name / Farm Name",
+    "key": "ui.s_c88ee07007"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 105,
+    "kind": "attribute",
+    "text": "e.g. Green Valley Orchards",
+    "key": "ui.s_38fcda250f"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 114,
+    "kind": "jsx-text",
+    "text": "Email Address",
+    "key": "ui.s_09ba557fd1"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 118,
+    "kind": "attribute",
+    "text": "farmer@example.com",
+    "key": "ui.s_836c332a4a"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 126,
+    "kind": "jsx-text",
+    "text": "Password",
+    "key": "ui.s_8be3c943b1"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 131,
+    "kind": "attribute",
+    "text": "••••••••",
+    "key": "ui.s_ce59047854"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 148,
+    "kind": "jsx-text",
+    "text": "Create Farm Account",
+    "key": "ui.s_54807932a6"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 153,
+    "kind": "jsx-text",
+    "text": "Sign In to Dashboard",
+    "key": "ui.s_afede44075"
+  },
+  {
+    "file": "src/pages/AuthPage.tsx",
+    "line": 161,
+    "kind": "jsx-text",
+    "text": "Continue as Guest without account &rarr;",
+    "key": "ui.s_2ad24bd4d2"
+  },
+  {
+    "file": "src/pages/DiseasesPage.tsx",
+    "line": 140,
+    "kind": "jsx-text",
+    "text": "View Full Monograph & Treatment",
+    "key": "ui.s_9090697f4f"
+  },
+  {
+    "file": "src/pages/DiseasesPage.tsx",
+    "line": 160,
+    "kind": "jsx-text",
+    "text": "Scientific Name:",
+    "key": "ui.s_1f25584166"
+  },
+  {
+    "file": "src/pages/DiseasesPage.tsx",
+    "line": 173,
+    "kind": "jsx-text",
+    "text": "Diagnostic Symptoms",
+    "key": "ui.s_aee3645a0a"
+  },
+  {
+    "file": "src/pages/DiseasesPage.tsx",
+    "line": 182,
+    "kind": "jsx-text",
+    "text": "Spread Mechanism",
+    "key": "ui.s_24a52d94a1"
+  },
+  {
+    "file": "src/pages/DiseasesPage.tsx",
+    "line": 187,
+    "kind": "jsx-text",
+    "text": "Favorable Weather Conditions",
+    "key": "ui.s_63320dac33"
+  },
+  {
+    "file": "src/pages/DiseasesPage.tsx",
+    "line": 189,
+    "kind": "jsx-text",
+    "text": "Temp:",
+    "key": "ui.s_fa0c175254"
+  },
+  {
+    "file": "src/pages/DiseasesPage.tsx",
+    "line": 189,
+    "kind": "jsx-text",
+    "text": "°C -",
+    "key": "ui.s_3f18a82d78"
+  },
+  {
+    "file": "src/pages/DiseasesPage.tsx",
+    "line": 189,
+    "kind": "jsx-text",
+    "text": "°C (Opt:",
+    "key": "ui.s_6acf1c5ccb"
+  },
+  {
+    "file": "src/pages/DiseasesPage.tsx",
+    "line": 189,
+    "kind": "jsx-text",
+    "text": "°C) | Min RH:",
+    "key": "ui.s_70a5bedac4"
+  },
+  {
+    "file": "src/pages/DiseasesPage.tsx",
+    "line": 196,
+    "kind": "jsx-text",
+    "text": "Cultural & Sanitation Controls",
+    "key": "ui.s_3b9d6d10f3"
+  },
+  {
+    "file": "src/pages/DiseasesPage.tsx",
+    "line": 207,
+    "kind": "jsx-text",
+    "text": "Organic & Bio-Control Methods",
+    "key": "ui.s_faa55775b7"
+  },
+  {
+    "file": "src/pages/DiseasesPage.tsx",
+    "line": 219,
+    "kind": "jsx-text",
+    "text": "Chemical Modes of Action (Generic Actives)",
+    "key": "ui.s_4452fa9d4f"
+  },
+  {
+    "file": "src/pages/DiseasesPage.tsx",
+    "line": 231,
+    "kind": "jsx-text",
+    "text": "Citations & Extension Resources",
+    "key": "ui.s_f6e5bfc882"
+  },
+  {
+    "file": "src/pages/DiseasesPage.tsx",
+    "line": 248,
+    "kind": "jsx-text",
+    "text": "Close Monograph",
+    "key": "ui.s_2573d13e0e"
+  },
+  {
+    "file": "src/pages/HistoryPage.tsx",
+    "line": 32,
+    "kind": "literal",
+    "text": "Failed to load diagnosis history.",
+    "key": "ui.s_24c52901bc"
+  },
+  {
+    "file": "src/pages/HistoryPage.tsx",
+    "line": 43,
+    "kind": "literal",
+    "text": "Failed to delete record.",
+    "key": "ui.s_f30892b2b8"
+  },
+  {
+    "file": "src/pages/HistoryPage.tsx",
+    "line": 142,
+    "kind": "literal",
+    "text": "No diagnoses match your search filter criteria.",
+    "key": "ui.s_c068a9033c"
+  },
+  {
+    "file": "src/pages/HistoryPage.tsx",
+    "line": 143,
+    "kind": "literal",
+    "text": "You have not scanned any crop leaves yet.",
+    "key": "ui.s_8f5b156913"
+  },
+  {
+    "file": "src/pages/HistoryPage.tsx",
+    "line": 183,
+    "kind": "jsx-text",
+    "text": "Healthy",
+    "key": "ui.s_80ea156e1b"
+  },
+  {
+    "file": "src/pages/HistoryPage.tsx",
+    "line": 188,
+    "kind": "jsx-text",
+    "text": "Uncertain",
+    "key": "ui.s_c6a143441b"
+  },
+  {
+    "file": "src/pages/HistoryPage.tsx",
+    "line": 192,
+    "kind": "jsx-text",
+    "text": "% Conf",
+    "key": "ui.s_b6a5e2d0b5"
+  },
+  {
+    "file": "src/pages/HistoryPage.tsx",
+    "line": 222,
+    "kind": "jsx-text",
+    "text": "Verified",
+    "key": "ui.s_aed3b8c6a7"
+  },
+  {
+    "file": "src/pages/HistoryPage.tsx",
+    "line": 229,
+    "kind": "attribute",
+    "text": "Delete diagnosis record",
+    "key": "ui.s_d5c8d25a5d"
+  },
+  {
+    "file": "src/pages/LandingPage.tsx",
+    "line": 16,
+    "kind": "literal",
+    "text": "Corn (Maize)",
+    "key": "ui.s_7740e59458"
+  },
+  {
+    "file": "src/pages/LandingPage.tsx",
+    "line": 17,
+    "kind": "literal",
+    "text": "Orange (Citrus)",
+    "key": "ui.s_acb025cb5f"
+  },
+  {
+    "file": "src/pages/LandingPage.tsx",
+    "line": 17,
+    "kind": "literal",
+    "text": "Bell Pepper",
+    "key": "ui.s_12cd9a115f"
+  },
+  {
+    "file": "src/pages/LandingPage.tsx",
+    "line": 75,
+    "kind": "jsx-text",
+    "text": "1",
+    "key": "ui.s_356a192b79"
+  },
+  {
+    "file": "src/pages/LandingPage.tsx",
+    "line": 85,
+    "kind": "jsx-text",
+    "text": "2",
+    "key": "ui.s_da4b9237ba"
+  },
+  {
+    "file": "src/pages/LandingPage.tsx",
+    "line": 95,
+    "kind": "jsx-text",
+    "text": "3",
+    "key": "ui.s_77de68daec"
+  },
+  {
+    "file": "src/pages/LandingPage.tsx",
+    "line": 109,
+    "kind": "jsx-text",
+    "text": "Supported Crops & Pathogens",
+    "key": "ui.s_8e0ab8050a"
+  },
+  {
+    "file": "src/pages/LandingPage.tsx",
+    "line": 110,
+    "kind": "jsx-text",
+    "text": "Trained across 38 distinct crop disease and healthy conditions",
+    "key": "ui.s_97fc43750e"
+  },
+  {
+    "file": "src/pages/LandingPage.tsx",
+    "line": 113,
+    "kind": "jsx-text",
+    "text": "14 Major Crops Covered",
+    "key": "ui.s_ee2f9362bf"
+  },
+  {
+    "file": "src/pages/LandingPage.tsx",
+    "line": 135,
+    "kind": "jsx-text",
+    "text": "Agronomic Advisory Notice",
+    "key": "ui.s_0db19550bc"
+  },
+  {
+    "file": "src/pages/ResultPage.tsx",
+    "line": 109,
+    "kind": "literal",
+    "text": "Guest diagnosis session expired. Please scan a new crop leaf sample.",
+    "key": "ui.s_60d8892340"
+  },
+  {
+    "file": "src/pages/ResultPage.tsx",
+    "line": 116,
+    "kind": "literal",
+    "text": "Please sign in to view this saved diagnosis record.",
+    "key": "ui.s_54fc8a7dad"
+  },
+  {
+    "file": "src/pages/ResultPage.tsx",
+    "line": 129,
+    "kind": "literal",
+    "text": "Failed to load diagnosis record.",
+    "key": "ui.s_c70a63d267"
+  },
+  {
+    "file": "src/pages/ResultPage.tsx",
+    "line": 155,
+    "kind": "literal",
+    "text": "Please run a new diagnosis from the scanner.",
+    "key": "ui.s_30f5d11bb2"
+  },
+  {
+    "file": "src/pages/ResultPage.tsx",
+    "line": 271,
+    "kind": "jsx-text",
+    "text": "Model:",
+    "key": "ui.s_9e1279af1f"
+  },
+  {
+    "file": "src/pages/ResultPage.tsx",
+    "line": 286,
+    "kind": "attribute",
+    "text": "Diagnosed leaf",
+    "key": "ui.s_48cc1eaaf7"
+  },
+  {
+    "file": "src/pages/ResultPage.tsx",
+    "line": 290,
+    "kind": "jsx-text",
+    "text": "Submitted Field Photo (EXIF Stripped)",
+    "key": "ui.s_07e5acb78f"
+  }
+]

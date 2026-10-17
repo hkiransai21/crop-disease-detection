@@ -1,0 +1,368 @@
+[
+  {
+    "file": "backend\\app\\api\\deps.py",
+    "line": 32,
+    "field": "detail",
+    "text": "'Could not validate authentication credentials. Please login again.'"
+  },
+  {
+    "file": "backend\\app\\api\\deps.py",
+    "line": 57,
+    "field": "detail",
+    "text": "'Inactive user account.'"
+  },
+  {
+    "file": "backend\\app\\api\\routes\\analyze.py",
+    "line": 48,
+    "field": "detail",
+    "text": "'Missing file name.'"
+  },
+  {
+    "file": "backend\\app\\api\\routes\\analyze.py",
+    "line": 52,
+    "field": "detail",
+    "text": "'Uploaded file is empty.'"
+  },
+  {
+    "file": "backend\\app\\api\\routes\\auth.py",
+    "line": 31,
+    "field": "detail",
+    "text": "'An account with this email address already exists.'"
+  },
+  {
+    "file": "backend\\app\\api\\routes\\auth.py",
+    "line": 61,
+    "field": "detail",
+    "text": "'Invalid email or password.'"
+  },
+  {
+    "file": "backend\\app\\api\\routes\\auth.py",
+    "line": 68,
+    "field": "detail",
+    "text": "'Account has been deactivated.'"
+  },
+  {
+    "file": "backend\\app\\api\\routes\\auth.py",
+    "line": 94,
+    "field": "detail",
+    "text": "'Invalid or expired refresh token.'"
+  },
+  {
+    "file": "backend\\app\\api\\routes\\auth.py",
+    "line": 105,
+    "field": "detail",
+    "text": "'User no longer exists or is inactive.'"
+  },
+  {
+    "file": "backend\\app\\api\\routes\\diseases.py",
+    "line": 43,
+    "field": "detail",
+    "text": "f\"Disease entry '{disease_id}' not found in knowledge base.\""
+  },
+  {
+    "file": "backend\\app\\api\\routes\\feedback.py",
+    "line": 35,
+    "field": "detail",
+    "text": "'Analysis record not found.'"
+  },
+  {
+    "file": "backend\\app\\api\\routes\\history.py",
+    "line": 90,
+    "field": "detail",
+    "text": "'Analysis record not found or access unauthorized.'"
+  },
+  {
+    "file": "backend\\app\\api\\routes\\history.py",
+    "line": 165,
+    "field": "detail",
+    "text": "'Analysis record not found or access unauthorized.'"
+  },
+  {
+    "file": "backend\\app\\services\\i18n.py",
+    "line": 242,
+    "field": "headline",
+    "text": "headline"
+  },
+  {
+    "file": "backend\\app\\services\\i18n.py",
+    "line": 243,
+    "field": "summary",
+    "text": "summary"
+  },
+  {
+    "file": "backend\\app\\services\\image_storage.py",
+    "line": 27,
+    "field": "detail",
+    "text": "f'Uploaded file exceeds maximum limit of {settings.MAX_UPLOAD_SIZE_MB}MB.'"
+  },
+  {
+    "file": "backend\\app\\services\\image_storage.py",
+    "line": 57,
+    "field": "detail",
+    "text": "f'Image dimensions ({width}x{height}) are too small for diagnostic analysis. Minimum is 32x32.'"
+  },
+  {
+    "file": "backend\\app\\services\\image_storage.py",
+    "line": 36,
+    "field": "detail",
+    "text": "f\"Unsupported image format '{ext}'. Allowed formats: {', '.join(settings.ALLOWED_IMAGE_EXTENSIONS)}\""
+  },
+  {
+    "file": "backend\\app\\services\\image_storage.py",
+    "line": 50,
+    "field": "detail",
+    "text": "f'Corrupted or unreadable image file: {str(e)}'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 257,
+    "field": "headline",
+    "text": "headline"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 258,
+    "field": "summary",
+    "text": "summary"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 328,
+    "field": "headline",
+    "text": "headline"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 329,
+    "field": "summary",
+    "text": "summary"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 48,
+    "field": "headline",
+    "text": "'Moderate Baseline Risk (Uncataloged Condition)'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 49,
+    "field": "summary",
+    "text": "'Standard agronomic monitoring recommended.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 70,
+    "field": "headline",
+    "text": "f'Moderate Spread Potential for {disease_entry.disease_name}'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 71,
+    "field": "summary",
+    "text": "'Environmental data unavailable. Standard preventative sanitation recommended.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 90,
+    "field": "factor_name",
+    "text": "'Optimal Pathogen Temperature'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 92,
+    "field": "explanation",
+    "text": "f'Forecast mean temperature of {t_mean}°C aligns closely with pathogen optimum ({cond.temp_optimal_c}°C).'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 97,
+    "field": "factor_name",
+    "text": "'Favorable Temperature Range'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 99,
+    "field": "explanation",
+    "text": "f'Forecast mean temperature ({t_mean}°C) falls inside pathogen activity range ({cond.temp_min_c}°C - {cond.temp_max_c}°C).'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 104,
+    "field": "factor_name",
+    "text": "'Unfavorable Temperature Suppression'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 106,
+    "field": "explanation",
+    "text": "f'Forecast mean temperature ({t_mean}°C) is outside favorable development limits.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 121,
+    "field": "factor_name",
+    "text": "'Dry & Hot Conditions Favour Spider Mites'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 123,
+    "field": "explanation",
+    "text": "f'Low relative humidity ({h_mean}%) combined with heat triggers explosive spider mite reproduction.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 128,
+    "field": "factor_name",
+    "text": "'High Humidity Suppresses Mite Outbreaks'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 130,
+    "field": "explanation",
+    "text": "f'Elevated humidity ({h_mean}%) supports natural fungal entomopathogens that attack mites.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 137,
+    "field": "factor_name",
+    "text": "'High Atmospheric Humidity'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 139,
+    "field": "explanation",
+    "text": "f'Forecast humidity of {h_mean}% exceeds minimum infection threshold of {cond.humidity_min_pct}%.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 159,
+    "field": "factor_name",
+    "text": "'Prolonged Leaf Wetness / High Humidity Hours'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 161,
+    "field": "explanation",
+    "text": "f'{high_h_hours} hours with RH >= 85% recorded over the last 7 days, promoting fungal sporulation.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 171,
+    "field": "factor_name",
+    "text": "'Heavy Rain & Splash Dispersal'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 173,
+    "field": "explanation",
+    "text": "f'Cumulative rainfall of {rain_total:.1f} mm facilitates rapid splash dispersal and spore wash.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 194,
+    "field": "factor_name",
+    "text": "'Dry Foliage Favors Disease / Vector'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 196,
+    "field": "explanation",
+    "text": "'Lack of rain allows powdery mildew conidia and insect vectors (whiteflies/psyllids) to flourish.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 201,
+    "field": "factor_name",
+    "text": "'Rain Washing'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 203,
+    "field": "explanation",
+    "text": "'Rainfall physically washes powdery mildew spores and small insect vectors off foliage.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 332,
+    "field": "factor_name",
+    "text": "'Crop Foliage Verified Healthy'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 334,
+    "field": "explanation",
+    "text": "f'Visual diagnostic confirmed no active lesion or necrosis on the submitted {crop_name} foliage.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 337,
+    "field": "factor_name",
+    "text": "f'Top Weather Susceptibility: {top_disease}'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 339,
+    "field": "explanation",
+    "text": "f'Regional weather patterns indicate {top_disease} is the highest environmental threat for {crop_name} at this time.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 74,
+    "field": "factor_name",
+    "text": "'Environmental Sensor Data Missing'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 76,
+    "field": "explanation",
+    "text": "'No local weather coordinates supplied. Risk score is computed from baseline crop susceptibility.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 144,
+    "field": "factor_name",
+    "text": "'Moderate Humidity Levels'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 146,
+    "field": "explanation",
+    "text": "f'Forecast humidity ({h_mean}%) is moderate but near threshold ({cond.humidity_min_pct}%).'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 151,
+    "field": "factor_name",
+    "text": "'Dry Air Suppresses Spore Germination'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 153,
+    "field": "explanation",
+    "text": "f'Low humidity ({h_mean}%) significantly impedes fungal spore germination and penetration.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 178,
+    "field": "factor_name",
+    "text": "'Periodic Rainfall'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 180,
+    "field": "explanation",
+    "text": "f'Moderate rainfall ({rain_total:.1f} mm) maintains foliar moisture necessary for infection.'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 185,
+    "field": "factor_name",
+    "text": "'Minimal Precipitation'"
+  },
+  {
+    "file": "backend\\app\\services\\risk.py",
+    "line": 187,
+    "field": "explanation",
+    "text": "f'Dry conditions ({rain_total:.1f} mm) limit rain-splash disease transmission.'"
+  }
+]
