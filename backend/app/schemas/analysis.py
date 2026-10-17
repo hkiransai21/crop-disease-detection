@@ -19,7 +19,11 @@ class PredictionItem(BaseModel):
 class AnalysisResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
+    localization_source: Optional[Dict[str, Any]] = None
     id: str
+    canonical_key: Optional[str] = None
+    scientific_name: Optional[str] = None
+    language: str = "en"
     predicted_label: str
     crop: str
     disease_name: str
@@ -43,6 +47,9 @@ class AnalysisHistoryItem(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     id: str
+    canonical_key: Optional[str] = None
+    scientific_name: Optional[str] = None
+    language: str = "en"
     predicted_label: str
     crop: str
     disease_name: str
@@ -51,6 +58,9 @@ class AnalysisHistoryItem(BaseModel):
     image_url: str
     location_name: Optional[str]
     created_at: datetime
+    disease_details: Optional[DiseaseEntry] = None
+    risk_assessment: Optional[RiskAssessment] = None
+    uncertainty_reason: Optional[str] = None
     has_feedback: bool = False
     is_feedback_correct: Optional[bool] = None
 

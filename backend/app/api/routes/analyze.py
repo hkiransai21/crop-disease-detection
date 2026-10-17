@@ -14,7 +14,7 @@ from backend.app.api.deps import get_optional_current_user, get_current_user, li
 from backend.app.services.image_storage import validate_and_process_image
 from backend.app.services.weather import fetch_weather_summary
 from backend.app.services.risk import evaluate_disease_risk, load_knowledge_base
-from backend.app.services.i18n import resolve_language, get_localized_disease_entry, load_localized_knowledge_base, localize_risk_assessment
+from backend.app.services.i18n import resolve_language, get_localized_disease_entry, load_localized_knowledge_base, localize_risk_assessment, translate_message, UNCERTAINTY
 from backend.app.ml.inference import predict_disease
 
 router = APIRouter(tags=["Crop Disease Analysis"])
@@ -31,7 +31,7 @@ async def analyze_crop_image(
     manual_temp_c: Optional[float] = Form(None, description="Manual temperature fallback"),
     manual_humidity_pct: Optional[float] = Form(None, description="Manual relative humidity fallback"),
     manual_rainfall_mm: Optional[float] = Form(None, description="Manual 7-day rainfall fallback"),
-    lang: Optional[str] = Form(None, description="Target language code (e.g. en, hi, te, ta, kn, ml, mr, bn, es)"),
+    lang: Optional[str] = Form(None, description="Target language code (e.g. en, hi, ta, te, kn)"),
     current_user: Optional[User] = Depends(get_optional_current_user),
     db: AsyncSession = Depends(get_db)
 ):
@@ -87,7 +87,7 @@ async def analyze_crop_image(
     risk_assessment = evaluate_disease_risk(pred_result["predicted_label"], weather_summary)
 
     # 5. Multilingual Localization
-    resolved_lang = resolve_language(lang, request.headers.get("Accept-Language"))
+    resolved_lang = resolve_language(request.query_params.get("lang") or lang, request.headers.get("Accept-Language"))
     localized_entry = get_localized_disease_entry(pred_result["predicted_label"], resolved_lang)
     localized_risk = localize_risk_assessment(risk_assessment, resolved_lang)
 
@@ -140,14 +140,18 @@ async def analyze_crop_image(
 
     from datetime import datetime, timezone
     return AnalysisResponse(
+        localization_source={"confidence_display": pred_result["confidence_display"], "risk_assessment": risk_assessment.model_dump() if risk_assessment else None},
         id=analysis_id,
+        canonical_key=pred_result["predicted_label"],
+        scientific_name=localized_entry.scientific_name if localized_entry else None,
+        language=resolved_lang,
         predicted_label=pred_result["predicted_label"],
         crop=crop_name,
         disease_name=disease_display_name,
         confidence=pred_result["confidence"],
-        confidence_display=pred_result["confidence_display"],
+        confidence_display=translate_message(pred_result["confidence_display"], resolved_lang),
         is_uncertain=pred_result["is_uncertain"],
-        uncertainty_reason=pred_result["uncertainty_reason"],
+        uncertainty_reason=translate_message(UNCERTAINTY, resolved_lang) if pred_result["is_uncertain"] else None,
         top_k=top_k_localized,
         model_version=pred_result["model_version"],
         image_url=image_url,

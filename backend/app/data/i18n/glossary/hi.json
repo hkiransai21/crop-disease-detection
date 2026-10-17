@@ -1,506 +1,537 @@
 {
   "language": "hi",
-  "language_name": "Hindi",
-  "diseases": {
-    "Apple___Apple_scab": {
-      "id": "Apple___Apple_scab",
-      "common_name": "सेब का पपड़ी रोग (Apple Scab)",
-      "alt_names": [
-        "काला धब्बा"
-      ],
-      "transliteration": "Apple Scab",
-      "scientific_name": "Venturia inaequalis",
-      "tts_text": "सेब का पपड़ी रोग यानी एप्पल स्कैब",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Apple___Black_rot": {
-      "id": "Apple___Black_rot",
-      "common_name": "सेब का ब्लैक रॉट व मेढक-आंख धब्बा",
-      "alt_names": [
-        "काला सड़न रोग"
-      ],
-      "transliteration": "Apple Black Rot",
-      "scientific_name": "Botryosphaeria obtusa",
-      "tts_text": "सेब का ब्लैक रॉट और पत्ती धब्बा रोग",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Apple___Cedar_apple_rust": {
-      "id": "Apple___Cedar_apple_rust",
-      "common_name": "सेब का देवदार रतुआ रोग (Cedar Apple Rust)",
-      "alt_names": [
-        "रतुआ रोग"
-      ],
-      "transliteration": "Cedar Apple Rust",
-      "scientific_name": "Gymnosporangium juniperi-virginianae",
-      "tts_text": "सेब का रतुआ रोग यानी सीडार एप्पल रस्ट",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Apple___healthy": {
-      "id": "Apple___healthy",
-      "common_name": "स्वस्थ सेब के पत्ते",
-      "alt_names": [
-        "निरोगी पत्ता"
-      ],
-      "transliteration": "Healthy Apple",
-      "scientific_name": "Malus domestica",
-      "tts_text": "सेब की फसल स्वस्थ है",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Blueberry___healthy": {
-      "id": "Blueberry___healthy",
-      "common_name": "स्वस्थ ब्लूबेरी के पत्ते",
-      "alt_names": [
-        "निरोगी पत्ता"
-      ],
-      "transliteration": "Healthy Blueberry",
-      "scientific_name": "Vaccinium corymbosum",
-      "tts_text": "ब्लूबेरी की पत्तियां स्वस्थ हैं",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Cherry_(including_sour)___Powdery_mildew": {
-      "id": "Cherry_(including_sour)___Powdery_mildew",
-      "common_name": "चेरी का चूर्णिल आसिता (Powdery Mildew)",
-      "alt_names": [
-        "सफेद चूर्ण रोग"
-      ],
-      "transliteration": "Cherry Powdery Mildew",
-      "scientific_name": "Podosphaera clandestina",
-      "tts_text": "चेरी का चूर्णिल फफूंद यानी पाउडरी मिल्ड्यू रोग",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Cherry_(including_sour)___healthy": {
-      "id": "Cherry_(including_sour)___healthy",
-      "common_name": "स्वस्थ चेरी के पत्ते",
-      "alt_names": [
-        "निरोगी पत्ता"
-      ],
-      "transliteration": "Healthy Cherry",
-      "scientific_name": "Prunus avium / Prunus cerasus",
-      "tts_text": "चेरी की फसल स्वस्थ है",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
-      "id": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
-      "common_name": "मक्का का ग्रे लीफ स्पॉट (सर्कोस्पोरा धब्बा)",
-      "alt_names": [
-        "मक्का धब्बा रोग"
-      ],
-      "transliteration": "Corn Gray Leaf Spot",
-      "scientific_name": "Cercospora zeae-maydis",
-      "tts_text": "मक्के का ग्रे लीफ स्पॉट और सर्कोस्पोरा पत्ती धब्बा रोग",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Corn_(maize)___Common_rust_": {
-      "id": "Corn_(maize)___Common_rust_",
-      "common_name": "मक्का का सामान्य रतुआ / गेरुई रोग (Common Rust)",
-      "alt_names": [
-        "गेरुई रोग"
-      ],
-      "transliteration": "Corn Common Rust",
-      "scientific_name": "Puccinia sorghi",
-      "tts_text": "मक्के का रतुआ या गेरुई रोग",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Corn_(maize)___Northern_Leaf_Blight": {
-      "id": "Corn_(maize)___Northern_Leaf_Blight",
-      "common_name": "मक्का का उत्तरी पत्ता झुलसा रोग (Northern Leaf Blight)",
-      "alt_names": [
-        "पत्ता झुलसा"
-      ],
-      "transliteration": "Corn Northern Leaf Blight",
-      "scientific_name": "Exserohilum turcicum (Setosphaeria turcica)",
-      "tts_text": "मक्के का उत्तरी पत्ता झुलसा रोग यानी नॉर्दर्न लीफ ब्लाइट",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Corn_(maize)___healthy": {
-      "id": "Corn_(maize)___healthy",
-      "common_name": "स्वस्थ मक्का के पत्ते",
-      "alt_names": [
-        "निरोगी पत्ता"
-      ],
-      "transliteration": "Healthy Corn",
-      "scientific_name": "Zea mays",
-      "tts_text": "मक्का की फसल बिल्कुल स्वस्थ है",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Grape___Black_rot": {
-      "id": "Grape___Black_rot",
-      "common_name": "अंगूर का ब्लैक रॉट (काला सड़न रोग)",
-      "alt_names": [
-        "काला सड़न"
-      ],
-      "transliteration": "Grape Black Rot",
-      "scientific_name": "Guignardia bidwellii (Phyllosticta ampelicida)",
-      "tts_text": "अंगूर का काला सड़न रोग यानी ब्लैक रॉट",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Grape___Esca_(Black_Measles)": {
-      "id": "Grape___Esca_(Black_Measles)",
-      "common_name": "अंगूर का एस्का / ब्लैक मीसल्स रोग",
-      "alt_names": [
-        "बाघ की धारियां रोग"
-      ],
-      "transliteration": "Grape Esca Black Measles",
-      "scientific_name": "Phaeoacremonium minimum, Phaeomoniella chlamydospora, Fomitiporia mediterranea",
-      "tts_text": "अंगूर का एस्का और ब्लैक मीसल्स रोग",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
-      "id": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
-      "common_name": "अंगूर का पत्ता झुलसा (आइसारियोप्सिस धब्बा)",
-      "alt_names": [
-        "पत्ती झुलसा"
-      ],
-      "transliteration": "Grape Leaf Blight",
-      "scientific_name": "Pseudocercospora cladosporioides (Isariopsis clavispora)",
-      "tts_text": "अंगूर का पत्ता झुलसा रोग यानी लीफ ब्लाइट",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Grape___healthy": {
-      "id": "Grape___healthy",
-      "common_name": "स्वस्थ अंगूर के पत्ते",
-      "alt_names": [
-        "निरोगी पत्ता"
-      ],
-      "transliteration": "Healthy Grape",
-      "scientific_name": "Vitis vinifera",
-      "tts_text": "अंगूर की बेल स्वस्थ है",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Orange___Haunglongbing_(Citrus_greening)": {
-      "id": "Orange___Haunglongbing_(Citrus_greening)",
-      "common_name": "नींबू / संतरे का सिट्रस ग्रीनिंग (हुआंगलोंगबिंग)",
-      "alt_names": [
-        "पीला ड्रैगन रोग"
-      ],
-      "transliteration": "Citrus Greening Huanglongbing",
-      "scientific_name": "Candidatus Liberibacter asiaticus",
-      "tts_text": "नींबू और संतरे का सिट्रस ग्रीनिंग रोग",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Peach___Bacterial_spot": {
-      "id": "Peach___Bacterial_spot",
-      "common_name": "आड़ू का जीवाणु धब्बा रोग (Bacterial Spot)",
-      "alt_names": [
-        "गोली छेद रोग"
-      ],
-      "transliteration": "Peach Bacterial Spot",
-      "scientific_name": "Xanthomonas arboricola pv. pruni",
-      "tts_text": "आड़ू का जीवाणु धब्बा रोग यानी बैक्टीरियल स्पॉट",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Peach___healthy": {
-      "id": "Peach___healthy",
-      "common_name": "स्वस्थ आड़ू के पत्ते",
-      "alt_names": [
-        "निरोगी पत्ता"
-      ],
-      "transliteration": "Healthy Peach",
-      "scientific_name": "Prunus persica",
-      "tts_text": "आड़ू की फसल स्वस्थ है",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Pepper,_bell___Bacterial_spot": {
-      "id": "Pepper,_bell___Bacterial_spot",
-      "common_name": "शिमला मिर्च का जीवाणु धब्बा रोग (Bacterial Spot)",
-      "alt_names": [
-        "जीवाणु पत्ती धब्बा"
-      ],
-      "transliteration": "Bell Pepper Bacterial Spot",
-      "scientific_name": "Xanthomonas euvesicatoria / X. vesicatoria",
-      "tts_text": "शिमला मिर्च का जीवाणु धब्बा रोग यानी बैक्टीरियल स्पॉट",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Pepper,_bell___healthy": {
-      "id": "Pepper,_bell___healthy",
-      "common_name": "स्वस्थ शिमला मिर्च के पत्ते",
-      "alt_names": [
-        "निरोगी पत्ता"
-      ],
-      "transliteration": "Healthy Bell Pepper",
-      "scientific_name": "Capsicum annuum",
-      "tts_text": "शिमला मिर्च की फसल स्वस्थ है",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Potato___Early_blight": {
-      "id": "Potato___Early_blight",
-      "common_name": "आलू का अगेती झुलसा रोग (Early Blight)",
-      "alt_names": [
-        "अगेती झुलसा",
-        "लक्ष्य चक्र धब्बा"
-      ],
-      "transliteration": "Potato Early Blight",
-      "scientific_name": "Alternaria solani",
-      "tts_text": "आलू का अगेती झुलसा रोग यानी अर्ली ब्लाइट",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Potato___Late_blight": {
-      "id": "Potato___Late_blight",
-      "common_name": "आलू का पछेती झुलसा रोग (Late Blight)",
-      "alt_names": [
-        "पछेती झुलसा"
-      ],
-      "transliteration": "Potato Late Blight",
-      "scientific_name": "Phytophthora infestans",
-      "tts_text": "आलू का पछेती झुलसा रोग यानी लेट ब्लाइट",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Potato___healthy": {
-      "id": "Potato___healthy",
-      "common_name": "स्वस्थ आलू के पत्ते",
-      "alt_names": [
-        "निरोगी पत्ता"
-      ],
-      "transliteration": "Healthy Potato",
-      "scientific_name": "Solanum tuberosum",
-      "tts_text": "आलू की फसल स्वस्थ है",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Raspberry___healthy": {
-      "id": "Raspberry___healthy",
-      "common_name": "स्वस्थ रास्पबेरी के पत्ते",
-      "alt_names": [
-        "निरोगी पत्ता"
-      ],
-      "transliteration": "Healthy Raspberry",
-      "scientific_name": "Rubus idaeus",
-      "tts_text": "रास्पबेरी की पत्तियां स्वस्थ हैं",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Soybean___healthy": {
-      "id": "Soybean___healthy",
-      "common_name": "स्वस्थ सोयाबीन के पत्ते",
-      "alt_names": [
-        "निरोगी पत्ता"
-      ],
-      "transliteration": "Healthy Soybean",
-      "scientific_name": "Glycine max",
-      "tts_text": "सोयाबीन की फसल पूरी तरह स्वस्थ है",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Squash___Powdery_mildew": {
-      "id": "Squash___Powdery_mildew",
-      "common_name": "कद्दू का चूर्णिल आसिता रोग (Powdery Mildew)",
-      "alt_names": [
-        "सफेद चूर्ण रोग"
-      ],
-      "transliteration": "Squash Powdery Mildew",
-      "scientific_name": "Podosphaera xanthii (syn. Sphaerotheca fuliginea), Golovinomyces cichoracearum",
-      "tts_text": "कद्दू का चूर्णिल फफूंद यानी पाउडरी मिल्ड्यू रोग",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Strawberry___Leaf_scorch": {
-      "id": "Strawberry___Leaf_scorch",
-      "common_name": "स्ट्रॉबेरी का पत्ती झुलसा रोग (Leaf Scorch)",
-      "alt_names": [
-        "पत्ती झुलसन"
-      ],
-      "transliteration": "Strawberry Leaf Scorch",
-      "scientific_name": "Diplocarpon earlianum",
-      "tts_text": "स्ट्रॉबेरी का पत्ती झुलसा रोग यानी लीफ स्कॉर्च",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Strawberry___healthy": {
-      "id": "Strawberry___healthy",
-      "common_name": "स्वस्थ स्ट्रॉबेरी के पत्ते",
-      "alt_names": [
-        "निरोगी पत्ता"
-      ],
-      "transliteration": "Healthy Strawberry",
-      "scientific_name": "Fragaria x ananassa",
-      "tts_text": "स्ट्रॉबेरी की फसल स्वस्थ है",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Bacterial_spot": {
-      "id": "Tomato___Bacterial_spot",
-      "common_name": "टमाटर का जीवाणु धब्बा रोग (Bacterial Spot)",
-      "alt_names": [
-        "जीवाणु पत्ती धब्बा"
-      ],
-      "transliteration": "Tomato Bacterial Spot",
-      "scientific_name": "Xanthomonas perforans / X. vesicatoria / X. gardneri",
-      "tts_text": "टमाटर का जीवाणु धब्बा रोग यानी बैक्टीरियल स्पॉट",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Early_blight": {
-      "id": "Tomato___Early_blight",
-      "common_name": "टमाटर का अगेती झुलसा रोग (Early Blight)",
-      "alt_names": [
-        "अगेती झुलसा"
-      ],
-      "transliteration": "Tomato Early Blight",
-      "scientific_name": "Alternaria linariae (syn. Alternaria solani)",
-      "tts_text": "टमाटर का अगेती झुलसा रोग यानी अर्ली ब्लाइट",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Late_blight": {
-      "id": "Tomato___Late_blight",
-      "common_name": "टमाटर का पछेती झुलसा रोग (Late Blight)",
-      "alt_names": [
-        "पछेती झुलसा"
-      ],
-      "transliteration": "Tomato Late Blight",
-      "scientific_name": "Phytophthora infestans",
-      "tts_text": "टमाटर का पछेती झुलसा रोग यानी लेट ब्लाइट",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Leaf_Mold": {
-      "id": "Tomato___Leaf_Mold",
-      "common_name": "टमाटर का लीफ मोल्ड (पत्ती फफूंद रोग)",
-      "alt_names": [
-        "पत्ती फफूंद"
-      ],
-      "transliteration": "Tomato Leaf Mold",
-      "scientific_name": "Passalora fulva (syn. Cladosporium fulvum)",
-      "tts_text": "टमाटर का लीफ मोल्ड यानी पत्ती फफूंद रोग",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Septoria_leaf_spot": {
-      "id": "Tomato___Septoria_leaf_spot",
-      "common_name": "टमाटर का सेप्टोरिया पत्ता धब्बा रोग",
-      "alt_names": [
-        "सेप्टोरिया धब्बा"
-      ],
-      "transliteration": "Tomato Septoria Leaf Spot",
-      "scientific_name": "Septoria lycopersici",
-      "tts_text": "टमाटर का सेप्टोरिया पत्ता धब्बा रोग",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Spider_mites Two-spotted_spider_mite": {
-      "id": "Tomato___Spider_mites Two-spotted_spider_mite",
-      "common_name": "टमाटर का लाल मकड़ी / दो-धब्बेदार मकड़ी कीट",
-      "alt_names": [
-        "लाल मकड़ी"
-      ],
-      "transliteration": "Tomato Spider Mite",
-      "scientific_name": "Tetranychus urticae",
-      "tts_text": "टमाटर का लाल मकड़ी और दो धब्बेदार मकड़ी कीट",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Target_Spot": {
-      "id": "Tomato___Target_Spot",
-      "common_name": "टमाटर का लक्ष्य चक्र धब्बा रोग (Target Spot)",
-      "alt_names": [
-        "चक्राकार धब्बा"
-      ],
-      "transliteration": "Tomato Target Spot",
-      "scientific_name": "Corynespora cassiicola",
-      "tts_text": "टमाटर का टार्गेट स्पॉट यानी चक्राकार धब्बा रोग",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
-      "id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
-      "common_name": "टमाटर का पीला पत्ती मरोड़ विषाणु (TYLCV / चुर्रा-मुर्रा)",
-      "alt_names": [
-        "चुर्रा-मुर्रा रोग",
-        "पत्ती मरोड़"
-      ],
-      "transliteration": "Tomato Yellow Leaf Curl Virus",
-      "scientific_name": "Begomovirus (TYLCV)",
-      "tts_text": "सफेद मक्खी द्वारा फैलने वाला टमाटर का पीला पत्ती मरोड़ विषाणु रोग",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Tomato_mosaic_virus": {
-      "id": "Tomato___Tomato_mosaic_virus",
-      "common_name": "टमाटर का मोजेक विषाणु रोग (Tomato Mosaic Virus)",
-      "alt_names": [
-        "मोजेक रोग"
-      ],
-      "transliteration": "Tomato Mosaic Virus",
-      "scientific_name": "Tobamovirus (ToMV)",
-      "tts_text": "टमाटर का मोजेक विषाणु रोग यानी टोमैटो मोज़ेक वायरस",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___healthy": {
-      "id": "Tomato___healthy",
-      "common_name": "स्वस्थ टमाटर के पत्ते",
-      "alt_names": [
-        "निरोगी पत्ता"
-      ],
-      "transliteration": "Healthy Tomato",
-      "scientific_name": "Solanum lycopersicum",
-      "tts_text": "टमाटर की फसल बिल्कुल स्वस्थ और सुरक्षित है",
-      "source": "ICAR-IARI / GBPUAT Extension",
-      "review_status": "expert_reviewed"
-    }
-  },
+  "language_name": "हिन्दी",
+  "review_status": "machine_suggested",
   "agronomic_terms": {
     "fungicide": {
       "term_key": "fungicide",
       "english": "Fungicide",
-      "localized_term": "फफूंदनाशक (Fungicide)",
-      "transliteration": "Fapoondnashak",
-      "definition": "फंगल संक्रमण रोकने वाली दवा",
-      "tts_text": "फफूंदनाशक दवा"
+      "localized_term": "फफूंदनाशक",
+      "transliteration": "phaphūṃdanāśaka",
+      "definition": "कीटनाशक जो कवक रोगजनकों को रोकता है या नष्ट करता है",
+      "tts_text": "फफूंदनाशक",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
     },
     "bactericide": {
       "term_key": "bactericide",
       "english": "Bactericide",
-      "localized_term": "जीवाणुनाशक (Bactericide)",
-      "transliteration": "Jeevanunashak",
-      "definition": "बैक्टीरिया संक्रमण रोकने वाली दवा",
-      "tts_text": "जीवाणुनाशक दवा"
+      "localized_term": "जीवाणुनाशक",
+      "transliteration": "jīvāṇunāśaka",
+      "definition": "बैक्टीरिया को नष्ट करने या दबाने वाला रासायनिक पदार्थ",
+      "tts_text": "जीवाणुनाशक",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
     },
     "crop_rotation": {
       "term_key": "crop_rotation",
       "english": "Crop Rotation",
-      "localized_term": "फसल चक्र",
-      "transliteration": "Fasal Chakra",
-      "definition": "खेत में फसलों को क्रमबद्ध रूप से बदल कर बोना",
-      "tts_text": "फसल चक्र"
+      "localized_term": "फसल बदलकर बोना",
+      "transliteration": "phasala badalakara bonā",
+      "definition": "एक ही भूखंड पर क्रमशः विभिन्न फसलों की रोपण",
+      "tts_text": "फसल बदलकर बोना",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
     },
     "spray_interval": {
       "term_key": "spray_interval",
       "english": "Spray Interval",
-      "localized_term": "छिड़काव अंतराल",
-      "transliteration": "Chhidkaav Antaraal",
-      "definition": "दो छिड़कावों के बीच के दिनों की संख्या",
-      "tts_text": "छिड़काव अंतराल"
+      "localized_term": "दो छिड़कावों के बीच का समय",
+      "transliteration": "do chir̤akāvoṃ ke bīca kā samaya",
+      "definition": "आवश्यक days क्रमशः आवेदनों के बीच",
+      "tts_text": "दो छिड़कावों के बीच का समय",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
     },
     "resistant_variety": {
       "term_key": "resistant_variety",
       "english": "Resistant Variety",
-      "localized_term": "रोग प्रतिरोधी किस्म",
-      "transliteration": "Rog Pratirodhi Kism",
-      "definition": "रोग को स्वाभाविक रूप से रोकने वाली फसल किस्म",
-      "tts_text": "रोग प्रतिरोधी किस्म"
+      "localized_term": "रोग सहने वाली किस्म",
+      "transliteration": "roga sahane vālī kisma",
+      "definition": "विशिष्ट रोगों के प्रति स्वाभाविक प्रतिरोध के लिए प्रजनन किया गया",
+      "tts_text": "रोग सहने वाली किस्म",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
+    },
+    "blight": {
+      "term_key": "blight",
+      "english": "blight",
+      "localized_term": "झुलसा रोग",
+      "transliteration": "jhulasā roga",
+      "definition": "झुलसा रोग",
+      "tts_text": "झुलसा रोग",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
+    },
+    "rust": {
+      "term_key": "rust",
+      "english": "rust",
+      "localized_term": "रतुआ रोग",
+      "transliteration": "ratuā roga",
+      "definition": "रतुआ रोग",
+      "tts_text": "रतुआ रोग",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
+    },
+    "mildew": {
+      "term_key": "mildew",
+      "english": "mildew",
+      "localized_term": "फफूंद की परत वाला रोग",
+      "transliteration": "phaphūṃda kī parata vālā roga",
+      "definition": "फफूंद की परत वाला रोग",
+      "tts_text": "फफूंद की परत वाला रोग",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
+    },
+    "leaf_spot": {
+      "term_key": "leaf_spot",
+      "english": "leaf spot",
+      "localized_term": "पत्ती पर धब्बा",
+      "transliteration": "pattī para dhabbā",
+      "definition": "पत्ती पर धब्बा",
+      "tts_text": "पत्ती पर धब्बा",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
+    },
+    "scab": {
+      "term_key": "scab",
+      "english": "scab",
+      "localized_term": "पपड़ी रोग",
+      "transliteration": "papar̤ī roga",
+      "definition": "पपड़ी रोग",
+      "tts_text": "पपड़ी रोग",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
+    },
+    "mosaic_virus": {
+      "term_key": "mosaic_virus",
+      "english": "mosaic virus",
+      "localized_term": "मोजेक विषाणु",
+      "transliteration": "mojeka viṣāṇu",
+      "definition": "मोजेक विषाणु",
+      "tts_text": "मोजेक विषाणु",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
+    }
+  },
+  "diseases": {
+    "Apple___Apple_scab": {
+      "id": "Apple___Apple_scab",
+      "common_name": "सेब का पपड़ी रोग (Apple Scab)",
+      "alt_names": [],
+      "scientific_name": "Venturia inaequalis",
+      "transliteration": "seba kā papar̤ī roga",
+      "tts_text": "सेब का पपड़ी रोग (Apple Scab)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Apple___Black_rot": {
+      "id": "Apple___Black_rot",
+      "common_name": "सेब का ब्लैक रॉट व मेढक-आंख धब्बा [Black Rot & Frogeye Leaf Spot]",
+      "alt_names": [],
+      "scientific_name": "Botryosphaeria obtusa",
+      "transliteration": "seba kā blaika raॉṭa va meḍhaka-āṃkha dhabbā",
+      "tts_text": "सेब का ब्लैक रॉट व मेढक-आंख धब्बा [Black Rot & Frogeye Leaf Spot]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Apple___Cedar_apple_rust": {
+      "id": "Apple___Cedar_apple_rust",
+      "common_name": "सेब का देवदार रतुआ रोग (Cedar Apple Rust)",
+      "alt_names": [],
+      "scientific_name": "Gymnosporangium juniperi-virginianae",
+      "transliteration": "seba kā devadāra ratuā roga",
+      "tts_text": "सेब का देवदार रतुआ रोग (Cedar Apple Rust)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Apple___healthy": {
+      "id": "Apple___healthy",
+      "common_name": "स्वस्थ सेब के पत्ते [Healthy Apple Leaf]",
+      "alt_names": [],
+      "scientific_name": "Malus domestica",
+      "transliteration": "svastha seba ke patte",
+      "tts_text": "स्वस्थ सेब के पत्ते [Healthy Apple Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Blueberry___healthy": {
+      "id": "Blueberry___healthy",
+      "common_name": "स्वस्थ ब्लूबेरी के पत्ते [Healthy Blueberry Leaf]",
+      "alt_names": [],
+      "scientific_name": "Vaccinium corymbosum",
+      "transliteration": "svastha blūberī ke patte",
+      "tts_text": "स्वस्थ ब्लूबेरी के पत्ते [Healthy Blueberry Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+      "id": "Cherry_(including_sour)___Powdery_mildew",
+      "common_name": "चेरी के पत्तों पर सफेद चूर्ण वाला रोग [Powdery Mildew]",
+      "alt_names": [],
+      "scientific_name": "Podosphaera clandestina",
+      "transliteration": "cerī ke pattoṃ para sapheda cūrṇa vālā roga",
+      "tts_text": "चेरी के पत्तों पर सफेद चूर्ण वाला रोग [Powdery Mildew]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Cherry_(including_sour)___healthy": {
+      "id": "Cherry_(including_sour)___healthy",
+      "common_name": "स्वस्थ चेरी के पत्ते [Healthy Cherry Leaf]",
+      "alt_names": [],
+      "scientific_name": "Prunus avium / Prunus cerasus",
+      "transliteration": "svastha cerī ke patte",
+      "tts_text": "स्वस्थ चेरी के पत्ते [Healthy Cherry Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+      "id": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "common_name": "मक्का का ग्रे लीफ स्पॉट (सर्कोस्पोरा धब्बा) [Gray Leaf Spot]",
+      "alt_names": [],
+      "scientific_name": "Cercospora zeae-maydis",
+      "transliteration": "makkā kā gre līpha spaॉṭa",
+      "tts_text": "मक्का का ग्रे लीफ स्पॉट (सर्कोस्पोरा धब्बा) [Gray Leaf Spot]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Corn_(maize)___Common_rust_": {
+      "id": "Corn_(maize)___Common_rust_",
+      "common_name": "मक्का का सामान्य रतुआ / गेरुई रोग (Common Rust)",
+      "alt_names": [],
+      "scientific_name": "Puccinia sorghi",
+      "transliteration": "makkā kā sāmānya ratuā / geruī roga",
+      "tts_text": "मक्का का सामान्य रतुआ / गेरुई रोग (Common Rust)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+      "id": "Corn_(maize)___Northern_Leaf_Blight",
+      "common_name": "मक्का का उत्तरी पत्ता झुलसा रोग (Northern Leaf Blight) [Northern Corn Leaf Blight]",
+      "alt_names": [],
+      "scientific_name": "Exserohilum turcicum (Setosphaeria turcica)",
+      "transliteration": "makkā kā uttarī pattā jhulasā roga",
+      "tts_text": "मक्का का उत्तरी पत्ता झुलसा रोग (Northern Leaf Blight) [Northern Corn Leaf Blight]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Corn_(maize)___healthy": {
+      "id": "Corn_(maize)___healthy",
+      "common_name": "स्वस्थ मक्का के पत्ते [Healthy Corn Leaf]",
+      "alt_names": [],
+      "scientific_name": "Zea mays",
+      "transliteration": "svastha makkā ke patte",
+      "tts_text": "स्वस्थ मक्का के पत्ते [Healthy Corn Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Grape___Black_rot": {
+      "id": "Grape___Black_rot",
+      "common_name": "अंगूर का ब्लैक रॉट (काला सड़न रोग) [Black Rot]",
+      "alt_names": [],
+      "scientific_name": "Guignardia bidwellii (Phyllosticta ampelicida)",
+      "transliteration": "aṃgūra kā blaika raॉṭa",
+      "tts_text": "अंगूर का ब्लैक रॉट (काला सड़न रोग) [Black Rot]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Grape___Esca_(Black_Measles)": {
+      "id": "Grape___Esca_(Black_Measles)",
+      "common_name": "अंगूर का एस्का / ब्लैक मीसल्स रोग [Esca (Black Measles)]",
+      "alt_names": [],
+      "scientific_name": "Phaeoacremonium minimum, Phaeomoniella chlamydospora, Fomitiporia mediterranea",
+      "transliteration": "aṃgūra kā eskā / blaika mīsalsa roga",
+      "tts_text": "अंगूर का एस्का / ब्लैक मीसल्स रोग [Esca (Black Measles)]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+      "id": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "common_name": "अंगूर का पत्ता झुलसा (आइसारियोप्सिस धब्बा) [Leaf Blight (Isariopsis / Phaeoisariopsis Leaf Spot)]",
+      "alt_names": [],
+      "scientific_name": "Pseudocercospora cladosporioides (Isariopsis clavispora)",
+      "transliteration": "aṃgūra kā pattā jhulasā",
+      "tts_text": "अंगूर का पत्ता झुलसा (आइसारियोप्सिस धब्बा) [Leaf Blight (Isariopsis / Phaeoisariopsis Leaf Spot)]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Grape___healthy": {
+      "id": "Grape___healthy",
+      "common_name": "स्वस्थ अंगूर के पत्ते [Healthy Grape Leaf]",
+      "alt_names": [],
+      "scientific_name": "Vitis vinifera",
+      "transliteration": "svastha aṃgūra ke patte",
+      "tts_text": "स्वस्थ अंगूर के पत्ते [Healthy Grape Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+      "id": "Orange___Haunglongbing_(Citrus_greening)",
+      "common_name": "नींबू / संतरे का सिट्रस ग्रीनिंग (हुआंगलोंगबिंग) [Huanglongbing (Citrus Greening)]",
+      "alt_names": [],
+      "scientific_name": "Candidatus Liberibacter asiaticus",
+      "transliteration": "nīṃbū / saṃtare kā siṭrasa grīniṃga",
+      "tts_text": "नींबू / संतरे का सिट्रस ग्रीनिंग (हुआंगलोंगबिंग) [Huanglongbing (Citrus Greening)]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Peach___Bacterial_spot": {
+      "id": "Peach___Bacterial_spot",
+      "common_name": "आड़ू का जीवाणु धब्बा रोग (Bacterial Spot)",
+      "alt_names": [],
+      "scientific_name": "Xanthomonas arboricola pv. pruni",
+      "transliteration": "ār̤ū kā jīvāṇu dhabbā roga",
+      "tts_text": "आड़ू का जीवाणु धब्बा रोग (Bacterial Spot)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Peach___healthy": {
+      "id": "Peach___healthy",
+      "common_name": "स्वस्थ आड़ू के पत्ते [Healthy Peach Leaf]",
+      "alt_names": [],
+      "scientific_name": "Prunus persica",
+      "transliteration": "svastha ār̤ū ke patte",
+      "tts_text": "स्वस्थ आड़ू के पत्ते [Healthy Peach Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Pepper,_bell___Bacterial_spot": {
+      "id": "Pepper,_bell___Bacterial_spot",
+      "common_name": "शिमला मिर्च का जीवाणु धब्बा रोग (Bacterial Spot)",
+      "alt_names": [],
+      "scientific_name": "Xanthomonas euvesicatoria / X. vesicatoria",
+      "transliteration": "śimalā mirca kā jīvāṇu dhabbā roga",
+      "tts_text": "शिमला मिर्च का जीवाणु धब्बा रोग (Bacterial Spot)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Pepper,_bell___healthy": {
+      "id": "Pepper,_bell___healthy",
+      "common_name": "स्वस्थ शिमला मिर्च के पत्ते [Healthy Bell Pepper Leaf]",
+      "alt_names": [],
+      "scientific_name": "Capsicum annuum",
+      "transliteration": "svastha śimalā mirca ke patte",
+      "tts_text": "स्वस्थ शिमला मिर्च के पत्ते [Healthy Bell Pepper Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Potato___Early_blight": {
+      "id": "Potato___Early_blight",
+      "common_name": "आलू का अगेती झुलसा रोग (Early Blight)",
+      "alt_names": [],
+      "scientific_name": "Alternaria solani",
+      "transliteration": "ālū kā agetī jhulasā roga",
+      "tts_text": "आलू का अगेती झुलसा रोग (Early Blight)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Potato___Late_blight": {
+      "id": "Potato___Late_blight",
+      "common_name": "आलू का पछेती झुलसा रोग (Late Blight)",
+      "alt_names": [],
+      "scientific_name": "Phytophthora infestans",
+      "transliteration": "ālū kā pachetī jhulasā roga",
+      "tts_text": "आलू का पछेती झुलसा रोग (Late Blight)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Potato___healthy": {
+      "id": "Potato___healthy",
+      "common_name": "स्वस्थ आलू के पत्ते [Healthy Potato Leaf]",
+      "alt_names": [],
+      "scientific_name": "Solanum tuberosum",
+      "transliteration": "svastha ālū ke patte",
+      "tts_text": "स्वस्थ आलू के पत्ते [Healthy Potato Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Raspberry___healthy": {
+      "id": "Raspberry___healthy",
+      "common_name": "स्वस्थ रास्पबेरी के पत्ते [Healthy Raspberry Leaf]",
+      "alt_names": [],
+      "scientific_name": "Rubus idaeus",
+      "transliteration": "svastha rāspaberī ke patte",
+      "tts_text": "स्वस्थ रास्पबेरी के पत्ते [Healthy Raspberry Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Soybean___healthy": {
+      "id": "Soybean___healthy",
+      "common_name": "स्वस्थ सोयाबीन के पत्ते [Healthy Soybean Leaf]",
+      "alt_names": [],
+      "scientific_name": "Glycine max",
+      "transliteration": "svastha soyābīna ke patte",
+      "tts_text": "स्वस्थ सोयाबीन के पत्ते [Healthy Soybean Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Squash___Powdery_mildew": {
+      "id": "Squash___Powdery_mildew",
+      "common_name": "कद्दू के पत्तों पर सफेद चूर्ण वाला रोग [Powdery Mildew]",
+      "alt_names": [],
+      "scientific_name": "Podosphaera xanthii (syn. Sphaerotheca fuliginea), Golovinomyces cichoracearum",
+      "transliteration": "kaddū ke pattoṃ para sapheda cūrṇa vālā roga",
+      "tts_text": "कद्दू के पत्तों पर सफेद चूर्ण वाला रोग [Powdery Mildew]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Strawberry___Leaf_scorch": {
+      "id": "Strawberry___Leaf_scorch",
+      "common_name": "स्ट्रॉबेरी का पत्ती झुलसा रोग (Leaf Scorch)",
+      "alt_names": [],
+      "scientific_name": "Diplocarpon earlianum",
+      "transliteration": "sṭraॉberī kā pattī jhulasā roga",
+      "tts_text": "स्ट्रॉबेरी का पत्ती झुलसा रोग (Leaf Scorch)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Strawberry___healthy": {
+      "id": "Strawberry___healthy",
+      "common_name": "स्वस्थ स्ट्रॉबेरी के पत्ते [Healthy Strawberry Leaf]",
+      "alt_names": [],
+      "scientific_name": "Fragaria x ananassa",
+      "transliteration": "svastha sṭraॉberī ke patte",
+      "tts_text": "स्वस्थ स्ट्रॉबेरी के पत्ते [Healthy Strawberry Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Bacterial_spot": {
+      "id": "Tomato___Bacterial_spot",
+      "common_name": "टमाटर का जीवाणु धब्बा रोग (Bacterial Spot)",
+      "alt_names": [],
+      "scientific_name": "Xanthomonas perforans / X. vesicatoria / X. gardneri",
+      "transliteration": "ṭamāṭara kā jīvāṇu dhabbā roga",
+      "tts_text": "टमाटर का जीवाणु धब्बा रोग (Bacterial Spot)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Early_blight": {
+      "id": "Tomato___Early_blight",
+      "common_name": "टमाटर का अगेती झुलसा रोग (Early Blight)",
+      "alt_names": [],
+      "scientific_name": "Alternaria linariae (syn. Alternaria solani)",
+      "transliteration": "ṭamāṭara kā agetī jhulasā roga",
+      "tts_text": "टमाटर का अगेती झुलसा रोग (Early Blight)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Late_blight": {
+      "id": "Tomato___Late_blight",
+      "common_name": "टमाटर का पछेती झुलसा रोग (Late Blight)",
+      "alt_names": [],
+      "scientific_name": "Phytophthora infestans",
+      "transliteration": "ṭamāṭara kā pachetī jhulasā roga",
+      "tts_text": "टमाटर का पछेती झुलसा रोग (Late Blight)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Leaf_Mold": {
+      "id": "Tomato___Leaf_Mold",
+      "common_name": "टमाटर का लीफ मोल्ड (पत्ती फफूंद रोग) [Leaf Mold]",
+      "alt_names": [],
+      "scientific_name": "Passalora fulva (syn. Cladosporium fulvum)",
+      "transliteration": "ṭamāṭara kā līpha molḍa",
+      "tts_text": "टमाटर का लीफ मोल्ड (पत्ती फफूंद रोग) [Leaf Mold]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Septoria_leaf_spot": {
+      "id": "Tomato___Septoria_leaf_spot",
+      "common_name": "टमाटर का सेप्टोरिया पत्ता धब्बा रोग [Septoria Leaf Spot]",
+      "alt_names": [],
+      "scientific_name": "Septoria lycopersici",
+      "transliteration": "ṭamāṭara kā sepṭoriyā pattā dhabbā roga",
+      "tts_text": "टमाटर का सेप्टोरिया पत्ता धब्बा रोग [Septoria Leaf Spot]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+      "id": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "common_name": "टमाटर का लाल मकड़ी / दो-धब्बेदार मकड़ी कीट [Two-Spotted Spider Mite Infestation]",
+      "alt_names": [],
+      "scientific_name": "Tetranychus urticae",
+      "transliteration": "ṭamāṭara kā lāla makar̤ī / do-dhabbedāra makar̤ī kīṭa",
+      "tts_text": "टमाटर का लाल मकड़ी / दो-धब्बेदार मकड़ी कीट [Two-Spotted Spider Mite Infestation]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Target_Spot": {
+      "id": "Tomato___Target_Spot",
+      "common_name": "टमाटर का लक्ष्य चक्र धब्बा रोग (Target Spot)",
+      "alt_names": [],
+      "scientific_name": "Corynespora cassiicola",
+      "transliteration": "ṭamāṭara kā lakṣya cakra dhabbā roga",
+      "tts_text": "टमाटर का लक्ष्य चक्र धब्बा रोग (Target Spot)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+      "id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "common_name": "टमाटर का पीला पत्ती मरोड़ विषाणु (TYLCV / चुर्रा-मुर्रा) [Tomato Yellow Leaf Curl Virus (TYLCV)]",
+      "alt_names": [],
+      "scientific_name": "Begomovirus (TYLCV)",
+      "transliteration": "ṭamāṭara kā pīlā pattī maror̤a viṣāṇu",
+      "tts_text": "टमाटर का पीला पत्ती मरोड़ विषाणु (TYLCV / चुर्रा-मुर्रा) [Tomato Yellow Leaf Curl Virus (TYLCV)]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Tomato_mosaic_virus": {
+      "id": "Tomato___Tomato_mosaic_virus",
+      "common_name": "टमाटर का मोजेक विषाणु रोग (Tomato Mosaic Virus) [Tomato Mosaic Virus (ToMV)]",
+      "alt_names": [],
+      "scientific_name": "Tobamovirus (ToMV)",
+      "transliteration": "ṭamāṭara kā mojeka viṣāṇu roga",
+      "tts_text": "टमाटर का मोजेक विषाणु रोग (Tomato Mosaic Virus) [Tomato Mosaic Virus (ToMV)]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___healthy": {
+      "id": "Tomato___healthy",
+      "common_name": "स्वस्थ टमाटर के पत्ते [Healthy Tomato Leaf]",
+      "alt_names": [],
+      "scientific_name": "Solanum lycopersicum",
+      "transliteration": "svastha ṭamāṭara ke patte",
+      "tts_text": "स्वस्थ टमाटर के पत्ते [Healthy Tomato Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
     }
   }
 }

@@ -10,6 +10,7 @@ from slowapi.errors import RateLimitExceeded
 from prometheus_fastapi_instrumentator import Instrumentator
 
 from backend.app.core.config import settings
+from backend.app.services.i18n import translate_message, resolve_language
 from backend.app.api.router import api_router
 from backend.app.api.deps import limiter
 from backend.app.db.session import init_db
@@ -52,7 +53,7 @@ app.state.limiter = limiter
 async def rate_limit_handler(request: Request, exc: RateLimitExceeded):
     return JSONResponse(
         status_code=429,
-        content={"detail": f"Rate limit exceeded: {exc.detail}. Please slow down your requests."}
+        content={"detail": translate_message("Too many requests. Please wait and try again.", resolve_language(request.query_params.get("lang"), request.headers.get("Accept-Language")))}
     )
 
 
@@ -89,3 +90,7 @@ async def root():
         "health": "/api/v1/health",
         "model_info": "/api/v1/model/info"
     }
+
+# Presentation-only error localization
+from backend.app.api.i18n_errors import install_i18n_errors
+install_i18n_errors(app)

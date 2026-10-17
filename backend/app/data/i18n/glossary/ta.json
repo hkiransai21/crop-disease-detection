@@ -1,504 +1,537 @@
 {
   "language": "ta",
-  "language_name": "Tamil",
-  "diseases": {
-    "Apple___Apple_scab": {
-      "id": "Apple___Apple_scab",
-      "common_name": "ஆப்பிள் செதில் நோய் (Apple Scab)",
-      "alt_names": [
-        "கருந்தழும்பு"
-      ],
-      "transliteration": "Apple Scab",
-      "scientific_name": "Venturia inaequalis",
-      "tts_text": "ஆப்பிள் செதில் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Apple___Black_rot": {
-      "id": "Apple___Black_rot",
-      "common_name": "ஆப்பிள் கறுப்பு அழுகல் மற்றும் தவளைக்கண் இலைப்புள்ளி",
-      "alt_names": [
-        "கறுப்பு அழுகல்"
-      ],
-      "transliteration": "Apple Black Rot",
-      "scientific_name": "Botryosphaeria obtusa",
-      "tts_text": "ஆப்பிள் கறுப்பு அழுகல் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Apple___Cedar_apple_rust": {
-      "id": "Apple___Cedar_apple_rust",
-      "common_name": "ஆப்பிள் செடார் துரு நோய்",
-      "alt_names": [
-        "துருப்புள்ளி"
-      ],
-      "transliteration": "Cedar Apple Rust",
-      "scientific_name": "Gymnosporangium juniperi-virginianae",
-      "tts_text": "ஆப்பிள் துரு நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Apple___healthy": {
-      "id": "Apple___healthy",
-      "common_name": "ஆரோக்கியமான ஆப்பிள் இலை",
-      "alt_names": [
-        "ஆரோக்கிய இலை"
-      ],
-      "transliteration": "Healthy Apple",
-      "scientific_name": "Malus domestica",
-      "tts_text": "ஆப்பிள் இலை ஆரோக்கியமாக உள்ளது",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Blueberry___healthy": {
-      "id": "Blueberry___healthy",
-      "common_name": "ஆரோக்கியமான புளூபெர்ரி இலை",
-      "alt_names": [
-        "ஆரோக்கிய இலை"
-      ],
-      "transliteration": "Healthy Blueberry",
-      "scientific_name": "Vaccinium corymbosum",
-      "tts_text": "புளூபெர்ரி இலை ஆரோக்கியமாக உள்ளது",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Cherry_(including_sour)___Powdery_mildew": {
-      "id": "Cherry_(including_sour)___Powdery_mildew",
-      "common_name": "செர்ரி சாம்பல் நோய் (Powdery Mildew)",
-      "alt_names": [
-        "வெள்ளை சாம்பல்"
-      ],
-      "transliteration": "Cherry Powdery Mildew",
-      "scientific_name": "Podosphaera clandestina",
-      "tts_text": "செர்ரி சாம்பல் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Cherry_(including_sour)___healthy": {
-      "id": "Cherry_(including_sour)___healthy",
-      "common_name": "ஆரோக்கியமான செர்ரி இலை",
-      "alt_names": [
-        "ஆரோக்கிய இலை"
-      ],
-      "transliteration": "Healthy Cherry",
-      "scientific_name": "Prunus avium / Prunus cerasus",
-      "tts_text": "செர்ரி இலை ஆரோக்கியமாக உள்ளது",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
-      "id": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
-      "common_name": "மக்காச்சோளம் சாம்பல் இலைப்புள்ளி நோய் (செர்கோஸ்போரா)",
-      "alt_names": [
-        "சாம்பல் புள்ளி"
-      ],
-      "transliteration": "Corn Gray Leaf Spot",
-      "scientific_name": "Cercospora zeae-maydis",
-      "tts_text": "மக்காச்சோளம் சாம்பல் இலைப்புள்ளி நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Corn_(maize)___Common_rust_": {
-      "id": "Corn_(maize)___Common_rust_",
-      "common_name": "மக்காச்சோளம் பொதுவான துரு நோய் (Common Rust)",
-      "alt_names": [
-        "துரு நோய்"
-      ],
-      "transliteration": "Corn Common Rust",
-      "scientific_name": "Puccinia sorghi",
-      "tts_text": "மக்காச்சோளம் துரு நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Corn_(maize)___Northern_Leaf_Blight": {
-      "id": "Corn_(maize)___Northern_Leaf_Blight",
-      "common_name": "மக்காச்சோளம் வடக்கு இலை கருகல் நோய் (Northern Leaf Blight)",
-      "alt_names": [
-        "இலை கருகல்"
-      ],
-      "transliteration": "Corn Northern Leaf Blight",
-      "scientific_name": "Exserohilum turcicum (Setosphaeria turcica)",
-      "tts_text": "மக்காச்சோளம் வடக்கு இலை கருகல் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Corn_(maize)___healthy": {
-      "id": "Corn_(maize)___healthy",
-      "common_name": "ஆரோக்கியமான மக்காச்சோளம் இலை",
-      "alt_names": [
-        "ஆரோக்கிய இலை"
-      ],
-      "transliteration": "Healthy Corn",
-      "scientific_name": "Zea mays",
-      "tts_text": "மக்காச்சோளம் பயிர் ஆரோக்கியமாக உள்ளது",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Grape___Black_rot": {
-      "id": "Grape___Black_rot",
-      "common_name": "திராட்சை கறுப்பு அழுகல் நோய் (Black Rot)",
-      "alt_names": [
-        "கறுப்பு அழுகல்"
-      ],
-      "transliteration": "Grape Black Rot",
-      "scientific_name": "Guignardia bidwellii (Phyllosticta ampelicida)",
-      "tts_text": "திராட்சை கறுப்பு அழுகல் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Grape___Esca_(Black_Measles)": {
-      "id": "Grape___Esca_(Black_Measles)",
-      "common_name": "திராட்சை எஸ்கா நோய் (கறுப்பு தட்டம்மை)",
-      "alt_names": [
-        "புலி வரி நோய்"
-      ],
-      "transliteration": "Grape Esca Black Measles",
-      "scientific_name": "Phaeoacremonium minimum, Phaeomoniella chlamydospora, Fomitiporia mediterranea",
-      "tts_text": "திராட்சை எஸ்கா நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
-      "id": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
-      "common_name": "திராட்சை இலை கருகல் (ஐசாரியோப்சிஸ் இலைப்புள்ளி)",
-      "alt_names": [
-        "இலைப்புள்ளி"
-      ],
-      "transliteration": "Grape Leaf Blight",
-      "scientific_name": "Pseudocercospora cladosporioides (Isariopsis clavispora)",
-      "tts_text": "திராட்சை இலை கருகல் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Grape___healthy": {
-      "id": "Grape___healthy",
-      "common_name": "ஆரோக்கியமான திராட்சை இலை",
-      "alt_names": [
-        "ஆரோக்கிய இலை"
-      ],
-      "transliteration": "Healthy Grape",
-      "scientific_name": "Vitis vinifera",
-      "tts_text": "திராட்சை இலை ஆரோக்கியமாக உள்ளது",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Orange___Haunglongbing_(Citrus_greening)": {
-      "id": "Orange___Haunglongbing_(Citrus_greening)",
-      "common_name": "சிட்ரஸ் கிரீனிங் நோய் (எலுமிச்சை மஞ்சள் வரி நோய்)",
-      "alt_names": [
-        "மஞ்சள் நோய்"
-      ],
-      "transliteration": "Citrus Greening Huanglongbing",
-      "scientific_name": "Candidatus Liberibacter asiaticus",
-      "tts_text": "சிட்ரஸ் கிரீனிங் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Peach___Bacterial_spot": {
-      "id": "Peach___Bacterial_spot",
-      "common_name": "பீச் பாக்டீரியா இலைப்புள்ளி நோய்",
-      "alt_names": [
-        "துளை நோய்"
-      ],
-      "transliteration": "Peach Bacterial Spot",
-      "scientific_name": "Xanthomonas arboricola pv. pruni",
-      "tts_text": "பீச் பாக்டீரியா புள்ளி நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Peach___healthy": {
-      "id": "Peach___healthy",
-      "common_name": "ஆரோக்கியமான பீச் இலை",
-      "alt_names": [
-        "ஆரோக்கிய இலை"
-      ],
-      "transliteration": "Healthy Peach",
-      "scientific_name": "Prunus persica",
-      "tts_text": "பீச் இலை ஆரோக்கியமாக உள்ளது",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Pepper,_bell___Bacterial_spot": {
-      "id": "Pepper,_bell___Bacterial_spot",
-      "common_name": "குடைமிளகாய் பாக்டீரியா இலைப்புள்ளி நோய்",
-      "alt_names": [
-        "பாக்டீரியா புள்ளி"
-      ],
-      "transliteration": "Bell Pepper Bacterial Spot",
-      "scientific_name": "Xanthomonas euvesicatoria / X. vesicatoria",
-      "tts_text": "குடைமிளகாய் பாக்டீரியா புள்ளி நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Pepper,_bell___healthy": {
-      "id": "Pepper,_bell___healthy",
-      "common_name": "ஆரோக்கியமான குடைமிளகாய் இலை",
-      "alt_names": [
-        "ஆரோக்கிய இலை"
-      ],
-      "transliteration": "Healthy Bell Pepper",
-      "scientific_name": "Capsicum annuum",
-      "tts_text": "குடைமிளகாய் இலை ஆரோக்கியமாக உள்ளது",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Potato___Early_blight": {
-      "id": "Potato___Early_blight",
-      "common_name": "உருளைக்கிழங்கு முன் பருவ கருகல் நோய் (Early Blight)",
-      "alt_names": [
-        "முன் கருகல் நோய்"
-      ],
-      "transliteration": "Potato Early Blight",
-      "scientific_name": "Alternaria solani",
-      "tts_text": "உருளைக்கிழங்கு முன் பருவ கருகல் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Potato___Late_blight": {
-      "id": "Potato___Late_blight",
-      "common_name": "உருளைக்கிழங்கு பின் பருவ கருகல் நோய் (Late Blight)",
-      "alt_names": [
-        "பின் கருகல் நோய்"
-      ],
-      "transliteration": "Potato Late Blight",
-      "scientific_name": "Phytophthora infestans",
-      "tts_text": "உருளைக்கிழங்கு பின் பருவ கருகல் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Potato___healthy": {
-      "id": "Potato___healthy",
-      "common_name": "ஆரோக்கியமான உருளைக்கிழங்கு இலை",
-      "alt_names": [
-        "ஆரோக்கிய இலை"
-      ],
-      "transliteration": "Healthy Potato",
-      "scientific_name": "Solanum tuberosum",
-      "tts_text": "உருளைக்கிழங்கு இலை ஆரோக்கியமாக உள்ளது",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Raspberry___healthy": {
-      "id": "Raspberry___healthy",
-      "common_name": "ஆரோக்கியமான ராஸ்பெர்ரி இலை",
-      "alt_names": [
-        "ஆரோக்கிய இலை"
-      ],
-      "transliteration": "Healthy Raspberry",
-      "scientific_name": "Rubus idaeus",
-      "tts_text": "ராஸ்பெர்ரி இலை ஆரோக்கியமாக உள்ளது",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Soybean___healthy": {
-      "id": "Soybean___healthy",
-      "common_name": "ஆரோக்கியமான சோயாபீன் இலை",
-      "alt_names": [
-        "ஆரோக்கிய இலை"
-      ],
-      "transliteration": "Healthy Soybean",
-      "scientific_name": "Glycine max",
-      "tts_text": "சோயாபீன் பயிர் ஆரோக்கியமாக உள்ளது",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Squash___Powdery_mildew": {
-      "id": "Squash___Powdery_mildew",
-      "common_name": "பூசணி சாம்பல் நோய் (Powdery Mildew)",
-      "alt_names": [
-        "சாம்பல் நோய்"
-      ],
-      "transliteration": "Squash Powdery Mildew",
-      "scientific_name": "Podosphaera xanthii (syn. Sphaerotheca fuliginea), Golovinomyces cichoracearum",
-      "tts_text": "பூசணி சாம்பல் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Strawberry___Leaf_scorch": {
-      "id": "Strawberry___Leaf_scorch",
-      "common_name": "ஸ்ட்ராபெர்ரி இலை கருகல் நோய் (Leaf Scorch)",
-      "alt_names": [
-        "இலை கருகல்"
-      ],
-      "transliteration": "Strawberry Leaf Scorch",
-      "scientific_name": "Diplocarpon earlianum",
-      "tts_text": "ஸ்ட்ராபெர்ரி இலை கருகல் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Strawberry___healthy": {
-      "id": "Strawberry___healthy",
-      "common_name": "ஆரோக்கியமான ஸ்ட்ராபெர்ரி இலை",
-      "alt_names": [
-        "ஆரோக்கிய இலை"
-      ],
-      "transliteration": "Healthy Strawberry",
-      "scientific_name": "Fragaria x ananassa",
-      "tts_text": "ஸ்ட்ராபெர்ரி இலை ஆரோக்கியமாக உள்ளது",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Bacterial_spot": {
-      "id": "Tomato___Bacterial_spot",
-      "common_name": "தக்காளி பாக்டீரியா இலைப்புள்ளி நோய் (Bacterial Spot)",
-      "alt_names": [
-        "பாக்டீரியா புள்ளி"
-      ],
-      "transliteration": "Tomato Bacterial Spot",
-      "scientific_name": "Xanthomonas perforans / X. vesicatoria / X. gardneri",
-      "tts_text": "தக்காளி பாக்டீரியா புள்ளி நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Early_blight": {
-      "id": "Tomato___Early_blight",
-      "common_name": "தக்காளி முன் பருவ கருகல் நோய் (Early Blight)",
-      "alt_names": [
-        "முன் கருகல்"
-      ],
-      "transliteration": "Tomato Early Blight",
-      "scientific_name": "Alternaria linariae (syn. Alternaria solani)",
-      "tts_text": "தக்காளி முன் பருவ கருகல் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Late_blight": {
-      "id": "Tomato___Late_blight",
-      "common_name": "தக்காளி பின் பருவ கருகல் நோய் (Late Blight)",
-      "alt_names": [
-        "பின் கருகல் நோய்"
-      ],
-      "transliteration": "Tomato Late Blight",
-      "scientific_name": "Phytophthora infestans",
-      "tts_text": "தக்காளி பின் பருவ கருகல் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Leaf_Mold": {
-      "id": "Tomato___Leaf_Mold",
-      "common_name": "தக்காளி இலை பூஞ்சை பூஞ்சணம் (Leaf Mold)",
-      "alt_names": [
-        "இலை பூஞ்சணம்"
-      ],
-      "transliteration": "Tomato Leaf Mold",
-      "scientific_name": "Passalora fulva (syn. Cladosporium fulvum)",
-      "tts_text": "தக்காளி இலை பூஞ்சை நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Septoria_leaf_spot": {
-      "id": "Tomato___Septoria_leaf_spot",
-      "common_name": "தக்காளி செப்டோரியா இலைப்புள்ளி நோய்",
-      "alt_names": [
-        "செப்டோரியா புள்ளி"
-      ],
-      "transliteration": "Tomato Septoria Leaf Spot",
-      "scientific_name": "Septoria lycopersici",
-      "tts_text": "தக்காளி செப்டோரியா புள்ளி நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Spider_mites Two-spotted_spider_mite": {
-      "id": "Tomato___Spider_mites Two-spotted_spider_mite",
-      "common_name": "தக்காளி இரண்டு புள்ளி செம்பேன் / சிலந்திப் பேன்",
-      "alt_names": [
-        "செம்பேன்"
-      ],
-      "transliteration": "Tomato Spider Mite",
-      "scientific_name": "Tetranychus urticae",
-      "tts_text": "தக்காளி செம்பேன் சிலந்திப் பேன் தாக்குதல்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Target_Spot": {
-      "id": "Tomato___Target_Spot",
-      "common_name": "தக்காளி இலக்கு புள்ளி நோய் (Target Spot)",
-      "alt_names": [
-        "வளைய புள்ளி"
-      ],
-      "transliteration": "Tomato Target Spot",
-      "scientific_name": "Corynespora cassiicola",
-      "tts_text": "தக்காளி டார்கெட் ஸ்பாட் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
-      "id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
-      "common_name": "தக்காளி இலை சுருள் மஞ்சள் வைரஸ் நோய் (TYLCV)",
-      "alt_names": [
-        "இலை சுருள் நோய்"
-      ],
-      "transliteration": "Tomato Yellow Leaf Curl Virus",
-      "scientific_name": "Begomovirus (TYLCV)",
-      "tts_text": "வெள்ளை ஈக்களால் பரவும் தக்காளி இலை சுருள் மஞ்சள் வைரஸ் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Tomato_mosaic_virus": {
-      "id": "Tomato___Tomato_mosaic_virus",
-      "common_name": "தக்காளி மொசைக் வைரஸ் நோய் (வண்ண வரி நோய்)",
-      "alt_names": [
-        "மொசைக் நோய்"
-      ],
-      "transliteration": "Tomato Mosaic Virus",
-      "scientific_name": "Tobamovirus (ToMV)",
-      "tts_text": "தக்காளி மொசைக் வைரஸ் நோய்",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___healthy": {
-      "id": "Tomato___healthy",
-      "common_name": "ஆரோக்கியமான தக்காளி இலை",
-      "alt_names": [
-        "ஆரோக்கிய இலை"
-      ],
-      "transliteration": "Healthy Tomato",
-      "scientific_name": "Solanum lycopersicum",
-      "tts_text": "தக்காளி பயிர் இலை முழுமையாக ஆரோக்கியமாக உள்ளது",
-      "source": "TNAU Agritech Portal",
-      "review_status": "expert_reviewed"
-    }
-  },
+  "language_name": "தமிழ்",
+  "review_status": "machine_suggested",
   "agronomic_terms": {
     "fungicide": {
       "term_key": "fungicide",
       "english": "Fungicide",
-      "localized_term": "பூஞ்சாணக்கொல்லி (Fungicide)",
-      "transliteration": "Poonjanakkolli",
-      "definition": "பூஞ்சை நோய்களைக் கட்டுப்படுத்தும் மருந்து",
-      "tts_text": "பூஞ்சாணக்கொல்லி மருந்து"
+      "localized_term": "பூஞ்சைக்கொல்லி",
+      "transliteration": "bhūñjhaighghòlli",
+      "definition": "பூச்சிக்கொல்லிகள், பூச்சிக்கொல்லிகள் அல்லது பூச்சிக்கொல்லிகளைத் தடுக்கும் அல்லது அழிக்கும்",
+      "tts_text": "பூஞ்சைக்கொல்லி",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
     },
     "bactericide": {
       "term_key": "bactericide",
       "english": "Bactericide",
       "localized_term": "பாக்டீரியாக்கொல்லி",
-      "transliteration": "Bacteriakkolli",
-      "definition": "பாக்டீரியா நோய்களைக் கட்டுப்படுத்தும் மருந்து",
-      "tts_text": "பாக்டீரியாக்கொல்லி"
+      "transliteration": "bhāghḍhīriyāghghòlli",
+      "definition": "பாக்டீரியாவை அழிக்கும் அல்லது அடக்கும் வேதியியல்",
+      "tts_text": "பாக்டீரியாக்கொல்லி",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
     },
     "crop_rotation": {
       "term_key": "crop_rotation",
       "english": "Crop Rotation",
       "localized_term": "பயிர் சுழற்சி",
-      "transliteration": "Payir Suzharchi",
-      "definition": "நிலத்தில் வெவ்வேறு பயிர்களை மாற்றி பயிரிடுதல்",
-      "tts_text": "பயிர் சுழற்சி"
+      "transliteration": "bhayir jhul̤aṟjhi",
+      "definition": "ஒரே நிலத்தில் வெவ்வேறு பயிர்களை வரிசையாக நடவு செய்தல்",
+      "tts_text": "பயிர் சுழற்சி",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
     },
     "spray_interval": {
       "term_key": "spray_interval",
       "english": "Spray Interval",
-      "localized_term": "தெளிப்பு இடைவெளி",
-      "transliteration": "Thelippu Idaiveli",
-      "definition": "இரண்டு மருந்து தெளிப்புகளுக்கு இடைப்பட்ட நாட்கள்",
-      "tts_text": "தெளிப்பு இடைவெளி"
+      "localized_term": "இரு தெளிப்புகளுக்கு இடையிலான காலம்",
+      "transliteration": "iru dhèḻibhbhughaḻughghu iḍhaiyilāṉa ghālaṃ",
+      "definition": "தொடர்ச்சியான விண்ணப்பங்களுக்கு இடையில் days தேவை",
+      "tts_text": "இரு தெளிப்புகளுக்கு இடையிலான காலம்",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
     },
     "resistant_variety": {
       "term_key": "resistant_variety",
       "english": "Resistant Variety",
-      "localized_term": "நோய் எதிர்ப்புத் திறன் கொண்ட ரகம்",
-      "transliteration": "Noi Ethirppu Rakam",
-      "definition": "நோயை எதிர்த்து வளரும் பயிர் வகை",
-      "tts_text": "நோய் எதிர்ப்பு ரகம்"
+      "localized_term": "நோயைத் தாங்கும் ரகம்",
+      "transliteration": "noyaidh dhāṅghuṃ raghaṃ",
+      "definition": "குறிப்பிட்ட நோய்களுக்கு உள்நோக்கமாக எதிர்க்கும் விளைச்சலுக்கு வளர்க்கப்படும் பயிர்",
+      "tts_text": "நோயைத் தாங்கும் ரகம்",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
+    },
+    "blight": {
+      "term_key": "blight",
+      "english": "blight",
+      "localized_term": "கருகல் நோய்",
+      "transliteration": "gharughal noy",
+      "definition": "கருகல் நோய்",
+      "tts_text": "கருகல் நோய்",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
+    },
+    "rust": {
+      "term_key": "rust",
+      "english": "rust",
+      "localized_term": "துரு நோய்",
+      "transliteration": "dhuru noy",
+      "definition": "துரு நோய்",
+      "tts_text": "துரு நோய்",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
+    },
+    "mildew": {
+      "term_key": "mildew",
+      "english": "mildew",
+      "localized_term": "பூஞ்சைப் படல நோய்",
+      "transliteration": "bhūñjhaibh bhaḍhala noy",
+      "definition": "பூஞ்சைப் படல நோய்",
+      "tts_text": "பூஞ்சைப் படல நோய்",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
+    },
+    "leaf_spot": {
+      "term_key": "leaf_spot",
+      "english": "leaf spot",
+      "localized_term": "இலைப்புள்ளி",
+      "transliteration": "ilaibhbhuḻḻi",
+      "definition": "இலைப்புள்ளி",
+      "tts_text": "இலைப்புள்ளி",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
+    },
+    "scab": {
+      "term_key": "scab",
+      "english": "scab",
+      "localized_term": "சொறி போன்ற புள்ளி நோய்",
+      "transliteration": "jhòṟi bhoṉṟa bhuḻḻi noy",
+      "definition": "சொறி போன்ற புள்ளி நோய்",
+      "tts_text": "சொறி போன்ற புள்ளி நோய்",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
+    },
+    "mosaic_virus": {
+      "term_key": "mosaic_virus",
+      "english": "mosaic virus",
+      "localized_term": "மொசைக் வைரஸ்",
+      "transliteration": "mòjhaigh vairas",
+      "definition": "மொசைக் வைரஸ்",
+      "tts_text": "மொசைக் வைரஸ்",
+      "review_status": "machine_suggested",
+      "review_notes": "Descriptive agricultural wording; confirm everyday regional usage and definition with a native-speaking agricultural reviewer."
+    }
+  },
+  "diseases": {
+    "Apple___Apple_scab": {
+      "id": "Apple___Apple_scab",
+      "common_name": "ஆப்பிள் செதில் நோய் (Apple Scab)",
+      "alt_names": [],
+      "scientific_name": "Venturia inaequalis",
+      "transliteration": "ābhbhiḻ jhèdhil noy",
+      "tts_text": "ஆப்பிள் செதில் நோய் (Apple Scab)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Apple___Black_rot": {
+      "id": "Apple___Black_rot",
+      "common_name": "ஆப்பிள் கறுப்பு அழுகல் மற்றும் தவளைக்கண் இலைப்புள்ளி [Black Rot & Frogeye Leaf Spot]",
+      "alt_names": [],
+      "scientific_name": "Botryosphaeria obtusa",
+      "transliteration": "ābhbhiḻ ghaṟubhbhu al̤ughal maṟṟuṃ dhavaḻaighghaṇ ilaibhbhuḻḻi",
+      "tts_text": "ஆப்பிள் கறுப்பு அழுகல் மற்றும் தவளைக்கண் இலைப்புள்ளி [Black Rot & Frogeye Leaf Spot]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Apple___Cedar_apple_rust": {
+      "id": "Apple___Cedar_apple_rust",
+      "common_name": "ஆப்பிள் செடார் துரு நோய் [Cedar Apple Rust]",
+      "alt_names": [],
+      "scientific_name": "Gymnosporangium juniperi-virginianae",
+      "transliteration": "ābhbhiḻ jhèḍhār dhuru noy",
+      "tts_text": "ஆப்பிள் செடார் துரு நோய் [Cedar Apple Rust]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Apple___healthy": {
+      "id": "Apple___healthy",
+      "common_name": "ஆரோக்கியமான ஆப்பிள் இலை [Healthy Apple Leaf]",
+      "alt_names": [],
+      "scientific_name": "Malus domestica",
+      "transliteration": "āroghghiyamāṉa ābhbhiḻ ilai",
+      "tts_text": "ஆரோக்கியமான ஆப்பிள் இலை [Healthy Apple Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Blueberry___healthy": {
+      "id": "Blueberry___healthy",
+      "common_name": "ஆரோக்கியமான புளூபெர்ரி இலை [Healthy Blueberry Leaf]",
+      "alt_names": [],
+      "scientific_name": "Vaccinium corymbosum",
+      "transliteration": "āroghghiyamāṉa bhuḻūbhèrri ilai",
+      "tts_text": "ஆரோக்கியமான புளூபெர்ரி இலை [Healthy Blueberry Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+      "id": "Cherry_(including_sour)___Powdery_mildew",
+      "common_name": "செர்ரி சாம்பல் நோய் (Powdery Mildew)",
+      "alt_names": [],
+      "scientific_name": "Podosphaera clandestina",
+      "transliteration": "jhèrri jhāṃbhal noy",
+      "tts_text": "செர்ரி சாம்பல் நோய் (Powdery Mildew)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Cherry_(including_sour)___healthy": {
+      "id": "Cherry_(including_sour)___healthy",
+      "common_name": "ஆரோக்கியமான செர்ரி இலை [Healthy Cherry Leaf]",
+      "alt_names": [],
+      "scientific_name": "Prunus avium / Prunus cerasus",
+      "transliteration": "āroghghiyamāṉa jhèrri ilai",
+      "tts_text": "ஆரோக்கியமான செர்ரி இலை [Healthy Cherry Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+      "id": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "common_name": "மக்காச்சோளம் சாம்பல் இலைப்புள்ளி நோய் (செர்கோஸ்போரா) [Gray Leaf Spot]",
+      "alt_names": [],
+      "scientific_name": "Cercospora zeae-maydis",
+      "transliteration": "maghghājhjhoḻaṃ jhāṃbhal ilaibhbhuḻḻi noy",
+      "tts_text": "மக்காச்சோளம் சாம்பல் இலைப்புள்ளி நோய் (செர்கோஸ்போரா) [Gray Leaf Spot]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Corn_(maize)___Common_rust_": {
+      "id": "Corn_(maize)___Common_rust_",
+      "common_name": "மக்காச்சோளம் பொதுவான துரு நோய் (Common Rust)",
+      "alt_names": [],
+      "scientific_name": "Puccinia sorghi",
+      "transliteration": "maghghājhjhoḻaṃ bhòdhuvāṉa dhuru noy",
+      "tts_text": "மக்காச்சோளம் பொதுவான துரு நோய் (Common Rust)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+      "id": "Corn_(maize)___Northern_Leaf_Blight",
+      "common_name": "மக்காச்சோளம் வடக்கு இலை கருகல் நோய் (Northern Leaf Blight) [Northern Corn Leaf Blight]",
+      "alt_names": [],
+      "scientific_name": "Exserohilum turcicum (Setosphaeria turcica)",
+      "transliteration": "maghghājhjhoḻaṃ vaḍhaghghu ilai gharughal noy",
+      "tts_text": "மக்காச்சோளம் வடக்கு இலை கருகல் நோய் (Northern Leaf Blight) [Northern Corn Leaf Blight]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Corn_(maize)___healthy": {
+      "id": "Corn_(maize)___healthy",
+      "common_name": "ஆரோக்கியமான மக்காச்சோளம் இலை [Healthy Corn Leaf]",
+      "alt_names": [],
+      "scientific_name": "Zea mays",
+      "transliteration": "āroghghiyamāṉa maghghājhjhoḻaṃ ilai",
+      "tts_text": "ஆரோக்கியமான மக்காச்சோளம் இலை [Healthy Corn Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Grape___Black_rot": {
+      "id": "Grape___Black_rot",
+      "common_name": "திராட்சை கறுப்பு அழுகல் நோய் (Black Rot)",
+      "alt_names": [],
+      "scientific_name": "Guignardia bidwellii (Phyllosticta ampelicida)",
+      "transliteration": "dhirāḍhjhai ghaṟubhbhu al̤ughal noy",
+      "tts_text": "திராட்சை கறுப்பு அழுகல் நோய் (Black Rot)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Grape___Esca_(Black_Measles)": {
+      "id": "Grape___Esca_(Black_Measles)",
+      "common_name": "திராட்சை எஸ்கா நோய் (கறுப்பு தட்டம்மை) [Esca (Black Measles)]",
+      "alt_names": [],
+      "scientific_name": "Phaeoacremonium minimum, Phaeomoniella chlamydospora, Fomitiporia mediterranea",
+      "transliteration": "dhirāḍhjhai èsghā noy",
+      "tts_text": "திராட்சை எஸ்கா நோய் (கறுப்பு தட்டம்மை) [Esca (Black Measles)]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+      "id": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "common_name": "திராட்சை இலை கருகல் (ஐசாரியோப்சிஸ் இலைப்புள்ளி) [Leaf Blight (Isariopsis / Phaeoisariopsis Leaf Spot)]",
+      "alt_names": [],
+      "scientific_name": "Pseudocercospora cladosporioides (Isariopsis clavispora)",
+      "transliteration": "dhirāḍhjhai ilai gharughal",
+      "tts_text": "திராட்சை இலை கருகல் (ஐசாரியோப்சிஸ் இலைப்புள்ளி) [Leaf Blight (Isariopsis / Phaeoisariopsis Leaf Spot)]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Grape___healthy": {
+      "id": "Grape___healthy",
+      "common_name": "ஆரோக்கியமான திராட்சை இலை [Healthy Grape Leaf]",
+      "alt_names": [],
+      "scientific_name": "Vitis vinifera",
+      "transliteration": "āroghghiyamāṉa dhirāḍhjhai ilai",
+      "tts_text": "ஆரோக்கியமான திராட்சை இலை [Healthy Grape Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+      "id": "Orange___Haunglongbing_(Citrus_greening)",
+      "common_name": "சிட்ரஸ் கிரீனிங் நோய் (எலுமிச்சை மஞ்சள் வரி நோய்) [Huanglongbing (Citrus Greening)]",
+      "alt_names": [],
+      "scientific_name": "Candidatus Liberibacter asiaticus",
+      "transliteration": "jhiḍhras ghirīṉiṅ noy",
+      "tts_text": "சிட்ரஸ் கிரீனிங் நோய் (எலுமிச்சை மஞ்சள் வரி நோய்) [Huanglongbing (Citrus Greening)]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Peach___Bacterial_spot": {
+      "id": "Peach___Bacterial_spot",
+      "common_name": "பீச் பாக்டீரியா இலைப்புள்ளி நோய் [Bacterial Spot]",
+      "alt_names": [],
+      "scientific_name": "Xanthomonas arboricola pv. pruni",
+      "transliteration": "bhījh bhāghḍhīriyā ilaibhbhuḻḻi noy",
+      "tts_text": "பீச் பாக்டீரியா இலைப்புள்ளி நோய் [Bacterial Spot]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Peach___healthy": {
+      "id": "Peach___healthy",
+      "common_name": "ஆரோக்கியமான பீச் இலை [Healthy Peach Leaf]",
+      "alt_names": [],
+      "scientific_name": "Prunus persica",
+      "transliteration": "āroghghiyamāṉa bhījh ilai",
+      "tts_text": "ஆரோக்கியமான பீச் இலை [Healthy Peach Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Pepper,_bell___Bacterial_spot": {
+      "id": "Pepper,_bell___Bacterial_spot",
+      "common_name": "குடைமிளகாய் பாக்டீரியா இலைப்புள்ளி நோய் [Bacterial Spot]",
+      "alt_names": [],
+      "scientific_name": "Xanthomonas euvesicatoria / X. vesicatoria",
+      "transliteration": "ghuḍhaimiḻaghāy bhāghḍhīriyā ilaibhbhuḻḻi noy",
+      "tts_text": "குடைமிளகாய் பாக்டீரியா இலைப்புள்ளி நோய் [Bacterial Spot]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Pepper,_bell___healthy": {
+      "id": "Pepper,_bell___healthy",
+      "common_name": "ஆரோக்கியமான குடைமிளகாய் இலை [Healthy Bell Pepper Leaf]",
+      "alt_names": [],
+      "scientific_name": "Capsicum annuum",
+      "transliteration": "āroghghiyamāṉa ghuḍhaimiḻaghāy ilai",
+      "tts_text": "ஆரோக்கியமான குடைமிளகாய் இலை [Healthy Bell Pepper Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Potato___Early_blight": {
+      "id": "Potato___Early_blight",
+      "common_name": "உருளைக்கிழங்கு முன் பருவ கருகல் நோய் (Early Blight)",
+      "alt_names": [],
+      "scientific_name": "Alternaria solani",
+      "transliteration": "uruḻaighghil̤aṅghu muṉ bharuva gharughal noy",
+      "tts_text": "உருளைக்கிழங்கு முன் பருவ கருகல் நோய் (Early Blight)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Potato___Late_blight": {
+      "id": "Potato___Late_blight",
+      "common_name": "உருளைக்கிழங்கு பின் பருவ கருகல் நோய் (Late Blight)",
+      "alt_names": [],
+      "scientific_name": "Phytophthora infestans",
+      "transliteration": "uruḻaighghil̤aṅghu bhiṉ bharuva gharughal noy",
+      "tts_text": "உருளைக்கிழங்கு பின் பருவ கருகல் நோய் (Late Blight)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Potato___healthy": {
+      "id": "Potato___healthy",
+      "common_name": "ஆரோக்கியமான உருளைக்கிழங்கு இலை [Healthy Potato Leaf]",
+      "alt_names": [],
+      "scientific_name": "Solanum tuberosum",
+      "transliteration": "āroghghiyamāṉa uruḻaighghil̤aṅghu ilai",
+      "tts_text": "ஆரோக்கியமான உருளைக்கிழங்கு இலை [Healthy Potato Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Raspberry___healthy": {
+      "id": "Raspberry___healthy",
+      "common_name": "ஆரோக்கியமான ராஸ்பெர்ரி இலை [Healthy Raspberry Leaf]",
+      "alt_names": [],
+      "scientific_name": "Rubus idaeus",
+      "transliteration": "āroghghiyamāṉa rāsbhèrri ilai",
+      "tts_text": "ஆரோக்கியமான ராஸ்பெர்ரி இலை [Healthy Raspberry Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Soybean___healthy": {
+      "id": "Soybean___healthy",
+      "common_name": "ஆரோக்கியமான சோயாபீன் இலை [Healthy Soybean Leaf]",
+      "alt_names": [],
+      "scientific_name": "Glycine max",
+      "transliteration": "āroghghiyamāṉa jhoyābhīṉ ilai",
+      "tts_text": "ஆரோக்கியமான சோயாபீன் இலை [Healthy Soybean Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Squash___Powdery_mildew": {
+      "id": "Squash___Powdery_mildew",
+      "common_name": "பூசணி சாம்பல் நோய் (Powdery Mildew)",
+      "alt_names": [],
+      "scientific_name": "Podosphaera xanthii (syn. Sphaerotheca fuliginea), Golovinomyces cichoracearum",
+      "transliteration": "bhūjhaṇi jhāṃbhal noy",
+      "tts_text": "பூசணி சாம்பல் நோய் (Powdery Mildew)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Strawberry___Leaf_scorch": {
+      "id": "Strawberry___Leaf_scorch",
+      "common_name": "ஸ்ட்ராபெர்ரி இலை கருகல் நோய் (Leaf Scorch)",
+      "alt_names": [],
+      "scientific_name": "Diplocarpon earlianum",
+      "transliteration": "sḍhrābhèrri ilai gharughal noy",
+      "tts_text": "ஸ்ட்ராபெர்ரி இலை கருகல் நோய் (Leaf Scorch)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Strawberry___healthy": {
+      "id": "Strawberry___healthy",
+      "common_name": "ஆரோக்கியமான ஸ்ட்ராபெர்ரி இலை [Healthy Strawberry Leaf]",
+      "alt_names": [],
+      "scientific_name": "Fragaria x ananassa",
+      "transliteration": "āroghghiyamāṉa sḍhrābhèrri ilai",
+      "tts_text": "ஆரோக்கியமான ஸ்ட்ராபெர்ரி இலை [Healthy Strawberry Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Bacterial_spot": {
+      "id": "Tomato___Bacterial_spot",
+      "common_name": "தக்காளி பாக்டீரியா இலைப்புள்ளி நோய் (Bacterial Spot)",
+      "alt_names": [],
+      "scientific_name": "Xanthomonas perforans / X. vesicatoria / X. gardneri",
+      "transliteration": "dhaghghāḻi bhāghḍhīriyā ilaibhbhuḻḻi noy",
+      "tts_text": "தக்காளி பாக்டீரியா இலைப்புள்ளி நோய் (Bacterial Spot)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Early_blight": {
+      "id": "Tomato___Early_blight",
+      "common_name": "தக்காளி முன் பருவ கருகல் நோய் (Early Blight)",
+      "alt_names": [],
+      "scientific_name": "Alternaria linariae (syn. Alternaria solani)",
+      "transliteration": "dhaghghāḻi muṉ bharuva gharughal noy",
+      "tts_text": "தக்காளி முன் பருவ கருகல் நோய் (Early Blight)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Late_blight": {
+      "id": "Tomato___Late_blight",
+      "common_name": "தக்காளி பின் பருவ கருகல் நோய் (Late Blight)",
+      "alt_names": [],
+      "scientific_name": "Phytophthora infestans",
+      "transliteration": "dhaghghāḻi bhiṉ bharuva gharughal noy",
+      "tts_text": "தக்காளி பின் பருவ கருகல் நோய் (Late Blight)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Leaf_Mold": {
+      "id": "Tomato___Leaf_Mold",
+      "common_name": "தக்காளி இலைப் பூஞ்சை நோய் [Leaf Mold]",
+      "alt_names": [],
+      "scientific_name": "Passalora fulva (syn. Cladosporium fulvum)",
+      "transliteration": "dhaghghāḻi ilaibh bhūñjhai noy",
+      "tts_text": "தக்காளி இலைப் பூஞ்சை நோய் [Leaf Mold]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Septoria_leaf_spot": {
+      "id": "Tomato___Septoria_leaf_spot",
+      "common_name": "தக்காளி செப்டோரியா இலைப்புள்ளி நோய் [Septoria Leaf Spot]",
+      "alt_names": [],
+      "scientific_name": "Septoria lycopersici",
+      "transliteration": "dhaghghāḻi jhèbhḍhoriyā ilaibhbhuḻḻi noy",
+      "tts_text": "தக்காளி செப்டோரியா இலைப்புள்ளி நோய் [Septoria Leaf Spot]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+      "id": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "common_name": "தக்காளி இரண்டு புள்ளி செம்பேன் / சிலந்திப் பேன் [Two-Spotted Spider Mite Infestation]",
+      "alt_names": [],
+      "scientific_name": "Tetranychus urticae",
+      "transliteration": "dhaghghāḻi iraṇḍhu bhuḻḻi jhèṃbheṉ / jhilandhibh bheṉ",
+      "tts_text": "தக்காளி இரண்டு புள்ளி செம்பேன் / சிலந்திப் பேன் [Two-Spotted Spider Mite Infestation]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Target_Spot": {
+      "id": "Tomato___Target_Spot",
+      "common_name": "தக்காளி இலக்கு புள்ளி நோய் (Target Spot)",
+      "alt_names": [],
+      "scientific_name": "Corynespora cassiicola",
+      "transliteration": "dhaghghāḻi ilaghghu bhuḻḻi noy",
+      "tts_text": "தக்காளி இலக்கு புள்ளி நோய் (Target Spot)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+      "id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "common_name": "தக்காளி இலை சுருள் மஞ்சள் வைரஸ் நோய் (TYLCV) [Tomato Yellow Leaf Curl Virus (TYLCV)]",
+      "alt_names": [],
+      "scientific_name": "Begomovirus (TYLCV)",
+      "transliteration": "dhaghghāḻi ilai jhuruḻ mañjhaḻ vairas noy",
+      "tts_text": "தக்காளி இலை சுருள் மஞ்சள் வைரஸ் நோய் (TYLCV) [Tomato Yellow Leaf Curl Virus (TYLCV)]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Tomato_mosaic_virus": {
+      "id": "Tomato___Tomato_mosaic_virus",
+      "common_name": "தக்காளி மொசைக் வைரஸ் நோய் (வண்ண வரி நோய்) [Tomato Mosaic Virus (ToMV)]",
+      "alt_names": [],
+      "scientific_name": "Tobamovirus (ToMV)",
+      "transliteration": "dhaghghāḻi mòjhaigh vairas noy",
+      "tts_text": "தக்காளி மொசைக் வைரஸ் நோய் (வண்ண வரி நோய்) [Tomato Mosaic Virus (ToMV)]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___healthy": {
+      "id": "Tomato___healthy",
+      "common_name": "ஆரோக்கியமான தக்காளி இலை [Healthy Tomato Leaf]",
+      "alt_names": [],
+      "scientific_name": "Solanum lycopersicum",
+      "transliteration": "āroghghiyamāṉa dhaghghāḻi ilai",
+      "tts_text": "ஆரோக்கியமான தக்காளி இலை [Healthy Tomato Leaf]",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
     }
   }
 }

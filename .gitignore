@@ -92,3 +92,7 @@ backend/logs/
 *.sqlite3
 *.db
 backend/app.db
+
+# Resumable translation-authoring cache (not runtime data)
+.translation-cache/
+.translation-tools/

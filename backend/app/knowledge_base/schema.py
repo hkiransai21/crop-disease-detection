@@ -31,6 +31,18 @@ class DiseaseEntry(BaseModel):
     when_to_consult_expert: str = Field(..., description="Specific escalation criteria for agricultural extension officers")
     safety_notes: List[str] = Field(..., description="Mandatory pesticide safety and handling guidelines")
     sources: List[str] = Field(..., description="Citations to verified university extension and agricultural research services")
+    canonical_key: Optional[str] = None
+    common_name: Optional[str] = None
+    transliteration: Optional[str] = None
+    summary: Optional[str] = None
+    immediate_actions: List[str] = Field(default_factory=list)
+    organic_options: List[str] = Field(default_factory=list)
+    chemical_options: List[str] = Field(default_factory=list)
+    prevention: List[str] = Field(default_factory=list)
+    when_to_call_expert: Optional[str] = None
+    safety_notice: Optional[str] = None
+    review_notes: Optional[str] = None
+    fallback_fields: List[str] = Field(default_factory=list)
     canonical_crop: Optional[str] = Field(None, description="Canonical English crop name")
     canonical_disease_name: Optional[str] = Field(None, description="Canonical English disease name")
     review_status: Optional[str] = Field("expert_reviewed", description="draft | machine_suggested | expert_reviewed")

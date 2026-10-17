@@ -5,6 +5,7 @@ from pydantic import BaseModel, Field
 
 class ContributingFactor(BaseModel):
     factor_name: str
+    impact_label: Optional[str] = None
     impact: str = Field(..., description="ELEVATES_RISK | REDUCES_RISK | NEUTRAL")
     explanation: str = Field(..., description="Plain-language agronomic explanation")
 
@@ -13,6 +14,7 @@ class DailyRiskOutlook(BaseModel):
     date: str
     risk_score: int = Field(..., ge=0, le=100)
     risk_level: str = Field(..., description="LOW | MODERATE | HIGH | VERY HIGH")
+    risk_level_label: Optional[str] = None
     favorable_factors: List[str]
 
 
@@ -21,6 +23,7 @@ class RiskAssessment(BaseModel):
     target_condition: str
     risk_score: int = Field(..., ge=0, le=100, description="Heuristic score from 0 to 100")
     risk_level: str = Field(..., description="LOW | MODERATE | HIGH | VERY HIGH")
+    risk_level_label: Optional[str] = None
     risk_color: str = Field(..., description="Hex color code for UI rendering")
     headline: str
     summary: str

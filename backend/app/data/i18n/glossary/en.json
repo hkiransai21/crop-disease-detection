@@ -1,468 +1,7 @@
 {
   "language": "en",
   "language_name": "English",
-  "diseases": {
-    "Apple___Apple_scab": {
-      "id": "Apple___Apple_scab",
-      "common_name": "Apple Scab",
-      "alt_names": [
-        "Black Spot of Apple"
-      ],
-      "transliteration": "Apple Scab",
-      "scientific_name": "Venturia inaequalis",
-      "tts_text": "Apple Scab fungal infection",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Apple___Black_rot": {
-      "id": "Apple___Black_rot",
-      "common_name": "Black Rot & Frogeye Leaf Spot",
-      "alt_names": [
-        "Frogeye Leaf Spot"
-      ],
-      "transliteration": "Apple Black Rot",
-      "scientific_name": "Botryosphaeria obtusa",
-      "tts_text": "Apple Black Rot and Frogeye Leaf Spot",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Apple___Cedar_apple_rust": {
-      "id": "Apple___Cedar_apple_rust",
-      "common_name": "Cedar Apple Rust",
-      "alt_names": [
-        "Gymnosporangium Rust"
-      ],
-      "transliteration": "Cedar Apple Rust",
-      "scientific_name": "Gymnosporangium juniperi-virginianae",
-      "tts_text": "Cedar Apple Rust fungal disease",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Apple___healthy": {
-      "id": "Apple___healthy",
-      "common_name": "Healthy Apple Foliage",
-      "alt_names": [
-        "Normal Leaf"
-      ],
-      "transliteration": "Healthy Apple",
-      "scientific_name": "Malus domestica",
-      "tts_text": "Healthy Apple crop foliage",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Blueberry___healthy": {
-      "id": "Blueberry___healthy",
-      "common_name": "Healthy Blueberry Foliage",
-      "alt_names": [
-        "Normal Leaf"
-      ],
-      "transliteration": "Healthy Blueberry",
-      "scientific_name": "Vaccinium corymbosum",
-      "tts_text": "Healthy Blueberry foliage",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Cherry_(including_sour)___Powdery_mildew": {
-      "id": "Cherry_(including_sour)___Powdery_mildew",
-      "common_name": "Cherry Powdery Mildew",
-      "alt_names": [
-        "Podosphaera Mildew"
-      ],
-      "transliteration": "Cherry Powdery Mildew",
-      "scientific_name": "Podosphaera clandestina",
-      "tts_text": "Cherry Powdery Mildew fungal infection",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Cherry_(including_sour)___healthy": {
-      "id": "Cherry_(including_sour)___healthy",
-      "common_name": "Healthy Cherry Foliage",
-      "alt_names": [
-        "Normal Leaf"
-      ],
-      "transliteration": "Healthy Cherry",
-      "scientific_name": "Prunus avium / Prunus cerasus",
-      "tts_text": "Healthy Cherry crop foliage",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
-      "id": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
-      "common_name": "Corn Gray Leaf Spot & Cercospora",
-      "alt_names": [
-        "Cercospora Leaf Spot"
-      ],
-      "transliteration": "Corn Gray Leaf Spot",
-      "scientific_name": "Cercospora zeae-maydis",
-      "tts_text": "Corn Gray Leaf Spot fungal infection",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Corn_(maize)___Common_rust_": {
-      "id": "Corn_(maize)___Common_rust_",
-      "common_name": "Corn Common Rust",
-      "alt_names": [
-        "Puccinia Rust"
-      ],
-      "transliteration": "Corn Common Rust",
-      "scientific_name": "Puccinia sorghi",
-      "tts_text": "Corn Common Rust fungal infection",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Corn_(maize)___Northern_Leaf_Blight": {
-      "id": "Corn_(maize)___Northern_Leaf_Blight",
-      "common_name": "Corn Northern Leaf Blight",
-      "alt_names": [
-        "Turcicum Leaf Blight"
-      ],
-      "transliteration": "Corn Northern Leaf Blight",
-      "scientific_name": "Exserohilum turcicum (Setosphaeria turcica)",
-      "tts_text": "Corn Northern Leaf Blight fungal disease",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Corn_(maize)___healthy": {
-      "id": "Corn_(maize)___healthy",
-      "common_name": "Healthy Corn Foliage",
-      "alt_names": [
-        "Normal Leaf"
-      ],
-      "transliteration": "Healthy Corn",
-      "scientific_name": "Zea mays",
-      "tts_text": "Healthy Corn crop foliage",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Grape___Black_rot": {
-      "id": "Grape___Black_rot",
-      "common_name": "Grape Black Rot",
-      "alt_names": [
-        "Guignardia Rot"
-      ],
-      "transliteration": "Grape Black Rot",
-      "scientific_name": "Guignardia bidwellii (Phyllosticta ampelicida)",
-      "tts_text": "Grape Black Rot fungal disease",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Grape___Esca_(Black_Measles)": {
-      "id": "Grape___Esca_(Black_Measles)",
-      "common_name": "Grape Esca (Black Measles)",
-      "alt_names": [
-        "Vine Decline"
-      ],
-      "transliteration": "Grape Esca Black Measles",
-      "scientific_name": "Phaeoacremonium minimum, Phaeomoniella chlamydospora, Fomitiporia mediterranea",
-      "tts_text": "Grape Esca or Black Measles disease",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
-      "id": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
-      "common_name": "Grape Leaf Blight (Isariopsis Leaf Spot)",
-      "alt_names": [
-        "Isariopsis Leaf Spot"
-      ],
-      "transliteration": "Grape Leaf Blight",
-      "scientific_name": "Pseudocercospora cladosporioides (Isariopsis clavispora)",
-      "tts_text": "Grape Leaf Blight fungal disease",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Grape___healthy": {
-      "id": "Grape___healthy",
-      "common_name": "Healthy Grape Foliage",
-      "alt_names": [
-        "Normal Leaf"
-      ],
-      "transliteration": "Healthy Grape",
-      "scientific_name": "Vitis vinifera",
-      "tts_text": "Healthy Grape crop foliage",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Orange___Haunglongbing_(Citrus_greening)": {
-      "id": "Orange___Haunglongbing_(Citrus_greening)",
-      "common_name": "Citrus Greening (Huanglongbing)",
-      "alt_names": [
-        "Yellow Dragon Disease",
-        "HLB"
-      ],
-      "transliteration": "Citrus Greening Huanglongbing",
-      "scientific_name": "Candidatus Liberibacter asiaticus",
-      "tts_text": "Citrus Greening or Huanglongbing bacterial disease",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Peach___Bacterial_spot": {
-      "id": "Peach___Bacterial_spot",
-      "common_name": "Peach Bacterial Spot",
-      "alt_names": [
-        "Bacterial Shot Hole"
-      ],
-      "transliteration": "Peach Bacterial Spot",
-      "scientific_name": "Xanthomonas arboricola pv. pruni",
-      "tts_text": "Peach Bacterial Spot disease",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Peach___healthy": {
-      "id": "Peach___healthy",
-      "common_name": "Healthy Peach Foliage",
-      "alt_names": [
-        "Normal Leaf"
-      ],
-      "transliteration": "Healthy Peach",
-      "scientific_name": "Prunus persica",
-      "tts_text": "Healthy Peach crop foliage",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Pepper,_bell___Bacterial_spot": {
-      "id": "Pepper,_bell___Bacterial_spot",
-      "common_name": "Bell Pepper Bacterial Spot",
-      "alt_names": [
-        "Xanthomonas Leaf Spot"
-      ],
-      "transliteration": "Bell Pepper Bacterial Spot",
-      "scientific_name": "Xanthomonas euvesicatoria / X. vesicatoria",
-      "tts_text": "Bell Pepper Bacterial Spot disease",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Pepper,_bell___healthy": {
-      "id": "Pepper,_bell___healthy",
-      "common_name": "Healthy Bell Pepper Foliage",
-      "alt_names": [
-        "Normal Leaf"
-      ],
-      "transliteration": "Healthy Bell Pepper",
-      "scientific_name": "Capsicum annuum",
-      "tts_text": "Healthy Bell Pepper crop foliage",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Potato___Early_blight": {
-      "id": "Potato___Early_blight",
-      "common_name": "Potato Early Blight",
-      "alt_names": [
-        "Alternaria Leaf Blight",
-        "Target Spot"
-      ],
-      "transliteration": "Potato Early Blight",
-      "scientific_name": "Alternaria solani",
-      "tts_text": "Potato Early Blight fungal infection",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Potato___Late_blight": {
-      "id": "Potato___Late_blight",
-      "common_name": "Potato Late Blight",
-      "alt_names": [
-        "Phytophthora Blight"
-      ],
-      "transliteration": "Potato Late Blight",
-      "scientific_name": "Phytophthora infestans",
-      "tts_text": "Potato Late Blight oomycete infection",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Potato___healthy": {
-      "id": "Potato___healthy",
-      "common_name": "Healthy Potato Foliage",
-      "alt_names": [
-        "Normal Leaf"
-      ],
-      "transliteration": "Healthy Potato",
-      "scientific_name": "Solanum tuberosum",
-      "tts_text": "Healthy Potato crop foliage",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Raspberry___healthy": {
-      "id": "Raspberry___healthy",
-      "common_name": "Healthy Raspberry Foliage",
-      "alt_names": [
-        "Normal Leaf"
-      ],
-      "transliteration": "Healthy Raspberry",
-      "scientific_name": "Rubus idaeus",
-      "tts_text": "Healthy Raspberry crop foliage",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Soybean___healthy": {
-      "id": "Soybean___healthy",
-      "common_name": "Healthy Soybean Foliage",
-      "alt_names": [
-        "Normal Leaf"
-      ],
-      "transliteration": "Healthy Soybean",
-      "scientific_name": "Glycine max",
-      "tts_text": "Healthy Soybean crop foliage",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Squash___Powdery_mildew": {
-      "id": "Squash___Powdery_mildew",
-      "common_name": "Squash Powdery Mildew",
-      "alt_names": [
-        "Cucurbit Powdery Mildew"
-      ],
-      "transliteration": "Squash Powdery Mildew",
-      "scientific_name": "Podosphaera xanthii (syn. Sphaerotheca fuliginea), Golovinomyces cichoracearum",
-      "tts_text": "Squash Powdery Mildew fungal infection",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Strawberry___Leaf_scorch": {
-      "id": "Strawberry___Leaf_scorch",
-      "common_name": "Strawberry Leaf Scorch",
-      "alt_names": [
-        "Diplocarpon Spot"
-      ],
-      "transliteration": "Strawberry Leaf Scorch",
-      "scientific_name": "Diplocarpon earlianum",
-      "tts_text": "Strawberry Leaf Scorch fungal disease",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Strawberry___healthy": {
-      "id": "Strawberry___healthy",
-      "common_name": "Healthy Strawberry Foliage",
-      "alt_names": [
-        "Normal Leaf"
-      ],
-      "transliteration": "Healthy Strawberry",
-      "scientific_name": "Fragaria x ananassa",
-      "tts_text": "Healthy Strawberry crop foliage",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Bacterial_spot": {
-      "id": "Tomato___Bacterial_spot",
-      "common_name": "Tomato Bacterial Spot",
-      "alt_names": [
-        "Xanthomonas Spot"
-      ],
-      "transliteration": "Tomato Bacterial Spot",
-      "scientific_name": "Xanthomonas perforans / X. vesicatoria / X. gardneri",
-      "tts_text": "Tomato Bacterial Spot disease",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Early_blight": {
-      "id": "Tomato___Early_blight",
-      "common_name": "Tomato Early Blight",
-      "alt_names": [
-        "Target Spot of Tomato"
-      ],
-      "transliteration": "Tomato Early Blight",
-      "scientific_name": "Alternaria linariae (syn. Alternaria solani)",
-      "tts_text": "Tomato Early Blight fungal disease",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Late_blight": {
-      "id": "Tomato___Late_blight",
-      "common_name": "Tomato Late Blight",
-      "alt_names": [
-        "Phytophthora Infestans"
-      ],
-      "transliteration": "Tomato Late Blight",
-      "scientific_name": "Phytophthora infestans",
-      "tts_text": "Tomato Late Blight oomycete infection",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Leaf_Mold": {
-      "id": "Tomato___Leaf_Mold",
-      "common_name": "Tomato Leaf Mold",
-      "alt_names": [
-        "Cladosporium Leaf Mold"
-      ],
-      "transliteration": "Tomato Leaf Mold",
-      "scientific_name": "Passalora fulva (syn. Cladosporium fulvum)",
-      "tts_text": "Tomato Leaf Mold fungal infection",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Septoria_leaf_spot": {
-      "id": "Tomato___Septoria_leaf_spot",
-      "common_name": "Tomato Septoria Leaf Spot",
-      "alt_names": [
-        "Septoria Spot"
-      ],
-      "transliteration": "Tomato Septoria Leaf Spot",
-      "scientific_name": "Septoria lycopersici",
-      "tts_text": "Tomato Septoria Leaf Spot fungal disease",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Spider_mites Two-spotted_spider_mite": {
-      "id": "Tomato___Spider_mites Two-spotted_spider_mite",
-      "common_name": "Tomato Two-Spotted Spider Mite",
-      "alt_names": [
-        "Red Spider Mite"
-      ],
-      "transliteration": "Tomato Spider Mite",
-      "scientific_name": "Tetranychus urticae",
-      "tts_text": "Tomato Two-Spotted Spider Mite infestation",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Target_Spot": {
-      "id": "Tomato___Target_Spot",
-      "common_name": "Tomato Target Spot",
-      "alt_names": [
-        "Corynespora Spot"
-      ],
-      "transliteration": "Tomato Target Spot",
-      "scientific_name": "Corynespora cassiicola",
-      "tts_text": "Tomato Target Spot fungal infection",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
-      "id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
-      "common_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
-      "alt_names": [
-        "Leaf Curl Virus",
-        "TYLCV"
-      ],
-      "transliteration": "Tomato Yellow Leaf Curl Virus",
-      "scientific_name": "Begomovirus (TYLCV)",
-      "tts_text": "Tomato Yellow Leaf Curl Virus infection transmitted by whiteflies",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___Tomato_mosaic_virus": {
-      "id": "Tomato___Tomato_mosaic_virus",
-      "common_name": "Tomato Mosaic Virus (ToMV)",
-      "alt_names": [
-        "ToMV",
-        "Mosaic Disease"
-      ],
-      "transliteration": "Tomato Mosaic Virus",
-      "scientific_name": "Tobamovirus (ToMV)",
-      "tts_text": "Tomato Mosaic Virus infection",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    },
-    "Tomato___healthy": {
-      "id": "Tomato___healthy",
-      "common_name": "Healthy Tomato Foliage",
-      "alt_names": [
-        "Normal Leaf"
-      ],
-      "transliteration": "Healthy Tomato",
-      "scientific_name": "Solanum lycopersicum",
-      "tts_text": "Healthy Tomato crop foliage",
-      "source": "Penn State / Cornell / UC Davis Extension",
-      "review_status": "expert_reviewed"
-    }
-  },
+  "review_status": "machine_suggested",
   "agronomic_terms": {
     "fungicide": {
       "term_key": "fungicide",
@@ -470,7 +9,9 @@
       "localized_term": "Fungicide",
       "transliteration": "Fungicide",
       "definition": "Pesticide that prevents or destroys fungal pathogens",
-      "tts_text": "Fungicide"
+      "tts_text": "Fungicide",
+      "review_status": "machine_suggested",
+      "review_notes": "Confirm the everyday local wording."
     },
     "bactericide": {
       "term_key": "bactericide",
@@ -478,7 +19,9 @@
       "localized_term": "Bactericide",
       "transliteration": "Bactericide",
       "definition": "Chemical agent that destroys or suppresses bacteria",
-      "tts_text": "Bactericide"
+      "tts_text": "Bactericide",
+      "review_status": "machine_suggested",
+      "review_notes": "Confirm the everyday local wording."
     },
     "crop_rotation": {
       "term_key": "crop_rotation",
@@ -486,7 +29,9 @@
       "localized_term": "Crop Rotation",
       "transliteration": "Crop Rotation",
       "definition": "Planting different crops sequentially on the same plot",
-      "tts_text": "Crop Rotation"
+      "tts_text": "Crop Rotation",
+      "review_status": "machine_suggested",
+      "review_notes": "Confirm the everyday local wording."
     },
     "spray_interval": {
       "term_key": "spray_interval",
@@ -494,7 +39,9 @@
       "localized_term": "Spray Interval",
       "transliteration": "Spray Interval",
       "definition": "Required days between successive applications",
-      "tts_text": "Spray Interval"
+      "tts_text": "Spray Interval",
+      "review_status": "machine_suggested",
+      "review_notes": "Confirm the everyday local wording."
     },
     "resistant_variety": {
       "term_key": "resistant_variety",
@@ -502,7 +49,489 @@
       "localized_term": "Resistant Variety",
       "transliteration": "Resistant Variety",
       "definition": "Cultivar bred for inherent resistance to specific diseases",
-      "tts_text": "Resistant Variety"
+      "tts_text": "Resistant Variety",
+      "review_status": "machine_suggested",
+      "review_notes": "Confirm the everyday local wording."
+    },
+    "blight": {
+      "term_key": "blight",
+      "english": "blight",
+      "localized_term": "blight",
+      "transliteration": "blight",
+      "definition": "blight",
+      "tts_text": "blight",
+      "review_status": "machine_suggested",
+      "review_notes": "Confirm the everyday local wording."
+    },
+    "rust": {
+      "term_key": "rust",
+      "english": "rust",
+      "localized_term": "rust",
+      "transliteration": "rust",
+      "definition": "rust",
+      "tts_text": "rust",
+      "review_status": "machine_suggested",
+      "review_notes": "Confirm the everyday local wording."
+    },
+    "mildew": {
+      "term_key": "mildew",
+      "english": "mildew",
+      "localized_term": "mildew",
+      "transliteration": "mildew",
+      "definition": "mildew",
+      "tts_text": "mildew",
+      "review_status": "machine_suggested",
+      "review_notes": "Confirm the everyday local wording."
+    },
+    "leaf_spot": {
+      "term_key": "leaf_spot",
+      "english": "leaf spot",
+      "localized_term": "leaf spot",
+      "transliteration": "leaf spot",
+      "definition": "leaf spot",
+      "tts_text": "leaf spot",
+      "review_status": "machine_suggested",
+      "review_notes": "Confirm the everyday local wording."
+    },
+    "scab": {
+      "term_key": "scab",
+      "english": "scab",
+      "localized_term": "scab",
+      "transliteration": "scab",
+      "definition": "scab",
+      "tts_text": "scab",
+      "review_status": "machine_suggested",
+      "review_notes": "Confirm the everyday local wording."
+    },
+    "mosaic_virus": {
+      "term_key": "mosaic_virus",
+      "english": "mosaic virus",
+      "localized_term": "mosaic virus",
+      "transliteration": "mosaic virus",
+      "definition": "mosaic virus",
+      "tts_text": "mosaic virus",
+      "review_status": "machine_suggested",
+      "review_notes": "Confirm the everyday local wording."
+    }
+  },
+  "diseases": {
+    "Apple___Apple_scab": {
+      "id": "Apple___Apple_scab",
+      "common_name": "Apple Scab",
+      "alt_names": [],
+      "scientific_name": "Venturia inaequalis",
+      "transliteration": "Apple Scab",
+      "tts_text": "Apple Scab",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Apple___Black_rot": {
+      "id": "Apple___Black_rot",
+      "common_name": "Black Rot & Frogeye Leaf Spot",
+      "alt_names": [],
+      "scientific_name": "Botryosphaeria obtusa",
+      "transliteration": "Black Rot & Frogeye Leaf Spot",
+      "tts_text": "Black Rot & Frogeye Leaf Spot",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Apple___Cedar_apple_rust": {
+      "id": "Apple___Cedar_apple_rust",
+      "common_name": "Cedar Apple Rust",
+      "alt_names": [],
+      "scientific_name": "Gymnosporangium juniperi-virginianae",
+      "transliteration": "Cedar Apple Rust",
+      "tts_text": "Cedar Apple Rust",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Apple___healthy": {
+      "id": "Apple___healthy",
+      "common_name": "Healthy Apple Leaf",
+      "alt_names": [],
+      "scientific_name": "Malus domestica",
+      "transliteration": "Healthy Apple Leaf",
+      "tts_text": "Healthy Apple Leaf",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Blueberry___healthy": {
+      "id": "Blueberry___healthy",
+      "common_name": "Healthy Blueberry Leaf",
+      "alt_names": [],
+      "scientific_name": "Vaccinium corymbosum",
+      "transliteration": "Healthy Blueberry Leaf",
+      "tts_text": "Healthy Blueberry Leaf",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+      "id": "Cherry_(including_sour)___Powdery_mildew",
+      "common_name": "Powdery Mildew",
+      "alt_names": [],
+      "scientific_name": "Podosphaera clandestina",
+      "transliteration": "Powdery Mildew",
+      "tts_text": "Powdery Mildew",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Cherry_(including_sour)___healthy": {
+      "id": "Cherry_(including_sour)___healthy",
+      "common_name": "Healthy Cherry Leaf",
+      "alt_names": [],
+      "scientific_name": "Prunus avium / Prunus cerasus",
+      "transliteration": "Healthy Cherry Leaf",
+      "tts_text": "Healthy Cherry Leaf",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+      "id": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "common_name": "Gray Leaf Spot",
+      "alt_names": [],
+      "scientific_name": "Cercospora zeae-maydis",
+      "transliteration": "Gray Leaf Spot",
+      "tts_text": "Gray Leaf Spot",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Corn_(maize)___Common_rust_": {
+      "id": "Corn_(maize)___Common_rust_",
+      "common_name": "Common Rust",
+      "alt_names": [],
+      "scientific_name": "Puccinia sorghi",
+      "transliteration": "Common Rust",
+      "tts_text": "Common Rust",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+      "id": "Corn_(maize)___Northern_Leaf_Blight",
+      "common_name": "Northern Corn Leaf Blight",
+      "alt_names": [],
+      "scientific_name": "Exserohilum turcicum (Setosphaeria turcica)",
+      "transliteration": "Northern Corn Leaf Blight",
+      "tts_text": "Northern Corn Leaf Blight",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Corn_(maize)___healthy": {
+      "id": "Corn_(maize)___healthy",
+      "common_name": "Healthy Corn Leaf",
+      "alt_names": [],
+      "scientific_name": "Zea mays",
+      "transliteration": "Healthy Corn Leaf",
+      "tts_text": "Healthy Corn Leaf",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Grape___Black_rot": {
+      "id": "Grape___Black_rot",
+      "common_name": "Black Rot",
+      "alt_names": [],
+      "scientific_name": "Guignardia bidwellii (Phyllosticta ampelicida)",
+      "transliteration": "Black Rot",
+      "tts_text": "Black Rot",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Grape___Esca_(Black_Measles)": {
+      "id": "Grape___Esca_(Black_Measles)",
+      "common_name": "Esca (Black Measles)",
+      "alt_names": [],
+      "scientific_name": "Phaeoacremonium minimum, Phaeomoniella chlamydospora, Fomitiporia mediterranea",
+      "transliteration": "Esca (Black Measles)",
+      "tts_text": "Esca (Black Measles)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+      "id": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "common_name": "Leaf Blight (Isariopsis / Phaeoisariopsis Leaf Spot)",
+      "alt_names": [],
+      "scientific_name": "Pseudocercospora cladosporioides (Isariopsis clavispora)",
+      "transliteration": "Leaf Blight (Isariopsis / Phaeoisariopsis Leaf Spot)",
+      "tts_text": "Leaf Blight (Isariopsis / Phaeoisariopsis Leaf Spot)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Grape___healthy": {
+      "id": "Grape___healthy",
+      "common_name": "Healthy Grape Leaf",
+      "alt_names": [],
+      "scientific_name": "Vitis vinifera",
+      "transliteration": "Healthy Grape Leaf",
+      "tts_text": "Healthy Grape Leaf",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+      "id": "Orange___Haunglongbing_(Citrus_greening)",
+      "common_name": "Huanglongbing (Citrus Greening)",
+      "alt_names": [],
+      "scientific_name": "Candidatus Liberibacter asiaticus",
+      "transliteration": "Huanglongbing (Citrus Greening)",
+      "tts_text": "Huanglongbing (Citrus Greening)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Peach___Bacterial_spot": {
+      "id": "Peach___Bacterial_spot",
+      "common_name": "Bacterial Spot",
+      "alt_names": [],
+      "scientific_name": "Xanthomonas arboricola pv. pruni",
+      "transliteration": "Bacterial Spot",
+      "tts_text": "Bacterial Spot",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Peach___healthy": {
+      "id": "Peach___healthy",
+      "common_name": "Healthy Peach Leaf",
+      "alt_names": [],
+      "scientific_name": "Prunus persica",
+      "transliteration": "Healthy Peach Leaf",
+      "tts_text": "Healthy Peach Leaf",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Pepper,_bell___Bacterial_spot": {
+      "id": "Pepper,_bell___Bacterial_spot",
+      "common_name": "Bacterial Spot",
+      "alt_names": [],
+      "scientific_name": "Xanthomonas euvesicatoria / X. vesicatoria",
+      "transliteration": "Bacterial Spot",
+      "tts_text": "Bacterial Spot",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Pepper,_bell___healthy": {
+      "id": "Pepper,_bell___healthy",
+      "common_name": "Healthy Bell Pepper Leaf",
+      "alt_names": [],
+      "scientific_name": "Capsicum annuum",
+      "transliteration": "Healthy Bell Pepper Leaf",
+      "tts_text": "Healthy Bell Pepper Leaf",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Potato___Early_blight": {
+      "id": "Potato___Early_blight",
+      "common_name": "Early Blight",
+      "alt_names": [],
+      "scientific_name": "Alternaria solani",
+      "transliteration": "Early Blight",
+      "tts_text": "Early Blight",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Potato___Late_blight": {
+      "id": "Potato___Late_blight",
+      "common_name": "Late Blight",
+      "alt_names": [],
+      "scientific_name": "Phytophthora infestans",
+      "transliteration": "Late Blight",
+      "tts_text": "Late Blight",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Potato___healthy": {
+      "id": "Potato___healthy",
+      "common_name": "Healthy Potato Leaf",
+      "alt_names": [],
+      "scientific_name": "Solanum tuberosum",
+      "transliteration": "Healthy Potato Leaf",
+      "tts_text": "Healthy Potato Leaf",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Raspberry___healthy": {
+      "id": "Raspberry___healthy",
+      "common_name": "Healthy Raspberry Leaf",
+      "alt_names": [],
+      "scientific_name": "Rubus idaeus",
+      "transliteration": "Healthy Raspberry Leaf",
+      "tts_text": "Healthy Raspberry Leaf",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Soybean___healthy": {
+      "id": "Soybean___healthy",
+      "common_name": "Healthy Soybean Leaf",
+      "alt_names": [],
+      "scientific_name": "Glycine max",
+      "transliteration": "Healthy Soybean Leaf",
+      "tts_text": "Healthy Soybean Leaf",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Squash___Powdery_mildew": {
+      "id": "Squash___Powdery_mildew",
+      "common_name": "Powdery Mildew",
+      "alt_names": [],
+      "scientific_name": "Podosphaera xanthii (syn. Sphaerotheca fuliginea), Golovinomyces cichoracearum",
+      "transliteration": "Powdery Mildew",
+      "tts_text": "Powdery Mildew",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Strawberry___Leaf_scorch": {
+      "id": "Strawberry___Leaf_scorch",
+      "common_name": "Leaf Scorch",
+      "alt_names": [],
+      "scientific_name": "Diplocarpon earlianum",
+      "transliteration": "Leaf Scorch",
+      "tts_text": "Leaf Scorch",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Strawberry___healthy": {
+      "id": "Strawberry___healthy",
+      "common_name": "Healthy Strawberry Leaf",
+      "alt_names": [],
+      "scientific_name": "Fragaria x ananassa",
+      "transliteration": "Healthy Strawberry Leaf",
+      "tts_text": "Healthy Strawberry Leaf",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Bacterial_spot": {
+      "id": "Tomato___Bacterial_spot",
+      "common_name": "Bacterial Spot",
+      "alt_names": [],
+      "scientific_name": "Xanthomonas perforans / X. vesicatoria / X. gardneri",
+      "transliteration": "Bacterial Spot",
+      "tts_text": "Bacterial Spot",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Early_blight": {
+      "id": "Tomato___Early_blight",
+      "common_name": "Early Blight",
+      "alt_names": [],
+      "scientific_name": "Alternaria linariae (syn. Alternaria solani)",
+      "transliteration": "Early Blight",
+      "tts_text": "Early Blight",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Late_blight": {
+      "id": "Tomato___Late_blight",
+      "common_name": "Late Blight",
+      "alt_names": [],
+      "scientific_name": "Phytophthora infestans",
+      "transliteration": "Late Blight",
+      "tts_text": "Late Blight",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Leaf_Mold": {
+      "id": "Tomato___Leaf_Mold",
+      "common_name": "Leaf Mold",
+      "alt_names": [],
+      "scientific_name": "Passalora fulva (syn. Cladosporium fulvum)",
+      "transliteration": "Leaf Mold",
+      "tts_text": "Leaf Mold",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Septoria_leaf_spot": {
+      "id": "Tomato___Septoria_leaf_spot",
+      "common_name": "Septoria Leaf Spot",
+      "alt_names": [],
+      "scientific_name": "Septoria lycopersici",
+      "transliteration": "Septoria Leaf Spot",
+      "tts_text": "Septoria Leaf Spot",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+      "id": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "common_name": "Two-Spotted Spider Mite Infestation",
+      "alt_names": [],
+      "scientific_name": "Tetranychus urticae",
+      "transliteration": "Two-Spotted Spider Mite Infestation",
+      "tts_text": "Two-Spotted Spider Mite Infestation",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Target_Spot": {
+      "id": "Tomato___Target_Spot",
+      "common_name": "Target Spot",
+      "alt_names": [],
+      "scientific_name": "Corynespora cassiicola",
+      "transliteration": "Target Spot",
+      "tts_text": "Target Spot",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+      "id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "common_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+      "alt_names": [],
+      "scientific_name": "Begomovirus (TYLCV)",
+      "transliteration": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+      "tts_text": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___Tomato_mosaic_virus": {
+      "id": "Tomato___Tomato_mosaic_virus",
+      "common_name": "Tomato Mosaic Virus (ToMV)",
+      "alt_names": [],
+      "scientific_name": "Tobamovirus (ToMV)",
+      "transliteration": "Tomato Mosaic Virus (ToMV)",
+      "tts_text": "Tomato Mosaic Virus (ToMV)",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
+    },
+    "Tomato___healthy": {
+      "id": "Tomato___healthy",
+      "common_name": "Healthy Tomato Leaf",
+      "alt_names": [],
+      "scientific_name": "Solanum lycopersicum",
+      "transliteration": "Healthy Tomato Leaf",
+      "tts_text": "Healthy Tomato Leaf",
+      "source": "Existing English knowledge base; machine translation draft",
+      "review_status": "machine_suggested",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source."
     }
   }
 }

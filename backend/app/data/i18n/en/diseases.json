@@ -49,7 +49,32 @@
         "Cornell University Cooperative Extension: Apple Scab Disease Identification and Management (https://cals.cornell.edu)",
         "UC Davis IPM: Apple Scab Management Guidelines (https://ipm.ucanr.edu/agriculture/apple/apple-scab/)"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Apple Scab",
+      "transliteration": "Apple Scab",
+      "summary": "Possible Apple Scab. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Apply sulfur or liquid lime-sulfur sprays preventatively prior to rain events during primary infection season.",
+        "Apply Bacillus subtilis or potassium bicarbonate sprays."
+      ],
+      "chemical_options": [
+        "Preventative protectants: Captan, Mancozeb (FRAC M04, M03).",
+        "Systemic fungicides: DMI fungicides (FRAC 3, e.g., Myclobutanil) or SDHI fungicides (FRAC 7, e.g., Fluopyram) in rotation to avoid resistance."
+      ],
+      "prevention": [
+        "Rake and destroy fallen leaves in autumn or shred with a flail mower to speed decomposition.",
+        "Prune tree canopies to improve airflow and sunlight penetration.",
+        "Plant scab-resistant cultivars (e.g., Enterprise, GoldRush, Liberty, Prima)."
+      ],
+      "when_to_call_expert": "If leaf lesions cover more than 20% of the canopy before petal fall or if commercial fruit quality is at risk.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Apple___Apple_scab"
     },
     {
       "id": "Apple___Black_rot",
@@ -94,7 +119,30 @@
         "University of Kentucky Extension: Black Rot of Apple (PPFS-FR-T-02)",
         "Purdue Extension: Fruit Diseases - Black Rot and Frogeye Leaf Spot (BP-137-W)"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Black Rot & Frogeye Leaf Spot",
+      "transliteration": "Black Rot & Frogeye Leaf Spot",
+      "summary": "Possible Black Rot & Frogeye Leaf Spot. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Copper-based fungicides applied during early season dormancy.",
+        "Sulfur sprays during early cover sprays."
+      ],
+      "chemical_options": [
+        "Fungicides: Captan, Thiophanate-methyl, or strobilurin fungicides (FRAC 11) applied from silver tip through cover sprays."
+      ],
+      "prevention": [
+        "Prune out dead branches, fire blight cankers, and remove all mummified fruit from the orchard.",
+        "Burn or dispose of pruned wood promptly rather than leaving brush piles near orchards."
+      ],
+      "when_to_call_expert": "If limb cankers girdle main scaffold branches or cause limb dieback.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Apple___Black_rot"
     },
     {
       "id": "Apple___Cedar_apple_rust",
@@ -139,7 +187,30 @@
         "University of Missouri Extension: Cedar Apple Rust (G6026)",
         "Penn State Extension: Cedar Apple Rust Biology and Management"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Cedar Apple Rust",
+      "transliteration": "Cedar Apple Rust",
+      "summary": "Possible Cedar Apple Rust. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Liquid sulfur or sulfur-based sprays applied preventatively when cedar galls swell in spring."
+      ],
+      "chemical_options": [
+        "Sterol inhibitor / DMI fungicides (FRAC 3, e.g., Myclobutanil, Tebuconazole) or Strobilurins (FRAC 11) from pink bud through third cover."
+      ],
+      "prevention": [
+        "Remove nearby Eastern red cedar / juniper trees within a 1-2 mile radius where feasible.",
+        "Remove rust galls (cedar apples) from adjacent landscape junipers before spring rains.",
+        "Plant rust-resistant apple varieties (e.g., Liberty, Freedom, Enterprise)."
+      ],
+      "when_to_call_expert": "If premature defoliation exceeds 30% of tree canopy in consecutive seasons.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Apple___Cedar_apple_rust"
     },
     {
       "id": "Apple___healthy",
@@ -184,7 +255,30 @@
         "Washington State University Tree Fruit Research and Extension Center",
         "UC Davis Fruit and Nut Research and Information Center"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Healthy Apple Leaf",
+      "transliteration": "Healthy Apple Leaf",
+      "summary": "Leaves appear healthy. Check regularly for changes.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Apply preventative dormant horticultural oils to suppress overwintering mites and scale."
+      ],
+      "chemical_options": [
+        "No chemical intervention needed for healthy foliage. Continue standard integrated pest management (IPM)."
+      ],
+      "prevention": [
+        "Maintain balanced soil fertility according to regular soil and leaf tissue tests.",
+        "Ensure proper orchard floor management and drip irrigation.",
+        "Conduct routine canopy scouting for early pest and disease pressure."
+      ],
+      "when_to_call_expert": "Routine annual orchard health review with extension fruit specialist.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Apple___healthy"
     },
     {
       "id": "Blueberry___healthy",
@@ -228,7 +322,29 @@
         "Michigan State University Extension: Blueberry Management Guide",
         "North Carolina State Extension: Blueberry Production"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Healthy Blueberry Leaf",
+      "transliteration": "Healthy Blueberry Leaf",
+      "summary": "Leaves appear healthy. Check regularly for changes.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Maintain pine bark mulch depth and apply mycorrhizal inoculants."
+      ],
+      "chemical_options": [
+        "No chemical intervention needed. Monitor for mummy berry and anthracnose in spring."
+      ],
+      "prevention": [
+        "Maintain soil pH between 4.5 and 5.2 using elemental sulfur.",
+        "Ensure drip irrigation under organic mulch (pine bark or wood chips)."
+      ],
+      "when_to_call_expert": "If soil pH drifts above 5.5 leading to iron chlorosis.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Blueberry___healthy"
     },
     {
       "id": "Cherry_(including_sour)___Powdery_mildew",
@@ -272,7 +388,29 @@
         "Washington State University Extension: Cherry Powdery Mildew Management (EM022E)",
         "UC Davis IPM: Cherry Powdery Mildew (Podosphaera clandestina)"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Powdery Mildew",
+      "transliteration": "Powdery Mildew",
+      "summary": "Possible Powdery Mildew. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Wettable sulfur, horticultural oils (e.g., neem or stylet oil), or potassium bicarbonate."
+      ],
+      "chemical_options": [
+        "FRAC 3 (DMI: Fenbuconazole, Tebuconazole), FRAC 7 (SDHI: Boscalid), or FRAC 11 (QoI: Trifloxystrobin) in rotation."
+      ],
+      "prevention": [
+        "Prune dense canopies to maximize light penetration and air circulation.",
+        "Avoid excessive nitrogen fertilization that promotes succulent susceptible flush."
+      ],
+      "when_to_call_expert": "If mildew appears on green cherry fruit clusters prior to harvest.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Cherry_(including_sour)___Powdery_mildew"
     },
     {
       "id": "Cherry_(including_sour)___healthy",
@@ -315,7 +453,29 @@
       "sources": [
         "Oregon State University Extension: Cherry Orchard IPM Guide"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Healthy Cherry Leaf",
+      "transliteration": "Healthy Cherry Leaf",
+      "summary": "Leaves appear healthy. Check regularly for changes.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Dormant copper sprays for bacterial canker suppression."
+      ],
+      "chemical_options": [
+        "No chemical treatment required."
+      ],
+      "prevention": [
+        "Maintain annual pruning and orchard sanitation.",
+        "Scout weekly for spotted wing drosophila and fungal leaf spot."
+      ],
+      "when_to_call_expert": "Routine seasonal inspection.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Cherry_(including_sour)___healthy"
     },
     {
       "id": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
@@ -360,7 +520,30 @@
         "Crop Protection Network: Gray Leaf Spot of Corn (CPN-2001)",
         "Purdue Extension: Diseases of Corn - Gray Leaf Spot (BP-06-W)"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Gray Leaf Spot",
+      "transliteration": "Gray Leaf Spot",
+      "summary": "Possible Gray Leaf Spot. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Crop rotation and biofungicide seed treatments (Trichoderma spp.)."
+      ],
+      "chemical_options": [
+        "Foliar fungicides applied at VT-R1 (tasseling to silking): Strobilurin (FRAC 11, Azoxystrobin, Pyraclostrobin) mixed with Triazole (FRAC 3, Propiconazole, Prothioconazole)."
+      ],
+      "prevention": [
+        "Plant resistant corn hybrids.",
+        "Rotate with non-host crops (soybean, wheat, alfalfa) for 1-2 years.",
+        "Practice residue management or conservation tillage to bury crop debris."
+      ],
+      "when_to_call_expert": "If lesions reach the ear leaf or two leaves below the ear leaf prior to VT/R1 stage.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot"
     },
     {
       "id": "Corn_(maize)___Common_rust_",
@@ -404,7 +587,29 @@
         "University of Illinois Extension: Corn Disease Management - Common Rust",
         "Iowa State University Extension: Corn Field Guide"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Common Rust",
+      "transliteration": "Common Rust",
+      "summary": "Possible Common Rust. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Use resistant cultivars and encourage beneficial phyllosphere microbes."
+      ],
+      "chemical_options": [
+        "Foliar fungicides: Triazoles (FRAC 3) or Strobilurins (FRAC 11) if pustules appear on upper leaves before silking on susceptible inbred lines."
+      ],
+      "prevention": [
+        "Plant resistant corn hybrids containing Rp genes.",
+        "Plant early in the season to avoid peak spore dispersal."
+      ],
+      "when_to_call_expert": "If disease severity reaches 5-10% of leaf area on susceptible seed production or sweet corn fields.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Corn_(maize)___Common_rust_"
     },
     {
       "id": "Corn_(maize)___Northern_Leaf_Blight",
@@ -448,7 +653,29 @@
         "Crop Protection Network: Northern Corn Leaf Blight (CPN-2002)",
         "University of Minnesota Extension: Northern corn leaf blight"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Northern Corn Leaf Blight",
+      "transliteration": "Northern Corn Leaf Blight",
+      "summary": "Possible Northern Corn Leaf Blight. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Resistant seed selection and balanced organic soil amendments."
+      ],
+      "chemical_options": [
+        "Fungicides containing DMI (FRAC 3), QoI (FRAC 11), or SDHI (FRAC 7) chemistries applied at early blister (R2) if threshold met."
+      ],
+      "prevention": [
+        "Plant resistant hybrids with qualitative Ht genes and quantitative multigenic resistance.",
+        "Rotate with non-host crops and manage residue."
+      ],
+      "when_to_call_expert": "If lesions appear on the third leaf below the ear or higher prior to silking.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Corn_(maize)___Northern_Leaf_Blight"
     },
     {
       "id": "Corn_(maize)___healthy",
@@ -491,7 +718,29 @@
       "sources": [
         "Purdue Extension: Corn Field Guide (ID-179)"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Healthy Corn Leaf",
+      "transliteration": "Healthy Corn Leaf",
+      "summary": "Leaves appear healthy. Check regularly for changes.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Maintain soil health with cover crops (e.g., rye, clover)."
+      ],
+      "chemical_options": [
+        "No chemical treatment required."
+      ],
+      "prevention": [
+        "Maintain optimal soil fertility (N-P-K and micronutrients) and adequate plant population density.",
+        "Scout fields regularly at V6, VT, and R2 growth stages."
+      ],
+      "when_to_call_expert": "Routine agronomic scouting.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Corn_(maize)___healthy"
     },
     {
       "id": "Grape___Black_rot",
@@ -535,7 +784,29 @@
         "Penn State Extension: Grape Black Rot Biology and Control",
         "Cornell Viticulture: Grape Disease Management Guide"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Black Rot",
+      "transliteration": "Black Rot",
+      "summary": "Possible Black Rot. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Copper-based fungicides applied from bud break through veraison."
+      ],
+      "chemical_options": [
+        "FRAC 3 (Myclobutanil, Tebuconazole), FRAC 11 (Azoxystrobin), or protectants (Mancozeb, Ziram) from early bloom through 4 weeks post-bloom."
+      ],
+      "prevention": [
+        "Remove and destroy all mummified fruit clusters during dormant winter pruning.",
+        "Open vine canopies with shoot thinning and leaf pulling around fruit zones to enhance air movement."
+      ],
+      "when_to_call_expert": "If leaf spots appear before bloom or berry infection is detected.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Grape___Black_rot"
     },
     {
       "id": "Grape___Esca_(Black_Measles)",
@@ -580,7 +851,30 @@
         "UC Davis IPM: Esca (Black Measles) in Grapevines",
         "Wine Australia: Grapevine Trunk Disease Management"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Esca (Black Measles)",
+      "transliteration": "Esca (Black Measles)",
+      "summary": "Possible Esca (Black Measles). Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Biocontrol agent Trichoderma atroviride applied directly to fresh pruning wounds."
+      ],
+      "chemical_options": [
+        "No curative foliar fungicide exists for internal wood rot. Protect pruning wounds with registered wound protectants (e.g., Thiophanate-methyl)."
+      ],
+      "prevention": [
+        "Prune late in the dormant season when wound healing is rapid.",
+        "Apply pruning wound sealants (e.g., acrylic paint with fungicide or biocontrol Trichoderma).",
+        "Avoid heavy water stress during hot summer periods."
+      ],
+      "when_to_call_expert": "If apoplexy (sudden vine collapse) occurs on high-value vineyard blocks.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Grape___Esca_(Black_Measles)"
     },
     {
       "id": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
@@ -624,7 +918,29 @@
         "UC Davis Grape IPM Guidelines: Minor Grape Foliar Diseases",
         "Texas A&M AgriLife Extension: Texas Grape Pest Management Guide"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Leaf Blight (Isariopsis / Phaeoisariopsis Leaf Spot)",
+      "transliteration": "Leaf Blight (Isariopsis / Phaeoisariopsis Leaf Spot)",
+      "summary": "Possible Leaf Blight (Isariopsis / Phaeoisariopsis Leaf Spot). Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Bordeaux mixture or copper hydroxide sprays applied in mid-to-late season."
+      ],
+      "chemical_options": [
+        "Broad-spectrum protectant fungicides (Mancozeb, Chlorothalonil) or strobilurins (FRAC 11) in post-bloom applications."
+      ],
+      "prevention": [
+        "Maintain canopy air circulation with shoot positioning and trellis management.",
+        "Collect and compost or bury fallen infected leaves in late autumn."
+      ],
+      "when_to_call_expert": "If extensive defoliation occurs before berry sugar accumulation is complete.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"
     },
     {
       "id": "Grape___healthy",
@@ -667,7 +983,29 @@
       "sources": [
         "UC Davis Viticulture and Enology Extension"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Healthy Grape Leaf",
+      "transliteration": "Healthy Grape Leaf",
+      "summary": "Leaves appear healthy. Check regularly for changes.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Preventative organic canopy hygiene."
+      ],
+      "chemical_options": [
+        "No chemical intervention needed."
+      ],
+      "prevention": [
+        "Maintain trellis training, canopy suckering, and balanced fertigation.",
+        "Scout weekly for powdery mildew and grapevine leafroll virus."
+      ],
+      "when_to_call_expert": "Routine vineyard IPM consultations.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Grape___healthy"
     },
     {
       "id": "Orange___Haunglongbing_(Citrus_greening)",
@@ -714,7 +1052,31 @@
         "USDA ARS Citrus Greening Research Program",
         "UC Davis IPM: Asian Citrus Psyllid and Citrus Greening Disease"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Huanglongbing (Citrus Greening)",
+      "transliteration": "Huanglongbing (Citrus Greening)",
+      "summary": "Possible Huanglongbing (Citrus Greening). Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Release parasitic wasps (Tamarixia radiata) for biological psyllid suppression.",
+        "Horticultural and citrus spray oils to deter psyllid egg-laying."
+      ],
+      "chemical_options": [
+        "Systemic insecticides (e.g., Imidacloprid, Thiamethoxam - IRAC 4A) and foliar rotation (Pyrethroids, Spinetoram) targeting psyllid flushes."
+      ],
+      "prevention": [
+        "Use certified disease-free nursery trees from enclosed screenhouses.",
+        "Eradicate confirmed infected trees promptly to remove pathogen reservoirs.",
+        "Control Asian citrus psyllid vector populations rigorously."
+      ],
+      "when_to_call_expert": "Immediately report suspected trees to state/national department of agriculture / local extension.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Orange___Haunglongbing_(Citrus_greening)"
     },
     {
       "id": "Peach___Bacterial_spot",
@@ -759,7 +1121,30 @@
         "Rutgers NJAES Cooperative Extension: Bacterial Spot of Stone Fruit",
         "Penn State Extension: Bacterial Spot on Peaches"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Bacterial Spot",
+      "transliteration": "Bacterial Spot",
+      "summary": "Possible Bacterial Spot. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Dormant copper applications and low-rate copper hydroxide during early cover sprays."
+      ],
+      "chemical_options": [
+        "Bactericides: Oxytetracycline (Mycoshield) and low-rate copper formulations applied from petal fall through cover sprays."
+      ],
+      "prevention": [
+        "Plant resistant peach cultivars (e.g., Candor, Clayton, Reliance).",
+        "Avoid excessive nitrogen fertilizers that stimulate susceptible young shoot growth.",
+        "Plant windbreaks to reduce windblown sand abrasions that facilitate bacterial entry."
+      ],
+      "when_to_call_expert": "If twig cankers proliferate or fruit drop exceeds 10%.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Peach___Bacterial_spot"
     },
     {
       "id": "Peach___healthy",
@@ -802,7 +1187,29 @@
       "sources": [
         "Clemson Cooperative Extension: Peach Orchard Management"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Healthy Peach Leaf",
+      "transliteration": "Healthy Peach Leaf",
+      "summary": "Leaves appear healthy. Check regularly for changes.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Preventative dormant sprays for peach leaf curl."
+      ],
+      "chemical_options": [
+        "No chemical treatment required."
+      ],
+      "prevention": [
+        "Ensure annual winter pruning for open center / vase shape canopy.",
+        "Monitor soil moisture with tensiometers."
+      ],
+      "when_to_call_expert": "Annual orchard nutrition and health review.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Peach___healthy"
     },
     {
       "id": "Pepper,_bell___Bacterial_spot",
@@ -847,7 +1254,30 @@
         "University of Florida IFAS Extension: Bacterial Spot of Pepper (PP-3)",
         "Purdue Extension: Bacterial Spot of Pepper and Tomato (BP-22-W)"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Bacterial Spot",
+      "transliteration": "Bacterial Spot",
+      "summary": "Possible Bacterial Spot. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Copper bactericides combined with bio-fungicides (Bacillus amyloliquefaciens)."
+      ],
+      "chemical_options": [
+        "Fixed copper formulations mixed with Mancozeb (to overcome copper tolerance) or acibenzolar-S-methyl (plant activator)."
+      ],
+      "prevention": [
+        "Use certified disease-free seed and resistant pepper varieties (races 1-10 resistance).",
+        "Avoid overhead sprinkler irrigation; use drip irrigation underneath plastic mulch.",
+        "Rotate fields out of Solanaceous crops for at least 2 years."
+      ],
+      "when_to_call_expert": "If rapid defoliation occurs during early flowering or fruit set.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Pepper,_bell___Bacterial_spot"
     },
     {
       "id": "Pepper,_bell___healthy",
@@ -890,7 +1320,29 @@
       "sources": [
         "Texas A&M AgriLife Extension: Commercial Pepper Production"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Healthy Bell Pepper Leaf",
+      "transliteration": "Healthy Bell Pepper Leaf",
+      "summary": "Leaves appear healthy. Check regularly for changes.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Beneficial predatory mites and organic mulch."
+      ],
+      "chemical_options": [
+        "No chemical intervention needed."
+      ],
+      "prevention": [
+        "Maintain consistent soil moisture and calcium fertility to prevent blossom end rot.",
+        "Scout weekly for aphids, thrips, and pepper weevils."
+      ],
+      "when_to_call_expert": "Routine crop scouting.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Pepper,_bell___healthy"
     },
     {
       "id": "Potato___Early_blight",
@@ -935,7 +1387,30 @@
         "University of Idaho Extension: Potato Early Blight Management",
         "North Dakota State University Extension: Potato Blight Control Guide"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Early Blight",
+      "transliteration": "Early Blight",
+      "summary": "Possible Early Blight. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Copper sulfate, Bacillus subtilis, and potassium bicarbonate foliar sprays."
+      ],
+      "chemical_options": [
+        "Protectants: Chlorothalonil, Mancozeb (FRAC M05, M03). Systemics: Boscalid (FRAC 7), Difenoconazole (FRAC 3), Azoxystrobin (FRAC 11) in rotation."
+      ],
+      "prevention": [
+        "Rotate with non-solanaceous crops (cereals, legumes) on a 3-year cycle.",
+        "Maintain optimal nitrogen fertility (stressed, senescing plants are most vulnerable).",
+        "Use drip irrigation or irrigate in the early morning to minimize nighttime leaf wetness."
+      ],
+      "when_to_call_expert": "If lesions advance rapidly to upper leaves before tuber bulking is completed.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Potato___Early_blight"
     },
     {
       "id": "Potato___Late_blight",
@@ -980,7 +1455,30 @@
         "Cornell University: Late Blight Forecasting and Management (USABlight)",
         "Michigan State University Extension: Potato Late Blight (E-2945)"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Late Blight",
+      "transliteration": "Late Blight",
+      "summary": "Possible Late Blight. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Preventative copper sprays applied prior to high-risk weather events."
+      ],
+      "chemical_options": [
+        "Protectants: Mancozeb, Chlorothalonil. Targeted oomycide systemics: Mandipropamid (FRAC 40), Fluopicolide (FRAC 43), Cyazofamid (FRAC 21), Propamocarb (FRAC 28)."
+      ],
+      "prevention": [
+        "Plant certified disease-free seed tubers.",
+        "Destroy all potato cull piles and volunteer potato plants in surrounding areas.",
+        "Kill vines (haulm destruction) 2-3 weeks before harvest to prevent tuber contamination."
+      ],
+      "when_to_call_expert": "Immediately notify local extension upon first sighting; late blight is an aggressive community-wide threat.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Potato___Late_blight"
     },
     {
       "id": "Potato___healthy",
@@ -1023,7 +1521,29 @@
       "sources": [
         "University of Maine Cooperative Extension: Potato Program"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Healthy Potato Leaf",
+      "transliteration": "Healthy Potato Leaf",
+      "summary": "Leaves appear healthy. Check regularly for changes.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Compost teas and preventative bio-stimulants."
+      ],
+      "chemical_options": [
+        "No chemical intervention required."
+      ],
+      "prevention": [
+        "Hilling and proper soil mounding to protect developing tubers.",
+        "Regular scouting using regional blight forecasting models (e.g., Blitecast)."
+      ],
+      "when_to_call_expert": "Routine seasonal inspection.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Potato___healthy"
     },
     {
       "id": "Raspberry___healthy",
@@ -1066,7 +1586,29 @@
       "sources": [
         "Cornell Berry Diagnostic Tool: Raspberry Management"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Healthy Raspberry Leaf",
+      "transliteration": "Healthy Raspberry Leaf",
+      "summary": "Leaves appear healthy. Check regularly for changes.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Annual organic mulch and drip irrigation."
+      ],
+      "chemical_options": [
+        "No chemical treatment required."
+      ],
+      "prevention": [
+        "Prune out spent floricanes immediately after harvest.",
+        "Maintain trellis support to promote air movement."
+      ],
+      "when_to_call_expert": "Routine berry health consultation.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Raspberry___healthy"
     },
     {
       "id": "Soybean___healthy",
@@ -1109,7 +1651,29 @@
       "sources": [
         "Iowa State University Extension: Soybean Field Guide"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Healthy Soybean Leaf",
+      "transliteration": "Healthy Soybean Leaf",
+      "summary": "Leaves appear healthy. Check regularly for changes.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Beneficial insect habitat and crop rotation."
+      ],
+      "chemical_options": [
+        "No chemical intervention needed."
+      ],
+      "prevention": [
+        "Ensure Rhizobium inoculation at planting for optimal nitrogen fixation.",
+        "Scout for defoliating caterpillars and stink bugs at R3-R5 stages."
+      ],
+      "when_to_call_expert": "Routine agronomy consulting.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Soybean___healthy"
     },
     {
       "id": "Squash___Powdery_mildew",
@@ -1154,7 +1718,30 @@
         "University of Massachusetts Amherst Extension: Cucurbit Powdery Mildew Management",
         "Cornell Vegetable MD Online: Powdery Mildew of Cucurbits"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Powdery Mildew",
+      "transliteration": "Powdery Mildew",
+      "summary": "Possible Powdery Mildew. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Horticultural oils, potassium bicarbonate (Armicarb/MilStop), neem oil, or sulfur."
+      ],
+      "chemical_options": [
+        "Targeted fungicides: Quinoxyfen (FRAC 13), Cyflufenamid (FRAC U06), Metrafenone (FRAC 50), DMI (FRAC 3, Difenoconazole) applied preventatively at first sign of white spots."
+      ],
+      "prevention": [
+        "Plant powdery mildew-resistant cucurbit varieties (PMR cultivars).",
+        "Provide adequate plant spacing to facilitate airflow within dense squash foliage.",
+        "Avoid excessive nitrogen application."
+      ],
+      "when_to_call_expert": "If powdery mildew covers more than 15% of lower leaf surfaces during early fruit development.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Squash___Powdery_mildew"
     },
     {
       "id": "Strawberry___Leaf_scorch",
@@ -1199,7 +1786,30 @@
         "Ohio State University Extension: Strawberry Leaf Scorch (PLPATH-FRU-34)",
         "North Carolina State Extension: Strawberry Leaf Scorch Management"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Leaf Scorch",
+      "transliteration": "Leaf Scorch",
+      "summary": "Possible Leaf Scorch. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Copper fungicides applied post-renovation in early autumn or early spring."
+      ],
+      "chemical_options": [
+        "Captan, Thiram, or QoI strobilurin fungicides (FRAC 11, Pyraclostrobin, Azoxystrobin) in spring prior to bloom."
+      ],
+      "prevention": [
+        "Plant certified disease-free strawberry plugs/runners of resistant cultivars (e.g., Allstar, Earliglow).",
+        "Mow and incorporate strawberry foliage immediately after harvest (renovation).",
+        "Use straw mulch to prevent soil splashing onto leaves and use drip irrigation."
+      ],
+      "when_to_call_expert": "If severe foliage scorching threatens runner production in nursery or perennial beds.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Strawberry___Leaf_scorch"
     },
     {
       "id": "Strawberry___healthy",
@@ -1242,7 +1852,29 @@
       "sources": [
         "UC Davis IPM: Strawberry Pest Management Guidelines"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Healthy Strawberry Leaf",
+      "transliteration": "Healthy Strawberry Leaf",
+      "summary": "Leaves appear healthy. Check regularly for changes.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Release predatory mites (Phytoseiulus persimilis) for mite suppression."
+      ],
+      "chemical_options": [
+        "No chemical treatment required."
+      ],
+      "prevention": [
+        "Maintain plastic mulch bed cleanliness and drip fertigation.",
+        "Scout for two-spotted spider mites and Botrytis fruit rot."
+      ],
+      "when_to_call_expert": "Routine seasonal IPM check.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Strawberry___healthy"
     },
     {
       "id": "Tomato___Bacterial_spot",
@@ -1287,7 +1919,30 @@
         "University of Florida IFAS: Bacterial Spot of Tomato (PP-3)",
         "Purdue Extension: Tomato Diseases - Bacterial Spot (BP-22-W)"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Bacterial Spot",
+      "transliteration": "Bacterial Spot",
+      "summary": "Possible Bacterial Spot. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Copper bactericides mixed with Bacillus subtilis or Bacillus amyloliquefaciens."
+      ],
+      "chemical_options": [
+        "Fixed copper + Mancozeb tank mix; plant defense activators like Acibenzolar-S-methyl (Actigard)."
+      ],
+      "prevention": [
+        "Use hot-water treated or certified disease-free seed.",
+        "Do not work in tomato fields when leaves are wet from dew or rain.",
+        "Rotate with non-solanaceous crops on a 2-3 year cycle."
+      ],
+      "when_to_call_expert": "If widespread defoliation causes fruit sunscald in commercial plantings.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Tomato___Bacterial_spot"
     },
     {
       "id": "Tomato___Early_blight",
@@ -1332,7 +1987,30 @@
         "Cornell Vegetable MD Online: Early Blight of Tomato",
         "North Carolina State Extension: Early Blight of Tomato"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Early Blight",
+      "transliteration": "Early Blight",
+      "summary": "Possible Early Blight. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Copper octanoate, Bacillus subtilis, and bio-fungicides."
+      ],
+      "chemical_options": [
+        "Protectants: Chlorothalonil, Mancozeb (FRAC M05, M03). Systemics: Difenoconazole, Azoxystrobin, Boscalid (FRAC 3, 11, 7)."
+      ],
+      "prevention": [
+        "Mulch heavily with straw or plastic to create a barrier between soil and lower leaves.",
+        "Stake or cage tomatoes and prune bottom 12-18 inches of leaves to prevent soil splash.",
+        "Rotate crops with non-solanaceous species."
+      ],
+      "when_to_call_expert": "If early blight reaches mid-canopy before first fruit harvest.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Tomato___Early_blight"
     },
     {
       "id": "Tomato___Late_blight",
@@ -1377,7 +2055,30 @@
         "USABlight: National Late Blight Information and Forecast System",
         "Penn State Extension: Tomato Late Blight Management"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Late Blight",
+      "transliteration": "Late Blight",
+      "summary": "Possible Late Blight. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Preventative copper sprays applied prior to cool, rainy disease-favoring weather."
+      ],
+      "chemical_options": [
+        "Mandipropamid (FRAC 40), Fluopicolide (FRAC 43), Cyazofamid (FRAC 21), Chlorothalonil (FRAC M05)."
+      ],
+      "prevention": [
+        "Plant resistant varieties (e.g., Defiant, Mountain Magic, Iron Lady).",
+        "Destroy infected plants immediately in plastic bags to avoid dispersing spores to neighbors.",
+        "Monitor regional late blight tracking maps (e.g., USABlight)."
+      ],
+      "when_to_call_expert": "Immediately alert university extension or regional crop specialist upon identification.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Tomato___Late_blight"
     },
     {
       "id": "Tomato___Leaf_Mold",
@@ -1422,7 +2123,30 @@
         "University of Massachusetts Amherst: Tomato Leaf Mold in High Tunnels",
         "Cornell Vegetable MD Online: Tomato Leaf Mold"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Leaf Mold",
+      "transliteration": "Leaf Mold",
+      "summary": "Possible Leaf Mold. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Copper fungicides, potassium bicarbonate, or hydrogen dioxide."
+      ],
+      "chemical_options": [
+        "Chlorothalonil, Mancozeb, Difenoconazole, or Cyazofamid labeled for greenhouse/field tomatoes."
+      ],
+      "prevention": [
+        "Maximize high-tunnel and greenhouse ventilation using exhaust fans and horizontal airflow.",
+        "Increase plant spacing and prune lower suckers to open canopy.",
+        "Plant resistant varieties with Cf resistance genes."
+      ],
+      "when_to_call_expert": "If greenhouse crop loses more than 25% photosynthesizing leaf area.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Tomato___Leaf_Mold"
     },
     {
       "id": "Tomato___Septoria_leaf_spot",
@@ -1467,7 +2191,30 @@
         "Missouri Botanical Garden: Septoria Leaf Spot of Tomato",
         "Purdue Extension: Septoria Leaf Spot on Tomato (BP-138-W)"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Septoria Leaf Spot",
+      "transliteration": "Septoria Leaf Spot",
+      "summary": "Possible Septoria Leaf Spot. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Copper octanoate or copper hydroxide applied at weekly intervals during wet weather."
+      ],
+      "chemical_options": [
+        "Chlorothalonil, Mancozeb, or FRAC 11 (Azoxystrobin) / FRAC 7 (Boscalid) in rotation."
+      ],
+      "prevention": [
+        "Clean cultivation, weed control (destroy horsenettle and nightshade near fields).",
+        "Mulch to prevent soil splash and drip irrigate exclusively.",
+        "Rotate away from solanaceous crops for 3 years."
+      ],
+      "when_to_call_expert": "If lower foliage defoliation progresses rapidly toward fruit clusters.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Tomato___Septoria_leaf_spot"
     },
     {
       "id": "Tomato___Spider_mites Two-spotted_spider_mite",
@@ -1513,7 +2260,31 @@
         "UC Davis IPM: Spider Mites on Tomato",
         "University of Florida IFAS: Two-Spotted Spider Mite Management (EENY-150)"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Two-Spotted Spider Mite Infestation",
+      "transliteration": "Two-Spotted Spider Mite Infestation",
+      "summary": "Possible Two-Spotted Spider Mite Infestation. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Release predatory mites (Phytoseiulus persimilis, Neoseiulus californicus).",
+        "Insecticidal soaps, horticultural mineral oil, or rosemary/neem oil emulsions."
+      ],
+      "chemical_options": [
+        "Selective miticides: Bifenazate (Acramite), Spiromesifen (Oberon), Abamectin (Agri-Mek) with proper surfactant."
+      ],
+      "prevention": [
+        "Keep farm roadways and perimeters watered to reduce dust, which suppresses natural mite predators.",
+        "Avoid broad-spectrum synthetic pyrethroids and carbamates that kill beneficial predatory insects.",
+        "Maintain adequate crop irrigation to reduce plant water stress."
+      ],
+      "when_to_call_expert": "If webbing appears on upper canopy or fruit clusters during hot dry spells.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Tomato___Spider_mites Two-spotted_spider_mite"
     },
     {
       "id": "Tomato___Target_Spot",
@@ -1558,7 +2329,30 @@
         "University of Florida IFAS: Target Spot of Tomato (PP-344)",
         "North Carolina State Extension: Target Spot on Tomato"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Target Spot",
+      "transliteration": "Target Spot",
+      "summary": "Possible Target Spot. Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Copper fungicides and biological antagonists."
+      ],
+      "chemical_options": [
+        "FRAC 7 (Fluxapyroxad), FRAC 3 (Difenoconazole), FRAC 11 (Pyraclostrobin), or Chlorothalonil."
+      ],
+      "prevention": [
+        "Increase row spacing to allow rapid canopy drying.",
+        "Prune lower leaves to minimize contact with humidity from soil.",
+        "Rotate with non-host crops."
+      ],
+      "when_to_call_expert": "If fruit lesions exceed 5% of harvestable fruit.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Tomato___Target_Spot"
     },
     {
       "id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
@@ -1604,7 +2398,31 @@
         "UC Davis IPM: Tomato Yellow Leaf Curl Virus Guidelines",
         "University of Florida IFAS: Tomato Yellow Leaf Curl Virus Management (ENY-712)"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+      "transliteration": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+      "summary": "Possible Tomato Yellow Leaf Curl Virus (TYLCV). Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Insecticidal soaps, horticultural oils, and release of predatory insects (Delphastus catalinae)."
+      ],
+      "chemical_options": [
+        "Target the whitefly vector: Systemic neonicotinoids (Imidacloprid, Dinotefuran - IRAC 4A) at transplant, followed by Cyantraniliprole (IRAC 28), Spiromesifen (IRAC 23), or Pyriproxyfen."
+      ],
+      "prevention": [
+        "Plant TYLCV-resistant tomato hybrids (e.g., Tygress, Charger, Red Bounty).",
+        "Use 50-mesh insect screening on high tunnels/greenhouses to exclude whiteflies.",
+        "Use UV-reflective silver plastic mulch to repel migrating whiteflies.",
+        "Rogue out infected plants immediately upon early symptom development."
+      ],
+      "when_to_call_expert": "Report suspected outbreaks in new growing districts to agricultural extension.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Tomato___Tomato_Yellow_Leaf_Curl_Virus"
     },
     {
       "id": "Tomato___Tomato_mosaic_virus",
@@ -1650,7 +2468,31 @@
         "Penn State Extension: Tomato Mosaic Virus and Tobacco Mosaic Virus",
         "Cornell Vegetable MD Online: Tobamoviruses of Tomato"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Tomato Mosaic Virus (ToMV)",
+      "transliteration": "Tomato Mosaic Virus (ToMV)",
+      "summary": "Possible Tomato Mosaic Virus (ToMV). Compare the symptoms before choosing treatment.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Strict sanitation, milk spray dips for tool and hand decontamination."
+      ],
+      "chemical_options": [
+        "No chemical cure exists for viral infections. Manage through sanitation and genetics."
+      ],
+      "prevention": [
+        "Plant certified virus-free seed and resistant cultivars (Tm-2 or Tm-2^2 resistance).",
+        "Disinfect hands and tools frequently in 20% non-fat dry milk solution or 10% trisodium phosphate (TSP).",
+        "Strictly prohibit tobacco smoking/chewing near tomato plants (tobacco carries mosaic viruses).",
+        "Rogue out and destroy infected plants immediately; do not compost."
+      ],
+      "when_to_call_expert": "If symptoms appear in seed-production or commercial greenhouse tomato operations.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Tomato___Tomato_mosaic_virus"
     },
     {
       "id": "Tomato___healthy",
@@ -1694,7 +2536,29 @@
         "University of Florida IFAS: Tomato Production Guide",
         "Purdue Extension: Tomato Plant Care and IPM"
       ],
-      "review_status": "expert_reviewed"
+      "review_status": "machine_suggested",
+      "common_name": "Healthy Tomato Leaf",
+      "transliteration": "Healthy Tomato Leaf",
+      "summary": "Leaves appear healthy. Check regularly for changes.",
+      "immediate_actions": [
+        "Check both sides of the leaves. Compare affected and healthy plants.",
+        "Take clear photos. Ask your local agriculture office to confirm the cause before applying pesticides."
+      ],
+      "organic_options": [
+        "Companion planting with marigolds/basil and organic compost mulching."
+      ],
+      "chemical_options": [
+        "No chemical intervention needed."
+      ],
+      "prevention": [
+        "Maintain consistent staking, drip irrigation, balanced N-P-K and calcium fertilizing.",
+        "Scout weekly for hornworms, fruitworms, and early foliar spots."
+      ],
+      "when_to_call_expert": "Routine seasonal agronomy check.",
+      "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+      "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+      "language": "en",
+      "canonical_key": "Tomato___healthy"
     }
   ]
 }

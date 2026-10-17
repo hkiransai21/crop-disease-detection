@@ -10,7 +10,7 @@ from backend.app.models.feedback import Feedback
 from backend.app.schemas.analysis import AnalysisResponse, AnalysisHistoryItem, PredictionItem
 from backend.app.schemas.weather import WeatherSummary
 from backend.app.schemas.risk import RiskAssessment
-from backend.app.services.i18n import resolve_language, get_localized_disease_entry, load_localized_knowledge_base, localize_risk_assessment
+from backend.app.services.i18n import resolve_language, get_localized_disease_entry, load_localized_knowledge_base, localize_risk_assessment, translate_message, UNCERTAINTY
 from backend.app.services.risk import load_knowledge_base
 from backend.app.api.deps import get_current_user
 
@@ -22,7 +22,7 @@ async def list_user_history(
     request: Request,
     limit: int = 50,
     offset: int = 0,
-    lang: Optional[str] = Query("en", description="Target language code"),
+    lang: Optional[str] = Query(None, description="Target language code"),
     current_user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db)
 ):
@@ -56,6 +56,12 @@ async def list_user_history(
 
         history_items.append(AnalysisHistoryItem(
             id=a.id,
+            canonical_key=a.predicted_label,
+            scientific_name=entry.scientific_name if entry else None,
+            language=resolved_lang,
+            disease_details=entry,
+            risk_assessment=localize_risk_assessment(RiskAssessment(**a.risk_assessment), resolved_lang) if a.risk_assessment else None,
+            uncertainty_reason=translate_message(UNCERTAINTY, resolved_lang) if a.is_uncertain else None,
             predicted_label=a.predicted_label,
             crop=crop,
             disease_name=disease,
@@ -75,7 +81,7 @@ async def list_user_history(
 async def get_analysis_detail(
     analysis_id: str,
     request: Request,
-    lang: Optional[str] = Query("en", description="Target language code"),
+    lang: Optional[str] = Query(None, description="Target language code"),
     current_user: User = Depends(get_current_user),
     db: AsyncSession = Depends(get_db)
 ):
@@ -128,11 +134,15 @@ async def get_analysis_detail(
 
     return AnalysisResponse(
         id=analysis.id,
+        canonical_key=analysis.predicted_label,
+        scientific_name=disease_entry.scientific_name if disease_entry else None,
+        language=resolved_lang,
         predicted_label=analysis.predicted_label,
         crop=crop,
         disease_name=disease,
         confidence=analysis.confidence,
-        confidence_display=conf_display,
+        confidence_display=translate_message(conf_display, resolved_lang),
+        uncertainty_reason=translate_message(UNCERTAINTY, resolved_lang) if analysis.is_uncertain else None,
         is_uncertain=analysis.is_uncertain,
         top_k=top_k_items,
         model_version=analysis.model_version,
