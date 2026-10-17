@@ -1,3 +1,6 @@
+import { LanguageChoice } from './components/LanguageChoice';
+import { useTranslation } from 'react-i18next';
+import { tr } from './i18n/i18n';
 import React, { useState, useEffect } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
@@ -12,6 +15,7 @@ import { api } from './api/client';
 import { User, AnalysisResponse } from './types';
 
 export const App: React.FC = () => {
+  useTranslation();
   const [user, setUser] = useState<User | null>(null);
   const [lastAnalysis, setLastAnalysis] = useState<AnalysisResponse | null>(() => {
     try {
@@ -62,7 +66,7 @@ export const App: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 selection:bg-brand-500 selection:text-white">
+    <LanguageChoice><div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 selection:bg-brand-500 selection:text-white">
       <Navbar user={user} onLogout={handleLogout} />
 
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-4">
@@ -98,14 +102,12 @@ export const App: React.FC = () => {
       <footer className="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 space-y-2">
         <div className="max-w-7xl mx-auto px-4">
           <p className="font-semibold text-slate-700">
-            AgriShield AI &bull; AI Crop Disease Detection & Outbreak Risk Prediction System
-          </p>
+            {tr('ui.s_260c166567')}</p>
           <p className="text-[11px] text-slate-400 max-w-2xl mx-auto mt-1">
-            Advisory decision-support tool. Always consult your regional agricultural extension officer before applying chemical crop protectants.
-          </p>
+            {tr('ui.s_71d376d100')}</p>
         </div>
       </footer>
-    </div>
+    </div></LanguageChoice>
   );
 };
 

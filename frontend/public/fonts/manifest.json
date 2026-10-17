@@ -1,0 +1,26 @@
+[
+  {
+    "file": "noto-sans-devanagari.woff2",
+    "package": "@fontsource-variable/noto-sans-devanagari",
+    "version": "5.3.0",
+    "source": "https://registry.npmjs.org/@fontsource-variable/noto-sans-devanagari/-/noto-sans-devanagari-5.3.0.tgz"
+  },
+  {
+    "file": "noto-sans-tamil.woff2",
+    "package": "@fontsource-variable/noto-sans-tamil",
+    "version": "5.3.0",
+    "source": "https://registry.npmjs.org/@fontsource-variable/noto-sans-tamil/-/noto-sans-tamil-5.3.0.tgz"
+  },
+  {
+    "file": "noto-sans-telugu.woff2",
+    "package": "@fontsource-variable/noto-sans-telugu",
+    "version": "5.3.0",
+    "source": "https://registry.npmjs.org/@fontsource-variable/noto-sans-telugu/-/noto-sans-telugu-5.3.0.tgz"
+  },
+  {
+    "file": "noto-sans-kannada.woff2",
+    "package": "@fontsource-variable/noto-sans-kannada",
+    "version": "5.3.0",
+    "source": "https://registry.npmjs.org/@fontsource-variable/noto-sans-kannada/-/noto-sans-kannada-5.3.0.tgz"
+  }
+]

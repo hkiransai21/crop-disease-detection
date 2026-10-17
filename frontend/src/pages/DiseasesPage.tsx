@@ -1,3 +1,4 @@
+import { tr } from '../i18n/i18n';
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BookOpen, Search, Filter, Leaf, Bug, FlaskConical, ExternalLink, ChevronRight, X, ShieldCheck } from 'lucide-react';
@@ -14,12 +15,16 @@ export const DiseasesPage: React.FC = () => {
   const [activeModalEntry, setActiveModalEntry] = useState<DiseaseEntry | null>(null);
 
   useEffect(() => {
+    let cancelled = false;
     setLoading(true);
+    setActiveModalEntry(null);
+    setSelectedCrop('');
     api
-      .getDiseases(i18n.language)
-      .then((data) => setDiseases(data))
+      .getDiseases(undefined, undefined, i18n.language)
+      .then((data) => { if (!cancelled) setDiseases(data); })
       .catch((err) => console.error(err))
-      .finally(() => setLoading(false));
+      .finally(() => { if (!cancelled) setLoading(false); });
+    return () => { cancelled = true; };
   }, [i18n.language]);
 
   const uniqueCrops = Array.from(new Set(diseases.map((d) => d.crop))).filter(Boolean);
@@ -80,7 +85,7 @@ export const DiseasesPage: React.FC = () => {
           <option value="">{t('diseases_page.all_agents')}</option>
           {uniqueAgents.map((a) => (
             <option key={a} value={a}>
-              {a.toUpperCase()}
+              {t(`agents.${a}`)}
             </option>
           ))}
         </select>
@@ -118,7 +123,7 @@ export const DiseasesPage: React.FC = () => {
                         ? 'bg-purple-100 text-purple-800'
                         : 'bg-slate-100 text-slate-700'
                     }`}>
-                      {entry.causal_agent_type}
+                      {t(`agents.${entry.causal_agent_type}`)}
                     </span>
                   </div>
 
@@ -137,7 +142,7 @@ export const DiseasesPage: React.FC = () => {
                 </div>
 
                 <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-xs text-brand-700 font-bold">
-                  <span>View Full Monograph & Treatment</span>
+                  <span>{tr('ui.s_9090697f4f')}</span>
                   <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </div>
@@ -157,7 +162,7 @@ export const DiseasesPage: React.FC = () => {
                 </span>
                 <h2 className="text-xl font-bold text-slate-900">{activeModalEntry.disease_name}</h2>
                 {activeModalEntry.scientific_name && (
-                  <p className="text-xs text-slate-500 italic">Scientific Name: {activeModalEntry.scientific_name}</p>
+                  <p className="text-xs text-slate-500 italic">{tr('ui.s_1f25584166')}{activeModalEntry.scientific_name}</p>
                 )}
               </div>
               <button
@@ -170,7 +175,7 @@ export const DiseasesPage: React.FC = () => {
 
             {/* Diagnostic Symptoms */}
             <div className="space-y-2">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">Diagnostic Symptoms</h4>
+              <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">{tr('ui.s_aee3645a0a')}</h4>
               <p className="text-xs text-slate-700 leading-relaxed bg-slate-50 p-3 rounded-xl border border-slate-100">
                 {activeModalEntry.symptoms}
               </p>
@@ -179,21 +184,21 @@ export const DiseasesPage: React.FC = () => {
             {/* Dissemination & Weather */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div className="p-3 rounded-xl bg-slate-50 border border-slate-100 text-xs space-y-1">
-                <span className="font-bold text-slate-800">Spread Mechanism</span>
+                <span className="font-bold text-slate-800">{tr('ui.s_24a52d94a1')}</span>
                 <p className="text-slate-600 text-[11px] leading-relaxed">{activeModalEntry.spread_mechanism}</p>
               </div>
 
               <div className="p-3 rounded-xl bg-amber-50/60 border border-amber-200/70 text-xs space-y-1 text-amber-950">
-                <span className="font-bold text-amber-900">Favorable Weather Conditions</span>
+                <span className="font-bold text-amber-900">{tr('ui.s_63320dac33')}</span>
                 <p className="text-[11px] leading-relaxed">
-                  Temp: {activeModalEntry.favorable_conditions.temp_min_c}°C - {activeModalEntry.favorable_conditions.temp_max_c}°C (Opt: {activeModalEntry.favorable_conditions.temp_optimal_c ?? 'N/A'}°C) | Min RH: {activeModalEntry.favorable_conditions.humidity_min_pct}%
+                  {tr('ui.s_fa0c175254')}{activeModalEntry.favorable_conditions.temp_min_c}{tr('ui.s_3f18a82d78')}{activeModalEntry.favorable_conditions.temp_max_c}{tr('ui.s_6acf1c5ccb')}{activeModalEntry.favorable_conditions.temp_optimal_c ?? 'N/A'}{tr('ui.s_70a5bedac4')}{activeModalEntry.favorable_conditions.humidity_min_pct}%
                 </p>
               </div>
             </div>
 
             {/* Prevention Steps */}
             <div className="space-y-2">
-              <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">Cultural & Sanitation Controls</h4>
+              <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">{tr('ui.s_3b9d6d10f3')}</h4>
               <ul className="list-disc list-inside space-y-1 text-xs text-slate-700">
                 {activeModalEntry.prevention_steps.map((s, i) => (
                   <li key={i}>{s}</li>
@@ -204,7 +209,7 @@ export const DiseasesPage: React.FC = () => {
             {/* Organic Controls */}
             {activeModalEntry.organic_controls.length > 0 && (
               <div className="space-y-2">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">Organic & Bio-Control Methods</h4>
+                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">{tr('ui.s_faa55775b7')}</h4>
                 <ul className="list-disc list-inside space-y-1 text-xs text-slate-700">
                   {activeModalEntry.organic_controls.map((s, i) => (
                     <li key={i}>{s}</li>
@@ -216,7 +221,7 @@ export const DiseasesPage: React.FC = () => {
             {/* Chemical Controls */}
             {activeModalEntry.chemical_controls.length > 0 && (
               <div className="space-y-2">
-                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">Chemical Modes of Action (Generic Actives)</h4>
+                <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500">{tr('ui.s_4452fa9d4f')}</h4>
                 <ul className="list-disc list-inside space-y-1 text-xs text-slate-700">
                   {activeModalEntry.chemical_controls.map((s, i) => (
                     <li key={i}>{s}</li>
@@ -225,15 +230,17 @@ export const DiseasesPage: React.FC = () => {
               </div>
             )}
 
+            <p className="bg-amber-50 p-3 rounded-xl text-sm leading-relaxed">{activeModalEntry.safety_notice}</p>
+            <p className="text-xs text-slate-600">{tr('ui.s_8ab0919883')}</p>
             {/* Extension Sources */}
             {activeModalEntry.sources.length > 0 && (
               <div className="pt-2 border-t border-slate-100 space-y-1">
-                <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Citations & Extension Resources</span>
+                <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">{tr('ui.s_f6e5bfc882')}</span>
                 <div className="space-y-1">
                   {activeModalEntry.sources.map((src, i) => (
                     <div key={i} className="flex items-center space-x-1.5 text-[11px] text-slate-500">
                       <ExternalLink className="w-3 h-3 text-slate-400" />
-                      <span className="truncate">{src}</span>
+                      <span className="break-words">{src}</span>
                     </div>
                   ))}
                 </div>
@@ -245,8 +252,7 @@ export const DiseasesPage: React.FC = () => {
                 onClick={() => setActiveModalEntry(null)}
                 className="px-5 py-2 rounded-xl bg-slate-900 text-white text-xs font-bold"
               >
-                Close Monograph
-              </button>
+                {tr('ui.s_2573d13e0e')}</button>
             </div>
           </div>
         </div>

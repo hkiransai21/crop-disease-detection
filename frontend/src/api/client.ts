@@ -1,3 +1,4 @@
+import { tr } from '../i18n/i18n';
 /**
  * API client with automatic auth header injection, error parsing, client-side image downscaling,
  * and multilingual language negotiation.
@@ -58,19 +59,19 @@ class ApiClient {
     const response = await fetch(`${API_BASE}${endpoint}`, {
       ...options,
       headers,
-    });
+    }).catch(() => { throw new Error(tr('ui.s_18fca6cbf7')); });
 
     if (response.status === 401) {
       this.setToken(null);
     }
 
     if (!response.ok) {
-      let errorMsg = 'An unexpected network error occurred';
+      let errorMsg = tr('ui.s_18fca6cbf7');
       try {
         const errorData = await response.json();
-        errorMsg = errorData.detail || errorMsg;
+        errorMsg = typeof errorData.detail === 'string' ? errorData.detail : Array.isArray(errorData.detail) ? errorData.detail.map((item: { msg?: string }) => item.msg).filter(Boolean).join(' ') || errorMsg : errorMsg;
       } catch {
-        errorMsg = response.statusText;
+        errorMsg = tr('ui.s_18fca6cbf7');
       }
       throw new Error(errorMsg);
     }
@@ -226,6 +227,10 @@ class ApiClient {
     return this.request<DiseaseEntry[]>(`/diseases?${params.toString()}`);
   }
 
+  async localizeResult(result: AnalysisResponse, lang: string): Promise<AnalysisResponse> {
+    return this.request<AnalysisResponse>(`/diseases/localize-result?lang=${encodeURIComponent(lang)}`, { method: 'POST', body: JSON.stringify(result) });
+  }
+
   async getDiseaseById(id: string, lang?: string): Promise<DiseaseEntry> {
     const targetLang = lang || this.getCurrentLang();
     return this.request<DiseaseEntry>(`/diseases/${encodeURIComponent(id)}?lang=${encodeURIComponent(targetLang)}`);
@@ -250,7 +255,7 @@ class ApiClient {
     const targetLang = lang || this.getCurrentLang();
     const response = await fetch(`${API_BASE}/audio/tts?${new URLSearchParams({ text, lang: targetLang })}`);
     if (!response.ok) {
-      throw new Error('Failed to synthesize audio');
+      throw new Error(tr('ui.s_9a128b52f5'));
     }
     return response.blob();
   }

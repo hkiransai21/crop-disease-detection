@@ -1,3 +1,4 @@
+import { tr } from '../i18n/i18n';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ThumbsUp, ThumbsDown, MessageSquare, Check, X, Shield, Loader2 } from 'lucide-react';
@@ -32,7 +33,7 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (isCorrect === null) {
-      setError('Please select whether the diagnosis was correct or incorrect.');
+      setError(tr('ui.s_0e60e944e4'));
       return;
     }
 
@@ -52,7 +53,7 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
         onClose();
       }, 1200);
     } catch (err: any) {
-      setError(err.message || 'Failed to submit feedback. Please ensure you are logged in.');
+      setError(err.message || tr('ui.s_d53daebde2'));
     } finally {
       setIsSubmitting(false);
     }
@@ -125,7 +126,7 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
                 <label className="block text-xs font-semibold text-slate-700">{t('feedback.select_actual')}</label>
                 <input
                   type="text"
-                  placeholder="e.g. Tomato Early Blight"
+                  placeholder={tr('ui.s_f27ffcbc35')}
                   value={correctedLabel}
                   onChange={(e) => setCorrectedLabel(e.target.value)}
                   className="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs focus:outline-none focus:border-brand-500"
@@ -138,7 +139,7 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
               <label className="block text-xs font-semibold text-slate-700">{t('feedback.comments_label')}</label>
               <textarea
                 rows={2}
-                placeholder="Notes..."
+                placeholder={tr('ui.s_fee3c9ab67')}
                 value={comments}
                 onChange={(e) => setComments(e.target.value)}
                 className="w-full px-3 py-2 rounded-xl border border-slate-300 text-xs focus:outline-none focus:border-brand-500"
@@ -166,8 +167,7 @@ export const FeedbackModal: React.FC<FeedbackModalProps> = ({
                 onClick={onClose}
                 className="px-4 py-2 rounded-xl text-xs font-semibold text-slate-600 hover:bg-slate-100"
               >
-                Cancel
-              </button>
+                {tr('ui.s_77dfd2135f')}</button>
               <button
                 type="submit"
                 disabled={isSubmitting}

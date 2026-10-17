@@ -16,12 +16,14 @@ export interface LanguageOption {
 }
 
 export const SUPPORTED_LANGUAGES: LanguageOption[] = [
-  { code: 'en', label: 'English (India)', nativeLabel: 'English', voiceLang: 'en-IN' },
-  { code: 'hi', label: 'Hindi', nativeLabel: 'हिन्दी', voiceLang: 'hi-IN' },
-  { code: 'te', label: 'Telugu', nativeLabel: 'తెలుగు', voiceLang: 'te-IN' },
-  { code: 'ta', label: 'Tamil', nativeLabel: 'தமிழ்', voiceLang: 'ta-IN' },
-  { code: 'kn', label: 'Kannada', nativeLabel: 'ಕನ್ನಡ', voiceLang: 'kn-IN' },
+  { code: 'en', label: 'English (India)', nativeLabel: en.language.names.en, voiceLang: 'en-IN' },
+  { code: 'hi', label: 'Hindi', nativeLabel: en.language.names.hi, voiceLang: 'hi-IN' },
+  { code: 'ta', label: 'Tamil', nativeLabel: en.language.names.ta, voiceLang: 'ta-IN' },
+  { code: 'te', label: 'Telugu', nativeLabel: en.language.names.te, voiceLang: 'te-IN' },
+  { code: 'kn', label: 'Kannada', nativeLabel: en.language.names.kn, voiceLang: 'kn-IN' },
 ];
+
+export const initialLanguageChosen = SUPPORTED_LANGUAGES.some(l => l.code === localStorage.getItem('agrishield_language'));
 
 i18n
   .use(LanguageDetector)
@@ -38,9 +40,9 @@ i18n
     supportedLngs: ['en', 'hi', 'ta', 'te', 'kn'],
     load: 'languageOnly',
     detection: {
-      order: ['localStorage', 'navigator'],
+      order: ['localStorage'],
       lookupLocalStorage: 'agrishield_language',
-      caches: ['localStorage'],
+      caches: [],
     },
     interpolation: {
       escapeValue: false,
@@ -48,3 +50,12 @@ i18n
   });
 
 export default i18n;
+
+export function tr(key: string, values?: Record<string, unknown>): string {
+  return String(i18n.t(key, values || {}));
+}
+i18n.on('languageChanged', lang => {
+  document.documentElement.lang = lang.split('-')[0];
+  document.title = tr('app_title');
+});
+document.documentElement.lang = i18n.language || 'en';

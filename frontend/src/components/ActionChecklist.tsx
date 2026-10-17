@@ -1,3 +1,4 @@
+import { tr } from '../i18n/i18n';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { CheckSquare, ShieldCheck, Leaf, FlaskConical, AlertTriangle, ExternalLink, UserCheck } from 'lucide-react';
@@ -13,18 +14,24 @@ export const ActionChecklist: React.FC<ActionChecklistProps> = ({ disease }) => 
 
   return (
     <div className="bg-white rounded-2xl border border-slate-200/80 shadow-sm p-5 md:p-6 space-y-5">
-      <div className="flex items-center justify-between border-b border-slate-100 pb-3">
+      <div className="flex flex-wrap gap-2 items-center justify-between border-b border-slate-100 pb-3">
         <div className="flex items-center space-x-2">
           <ShieldCheck className="w-5 h-5 text-brand-600" />
           <h3 className="text-lg font-bold text-slate-900">{t('result.actions_title')}</h3>
         </div>
         <span className="text-xs font-semibold text-slate-500 bg-slate-100 px-2.5 py-1 rounded-full">
-          Curated University Guidance
-        </span>
+          {tr('ui.s_8ab0919883')}</span>
       </div>
 
+      <section className="space-y-2 text-sm leading-relaxed">
+        <h4 className="font-bold">{t('result.symptoms')}</h4>
+        <p>{disease.symptoms}</p>
+        <h4 className="font-bold">{t('result.immediate')}</h4>
+        <ul className="list-disc pl-5">{disease.immediate_actions?.map((action, i) => <li key={i}>{action}</li>)}</ul>
+        {disease.safety_notice && <p className="bg-amber-50 border border-amber-200 p-3 rounded-xl">{disease.safety_notice}</p>}
+      </section>
       {/* Tabs */}
-      <div className="flex space-x-2 border-b border-slate-100 pb-2">
+      <div className="flex flex-wrap gap-2 border-b border-slate-100 pb-2">
         <button
           onClick={() => setActiveTab('cultural')}
           className={`flex items-center space-x-1.5 px-3 py-2 rounded-xl text-xs font-bold transition-all ${
@@ -136,7 +143,7 @@ export const ActionChecklist: React.FC<ActionChecklistProps> = ({ disease }) => 
             {disease.sources.map((src, idx) => (
               <div key={idx} className="flex items-center space-x-1.5 text-[11px] text-slate-500">
                 <ExternalLink className="w-3 h-3 text-slate-400" />
-                <span className="truncate">{src}</span>
+                <span className="break-words">{src}</span>
               </div>
             ))}
           </div>

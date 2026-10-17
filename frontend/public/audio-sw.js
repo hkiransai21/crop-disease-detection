@@ -1,7 +1,19 @@
-﻿/* Explicit opt-in audio downloads. Never runtime-cache a playback response. */
+/* Explicit opt-in audio downloads. Never runtime-cache a playback response. */
 const LANGUAGES = ['en', 'hi', 'ta', 'te', 'kn'];
 const PREFIX = 'agrishield-audio-v2-';
-self.addEventListener('install', () => self.skipWaiting());
+const FONT_CACHE = 'agrishield-fonts-v1';
+const FONT_URLS = ['devanagari', 'tamil', 'telugu', 'kannada'].map(script => `/fonts/noto-sans-${script}.woff2`);
+self.addEventListener('install', event => event.waitUntil((async () => {
+  const cache = await caches.open(FONT_CACHE);
+  await cache.addAll(FONT_URLS);
+  await self.skipWaiting();
+})()));
+self.addEventListener('fetch', event => {
+  const url = new URL(event.request.url);
+  if (url.origin === self.location.origin && FONT_URLS.includes(url.pathname)) {
+    event.respondWith(caches.open(FONT_CACHE).then(async cache => (await cache.match(url.pathname)) || fetch(event.request)));
+  }
+});
 self.addEventListener('activate', event => event.waitUntil(self.clients.claim()));
 self.addEventListener('message', event => {
   if (event.data?.type !== 'DOWNLOAD_AUDIO' || !LANGUAGES.includes(event.data.lang)) return;

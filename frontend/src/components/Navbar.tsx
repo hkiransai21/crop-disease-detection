@@ -1,3 +1,4 @@
+import { tr } from '../i18n/i18n';
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -45,21 +46,19 @@ export const Navbar: React.FC<NavbarProps> = ({ user, onLogout }) => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-emerald-100 shadow-sm">
+    <header className="relative z-50 bg-white/95 backdrop-blur-md border-b border-emerald-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Brand Logo */}
-          <Link to="/" className="flex items-center space-x-2.5 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
+          <Link to="/" className="flex min-w-0 items-center gap-2 group">
+            <div className="shrink-0 w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white shadow-md shadow-brand-500/20 group-hover:scale-105 transition-transform">
               <Sprout className="w-6 h-6" />
             </div>
             <div>
-              <span className="text-xl font-bold bg-gradient-to-r from-brand-950 via-brand-800 to-brand-600 bg-clip-text text-transparent">
-                AgriShield
-              </span>
+              <span className="text-lg sm:text-xl font-bold bg-gradient-to-r from-brand-950 via-brand-800 to-brand-600 bg-clip-text text-transparent">
+                {tr('ui.s_7b519bfdc3')}</span>
               <span className="text-xs ml-1 font-semibold px-1.5 py-0.5 rounded bg-brand-100 text-brand-800 border border-brand-200">
-                AI
-              </span>
+                {tr('ui.s_560040c54a')}</span>
             </div>
           </Link>
 
@@ -91,7 +90,7 @@ export const Navbar: React.FC<NavbarProps> = ({ user, onLogout }) => {
               <button
                 onClick={() => setIsLangOpen(!isLangOpen)}
                 className="flex items-center space-x-1.5 px-3 py-1.5 rounded-xl border border-slate-200 bg-white hover:bg-slate-50 text-xs font-bold text-slate-800 shadow-sm transition-all"
-                title="Select Language"
+                title={tr('ui.s_17d647c6c1')}
               >
                 <Globe className="w-3.5 h-3.5 text-brand-600" />
                 <span>{currentLangObj.nativeLabel}</span>
@@ -118,7 +117,6 @@ export const Navbar: React.FC<NavbarProps> = ({ user, onLogout }) => {
                         >
                           <div className="flex items-center space-x-2">
                             <span className="text-sm font-semibold">{lang.nativeLabel}</span>
-                            <span className="text-[11px] text-slate-400 font-normal">({lang.label})</span>
                           </div>
                           {isSelected && <Check className="w-4 h-4 text-brand-600 shrink-0" />}
                         </button>
@@ -157,18 +155,8 @@ export const Navbar: React.FC<NavbarProps> = ({ user, onLogout }) => {
 
           {/* Mobile Menu Button */}
           <div className="flex md:hidden items-center space-x-2">
-            <select
-              value={currentLang}
-              onChange={(e) => handleSelectLanguage(e.target.value)}
-              className="px-2.5 py-1.5 rounded-lg border border-slate-200 text-xs font-bold text-slate-800 bg-white"
-            >
-              {SUPPORTED_LANGUAGES.map((lang) => (
-                <option key={lang.code} value={lang.code}>
-                  {lang.nativeLabel}
-                </option>
-              ))}
-            </select>
             <button
+              aria-label={t('nav.menu')}
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none"
             >

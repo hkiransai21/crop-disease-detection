@@ -1,3 +1,4 @@
+import { tr } from '../i18n/i18n';
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -25,12 +26,15 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
       return;
     }
 
+    let cancelled = false;
+    setFilterCrop('');
     setLoading(true);
     api
       .getHistory(100, 0, i18n.language)
-      .then((data) => setHistory(data))
-      .catch((err) => setError(err.message || 'Failed to load diagnosis history.'))
-      .finally(() => setLoading(false));
+      .then((data) => { if (!cancelled) setHistory(data); })
+      .catch((err) => setError(err.message || tr('ui.s_24c52901bc')))
+      .finally(() => { if (!cancelled) setLoading(false); });
+    return () => { cancelled = true; };
   }, [user, i18n.language]);
 
   const handleDelete = async (id: string, e: React.MouseEvent) => {
@@ -40,7 +44,7 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
       setHistory(history.filter((item) => item.id !== id));
       setDeleteTargetId(null);
     } catch (err: any) {
-      alert(err.message || 'Failed to delete record.');
+      alert(err.message || tr('ui.s_f30892b2b8'));
     }
   };
 
@@ -139,8 +143,8 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
           <h3 className="text-base font-bold text-slate-800">{t('history.empty')}</h3>
           <p className="text-xs text-slate-500 max-w-sm mx-auto">
             {searchQuery || filterCrop
-              ? 'No diagnoses match your search filter criteria.'
-              : 'You have not scanned any crop leaves yet.'}
+              ? tr('ui.s_c068a9033c')
+              : tr('ui.s_8f5b156913')}
           </p>
           <div className="pt-2">
             <Link
@@ -180,17 +184,16 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
                       {isHealthy ? (
                         <span className="px-2 py-0.5 rounded-md bg-emerald-600 text-white text-[10px] font-bold flex items-center space-x-1">
                           <CheckCircle2 className="w-3 h-3" />
-                          <span>Healthy</span>
+                          <span>{tr('ui.s_80ea156e1b')}</span>
                         </span>
                       ) : item.is_uncertain ? (
                         <span className="px-2 py-0.5 rounded-md bg-amber-500 text-white text-[10px] font-bold flex items-center space-x-1">
                           <AlertCircle className="w-3 h-3" />
-                          <span>Uncertain</span>
+                          <span>{tr('ui.s_c6a143441b')}</span>
                         </span>
                       ) : (
                         <span className="px-2 py-0.5 rounded-md bg-slate-900/80 backdrop-blur-sm text-white text-[10px] font-bold">
-                          {Math.round(item.confidence * 100)}% Conf
-                        </span>
+                          {Math.round(item.confidence * 100)}{tr('ui.s_b6a5e2d0b5')}</span>
                       )}
                     </div>
                   </div>
@@ -213,20 +216,19 @@ export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
                 <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
                   <span className="flex items-center space-x-1">
                     <Calendar className="w-3 h-3" />
-                    <span>{new Date(item.created_at).toLocaleDateString()}</span>
+                    <span>{new Date(item.created_at).toLocaleDateString(i18n.language + '-IN')}</span>
                   </span>
 
                   <div className="flex items-center space-x-2">
                     {item.has_feedback && (
                       <span className="px-1.5 py-0.5 rounded bg-brand-50 text-brand-700 font-semibold text-[10px]">
-                        Verified
-                      </span>
+                        {tr('ui.s_aed3b8c6a7')}</span>
                     )}
 
                     <button
                       onClick={(e) => handleDelete(item.id, e)}
                       className="p-1 text-slate-400 hover:text-rose-600 transition-colors"
-                      title="Delete diagnosis record"
+                      title={tr('ui.s_d5c8d25a5d')}
                     >
                       <Trash2 className="w-3.5 h-3.5" />
                     </button>

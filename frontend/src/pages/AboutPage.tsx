@@ -1,3 +1,4 @@
+import { tr } from '../i18n/i18n';
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Shield, Info, AlertTriangle, Cpu, Database, CheckCircle2, Layers, BookOpen, Lock, PhoneCall } from 'lucide-react';
@@ -33,41 +34,40 @@ export const AboutPage: React.FC = () => {
       <div className="bg-white rounded-3xl border border-slate-200 p-6 md:p-8 shadow-sm space-y-6">
         <div className="flex items-center space-x-2 border-b border-slate-100 pb-3">
           <Cpu className="w-5 h-5 text-brand-600" />
-          <h2 className="text-lg font-bold text-slate-900">Neural Network Architecture & Optimization</h2>
+          <h2 className="text-lg font-bold text-slate-900">{tr('ui.s_acaf6737da')}</h2>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
-            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Base Backbone</span>
-            <p className="text-sm font-bold text-slate-900">EfficientNet-B0</p>
-            <span className="text-[11px] text-slate-500">ImageNet Pretrained</span>
+            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">{tr('ui.s_c5c821ded7')}</span>
+            <p className="text-sm font-bold text-slate-900">{tr('ui.s_b5789ad0bc')}</p>
+            <span className="text-[11px] text-slate-500">{tr('ui.s_be3c2126e9')}</span>
           </div>
 
           <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
-            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Deployment Runtime</span>
-            <p className="text-sm font-bold text-slate-900">ONNX Runtime CPU</p>
-            <span className="text-[11px] text-slate-500">Dynamic INT8 Quantized</span>
+            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">{tr('ui.s_fe961af9d8')}</span>
+            <p className="text-sm font-bold text-slate-900">{tr('ui.s_17aaea2858')}</p>
+            <span className="text-[11px] text-slate-500">{tr('ui.s_177075af3d')}</span>
           </div>
 
           <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
-            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Classes Covered</span>
-            <p className="text-sm font-bold text-slate-900">38 Diagnostic Classes</p>
-            <span className="text-[11px] text-slate-500">14 Agricultural Crops</span>
+            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">{tr('ui.s_cdca30cf0d')}</span>
+            <p className="text-sm font-bold text-slate-900">{tr('ui.s_40bfb032d0')}</p>
+            <span className="text-[11px] text-slate-500">{tr('ui.s_0e1171b474')}</span>
           </div>
 
           <div className="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
-            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Calibration</span>
-            <p className="text-sm font-bold text-slate-900">Temperature Scaled</p>
-            <span className="text-[11px] text-slate-500">ECE Reliability Optimized</span>
+            <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">{tr('ui.s_f5ed075f00')}</span>
+            <p className="text-sm font-bold text-slate-900">{tr('ui.s_0dca369ebf')}</p>
+            <span className="text-[11px] text-slate-500">{tr('ui.s_960d84092e')}</span>
           </div>
         </div>
 
         {modelInfo && (
           <div className="p-4 rounded-xl bg-brand-50/50 border border-brand-100 text-xs space-y-2">
-            <span className="font-bold text-brand-900">Active Model Version: {modelInfo.model_version}</span>
+            <span className="font-bold text-brand-900">{tr('ui.s_79b990023f')}{modelInfo.model_version}</span>
             <p className="text-slate-600 text-[11px]">
-              Trained using two-stage fine-tuning with AdamW optimizer, cosine annealing, and heavy data augmentation to combat laboratory background shortcut learning.
-            </p>
+              {tr('ui.s_7c150d36b4')}</p>
           </div>
         )}
       </div>
@@ -76,21 +76,18 @@ export const AboutPage: React.FC = () => {
       <div className="bg-white rounded-3xl border border-slate-200 p-6 md:p-8 shadow-sm space-y-4">
         <div className="flex items-center space-x-2 border-b border-slate-100 pb-3">
           <Database className="w-5 h-5 text-brand-600" />
-          <h2 className="text-lg font-bold text-slate-900">Dataset Sources & The Field Generalization Gap</h2>
+          <h2 className="text-lg font-bold text-slate-900">{tr('ui.s_8f0c87a7dd')}</h2>
         </div>
 
         <div className="space-y-3 text-xs text-slate-700 leading-relaxed">
           <p>
-            <strong>Primary Training Set (PlantVillage):</strong> 54,305 controlled laboratory images across 38 classes. While providing rich morphological coverage, lab images feature uniform single-color backgrounds that can cause models to learn background shortcuts.
-          </p>
+            <strong>{tr('ui.s_2a0f13695d')}</strong> {tr('ui.s_ab877d07e7')}</p>
           <p>
-            <strong>Cross-Dataset Evaluation (PlantDoc):</strong> Evaluated against real-world field photographs taken in orchards and farms under variable weather, complex background foliage, and varying light conditions.
-          </p>
+            <strong>{tr('ui.s_ee08245b74')}</strong> {tr('ui.s_7afc59bed1')}</p>
           <div className="p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-950 space-y-1.5">
-            <span className="font-bold text-amber-900">Honest Generalization Gap Disclosure:</span>
+            <span className="font-bold text-amber-900">{tr('ui.s_5cc6fd5a0b')}</span>
             <p className="text-[11px] leading-relaxed">
-              Accuracy on clean lab test sets is typically higher than real-world field images due to overlapping leaves, motion blur, and co-infections in nature. Our model implements explicit confidence thresholding and Shannon entropy rejection to flag ambiguous field samples as 'Uncertain' rather than making false confident predictions.
-            </p>
+              {tr('ui.s_5a59600e77')}</p>
           </div>
         </div>
       </div>
@@ -99,23 +96,22 @@ export const AboutPage: React.FC = () => {
       <div className="bg-white rounded-3xl border border-slate-200 p-6 md:p-8 shadow-sm space-y-4">
         <div className="flex items-center space-x-2 border-b border-slate-100 pb-3">
           <Lock className="w-5 h-5 text-brand-600" />
-          <h2 className="text-lg font-bold text-slate-900">Farmer Data Privacy & EXIF Stripping</h2>
+          <h2 className="text-lg font-bold text-slate-900">{tr('ui.s_7d4bcff067')}</h2>
         </div>
         <p className="text-xs text-slate-600 leading-relaxed">
-          All image uploads are immediately stripped of embedded EXIF camera and GPS metadata on our server before persistence. Coordinates for weather telemetry are processed in-memory or stored with anonymized user accounts only. Retraining datasets are generated strictly with voluntary farmer opt-in consent.
-        </p>
+          {tr('ui.s_2ff168e676')}</p>
       </div>
 
       {/* Mandatory Safety Notice */}
       <div className="p-6 rounded-3xl bg-rose-50 border border-rose-200 text-rose-950 space-y-3">
         <div className="flex items-center space-x-2.5 font-bold text-rose-900">
           <AlertTriangle className="w-5 h-5 text-rose-600 shrink-0" />
-          <h3 className="text-base">Agricultural Safety Disclaimer & Limitations</h3>
+          <h3 className="text-base">{tr('ui.s_f93a83907c')}</h3>
         </div>
         <ul className="list-disc list-inside space-y-1.5 text-xs text-rose-900 leading-relaxed">
-          <li><strong>Advisory Decision-Support:</strong> This software is an informational tool and does not substitute for certified in-person crop consultants or government plant pathology laboratories.</li>
-          <li><strong>Pesticide Regulations:</strong> Pesticide active ingredients and controls listed are generic categories. Chemical registrations vary by state and nation. Always read the physical chemical product label and observe Pre-Harvest Intervals (PHI) and Re-Entry Intervals (REI).</li>
-          <li><strong>Environmental Weather Risk:</strong> Outbreak risk scores are transparent agronomic heuristics combining temperature windows, high-humidity hours, and rainfall proxies. They are advisory estimates, not guaranteed forecasts.</li>
+          <li><strong>{tr('ui.s_da1d761402')}</strong> {tr('ui.s_825462fc16')}</li>
+          <li><strong>{tr('ui.s_639e4ef1fd')}</strong> {tr('ui.s_77db47a730')}</li>
+          <li><strong>{tr('ui.s_47709278f3')}</strong> {tr('ui.s_8a70460c60')}</li>
         </ul>
       </div>
     </div>

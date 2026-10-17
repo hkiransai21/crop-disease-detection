@@ -1,3 +1,4 @@
+import { tr } from '../i18n/i18n';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -58,7 +59,7 @@ export const AnalyzePage: React.FC<AnalyzePageProps> = ({ onAnalysisComplete }) 
       onAnalysisComplete(response);
       navigate(`/result/${response.id}`, { state: { analysis: response } });
     } catch (err: any) {
-      setError(err.message || 'Diagnosis failed. Please check your network connection and retry.');
+      setError(err.message || tr('ui.s_a8e0832194'));
     } finally {
       setIsSubmitting(false);
     }

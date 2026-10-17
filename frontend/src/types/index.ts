@@ -34,6 +34,14 @@ export interface EnvironmentalConditions {
 }
 
 export interface DiseaseEntry {
+  common_name?: string;
+  canonical_key?: string;
+  transliteration?: string;
+  summary?: string;
+  immediate_actions?: string[];
+  safety_notice?: string;
+  review_status?: string;
+  review_notes?: string;
   id: string;
   crop: string;
   disease_name: string;
@@ -120,6 +128,9 @@ export interface RiskAssessment {
 }
 
 export interface AnalysisResponse {
+  language?: string;
+  canonical_key?: string;
+  scientific_name?: string;
   id: string;
   predicted_label: string;
   crop: string;

@@ -1,3 +1,4 @@
+import { tr } from '../i18n/i18n';
 import React, { useState, useEffect, useRef } from 'react';
 import { useParams, useLocation, useNavigate, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -64,7 +65,7 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
     if (!id) return;
 
     const isGuest = id.startsWith('guest_');
-    const isLangChange = prevLangRef.current !== currentLang;
+    const isLangChange = prevLangRef.current !== currentLang || Boolean(analysis && (analysis.language || 'en') !== currentLang);
     prevLangRef.current = currentLang;
 
     // Case 1: We already have the analysis in memory for this ID
@@ -78,42 +79,32 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
       if (isGuest || !api.getToken()) {
         // Guest or unauthenticated user: re-localize disease details from public encyclopedia
         if (analysis.predicted_label) {
-          api
-            .getDiseaseById(analysis.predicted_label, currentLang)
-            .then((entry) => {
-              setAnalysis((prev) =>
-                prev
-                  ? {
-                      ...prev,
-                      crop: entry.crop,
-                      disease_name: entry.disease_name,
-                      disease_details: entry,
-                    }
-                  : null
-              );
-            })
-            .catch(() => {});
+          setLoading(true);
+          api.localizeResult(analysis, currentLang)
+            .then((result) => { if (i18n.language.split('-')[0] === currentLang) setAnalysis(result); })
+            .catch(() => setError(tr('ui.s_c70a63d267')))
+            .finally(() => setLoading(false));
         }
       } else {
         // Authenticated user with saved analysis in DB: fetch fully localized record
         api
           .getHistoryDetail(id, currentLang)
-          .then((res) => setAnalysis(res))
-          .catch(() => {});
+          .then((res) => { if (i18n.language.split('-')[0] === currentLang) setAnalysis(res); })
+          .catch(() => setError(tr('ui.s_c70a63d267')));
       }
       return;
     }
 
     // Case 2: Analysis is not in memory (direct URL or refreshed guest without cache)
     if (isGuest) {
-      setError('Guest diagnosis session expired. Please scan a new crop leaf sample.');
+      setError(tr('ui.s_60d8892340'));
       setLoading(false);
       return;
     }
 
     // Case 3: Persistent analysis ID from database
     if (!api.getToken()) {
-      setError('Please sign in to view this saved diagnosis record.');
+      setError(tr('ui.s_54fc8a7dad'));
       setLoading(false);
       return;
     }
@@ -126,7 +117,7 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
         setError(null);
       })
       .catch((err) => {
-        setError(err.message || 'Failed to load diagnosis record.');
+        setError(err.message || tr('ui.s_c70a63d267'));
       })
       .finally(() => setLoading(false));
   }, [id, currentLang]);
@@ -152,7 +143,7 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
           <AlertTriangle className="w-8 h-8" />
         </div>
         <h2 className="text-xl font-bold text-slate-900">{t('history.empty')}</h2>
-        <p className="text-xs text-slate-500">{error || 'Please run a new diagnosis from the scanner.'}</p>
+        <p className="text-xs text-slate-500">{error || tr('ui.s_30f5d11bb2')}</p>
         <div className="flex items-center justify-center gap-3 pt-2">
           {isAuthError && (
             <Link
@@ -179,7 +170,7 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
   return (
     <div className="max-w-4xl mx-auto py-6 space-y-8">
       {/* Top Bar Navigation */}
-      <div className="flex items-center justify-between">
+      <div className="flex flex-wrap items-center justify-between gap-3">
         <Link
           to="/analyze"
           className="inline-flex items-center space-x-1.5 text-xs font-bold text-slate-600 hover:text-slate-900"
@@ -188,7 +179,7 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
           <span>{t('result.back_btn')}</span>
         </Link>
 
-        <div className="flex items-center space-x-2">
+        <div className="flex flex-wrap items-center gap-2">
           <button
             onClick={() => setIsShareOpen(true)}
             className="flex items-center space-x-1.5 px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold shadow-sm shadow-emerald-600/20 transition-all active:scale-95"
@@ -216,19 +207,19 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
         }`}>
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div className="space-y-1.5">
-              <div className="flex items-center space-x-2">
+              <div className="flex flex-wrap items-center gap-2">
                 <span className="px-2.5 py-0.5 rounded-full bg-white/20 text-white text-[11px] font-bold uppercase tracking-wider backdrop-blur-sm">
                   {analysis.crop}
                 </span>
                 {analysis.disease_details?.causal_agent_type && (
                   <span className="px-2.5 py-0.5 rounded-full bg-white/10 text-white/90 text-[11px] font-medium uppercase tracking-wider">
-                    {analysis.disease_details.causal_agent_type}
+                    {t(`agents.${analysis.disease_details.causal_agent_type}`)}
                   </span>
                 )}
               </div>
 
               <h1 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
-                {analysis.disease_name}
+                {analysis.is_uncertain ? t('result.possible', { name: analysis.disease_name }) : analysis.disease_name}
               </h1>
 
               {analysis.disease_details?.scientific_name && (
@@ -257,7 +248,7 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
         <div className="px-6 py-3 bg-slate-50 border-b border-slate-100 flex flex-wrap items-center justify-between gap-3 text-xs text-slate-500 font-medium">
           <div className="flex items-center space-x-1.5">
             <Calendar className="w-3.5 h-3.5" />
-            <span>{t('result.diagnosed_on')} {new Date(analysis.created_at).toLocaleDateString()}</span>
+            <span>{t('result.diagnosed_on')} {new Date(analysis.created_at).toLocaleDateString(i18n.language + '-IN')}</span>
           </div>
 
           {analysis.location_name && (
@@ -268,13 +259,13 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
           )}
 
           <div className="font-mono text-[10px] text-slate-400">
-            Model: {analysis.model_version}
+            {tr('ui.s_9e1279af1f')}{analysis.model_version}
           </div>
         </div>
       </div>
 
       {/* Voice Assistant / Multi-lingual Spoken Audio Narration */}
-      <AudioNarrator analysis={analysis} />
+      {!analysis.is_uncertain && <AudioNarrator analysis={analysis} />}
 
       {/* Grid: Image & Confidence Meter */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
@@ -283,11 +274,11 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
           <div className="relative rounded-xl overflow-hidden aspect-square w-full bg-slate-900 flex items-center justify-center">
             <img
               src={analysis.image_url}
-              alt="Diagnosed leaf"
+              alt={tr('ui.s_48cc1eaaf7')}
               className="w-full h-full object-contain"
             />
           </div>
-          <span className="text-[11px] font-medium text-slate-500 mt-2">Submitted Field Photo (EXIF Stripped)</span>
+          <span className="text-[11px] font-medium text-slate-500 mt-2">{tr('ui.s_07e5acb78f')}</span>
         </div>
 
         {/* Confidence & Diagnostic Reliability Bar */}
@@ -303,17 +294,17 @@ export const ResultPage: React.FC<ResultPageProps> = ({ lastAnalysis }) => {
       </div>
 
       {/* Outbreak Risk Engine Gauge */}
-      {analysis.risk_assessment && (
+      {analysis.risk_assessment && !analysis.is_uncertain && (
         <RiskGauge assessment={analysis.risk_assessment} />
       )}
 
       {/* Actionable Treatment & Prevention Protocol */}
-      {analysis.disease_details && (
+      {analysis.disease_details && !analysis.is_uncertain && (
         <ActionChecklist disease={analysis.disease_details} />
       )}
 
       {/* Knapsack Sprayer & Tank Dosage Calculator */}
-      {analysis.disease_details && (
+      {analysis.disease_details && !analysis.is_uncertain && (
         <KnapsackCalculator
           disease={analysis.disease_details}
           cropName={analysis.crop}

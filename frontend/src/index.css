@@ -22,3 +22,21 @@
 .animate-fadeIn {
   animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
+
+/* Script-subsetted Noto fonts, SIL OFL. See public/fonts/LICENSE-*.txt. */
+@font-face { font-family: 'Noto Devanagari'; src: url('/fonts/noto-sans-devanagari.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Tamil'; src: url('/fonts/noto-sans-tamil.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Telugu'; src: url('/fonts/noto-sans-telugu.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Noto Kannada'; src: url('/fonts/noto-sans-kannada.woff2') format('woff2'); font-weight: 100 900; font-style: normal; font-display: swap; }
+html, body, button, input, select, textarea, .font-sans {
+  font-family: system-ui, 'Noto Devanagari', 'Noto Tamil', 'Noto Telugu', 'Noto Kannada', sans-serif;
+}
+:lang(hi) { font-family: 'Noto Devanagari', system-ui, 'Noto Tamil', 'Noto Telugu', 'Noto Kannada', sans-serif; }
+:lang(ta) { font-family: 'Noto Tamil', system-ui, 'Noto Devanagari', 'Noto Telugu', 'Noto Kannada', sans-serif; }
+:lang(te) { font-family: 'Noto Telugu', system-ui, 'Noto Devanagari', 'Noto Tamil', 'Noto Kannada', sans-serif; }
+:lang(kn) { font-family: 'Noto Kannada', system-ui, 'Noto Devanagari', 'Noto Tamil', 'Noto Telugu', sans-serif; }
+body { overflow-wrap: anywhere; }
+button, select { max-width: 100%; }
+input, textarea { min-width: 0; }
+main { min-width: 0; }
+[role='dialog'] { overflow-y: auto; }

@@ -1,3 +1,4 @@
+import { tr } from '../i18n/i18n';
 import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Camera, Upload, Image as ImageIcon, CheckCircle, Info, X, RefreshCw } from 'lucide-react';
@@ -127,7 +128,7 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ selectedFile, onFi
         <div className="relative rounded-2xl overflow-hidden border border-slate-200 bg-black aspect-video max-h-80 flex items-center justify-center group">
           <img
             src={previewUrl}
-            alt="Selected leaf preview"
+            alt={tr('ui.s_bb1286afa5')}
             className="w-full h-full object-contain"
           />
 
@@ -136,7 +137,7 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ selectedFile, onFi
               type="button"
               onClick={() => cameraInputRef.current?.click()}
               className="p-2 rounded-full bg-black/60 text-white hover:bg-black/80 backdrop-blur-sm transition-all"
-              title="Retake Photo"
+              title={tr('ui.s_9c96df4efa')}
             >
               <RefreshCw className="w-4 h-4" />
             </button>
@@ -144,7 +145,7 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ selectedFile, onFi
               type="button"
               onClick={clearImage}
               className="p-2 rounded-full bg-rose-600/90 text-white hover:bg-rose-700 backdrop-blur-sm transition-all"
-              title="Remove Image"
+              title={tr('ui.s_3568c5bdd3')}
             >
               <X className="w-4 h-4" />
             </button>
@@ -163,17 +164,17 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ selectedFile, onFi
           <div className="flex items-center justify-between font-bold text-brand-900">
             <span className="flex items-center space-x-1.5">
               <Info className="w-4 h-4 text-brand-600" />
-              <span>How to take a high-precision leaf photo:</span>
+              <span>{tr('ui.s_120d7dc017')}</span>
             </span>
             <button onClick={() => setShowTips(false)} className="text-brand-700 hover:text-brand-950">
               <X className="w-4 h-4" />
             </button>
           </div>
           <ul className="list-disc list-inside space-y-1 text-brand-900 leading-relaxed text-[11px]">
-            <li><strong>Single Leaf:</strong> Keep the leaf centered against a plain or natural background.</li>
-            <li><strong>Sharp Focus:</strong> Tap your screen to focus on the yellow spots, powdery mold, or lesions.</li>
-            <li><strong>Good Lighting:</strong> Take photos in bright daylight. Avoid heavy shadows or flashlight glare.</li>
-            <li><strong>Orientation:</strong> Photograph both upper surface spots and leaf undersides if mold is present.</li>
+            <li><strong>{tr('ui.s_aa3acd3635')}</strong> {tr('ui.s_ba3ba05464')}</li>
+            <li><strong>{tr('ui.s_1019d8c191')}</strong> {tr('ui.s_619bed077f')}</li>
+            <li><strong>{tr('ui.s_f82b38d6a0')}</strong> {tr('ui.s_0e0a4f316d')}</li>
+            <li><strong>{tr('ui.s_518d43c0a4')}</strong> {tr('ui.s_6a7848d6f5')}</li>
           </ul>
         </div>
       )}

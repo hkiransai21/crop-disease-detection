@@ -1,3 +1,4 @@
+import { tr } from '../i18n/i18n';
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { MapPin, Navigation, Search, Sliders, Cloud, Check, Loader2, AlertCircle } from 'lucide-react';
@@ -62,7 +63,7 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
 
   const handleUseGps = () => {
     if (!navigator.geolocation) {
-      setGeoError('GPS Geolocation is not supported by your browser.');
+      setGeoError(tr('ui.s_f3e1416adb'));
       return;
     }
 
@@ -75,7 +76,7 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
         onChange({
           latitude: position.coords.latitude,
           longitude: position.coords.longitude,
-          locationName: 'My Farm (GPS Coordinates)',
+          locationName: tr('ui.s_1a5712e514'),
           manualTemp: null,
           manualHumidity: null,
           manualRain: null,
@@ -83,7 +84,7 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
       },
       (error) => {
         setIsLocating(false);
-        setGeoError(`Location access denied or unavailable (${error.message}). Please search by town or enter manually.`);
+        setGeoError(tr('location.unavailable'));
       },
       { timeout: 10000, enableHighAccuracy: true }
     );
@@ -135,9 +136,9 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
               <div className="flex items-center space-x-2">
                 <Check className="w-4 h-4 text-brand-600" />
                 <div>
-                  <span className="font-bold text-brand-950">{locationName || 'Farm Location'}</span>
+                  <span className="font-bold text-brand-950">{locationName || tr('ui.s_9786edfe4c')}</span>
                   <p className="text-brand-800 text-[11px] font-mono">
-                    Lat: {latitude.toFixed(3)}, Lon: {longitude.toFixed(3)}
+                    {tr('ui.s_46cc95041a')}{latitude.toFixed(3)}{tr('ui.s_ad72300a9f')}{longitude.toFixed(3)}
                   </p>
                 </div>
               </div>
@@ -155,8 +156,7 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
                 }
                 className="text-xs font-semibold text-slate-500 hover:text-rose-600"
               >
-                Change
-              </button>
+                {tr('ui.s_64fbd995d3')}</button>
             </div>
           ) : (
             <div className="flex flex-col sm:flex-row gap-2">
@@ -167,7 +167,7 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
                 className="flex-1 flex items-center justify-center space-x-2 px-4 py-2.5 rounded-xl bg-brand-50 hover:bg-brand-100 border border-brand-200 text-brand-800 text-xs font-bold transition-all"
               >
                 {isLocating ? <Loader2 className="w-4 h-4 animate-spin" /> : <Navigation className="w-4 h-4" />}
-                <span>{isLocating ? 'Acquiring GPS...' : t('analyze.use_gps')}</span>
+                <span>{isLocating ? tr('ui.s_aa9d35245b') : t('analyze.use_gps')}</span>
               </button>
 
               {/* Search place input */}
@@ -215,13 +215,13 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
             <label className="block text-[11px] font-semibold text-slate-600 mb-1">{t('analyze.temp_label')}</label>
             <input
               type="number"
-              placeholder="e.g. 24"
+              placeholder={tr('ui.s_77026bd31e')}
               value={manualTemp ?? ''}
               onChange={(e) =>
                 onChange({
                   latitude: null,
                   longitude: null,
-                  locationName: 'Manual Weather Entry',
+                  locationName: tr('ui.s_e6465317e1'),
                   manualTemp: e.target.value ? parseFloat(e.target.value) : null,
                   manualHumidity,
                   manualRain,
@@ -235,13 +235,13 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
             <label className="block text-[11px] font-semibold text-slate-600 mb-1">{t('analyze.humidity_label')}</label>
             <input
               type="number"
-              placeholder="e.g. 85"
+              placeholder={tr('ui.s_873c3e53aa')}
               value={manualHumidity ?? ''}
               onChange={(e) =>
                 onChange({
                   latitude: null,
                   longitude: null,
-                  locationName: 'Manual Weather Entry',
+                  locationName: tr('ui.s_e6465317e1'),
                   manualTemp,
                   manualHumidity: e.target.value ? parseFloat(e.target.value) : null,
                   manualRain,
@@ -255,13 +255,13 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
             <label className="block text-[11px] font-semibold text-slate-600 mb-1">{t('analyze.rainfall_label')}</label>
             <input
               type="number"
-              placeholder="e.g. 15"
+              placeholder={tr('ui.s_3cfcdb32cc')}
               value={manualRain ?? ''}
               onChange={(e) =>
                 onChange({
                   latitude: null,
                   longitude: null,
-                  locationName: 'Manual Weather Entry',
+                  locationName: tr('ui.s_e6465317e1'),
                   manualTemp,
                   manualHumidity,
                   manualRain: e.target.value ? parseFloat(e.target.value) : null,

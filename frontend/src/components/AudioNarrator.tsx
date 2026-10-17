@@ -1,3 +1,4 @@
+import { tr } from '../i18n/i18n';
 import React, { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
@@ -22,7 +23,7 @@ export const AudioNarrator: React.FC<{ analysis: AnalysisResponse }> = ({ analys
     downloadGeneration.current += 1;
     setDownload('idle');
     fetch(`/api/v1/audio/catalog/${lang}`, { signal: abort.signal })
-      .then(response => { if (!response.ok) throw new Error('Catalog unavailable'); return response.json(); })
+      .then(response => { if (!response.ok) throw new Error(tr('ui.s_033863e5c3')); return response.json(); })
       .then(data => setCatalog({ lang, data })).catch(() => {});
     return () => abort.abort();
   }, [lang]);
@@ -36,12 +37,12 @@ export const AudioNarrator: React.FC<{ analysis: AnalysisResponse }> = ({ analys
     const token = downloadGeneration.current;
     setDownload('loading');
     try {
-      if (!('serviceWorker' in navigator)) throw new Error('Offline audio unsupported');
+      if (!('serviceWorker' in navigator)) throw new Error(tr('ui.s_5c6a5ce6e9'));
       await navigator.serviceWorker.register('/audio-sw.js', { scope: '/' });
       const registration = await navigator.serviceWorker.ready;
       await new Promise<void>((resolve, reject) => {
         const channel = new MessageChannel();
-        const timer = setTimeout(() => { channel.port1.close(); reject(new Error('Download timed out')); }, 300000);
+        const timer = setTimeout(() => { channel.port1.close(); reject(new Error(tr('ui.s_ac8642a983'))); }, 300000);
         channel.port1.onmessage = event => {
           clearTimeout(timer); channel.port1.close();
           event.data.ok ? resolve() : reject(new Error(event.data.error));
@@ -55,7 +56,7 @@ export const AudioNarrator: React.FC<{ analysis: AnalysisResponse }> = ({ analys
   return <section aria-label={t('audio.title')} className="rounded-3xl bg-slate-900 p-6 text-white space-y-4">
     <h3 className="text-lg font-bold">{t('audio.title')}</h3>
     <label className="block">{t('audio.listen_btn', { lang: SUPPORTED_LANGUAGES.find(l => l.code === lang)?.nativeLabel })}
-      <select aria-label={t('audio.title')} className="ml-3 rounded bg-slate-800 p-2" value={lang} onChange={e => { player.stop(); void i18n.changeLanguage(e.target.value); }}>
+      <select aria-label={t('audio.title')} className="ml-3 rounded bg-slate-800 p-2" value={lang} onChange={e => { player.stop(); localStorage.setItem('agrishield_language', e.target.value); void i18n.changeLanguage(e.target.value); }}>
         {SUPPORTED_LANGUAGES.map(l => <option key={l.code} value={l.code}>{l.nativeLabel}</option>)}
       </select>
     </label>
@@ -68,7 +69,7 @@ export const AudioNarrator: React.FC<{ analysis: AnalysisResponse }> = ({ analys
       </button>
       <button type="button" onClick={player.stop}>{t('audio.stop')}</button>
       <button type="button" onClick={player.replay}>{t('audio.replay')}</button>
-      <label>{t('audio.speed')} <select className="rounded bg-slate-800 p-2" value={player.speed} onChange={e => player.changeSpeed(Number(e.target.value))}>{[0.75, 1, 1.25].map(speed => <option key={speed} value={speed}>{speed}x</option>)}</select></label>
+      <label>{t('audio.speed')} <select className="rounded bg-slate-800 p-2" value={player.speed} onChange={e => player.changeSpeed(Number(e.target.value))}>{[0.75, 1, 1.25].map(speed => <option key={speed} value={speed}>{speed}{tr('ui.s_11f6ad8ec5')}</option>)}</select></label>
     </div>
     <p role={player.state === 'error' ? 'alert' : 'status'} aria-live="polite" aria-busy={player.state === 'loading'}>{player.state === 'loading' ? t('audio.loading') : t(`audio.${status}`)}</p>
     <button type="button" disabled={download === 'loading'} onClick={() => void downloadAudio()} className="rounded border border-slate-500 px-3 py-2">{t('audio.download')}</button>

@@ -7,11 +7,12 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest run",
+    "test": "node scripts/i18n_inventory.cjs --check && vitest run",
     "test:run": "vitest run",
     "test:watch": "vitest",
     "lint": "eslint src --ext .ts,.tsx",
-    "format": "prettier --write \"src/**/*.{ts,tsx,css}\""
+    "format": "prettier --write \"src/**/*.{ts,tsx,css}\"",
+    "test:i18n-audit": "node scripts/i18n_inventory.cjs --check"
   },
   "dependencies": {
     "clsx": "^2.1.0",

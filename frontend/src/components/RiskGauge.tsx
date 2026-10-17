@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+import { tr } from '../i18n/i18n';
 import React from 'react';
 import { AlertTriangle, TrendingUp, ShieldAlert, CheckCircle2, CloudRain, Droplets, Thermometer, Wind } from 'lucide-react';
 import { RiskAssessment } from '../types';
@@ -7,6 +9,7 @@ interface RiskGaugeProps {
 }
 
 export const RiskGauge: React.FC<RiskGaugeProps> = ({ assessment }) => {
+  const { t, i18n } = useTranslation();
   const { risk_score, risk_level, risk_color, headline, summary, contributing_factors, daily_outlook, top_regional_threats, disclaimer } = assessment;
 
   const getBadgeColor = (level: string) => {
@@ -29,14 +32,14 @@ export const RiskGauge: React.FC<RiskGaugeProps> = ({ assessment }) => {
         <div>
           <div className="flex items-center space-x-2">
             <ShieldAlert className="w-5 h-5 text-brand-600" />
-            <h3 className="text-lg font-bold text-slate-900">Environmental Outbreak Risk</h3>
+            <h3 className="text-lg font-bold text-slate-900">{tr('ui.s_76e8dd73b6')}</h3>
           </div>
-          <p className="text-xs text-slate-500 mt-0.5">Based on local microclimate weather & agronomic disease models</p>
+          <p className="text-xs text-slate-500 mt-0.5">{tr('ui.s_8f42b43891')}</p>
         </div>
 
         <div className={`self-start sm:self-auto px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider border flex items-center space-x-1.5 ${getBadgeColor(risk_level)}`}>
           <span className="w-2 h-2 rounded-full" style={{ backgroundColor: risk_color }}></span>
-          <span>{risk_level} RISK ({risk_score}/100)</span>
+          <span>{t(`risk.levels.${risk_level}`)} {tr('ui.s_bfb2d1611e')}{risk_score}{tr('ui.s_33d0bb0afe')}</span>
         </div>
       </div>
 
@@ -69,10 +72,10 @@ export const RiskGauge: React.FC<RiskGaugeProps> = ({ assessment }) => {
             </svg>
             <div className="absolute flex flex-col items-center">
               <span className="text-3xl font-extrabold text-slate-900">{risk_score}</span>
-              <span className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">Score</span>
+              <span className="text-[10px] font-semibold text-slate-500 uppercase tracking-wider">{tr('ui.s_489f487724')}</span>
             </div>
           </div>
-          <span className="text-xs font-medium text-slate-600 mt-2 text-center">0 = Minimal &bull; 100 = Severe</span>
+          <span className="text-xs font-medium text-slate-600 mt-2 text-center">{tr('ui.s_59d4376cf9')}</span>
         </div>
 
         {/* Headline & Summary */}
@@ -87,7 +90,7 @@ export const RiskGauge: React.FC<RiskGaugeProps> = ({ assessment }) => {
         <div className="space-y-3">
           <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center space-x-1.5">
             <TrendingUp className="w-4 h-4 text-slate-500" />
-            <span>Key Environmental Contributing Factors</span>
+            <span>{tr('ui.s_de54ff9d31')}</span>
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {contributing_factors.map((factor, idx) => {
@@ -109,7 +112,7 @@ export const RiskGauge: React.FC<RiskGaugeProps> = ({ assessment }) => {
                     <span className={`px-1.5 py-0.5 rounded text-[10px] font-bold ${
                       isElevating ? 'bg-rose-200 text-rose-900' : isReducing ? 'bg-emerald-200 text-emerald-900' : 'bg-slate-200 text-slate-700'
                     }`}>
-                      {factor.impact.replace('_', ' ')}
+                      {t(`risk.impacts.${factor.impact}`)}
                     </span>
                   </div>
                   <p className="text-slate-600 leading-normal">{factor.explanation}</p>
@@ -123,13 +126,13 @@ export const RiskGauge: React.FC<RiskGaugeProps> = ({ assessment }) => {
       {/* 7-Day Risk Outlook Bar */}
       {daily_outlook && daily_outlook.length > 0 && (
         <div className="space-y-2 pt-2 border-t border-slate-100">
-          <span className="text-xs font-bold uppercase tracking-wider text-slate-500">7-Day Outbreak Risk Forecast</span>
-          <div className="grid grid-cols-7 gap-1.5 text-center">
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-500">{tr('ui.s_7ac9842940')}</span>
+          <div className="grid grid-cols-4 sm:grid-cols-7 gap-1.5 text-center">
             {daily_outlook.slice(0, 7).map((d, i) => {
               const dayScore = d.risk_score;
               const barColor = dayScore >= 65 ? 'bg-rose-500' : dayScore >= 45 ? 'bg-amber-500' : 'bg-emerald-500';
               const dateObj = new Date(d.date);
-              const dayName = isNaN(dateObj.getTime()) ? `D${i+1}` : dateObj.toLocaleDateString('en-US', { weekday: 'short' });
+              const dayName = isNaN(dateObj.getTime()) ? t('risk.day', { number: i + 1 }) : dateObj.toLocaleDateString(i18n.language + '-IN', { weekday: 'short' });
               return (
                 <div key={i} className="p-2 rounded-lg bg-slate-50 border border-slate-100 flex flex-col items-center justify-between">
                   <span className="text-[11px] font-medium text-slate-500">{dayName}</span>
@@ -147,7 +150,7 @@ export const RiskGauge: React.FC<RiskGaugeProps> = ({ assessment }) => {
       {/* Top Regional Threats (For Healthy Plants) */}
       {top_regional_threats && top_regional_threats.length > 0 && (
         <div className="space-y-3 pt-2 border-t border-slate-100">
-          <span className="text-xs font-bold uppercase tracking-wider text-slate-500">Highest Weather Risks for this Crop</span>
+          <span className="text-xs font-bold uppercase tracking-wider text-slate-500">{tr('ui.s_e71e14953a')}</span>
           <div className="space-y-2">
             {top_regional_threats.map((threat, i) => (
               <div key={i} className="flex items-center justify-between p-3 rounded-xl bg-slate-50 border border-slate-200/80 text-xs">
@@ -156,7 +159,7 @@ export const RiskGauge: React.FC<RiskGaugeProps> = ({ assessment }) => {
                   <p className="text-slate-500 text-[11px] mt-0.5">{threat.headline}</p>
                 </div>
                 <span className={`px-2.5 py-1 rounded-md font-bold text-[11px] uppercase ${getBadgeColor(threat.risk_level)}`}>
-                  {threat.risk_score}% ({threat.risk_level})
+                  {threat.risk_score}% ({t(`risk.levels.${threat.risk_level}`)})
                 </span>
               </div>
             ))}

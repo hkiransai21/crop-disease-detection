@@ -1,3 +1,4 @@
+import { tr } from '../i18n/i18n';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -13,8 +14,8 @@ export const LandingPage: React.FC = () => {
   const { t } = useTranslation();
 
   const supportedCrops = [
-    'Apple', 'Blueberry', 'Cherry', 'Corn (Maize)', 'Grape',
-    'Orange (Citrus)', 'Peach', 'Bell Pepper', 'Potato', 'Raspberry',
+    'Apple', 'Blueberry', 'Cherry', tr('ui.s_7740e59458'), 'Grape',
+    tr('ui.s_acb025cb5f'), 'Peach', tr('ui.s_12cd9a115f'), 'Potato', 'Raspberry',
     'Soybean', 'Squash', 'Strawberry', 'Tomato'
   ];
 
@@ -72,8 +73,7 @@ export const LandingPage: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm space-y-4 hover:border-brand-300 transition-colors">
             <div className="w-12 h-12 rounded-2xl bg-brand-50 text-brand-700 flex items-center justify-center font-bold text-lg border border-brand-100">
-              1
-            </div>
+              {tr('ui.s_356a192b79')}</div>
             <h3 className="text-lg font-bold text-slate-900">{t('hero.step1_title')}</h3>
             <p className="text-xs text-slate-600 leading-relaxed">
               {t('hero.step1_desc')}
@@ -82,8 +82,7 @@ export const LandingPage: React.FC = () => {
 
           <div className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm space-y-4 hover:border-brand-300 transition-colors">
             <div className="w-12 h-12 rounded-2xl bg-amber-50 text-amber-700 flex items-center justify-center font-bold text-lg border border-amber-100">
-              2
-            </div>
+              {tr('ui.s_da4b9237ba')}</div>
             <h3 className="text-lg font-bold text-slate-900">{t('hero.step2_title')}</h3>
             <p className="text-xs text-slate-600 leading-relaxed">
               {t('hero.step2_desc')}
@@ -92,8 +91,7 @@ export const LandingPage: React.FC = () => {
 
           <div className="bg-white rounded-2xl p-6 border border-slate-200/80 shadow-sm space-y-4 hover:border-brand-300 transition-colors">
             <div className="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-700 flex items-center justify-center font-bold text-lg border border-emerald-100">
-              3
-            </div>
+              {tr('ui.s_77de68daec')}</div>
             <h3 className="text-lg font-bold text-slate-900">{t('hero.step3_title')}</h3>
             <p className="text-xs text-slate-600 leading-relaxed">
               {t('hero.step3_desc')}
@@ -106,12 +104,11 @@ export const LandingPage: React.FC = () => {
       <section className="bg-white rounded-3xl p-8 border border-slate-200/80 shadow-sm space-y-6">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 pb-4">
           <div>
-            <h3 className="text-lg font-bold text-slate-900">Supported Crops & Pathogens</h3>
-            <p className="text-xs text-slate-500">Trained across 38 distinct crop disease and healthy conditions</p>
+            <h3 className="text-lg font-bold text-slate-900">{tr('ui.s_8e0ab8050a')}</h3>
+            <p className="text-xs text-slate-500">{tr('ui.s_97fc43750e')}</p>
           </div>
           <span className="text-xs font-bold text-brand-700 bg-brand-50 px-3 py-1 rounded-full self-start sm:self-auto">
-            14 Major Crops Covered
-          </span>
+            {tr('ui.s_ee2f9362bf')}</span>
         </div>
 
         <div className="flex flex-wrap gap-2">
@@ -132,7 +129,7 @@ export const LandingPage: React.FC = () => {
           <AlertTriangle className="w-6 h-6" />
         </div>
         <div className="space-y-1 text-xs">
-          <h4 className="font-bold text-amber-900 text-sm">Agronomic Advisory Notice</h4>
+          <h4 className="font-bold text-amber-900 text-sm">{tr('ui.s_0db19550bc')}</h4>
           <p className="leading-relaxed text-amber-900/90 text-[11px]">
             {t('footer.disclaimer')}
           </p>

@@ -48,7 +48,7 @@ describe('Frontend Component Tests', () => {
     );
 
     expect(screen.getByText('Uncertain Diagnostic')).toBeInTheDocument();
-    expect(screen.getByText(/Low diagnostic confidence threshold/)).toBeInTheDocument();
+    expect(screen.getByText(/This photo does not give a clear result/)).toBeInTheDocument();
   });
 
   it('renders RiskGauge with score and contributing factors', () => {
@@ -201,8 +201,8 @@ describe('Frontend Component Tests', () => {
     render(<KnapsackCalculator disease={mockDisease} cropName="Tomato" />);
 
     expect(screen.getByText('Spray Tank & Knapsack Pump Calculator')).toBeInTheDocument();
-    expect(screen.getAllByText(/15L/)[0]).toBeInTheDocument();
-    expect(screen.getByText(/Field Mixing Instructions/)).toBeInTheDocument();
+    expect(screen.queryByText(/15L/)).not.toBeInTheDocument();
+    expect(screen.getByText(/Check the exact product label/)).toBeInTheDocument();
   });
 
   it('renders WhatsAppShareModal with formatted report and copy/share actions', () => {
@@ -252,9 +252,8 @@ describe('Frontend Component Tests', () => {
       />
     );
 
-    expect(screen.getByText('Share Report on WhatsApp')).toBeInTheDocument();
+    expect(screen.getByText('Share this report')).toBeInTheDocument();
     expect(screen.getByText('Open in WhatsApp')).toBeInTheDocument();
-    expect(screen.getByText('Copy Summary Text')).toBeInTheDocument();
-    expect(screen.getByText('हिन्दी (Hindi)')).toBeInTheDocument();
+    expect(screen.getByText('Copy report')).toBeInTheDocument();
   });
 });

@@ -1,3 +1,4 @@
+import { tr } from '../i18n/i18n';
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Sprout, LogIn, UserPlus, AlertCircle, Loader2, Check } from 'lucide-react';
@@ -37,7 +38,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ onLoginSuccess }) => {
       onLoginSuccess(user);
       navigate('/analyze');
     } catch (err: any) {
-      setError(err.message || 'Authentication failed. Please verify credentials.');
+      setError(err.message || tr('ui.s_558fa253eb'));
     } finally {
       setLoading(false);
     }
@@ -50,12 +51,12 @@ export const AuthPage: React.FC<AuthPageProps> = ({ onLoginSuccess }) => {
           <Sprout className="w-6 h-6" />
         </div>
         <h1 className="text-2xl font-extrabold text-slate-900">
-          {isRegister ? 'Create Farmer Account' : 'Welcome Back'}
+          {isRegister ? tr('ui.s_f5884fa3e2') : tr('ui.s_1c9089485a')}
         </h1>
         <p className="text-xs text-slate-500">
           {isRegister
-            ? 'Track your crop disease diagnoses and risk history over seasons'
-            : 'Sign in to access your past diagnoses and personalized alerts'}
+            ? tr('ui.s_828e7fd67b')
+            : tr('ui.s_f20933fe08')}
         </p>
       </div>
 
@@ -72,8 +73,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ onLoginSuccess }) => {
               !isRegister ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-800'
             }`}
           >
-            Sign In
-          </button>
+            {tr('ui.s_f8492cc1de')}</button>
           <button
             type="button"
             onClick={() => {
@@ -84,8 +84,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ onLoginSuccess }) => {
               isRegister ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-500 hover:text-slate-800'
             }`}
           >
-            Register
-          </button>
+            {tr('ui.s_d672995a14')}</button>
         </div>
 
         {error && (
@@ -98,11 +97,11 @@ export const AuthPage: React.FC<AuthPageProps> = ({ onLoginSuccess }) => {
         <form onSubmit={handleSubmit} className="space-y-4">
           {isRegister && (
             <div className="space-y-1">
-              <label className="block text-xs font-bold text-slate-700">Full Name / Farm Name</label>
+              <label className="block text-xs font-bold text-slate-700">{tr('ui.s_c88ee07007')}</label>
               <input
                 type="text"
                 required
-                placeholder="e.g. Green Valley Orchards"
+                placeholder={tr('ui.s_38fcda250f')}
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
                 className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:outline-none focus:border-brand-500 bg-slate-50/50"
@@ -111,11 +110,11 @@ export const AuthPage: React.FC<AuthPageProps> = ({ onLoginSuccess }) => {
           )}
 
           <div className="space-y-1">
-            <label className="block text-xs font-bold text-slate-700">Email Address</label>
+            <label className="block text-xs font-bold text-slate-700">{tr('ui.s_09ba557fd1')}</label>
             <input
               type="email"
               required
-              placeholder="farmer@example.com"
+              placeholder={tr('ui.s_836c332a4a')}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:outline-none focus:border-brand-500 bg-slate-50/50"
@@ -123,12 +122,12 @@ export const AuthPage: React.FC<AuthPageProps> = ({ onLoginSuccess }) => {
           </div>
 
           <div className="space-y-1">
-            <label className="block text-xs font-bold text-slate-700">Password</label>
+            <label className="block text-xs font-bold text-slate-700">{tr('ui.s_8be3c943b1')}</label>
             <input
               type="password"
               required
               minLength={6}
-              placeholder="••••••••"
+              placeholder={tr('ui.s_ce59047854')}
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs focus:outline-none focus:border-brand-500 bg-slate-50/50"
@@ -145,12 +144,12 @@ export const AuthPage: React.FC<AuthPageProps> = ({ onLoginSuccess }) => {
             ) : isRegister ? (
               <>
                 <UserPlus className="w-4 h-4" />
-                <span>Create Farm Account</span>
+                <span>{tr('ui.s_54807932a6')}</span>
               </>
             ) : (
               <>
                 <LogIn className="w-4 h-4" />
-                <span>Sign In to Dashboard</span>
+                <span>{tr('ui.s_afede44075')}</span>
               </>
             )}
           </button>
@@ -158,8 +157,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({ onLoginSuccess }) => {
 
         <div className="text-center pt-2">
           <Link to="/analyze" className="text-xs font-medium text-slate-500 hover:text-slate-800">
-            Continue as Guest without account &rarr;
-          </Link>
+            {tr('ui.s_2ad24bd4d2')}</Link>
         </div>
       </div>
     </div>
