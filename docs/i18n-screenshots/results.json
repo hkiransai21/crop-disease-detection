@@ -1,0 +1,67 @@
+[
+  {
+    "language": "en",
+    "viewport": "360x640",
+    "horizontal_overflow": 0,
+    "page_errors": 0,
+    "fonts_loaded": [
+      "Noto Devanagari",
+      "Noto Tamil",
+      "Noto Telugu",
+      "Noto Kannada"
+    ],
+    "offline_fonts": true
+  },
+  {
+    "language": "hi",
+    "viewport": "360x640",
+    "horizontal_overflow": 0,
+    "page_errors": 0,
+    "fonts_loaded": [
+      "Noto Devanagari",
+      "Noto Tamil",
+      "Noto Telugu",
+      "Noto Kannada"
+    ],
+    "offline_fonts": true
+  },
+  {
+    "language": "ta",
+    "viewport": "360x640",
+    "horizontal_overflow": 0,
+    "page_errors": 0,
+    "fonts_loaded": [
+      "Noto Devanagari",
+      "Noto Tamil",
+      "Noto Telugu",
+      "Noto Kannada"
+    ],
+    "offline_fonts": true
+  },
+  {
+    "language": "te",
+    "viewport": "360x640",
+    "horizontal_overflow": 0,
+    "page_errors": 0,
+    "fonts_loaded": [
+      "Noto Devanagari",
+      "Noto Tamil",
+      "Noto Telugu",
+      "Noto Kannada"
+    ],
+    "offline_fonts": true
+  },
+  {
+    "language": "kn",
+    "viewport": "360x640",
+    "horizontal_overflow": 0,
+    "page_errors": 0,
+    "fonts_loaded": [
+      "Noto Devanagari",
+      "Noto Tamil",
+      "Noto Telugu",
+      "Noto Kannada"
+    ],
+    "offline_fonts": true
+  }
+]
