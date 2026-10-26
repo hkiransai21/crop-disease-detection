@@ -19,6 +19,8 @@ class DailyRiskOutlook(BaseModel):
 
 
 class RiskAssessment(BaseModel):
+    canonical_key: Optional[str] = None
+    action: Optional[str] = None
     crop: str
     target_condition: str
     risk_score: int = Field(..., ge=0, le=100, description="Heuristic score from 0 to 100")

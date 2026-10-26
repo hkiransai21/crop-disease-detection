@@ -20,6 +20,9 @@ class AnalysisResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 
     localization_source: Optional[Dict[str, Any]] = None
+    image_sha256: Optional[str] = None
+    entropy: Optional[float] = None
+    weather_status: str = 'location_required'
     id: str
     canonical_key: Optional[str] = None
     scientific_name: Optional[str] = None

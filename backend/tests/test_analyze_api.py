@@ -24,7 +24,10 @@ async def test_analyze_crop_image_guest_flow(client: AsyncClient, sample_leaf_im
     assert "top_k" in res_data
     assert len(res_data["top_k"]) == 3
     assert "risk_assessment" in res_data
-    assert res_data["risk_assessment"]["risk_score"] >= 0
+    if res_data['weather_status'] == 'unavailable':
+        assert res_data['risk_assessment'] is None
+    elif res_data['risk_assessment'] is not None:
+        assert res_data['risk_assessment']['risk_score'] >= 0
     assert "disease_details" in res_data
 
 

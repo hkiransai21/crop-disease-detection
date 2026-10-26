@@ -121,5 +121,14 @@
   "Check the information you entered.": "మీరు నమోదు చేసిన సమాచారాన్ని తనిఖీ చేయండి.",
   "Too many requests. Please wait and try again.": "చాలా అభ్యర్థనలు. దయచేసి వేచి మరియు మళ్ళీ ప్రయత్నించండి.",
   "The service is unavailable. Please try again later.": "సేవ అందుబాటులో లేదు. దయచేసి తరువాత మళ్లీ ప్రయత్నించండి.",
-  "Healthy": "ఆరోగ్యకరమైనది"
+  "Healthy": "ఆరోగ్యకరమైనది",
+  "Forecast: {{p0}} °C, humidity {{p1}}%.": "అంచనా: {{p0}} °C, తేమ {{p1}}%.",
+  "Rain: last 72 h {{p0}} mm; next 48 h {{p1}} mm. Wetness proxy: {{p2}} h.": "వర్షం: గత 72 h {{p0}} mm; వచ్చే 48 h {{p1}} mm. తడి అంచనా: {{p2}} h.",
+  "Forecast wind: {{p0}} km/h. Wind spread modifier: {{p1}} points.": "గాలి అంచనా: {{p0}} km/h. గాలి వ్యాప్తి పాయింట్లు: {{p1}}.",
+  "Temperature / humidity": "ఉష్ణోగ్రత / తేమ",
+  "Rain / leaf wetness": "వర్షం / ఆకు తడి",
+  "Wind": "గాలి",
+  "Re-check in 24 hours and consult the local agriculture office.": "24 గంటల్లో మళ్లీ పరిశీలించి స్థానిక వ్యవసాయ కార్యాలయాన్ని సంప్రదించండి.",
+  "Re-check in 48 hours.": "48 గంటల్లో మళ్లీ పరిశీలించండి.",
+  "{{p0}}: forecast {{p1}} °C (favorable {{p2}} to {{p3}} °C); humidity {{p4}}% (threshold {{p5}}%).": "{{p0}}: అంచనా {{p1}} °C (అనుకూలం {{p2}} నుండి {{p3}} °C); తేమ {{p4}}% (పరిమితి {{p5}}%)."
 }

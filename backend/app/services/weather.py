@@ -57,6 +57,8 @@ async def search_locations(query: str, count: int = 5) -> List[GeocodingResult]:
 
 async def fetch_weather_summary(latitude: float, longitude: float) -> WeatherSummary:
     """Fetch 7 days of past weather and 7 days of forecast from Open-Meteo API."""
+    if not (-90 <= latitude <= 90 and -180 <= longitude <= 180):
+        raise ValueError('Invalid coordinates')
     cache_key = _get_cache_key(latitude, longitude)
     now = time.time()
     
@@ -67,6 +69,7 @@ async def fetch_weather_summary(latitude: float, longitude: float) -> WeatherSum
             
     url = f"{settings.OPEN_METEO_BASE_URL}/forecast"
     params = {
+        "current": "temperature_2m,relative_humidity_2m,precipitation",
         "latitude": latitude,
         "longitude": longitude,
         "hourly": "temperature_2m,relative_humidity_2m,precipitation,surface_pressure,wind_speed_10m",
@@ -86,8 +89,7 @@ async def fetch_weather_summary(latitude: float, longitude: float) -> WeatherSum
         _WEATHER_CACHE[cache_key] = (now, summary)
         return summary
     except Exception as e:
-        print(f"Weather API request failed: {e}. Falling back to default baseline environmental proxy.")
-        return _generate_fallback_weather(latitude, longitude)
+        raise
 
 
 def _parse_open_meteo_response(data: Dict[str, Any]) -> WeatherSummary:
@@ -99,13 +101,17 @@ def _parse_open_meteo_response(data: Dict[str, Any]) -> WeatherSummary:
     humidities = hourly.get("relative_humidity_2m", [])
     precips = hourly.get("precipitation", [])
     
-    current_idx = min(7 * 24, len(temps) - 1) if temps else 0
+    if not temps or len(temps) != len(humidities) or len(temps) != len(precips) or any(v is None for values in (temps, humidities, precips) for v in values):
+        raise ValueError('Incomplete weather observations')
+    current = data.get('current', {})
+    current_time = current.get('time')
+    current_idx = next((i for i, t in enumerate(times) if current_time and t >= current_time[:13] + ':00'), min(7 * 24, len(temps) - 1))
     current_temp = float(temps[current_idx]) if temps else 22.0
     current_humidity = float(humidities[current_idx]) if humidities else 65.0
     current_precip = float(precips[current_idx]) if precips else 0.0
     
     # Past 7 days statistics (first 7*24 hours)
-    past_hours = 7 * 24
+    past_hours = current_idx
     past_temps = temps[:past_hours] if len(temps) >= past_hours else temps
     past_humidities = humidities[:past_hours] if len(humidities) >= past_hours else humidities
     past_precips = precips[:past_hours] if len(precips) >= past_hours else precips
@@ -134,6 +140,8 @@ def _parse_open_meteo_response(data: Dict[str, Any]) -> WeatherSummary:
     
     daily_forecasts: List[DailyForecast] = []
     for i in range(len(daily_dates)):
+        if times and daily_dates[i] < times[current_idx][:10]:
+            continue
         d_tmean = float(daily_tmean[i]) if i < len(daily_tmean) and daily_tmean[i] is not None else 20.0
         d_hmean = float(daily_hmean[i]) if i < len(daily_hmean) and daily_hmean[i] is not None else 60.0
         d_rain = float(daily_precip[i]) if i < len(daily_precip) and daily_precip[i] is not None else 0.0
@@ -154,7 +162,15 @@ def _parse_open_meteo_response(data: Dict[str, Any]) -> WeatherSummary:
             wetness_risk_level=wetness_risk
         ))
         
+    winds = hourly.get('wind_speed_10m', [])
+    recent_rain = precips[max(0, current_idx-72):current_idx]
+    future_rain = precips[current_idx:current_idx+48]
+    future_winds = [v for v in winds[current_idx:current_idx+48] if v is not None]
     return WeatherSummary(
+        past_72h_rain_mm=round(sum(recent_rain), 2),
+        forecast_48h_rain_mm=round(sum(future_rain), 2),
+        past_72h_wet_hours=sum(1 for h,p in zip(humidities[max(0,current_idx-72):current_idx], recent_rain) if h >= 85 or p > 0),
+        forecast_48h_wind_kmh=round(sum(future_winds)/len(future_winds), 1) if future_winds else None,
         current_temp_c=round(current_temp, 1),
         current_humidity_pct=round(current_humidity, 1),
         current_precipitation_mm=round(current_precip, 2),
@@ -168,40 +184,4 @@ def _parse_open_meteo_response(data: Dict[str, Any]) -> WeatherSummary:
         daily_forecasts=daily_forecasts,
         data_source="Open-Meteo API",
         is_live=True
-    )
-
-
-def _generate_fallback_weather(latitude: float, longitude: float) -> WeatherSummary:
-    """Fallback weather generator if external API is unreachable."""
-    from datetime import datetime, timezone, timedelta
-    today = datetime.now(timezone.utc).date()
-    daily_forecasts = []
-    
-    for i in range(-7, 8):
-        d = today + timedelta(days=i)
-        daily_forecasts.append(DailyForecast(
-            date=d.isoformat(),
-            temp_max_c=26.0,
-            temp_min_c=16.0,
-            temp_mean_c=21.0,
-            humidity_mean_pct=65.0,
-            precipitation_sum_mm=1.2,
-            high_humidity_hours=4,
-            wetness_risk_level="MODERATE"
-        ))
-        
-    return WeatherSummary(
-        current_temp_c=22.0,
-        current_humidity_pct=65.0,
-        current_precipitation_mm=0.0,
-        past_7d_mean_temp_c=21.5,
-        past_7d_mean_humidity_pct=66.0,
-        past_7d_total_rain_mm=8.4,
-        past_7d_high_humidity_hours=28,
-        forecast_7d_mean_temp_c=22.5,
-        forecast_7d_mean_humidity_pct=64.0,
-        forecast_7d_total_rain_mm=5.0,
-        daily_forecasts=daily_forecasts,
-        data_source="Estimated Agronomic Baseline (Weather API Offline)",
-        is_live=False
     )

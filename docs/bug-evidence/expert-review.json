@@ -1,0 +1,320 @@
+{
+  "review_status": "machine_suggested",
+  "languages": [
+    "en",
+    "hi",
+    "ta",
+    "te",
+    "kn"
+  ],
+  "classes": [
+    {
+      "canonical_key": "Apple___Apple_scab",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Apple___Black_rot",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Apple___Cedar_apple_rust",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Apple___healthy",
+      "review": [
+        "localized immediate_actions",
+        "healthy maintenance",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Blueberry___healthy",
+      "review": [
+        "localized immediate_actions",
+        "healthy maintenance",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Cherry_(including_sour)___Powdery_mildew",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Cherry_(including_sour)___healthy",
+      "review": [
+        "localized immediate_actions",
+        "healthy maintenance",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Corn_(maize)___Common_rust_",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Corn_(maize)___Northern_Leaf_Blight",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Corn_(maize)___healthy",
+      "review": [
+        "localized immediate_actions",
+        "healthy maintenance",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Grape___Black_rot",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Grape___Esca_(Black_Measles)",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Grape___healthy",
+      "review": [
+        "localized immediate_actions",
+        "healthy maintenance",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Orange___Haunglongbing_(Citrus_greening)",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Peach___Bacterial_spot",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Peach___healthy",
+      "review": [
+        "localized immediate_actions",
+        "healthy maintenance",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Pepper,_bell___Bacterial_spot",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Pepper,_bell___healthy",
+      "review": [
+        "localized immediate_actions",
+        "healthy maintenance",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Potato___Early_blight",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Potato___Late_blight",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Potato___healthy",
+      "review": [
+        "localized immediate_actions",
+        "healthy maintenance",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Raspberry___healthy",
+      "review": [
+        "localized immediate_actions",
+        "healthy maintenance",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Soybean___healthy",
+      "review": [
+        "localized immediate_actions",
+        "healthy maintenance",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Squash___Powdery_mildew",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Strawberry___Leaf_scorch",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Strawberry___healthy",
+      "review": [
+        "localized immediate_actions",
+        "healthy maintenance",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Tomato___Bacterial_spot",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Tomato___Early_blight",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Tomato___Late_blight",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Tomato___Leaf_Mold",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Tomato___Septoria_leaf_spot",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Tomato___Spider_mites Two-spotted_spider_mite",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Tomato___Target_Spot",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Tomato___Tomato_mosaic_virus",
+      "review": [
+        "localized immediate_actions",
+        "existing disease controls and symptoms",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    },
+    {
+      "canonical_key": "Tomato___healthy",
+      "review": [
+        "localized immediate_actions",
+        "healthy maintenance",
+        "risk_rules thresholds, reasoning, weights and action timing"
+      ]
+    }
+  ],
+  "additional_review": [
+    "native-language weather and location templates",
+    "field-data entropy threshold experiment"
+  ]
+}

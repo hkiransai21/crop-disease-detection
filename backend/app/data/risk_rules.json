@@ -1,0 +1,621 @@
+{
+  "_comment": "Heuristic index, not infection probability. Existing KB thresholds and spread reasoning; expert review required. Rain/wetness use recent 72h and next 48h when available. Wind is a dispersal modifier only for wind_spread classes.",
+  "weights": {
+    "temperature_suppression_factor": 0.25,
+    "temperature_optimal": 35,
+    "temperature_favorable": 25,
+    "temperature_edge": 15,
+    "temperature_unfavorable": 5,
+    "humidity_high": 30,
+    "humidity_near": 18,
+    "humidity_low": 5,
+    "wetness": 10,
+    "rain_heavy": 25,
+    "rain_some": 15,
+    "rain_low": 5,
+    "wind": 5
+  },
+  "rules": {
+    "Apple___Apple_scab": {
+      "temp_min_c": 10.0,
+      "temp_max_c": 24.0,
+      "temp_optimal_c": 18.0,
+      "humidity_min_pct": 85.0,
+      "leaf_wetness_hours_min": 9.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Ascospores released from overwintered leaves in leaf litter during spring rains, carried by air currents.",
+      "sources": [
+        "Penn State Extension: Tree Fruit Production Guide - Apple Scab (https://extension.psu.edu/apple-scab)",
+        "Cornell University Cooperative Extension: Apple Scab Disease Identification and Management (https://cals.cornell.edu)",
+        "UC Davis IPM: Apple Scab Management Guidelines (https://ipm.ucanr.edu/agriculture/apple/apple-scab/)"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Apple___Black_rot": {
+      "temp_min_c": 15.0,
+      "temp_max_c": 32.0,
+      "temp_optimal_c": 26.0,
+      "humidity_min_pct": 80.0,
+      "leaf_wetness_hours_min": 6.0,
+      "rainfall_favorable": true,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "Spores splash from dead wood, mummified fruit, and bark cankers during warm rains.",
+      "sources": [
+        "University of Kentucky Extension: Black Rot of Apple (PPFS-FR-T-02)",
+        "Purdue Extension: Fruit Diseases - Black Rot and Frogeye Leaf Spot (BP-137-W)"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Apple___Cedar_apple_rust": {
+      "temp_min_c": 12.0,
+      "temp_max_c": 24.0,
+      "temp_optimal_c": 16.0,
+      "humidity_min_pct": 85.0,
+      "leaf_wetness_hours_min": 4.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Obligate heteroecious fungus cycling between Eastern red cedar / juniper galls and apple foliage via windborne basidiospores.",
+      "sources": [
+        "University of Missouri Extension: Cedar Apple Rust (G6026)",
+        "Penn State Extension: Cedar Apple Rust Biology and Management"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Apple___healthy": {
+      "temp_min_c": 10.0,
+      "temp_max_c": 30.0,
+      "temp_optimal_c": 20.0,
+      "humidity_min_pct": 40.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "None (healthy tissue).",
+      "sources": [
+        "Washington State University Tree Fruit Research and Extension Center",
+        "UC Davis Fruit and Nut Research and Information Center"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Blueberry___healthy": {
+      "temp_min_c": 12.0,
+      "temp_max_c": 28.0,
+      "temp_optimal_c": 22.0,
+      "humidity_min_pct": 50.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "None (healthy tissue).",
+      "sources": [
+        "Michigan State University Extension: Blueberry Management Guide",
+        "North Carolina State Extension: Blueberry Production"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+      "temp_min_c": 15.0,
+      "temp_max_c": 30.0,
+      "temp_optimal_c": 22.0,
+      "humidity_min_pct": 70.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Conidia are wind-dispersed; fungus overwinters as chasmothecia in bark crevices and fallen leaves.",
+      "sources": [
+        "Washington State University Extension: Cherry Powdery Mildew Management (EM022E)",
+        "UC Davis IPM: Cherry Powdery Mildew (Podosphaera clandestina)"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Cherry_(including_sour)___healthy": {
+      "temp_min_c": 12.0,
+      "temp_max_c": 28.0,
+      "temp_optimal_c": 20.0,
+      "humidity_min_pct": 45.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "None.",
+      "sources": [
+        "Oregon State University Extension: Cherry Orchard IPM Guide"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+      "temp_min_c": 22.0,
+      "temp_max_c": 32.0,
+      "temp_optimal_c": 28.0,
+      "humidity_min_pct": 90.0,
+      "leaf_wetness_hours_min": 11.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Windblown conidia from infected corn residue on the soil surface.",
+      "sources": [
+        "Crop Protection Network: Gray Leaf Spot of Corn (CPN-2001)",
+        "Purdue Extension: Diseases of Corn - Gray Leaf Spot (BP-06-W)"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Corn_(maize)___Common_rust_": {
+      "temp_min_c": 16.0,
+      "temp_max_c": 25.0,
+      "temp_optimal_c": 20.0,
+      "humidity_min_pct": 95.0,
+      "leaf_wetness_hours_min": 6.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Urediniospores carried by southerly winds from tropical/subtropical regions in spring.",
+      "sources": [
+        "University of Illinois Extension: Corn Disease Management - Common Rust",
+        "Iowa State University Extension: Corn Field Guide"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+      "temp_min_c": 18.0,
+      "temp_max_c": 27.0,
+      "temp_optimal_c": 22.0,
+      "humidity_min_pct": 90.0,
+      "leaf_wetness_hours_min": 6.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Conidia rain-splashed and windblown from infested corn residue.",
+      "sources": [
+        "Crop Protection Network: Northern Corn Leaf Blight (CPN-2002)",
+        "University of Minnesota Extension: Northern corn leaf blight"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Corn_(maize)___healthy": {
+      "temp_min_c": 15.0,
+      "temp_max_c": 35.0,
+      "temp_optimal_c": 28.0,
+      "humidity_min_pct": 40.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "None.",
+      "sources": [
+        "Purdue Extension: Corn Field Guide (ID-179)"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Grape___Black_rot": {
+      "temp_min_c": 15.0,
+      "temp_max_c": 32.0,
+      "temp_optimal_c": 27.0,
+      "humidity_min_pct": 85.0,
+      "leaf_wetness_hours_min": 6.0,
+      "rainfall_favorable": true,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "Ascospores and conidia rain-splashed from overwintered mummified berries and cane lesions.",
+      "sources": [
+        "Penn State Extension: Grape Black Rot Biology and Control",
+        "Cornell Viticulture: Grape Disease Management Guide"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Grape___Esca_(Black_Measles)": {
+      "temp_min_c": 18.0,
+      "temp_max_c": 35.0,
+      "temp_optimal_c": 25.0,
+      "humidity_min_pct": 70.0,
+      "leaf_wetness_hours_min": 4.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Fungal spores enter through pruning wounds and propagate within mature vine wood.",
+      "sources": [
+        "UC Davis IPM: Esca (Black Measles) in Grapevines",
+        "Wine Australia: Grapevine Trunk Disease Management"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+      "temp_min_c": 20.0,
+      "temp_max_c": 32.0,
+      "temp_optimal_c": 26.0,
+      "humidity_min_pct": 85.0,
+      "leaf_wetness_hours_min": 8.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Conidia splashed by rain and carried by wind currents.",
+      "sources": [
+        "UC Davis Grape IPM Guidelines: Minor Grape Foliar Diseases",
+        "Texas A&M AgriLife Extension: Texas Grape Pest Management Guide"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Grape___healthy": {
+      "temp_min_c": 15.0,
+      "temp_max_c": 35.0,
+      "temp_optimal_c": 25.0,
+      "humidity_min_pct": 40.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "None.",
+      "sources": [
+        "UC Davis Viticulture and Enology Extension"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+      "temp_min_c": 18.0,
+      "temp_max_c": 32.0,
+      "temp_optimal_c": 25.0,
+      "humidity_min_pct": 60.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Transmitted by Asian citrus psyllid (Diaphorina citri) vector and grafting of infected budwood.",
+      "sources": [
+        "University of Florida IFAS Extension: Huanglongbing (Citrus Greening) Information (PP225)",
+        "USDA ARS Citrus Greening Research Program",
+        "UC Davis IPM: Asian Citrus Psyllid and Citrus Greening Disease"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Peach___Bacterial_spot": {
+      "temp_min_c": 20.0,
+      "temp_max_c": 30.0,
+      "temp_optimal_c": 25.0,
+      "humidity_min_pct": 85.0,
+      "leaf_wetness_hours_min": 4.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Bacteria splash from twig cankers during wind-driven rain and enter via stomata and wounds.",
+      "sources": [
+        "Rutgers NJAES Cooperative Extension: Bacterial Spot of Stone Fruit",
+        "Penn State Extension: Bacterial Spot on Peaches"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Peach___healthy": {
+      "temp_min_c": 12.0,
+      "temp_max_c": 32.0,
+      "temp_optimal_c": 24.0,
+      "humidity_min_pct": 45.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "None.",
+      "sources": [
+        "Clemson Cooperative Extension: Peach Orchard Management"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Pepper,_bell___Bacterial_spot": {
+      "temp_min_c": 24.0,
+      "temp_max_c": 35.0,
+      "temp_optimal_c": 28.0,
+      "humidity_min_pct": 85.0,
+      "leaf_wetness_hours_min": 4.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Seedborne and splashing rain / overhead irrigation from plant to plant; enters through stomata and abrasions.",
+      "sources": [
+        "University of Florida IFAS Extension: Bacterial Spot of Pepper (PP-3)",
+        "Purdue Extension: Bacterial Spot of Pepper and Tomato (BP-22-W)"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Pepper,_bell___healthy": {
+      "temp_min_c": 18.0,
+      "temp_max_c": 32.0,
+      "temp_optimal_c": 25.0,
+      "humidity_min_pct": 50.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "None.",
+      "sources": [
+        "Texas A&M AgriLife Extension: Commercial Pepper Production"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Potato___Early_blight": {
+      "temp_min_c": 20.0,
+      "temp_max_c": 32.0,
+      "temp_optimal_c": 26.0,
+      "humidity_min_pct": 80.0,
+      "leaf_wetness_hours_min": 6.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Airborne conidia and rain splash from infected crop debris and solanaceous weeds.",
+      "sources": [
+        "University of Idaho Extension: Potato Early Blight Management",
+        "North Dakota State University Extension: Potato Blight Control Guide"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Potato___Late_blight": {
+      "temp_min_c": 10.0,
+      "temp_max_c": 24.0,
+      "temp_optimal_c": 18.0,
+      "humidity_min_pct": 90.0,
+      "leaf_wetness_hours_min": 8.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Sporangia and zoospores dispersed long distances by wind and rain splash from infected volunteer potatoes, cull piles, or seed tubers.",
+      "sources": [
+        "Cornell University: Late Blight Forecasting and Management (USABlight)",
+        "Michigan State University Extension: Potato Late Blight (E-2945)"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Potato___healthy": {
+      "temp_min_c": 15.0,
+      "temp_max_c": 25.0,
+      "temp_optimal_c": 20.0,
+      "humidity_min_pct": 50.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "None.",
+      "sources": [
+        "University of Maine Cooperative Extension: Potato Program"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Raspberry___healthy": {
+      "temp_min_c": 12.0,
+      "temp_max_c": 28.0,
+      "temp_optimal_c": 20.0,
+      "humidity_min_pct": 50.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "None.",
+      "sources": [
+        "Cornell Berry Diagnostic Tool: Raspberry Management"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Soybean___healthy": {
+      "temp_min_c": 18.0,
+      "temp_max_c": 32.0,
+      "temp_optimal_c": 26.0,
+      "humidity_min_pct": 45.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "None.",
+      "sources": [
+        "Iowa State University Extension: Soybean Field Guide"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Squash___Powdery_mildew": {
+      "temp_min_c": 18.0,
+      "temp_max_c": 32.0,
+      "temp_optimal_c": 26.0,
+      "humidity_min_pct": 70.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Conidia are wind-dispersed; does not require free water to germinate, only high relative humidity.",
+      "sources": [
+        "University of Massachusetts Amherst Extension: Cucurbit Powdery Mildew Management",
+        "Cornell Vegetable MD Online: Powdery Mildew of Cucurbits"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Strawberry___Leaf_scorch": {
+      "temp_min_c": 15.0,
+      "temp_max_c": 28.0,
+      "temp_optimal_c": 22.0,
+      "humidity_min_pct": 85.0,
+      "leaf_wetness_hours_min": 9.0,
+      "rainfall_favorable": true,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "Conidia rain-splashed from infected overwintered leaves onto newly emerging foliage.",
+      "sources": [
+        "Ohio State University Extension: Strawberry Leaf Scorch (PLPATH-FRU-34)",
+        "North Carolina State Extension: Strawberry Leaf Scorch Management"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Strawberry___healthy": {
+      "temp_min_c": 12.0,
+      "temp_max_c": 26.0,
+      "temp_optimal_c": 20.0,
+      "humidity_min_pct": 45.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "None.",
+      "sources": [
+        "UC Davis IPM: Strawberry Pest Management Guidelines"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Tomato___Bacterial_spot": {
+      "temp_min_c": 24.0,
+      "temp_max_c": 34.0,
+      "temp_optimal_c": 28.0,
+      "humidity_min_pct": 85.0,
+      "leaf_wetness_hours_min": 4.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Splashing water, driving rain, contaminated seed, handling wet plants; enters via stomata and mechanical wounds.",
+      "sources": [
+        "University of Florida IFAS: Bacterial Spot of Tomato (PP-3)",
+        "Purdue Extension: Tomato Diseases - Bacterial Spot (BP-22-W)"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Tomato___Early_blight": {
+      "temp_min_c": 20.0,
+      "temp_max_c": 32.0,
+      "temp_optimal_c": 26.0,
+      "humidity_min_pct": 80.0,
+      "leaf_wetness_hours_min": 6.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Spores rain-splashed from infested soil and crop debris; windblown conidia.",
+      "sources": [
+        "Cornell Vegetable MD Online: Early Blight of Tomato",
+        "North Carolina State Extension: Early Blight of Tomato"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Tomato___Late_blight": {
+      "temp_min_c": 10.0,
+      "temp_max_c": 24.0,
+      "temp_optimal_c": 18.0,
+      "humidity_min_pct": 90.0,
+      "leaf_wetness_hours_min": 8.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Sporangia carried miles on cool, moist winds; rain-splashed zoospores.",
+      "sources": [
+        "USABlight: National Late Blight Information and Forecast System",
+        "Penn State Extension: Tomato Late Blight Management"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Tomato___Leaf_Mold": {
+      "temp_min_c": 18.0,
+      "temp_max_c": 28.0,
+      "temp_optimal_c": 23.0,
+      "humidity_min_pct": 85.0,
+      "leaf_wetness_hours_min": 5.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Conidia airborne and rain-splashed; primarily a severe problem in high tunnels and greenhouses with high humidity.",
+      "sources": [
+        "University of Massachusetts Amherst: Tomato Leaf Mold in High Tunnels",
+        "Cornell Vegetable MD Online: Tomato Leaf Mold"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Tomato___Septoria_leaf_spot": {
+      "temp_min_c": 18.0,
+      "temp_max_c": 28.0,
+      "temp_optimal_c": 23.0,
+      "humidity_min_pct": 90.0,
+      "leaf_wetness_hours_min": 6.0,
+      "rainfall_favorable": true,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "Pycnidiospores extruded in gelatinous tendrils and rain-splashed from overwintered debris and weeds (horsenettle).",
+      "sources": [
+        "Missouri Botanical Garden: Septoria Leaf Spot of Tomato",
+        "Purdue Extension: Septoria Leaf Spot on Tomato (BP-138-W)"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+      "temp_min_c": 25.0,
+      "temp_max_c": 38.0,
+      "temp_optimal_c": 32.0,
+      "humidity_min_pct": 20.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": true,
+      "humidity_mode": "dry",
+      "rationale": "Mites crawl between touching foliage and disperse by ballooning on silk threads in hot, dry, dusty wind.",
+      "sources": [
+        "UC Davis IPM: Spider Mites on Tomato",
+        "University of Florida IFAS: Two-Spotted Spider Mite Management (EENY-150)"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Tomato___Target_Spot": {
+      "temp_min_c": 20.0,
+      "temp_max_c": 32.0,
+      "temp_optimal_c": 28.0,
+      "humidity_min_pct": 85.0,
+      "leaf_wetness_hours_min": 8.0,
+      "rainfall_favorable": true,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Conidia windblown and rain-splashed from crop debris and alternative weed hosts.",
+      "sources": [
+        "University of Florida IFAS: Target Spot of Tomato (PP-344)",
+        "North Carolina State Extension: Target Spot on Tomato"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+      "temp_min_c": 24.0,
+      "temp_max_c": 38.0,
+      "temp_optimal_c": 30.0,
+      "humidity_min_pct": 30.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": true,
+      "humidity_mode": "humid",
+      "rationale": "Transmitted persistently by the silverleaf whitefly (Bemisia tabaci); not seedborne or mechanically transmitted.",
+      "sources": [
+        "UC Davis IPM: Tomato Yellow Leaf Curl Virus Guidelines",
+        "University of Florida IFAS: Tomato Yellow Leaf Curl Virus Management (ENY-712)"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Tomato___Tomato_mosaic_virus": {
+      "temp_min_c": 20.0,
+      "temp_max_c": 32.0,
+      "temp_optimal_c": 26.0,
+      "humidity_min_pct": 40.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "Extremely stable virus transmitted mechanically by hands, pruning tools, trellis strings, contaminated seed, and worker clothing.",
+      "sources": [
+        "Penn State Extension: Tomato Mosaic Virus and Tobacco Mosaic Virus",
+        "Cornell Vegetable MD Online: Tobamoviruses of Tomato"
+      ],
+      "review_status": "machine_suggested"
+    },
+    "Tomato___healthy": {
+      "temp_min_c": 18.0,
+      "temp_max_c": 30.0,
+      "temp_optimal_c": 24.0,
+      "humidity_min_pct": 50.0,
+      "leaf_wetness_hours_min": 0.0,
+      "rainfall_favorable": false,
+      "wind_spread": false,
+      "humidity_mode": "humid",
+      "rationale": "None.",
+      "sources": [
+        "University of Florida IFAS: Tomato Production Guide",
+        "Purdue Extension: Tomato Plant Care and IPM"
+      ],
+      "review_status": "machine_suggested"
+    }
+  }
+}

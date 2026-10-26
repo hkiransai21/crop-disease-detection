@@ -41,7 +41,11 @@ def load_inference_artifacts():
         with open(labels_path, "r") as f:
             _LABELS = json.load(f)
     else:
-        _LABELS = DEFAULT_CLASSES
+        raise RuntimeError('Model labels are missing')
+    from backend.app.services.i18n import load_localized_knowledge_base
+    expected = set(load_localized_knowledge_base('en'))
+    if len(_LABELS) != 38 or len(set(_LABELS)) != 38 or set(_LABELS) != expected:
+        raise RuntimeError('Model labels do not match the knowledge base')
 
     # 2. Load model version
     v_path = Path(settings.MODEL_VERSION_PATH)
@@ -73,7 +77,7 @@ def load_inference_artifacts():
         _ORT_SESSION = ort.InferenceSession(str(model_path), sess_options, providers=["CPUExecutionProvider"])
         print(f"Loaded ONNX model for CPU inference from {model_path} ({_MODEL_VERSION}, T={_TEMPERATURE:.3f})")
     else:
-        print(f"Warning: ONNX model not found at {model_path}. Will use dummy fallback prediction until model is trained.")
+        raise RuntimeError(f'ONNX model missing: {model_path}')
 
 
 def preprocess_image(image: Image.Image, target_size: int = 224) -> np.ndarray:
@@ -112,14 +116,16 @@ def predict_disease(image: Image.Image, top_k: int = 3) -> Dict[str, Any]:
     """Execute model inference and return top-k predictions with uncertainty detection."""
     global _ORT_SESSION, _LABELS, _MODEL_VERSION, _TEMPERATURE
 
-    if _LABELS is None:
-        _LABELS = DEFAULT_CLASSES
+    if _LABELS is None or _ORT_SESSION is None:
+        raise RuntimeError('Inference artifacts are unavailable')
 
     # Fast path if ONNX model is loaded
     if _ORT_SESSION is not None:
         input_tensor = preprocess_image(image)
         input_name = _ORT_SESSION.get_inputs()[0].name
         logits = _ORT_SESSION.run(None, {input_name: input_tensor})[0][0]
+        if logits.shape != (len(_LABELS),) or not np.isfinite(logits).all():
+            raise RuntimeError('Invalid model output')
 
         # Apply learned temperature scaling
         scaled_logits = logits / _TEMPERATURE
@@ -129,7 +135,7 @@ def predict_disease(image: Image.Image, top_k: int = 3) -> Dict[str, Any]:
         probs = exp_logits / np.sum(exp_logits)
     else:
         # Fallback pseudo-prediction if model is still being trained
-        probs = np.random.dirichlet(np.ones(len(_LABELS)) * 0.1)
+        raise RuntimeError('Inference session is unavailable')
 
     top_indices = np.argsort(probs)[::-1][:top_k]
     entropy = compute_entropy(probs)

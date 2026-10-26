@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 const ts = require('typescript');
 const crypto = require('crypto');
@@ -11,9 +11,10 @@ english.ui ||= {};
 const visibleAttrs = new Set(['title', 'placeholder', 'alt', 'aria-label', 'label']);
 function classify(n, sf) {
   const p = n.parent;
+  for(let a=p;a && !ts.isSourceFile(a);a=a.parent) { if(ts.isJsxAttribute(a) && a.name.text === "className") return null; }
   if (ts.isJsxText(n)) return n.text.trim() && /[\p{L}\p{N}]/u.test(n.text) ? 'jsx-text' : null;
   if (!ts.isStringLiteral(n) && !ts.isNoSubstitutionTemplateLiteral(n)) return null;
-  if (ts.isJsxAttribute(p)) return visibleAttrs.has(p.name.text) ? 'attribute' : null;
+  if (ts.isJsxAttribute(p)) return visibleAttrs.has(p.name.text) && n.text.trim() ? 'attribute' : null;
   if (ts.isImportDeclaration(p) || ts.isExportDeclaration(p) || ts.isLiteralTypeNode(p) || ts.isPropertyAssignment(p) && p.name === n) return null;
   if (ts.isCallExpression(p) && /(^|\.)(t|tr)$/.test(p.expression.getText(sf))) return null;
   if (ts.isBinaryExpression(p) && [ts.SyntaxKind.EqualsEqualsEqualsToken,ts.SyntaxKind.ExclamationEqualsEqualsToken,ts.SyntaxKind.EqualsEqualsToken,ts.SyntaxKind.ExclamationEqualsToken].includes(p.operatorToken.kind)) return null;

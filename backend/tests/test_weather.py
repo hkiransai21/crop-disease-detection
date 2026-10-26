@@ -1,6 +1,6 @@
 """Unit tests for weather parsing, leaf wetness estimation, and geocoding."""
 import pytest
-from backend.app.services.weather import _parse_open_meteo_response, _generate_fallback_weather, search_locations
+from backend.app.services.weather import _parse_open_meteo_response, search_locations
 from backend.app.schemas.weather import WeatherSummary
 
 
@@ -30,13 +30,9 @@ def test_parse_open_meteo_response_deterministic():
     assert summary.is_live is True
     assert summary.past_7d_high_humidity_hours > 0
     assert summary.past_7d_total_rain_mm > 0
-    assert len(summary.daily_forecasts) == 14
+    assert all(day.date >= '2026-10-06' for day in summary.daily_forecasts)
 
 
-def test_fallback_weather_generator():
-    """Verify fallback baseline generation when external API is unreachable."""
-    fallback = _generate_fallback_weather(latitude=37.77, longitude=-122.41)
-    assert isinstance(fallback, WeatherSummary)
-    assert fallback.is_live is False
-    assert "Offline" in fallback.data_source or "Estimated" in fallback.data_source
-    assert len(fallback.daily_forecasts) > 0
+def test_missing_weather_observations_are_rejected():
+    with pytest.raises(ValueError):
+        _parse_open_meteo_response({})

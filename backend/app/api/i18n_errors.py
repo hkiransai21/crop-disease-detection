@@ -3,7 +3,7 @@ from fastapi import Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from starlette.exceptions import HTTPException
-from backend.app.services.i18n import resolve_language, translate_message
+from backend.app.services.i18n import resolve_language, translate_message, messages
 
 
 def language(request):
@@ -15,7 +15,7 @@ async def http_error(request: Request, exc: HTTPException):
     detail=exc.detail
     if isinstance(detail,str):
         localized=translate_message(detail,lang)
-        if localized==detail and lang!='en':
+        if localized==detail and lang!='en' and detail not in messages(lang).values():
             generic={401:'Please sign in to continue.',403:'Please sign in to continue.',404:'The requested record was not found.',429:'Too many requests. Please wait and try again.'}.get(exc.status_code,'Check the information you entered.' if exc.status_code<500 else 'The service is unavailable. Please try again later.')
             localized=translate_message(generic,lang)
         detail=localized

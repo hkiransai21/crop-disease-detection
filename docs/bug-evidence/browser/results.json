@@ -1,0 +1,269 @@
+[
+  {
+    "mode": "real ONNX via browser downscaler",
+    "image": "sample_leaf_diseased.jpg",
+    "response": {
+      "localization_source": {
+        "confidence_display": "Low / Uncertain",
+        "risk_assessment": null
+      },
+      "image_sha256": "acab32c55007cfc751647f94e2e6f84c4a8eabe12cda1cc0d40e9044f61eb188",
+      "entropy": 2.5505,
+      "weather_status": "location_required",
+      "id": "guest_eeb3cbbf65434f9d9330e5dca569da2e",
+      "canonical_key": "Peach___Bacterial_spot",
+      "scientific_name": "Xanthomonas arboricola pv. pruni",
+      "language": "en",
+      "predicted_label": "Peach___Bacterial_spot",
+      "crop": "Peach",
+      "disease_name": "Bacterial Spot",
+      "confidence": 0.3054589629173279,
+      "confidence_display": "Low / Uncertain",
+      "is_uncertain": true,
+      "uncertainty_reason": "This photo does not give a clear result. Take another photo in good light. Do not choose a pesticide from this result. Ask your local agriculture office to check the plant.",
+      "top_k": [
+        {
+          "class_id": "Peach___Bacterial_spot",
+          "crop": "Peach",
+          "disease_name": "Bacterial Spot",
+          "confidence": 0.3054589629173279,
+          "confidence_percentage": 30.55,
+          "is_healthy": false
+        },
+        {
+          "class_id": "Corn_(maize)___Common_rust_",
+          "crop": "Corn (Maize)",
+          "disease_name": "Common Rust",
+          "confidence": 0.12404782325029373,
+          "confidence_percentage": 12.4,
+          "is_healthy": false
+        },
+        {
+          "class_id": "Cherry_(including_sour)___Powdery_mildew",
+          "crop": "Cherry",
+          "disease_name": "Powdery Mildew",
+          "confidence": 0.10941294580698013,
+          "confidence_percentage": 10.94,
+          "is_healthy": false
+        }
+      ],
+      "model_version": "v1.0.0_efficientnet_b0_1791304778",
+      "image_url": "/static/uploads/3254c90b-b279-41c5-a502-62bb11cf2133.jpg",
+      "location_name": null,
+      "latitude": null,
+      "longitude": null,
+      "weather_summary": null,
+      "risk_assessment": null,
+      "disease_details": {
+        "id": "Peach___Bacterial_spot",
+        "crop": "Peach",
+        "disease_name": "Bacterial Spot",
+        "scientific_name": "Xanthomonas arboricola pv. pruni",
+        "causal_agent_type": "bacterial",
+        "is_healthy": false,
+        "symptoms": "Water-soaked polygonal angular spots on leaves turning purplish-brown, centers drop out giving a 'shot-hole' look. Pitted, gumming lesions on fruit.",
+        "spread_mechanism": "Bacteria splash from twig cankers during wind-driven rain and enter via stomata and wounds.",
+        "favorable_conditions": {
+          "temp_min_c": 20.0,
+          "temp_max_c": 30.0,
+          "temp_optimal_c": 25.0,
+          "humidity_min_pct": 85.0,
+          "leaf_wetness_hours_min": 4.0,
+          "rainfall_favorable": true,
+          "wind_spread": true
+        },
+        "prevention_steps": [
+          "Plant resistant peach cultivars (e.g., Candor, Clayton, Reliance).",
+          "Avoid excessive nitrogen fertilizers that stimulate susceptible young shoot growth.",
+          "Plant windbreaks to reduce windblown sand abrasions that facilitate bacterial entry."
+        ],
+        "organic_controls": [
+          "Dormant copper applications and low-rate copper hydroxide during early cover sprays."
+        ],
+        "chemical_controls": [
+          "Bactericides: Oxytetracycline (Mycoshield) and low-rate copper formulations applied from petal fall through cover sprays."
+        ],
+        "severity": "HIGH",
+        "when_to_consult_expert": "If twig cankers proliferate or fruit drop exceeds 10%.",
+        "safety_notes": [
+          "Always read and strictly follow pesticide product label instructions and pre-harvest intervals (PHI).",
+          "Wear required Personal Protective Equipment (PPE) including chemical-resistant gloves, goggles, and respirator mask.",
+          "Keep all chemicals out of reach of children and away from livestock and drinking water sources.",
+          "Consult your local agricultural extension officer or call Kisan Call Center (1800-180-1551) for certified advice."
+        ],
+        "sources": [
+          "Rutgers NJAES Cooperative Extension: Bacterial Spot of Stone Fruit",
+          "Penn State Extension: Bacterial Spot on Peaches"
+        ],
+        "canonical_key": "Peach___Bacterial_spot",
+        "common_name": "Bacterial Spot",
+        "transliteration": "Bacterial Spot",
+        "summary": "Possible Bacterial Spot. Compare the symptoms before choosing treatment.",
+        "immediate_actions": [
+          "Dormant copper applications and low-rate copper hydroxide during early cover sprays."
+        ],
+        "organic_options": [
+          "Dormant copper applications and low-rate copper hydroxide during early cover sprays."
+        ],
+        "chemical_options": [
+          "Bactericides: Oxytetracycline (Mycoshield) and low-rate copper formulations applied from petal fall through cover sprays."
+        ],
+        "prevention": [
+          "Plant resistant peach cultivars (e.g., Candor, Clayton, Reliance).",
+          "Avoid excessive nitrogen fertilizers that stimulate susceptible young shoot growth.",
+          "Plant windbreaks to reduce windblown sand abrasions that facilitate bacterial entry."
+        ],
+        "when_to_call_expert": "If twig cankers proliferate or fruit drop exceeds 10%.",
+        "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+        "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+        "fallback_fields": [],
+        "canonical_crop": "Peach",
+        "canonical_disease_name": "Bacterial Spot",
+        "review_status": "machine_suggested",
+        "language": "en"
+      },
+      "created_at": "2026-10-26T05:29:07.928859Z"
+    },
+    "ui": "Peach\n\nNot sure\n\nConfidence: Low\n\nRetake the photo or ask your local agriculture officer. Do not choose a pesticide from this result.\n\nRetake photo\nTop three possibilities\nPeach: Bacterial Spot — Low (30.6%)\nCorn (Maize): Common Rust — Low (12.4%)\nCherry: Powdery Mildew — Low (10.9%)\nTake leaf photo\nShare on WhatsApp"
+  },
+  {
+    "mode": "real ONNX via browser downscaler",
+    "image": "sample_leaf_healthy.jpg",
+    "response": {
+      "localization_source": {
+        "confidence_display": "Moderate Confidence",
+        "risk_assessment": null
+      },
+      "image_sha256": "f7f9fc940448ddfef35fdef259f4d8c6c0ecfbf54aabedbdf7ff3406a5f3995e",
+      "entropy": 2.038,
+      "weather_status": "location_required",
+      "id": "guest_c8852e10179746eb8cb128bb47856a9c",
+      "canonical_key": "Corn_(maize)___healthy",
+      "scientific_name": "Zea mays",
+      "language": "en",
+      "predicted_label": "Corn_(maize)___healthy",
+      "crop": "Corn (Maize)",
+      "disease_name": "Healthy Corn Leaf",
+      "confidence": 0.538570761680603,
+      "confidence_display": "Moderate Confidence",
+      "is_uncertain": true,
+      "uncertainty_reason": "This photo does not give a clear result. Take another photo in good light. Do not choose a pesticide from this result. Ask your local agriculture office to check the plant.",
+      "top_k": [
+        {
+          "class_id": "Corn_(maize)___healthy",
+          "crop": "Corn (Maize)",
+          "disease_name": "Healthy Corn Leaf",
+          "confidence": 0.538570761680603,
+          "confidence_percentage": 53.86,
+          "is_healthy": true
+        },
+        {
+          "class_id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+          "crop": "Tomato",
+          "disease_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+          "confidence": 0.0771726667881012,
+          "confidence_percentage": 7.72,
+          "is_healthy": false
+        },
+        {
+          "class_id": "Corn_(maize)___Common_rust_",
+          "crop": "Corn (Maize)",
+          "disease_name": "Common Rust",
+          "confidence": 0.04462919756770134,
+          "confidence_percentage": 4.46,
+          "is_healthy": false
+        }
+      ],
+      "model_version": "v1.0.0_efficientnet_b0_1791304778",
+      "image_url": "/static/uploads/ac65521d-cb45-4636-af76-ce607f5ed903.jpg",
+      "location_name": null,
+      "latitude": null,
+      "longitude": null,
+      "weather_summary": null,
+      "risk_assessment": null,
+      "disease_details": {
+        "id": "Corn_(maize)___healthy",
+        "crop": "Corn (Maize)",
+        "disease_name": "Healthy Corn Leaf",
+        "scientific_name": "Zea mays",
+        "causal_agent_type": "none",
+        "is_healthy": true,
+        "symptoms": "Broad, vibrant green leaves with parallel venation and no chlorosis, blight, or pustules.",
+        "spread_mechanism": "None.",
+        "favorable_conditions": {
+          "temp_min_c": 15.0,
+          "temp_max_c": 35.0,
+          "temp_optimal_c": 28.0,
+          "humidity_min_pct": 40.0,
+          "leaf_wetness_hours_min": 0.0,
+          "rainfall_favorable": false,
+          "wind_spread": false
+        },
+        "prevention_steps": [
+          "Maintain optimal soil fertility (N-P-K and micronutrients) and adequate plant population density.",
+          "Scout fields regularly at V6, VT, and R2 growth stages."
+        ],
+        "organic_controls": [
+          "Maintain soil health with cover crops (e.g., rye, clover)."
+        ],
+        "chemical_controls": [
+          "No chemical treatment required."
+        ],
+        "severity": "LOW",
+        "when_to_consult_expert": "Routine agronomic scouting.",
+        "safety_notes": [
+          "Always read and strictly follow pesticide product label instructions and pre-harvest intervals (PHI).",
+          "Wear required Personal Protective Equipment (PPE) including chemical-resistant gloves, goggles, and respirator mask.",
+          "Keep all chemicals out of reach of children and away from livestock and drinking water sources.",
+          "Consult your local agricultural extension officer or call Kisan Call Center (1800-180-1551) for certified advice."
+        ],
+        "sources": [
+          "Purdue Extension: Corn Field Guide (ID-179)"
+        ],
+        "canonical_key": "Corn_(maize)___healthy",
+        "common_name": "Healthy Corn Leaf",
+        "transliteration": "Healthy Corn Leaf",
+        "summary": "Leaves appear healthy. Check regularly for changes.",
+        "immediate_actions": [
+          "Maintain optimal soil fertility (N-P-K and micronutrients) and adequate plant population density.",
+          "Scout fields regularly at V6, VT, and R2 growth stages."
+        ],
+        "organic_options": [
+          "Maintain soil health with cover crops (e.g., rye, clover)."
+        ],
+        "chemical_options": [
+          "No chemical treatment required."
+        ],
+        "prevention": [
+          "Maintain optimal soil fertility (N-P-K and micronutrients) and adequate plant population density.",
+          "Scout fields regularly at V6, VT, and R2 growth stages."
+        ],
+        "when_to_call_expert": "Routine agronomic scouting.",
+        "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+        "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+        "fallback_fields": [],
+        "canonical_crop": "Corn (Maize)",
+        "canonical_disease_name": "Healthy Corn Leaf",
+        "review_status": "machine_suggested",
+        "language": "en"
+      },
+      "created_at": "2026-10-26T05:29:10.956055Z"
+    },
+    "ui": "Corn (Maize)\n\nNot sure\n\nConfidence: Low\n\nRetake the photo or ask your local agriculture officer. Do not choose a pesticide from this result.\n\nRetake photo\nTop three possibilities\nCorn (Maize): Healthy Corn Leaf — Low (53.9%)\nTomato: Tomato Yellow Leaf Curl Virus (TYLCV) — Low (7.7%)\nCorn (Maize): Common Rust — Low (4.5%)\nTake leaf photo\nShare on WhatsApp"
+  },
+  {
+    "mode": "MOCKED class response, same sample image",
+    "class": "Apple___Apple_scab",
+    "ui": "Apple\n\nApple Scab\n\nConfidence: High\n\nListen\n\nReady to Play\n\nMore details\n\nVenturia inaequalis\n\nWhat is this?\nApple Scab\nPossible Apple Scab. Compare the symptoms before choosing treatment.\nOlive-green to dark brown velvety spots on leaves, becoming corky and distorted. Scabby lesions on fruit surface leading to cracking.\nWhat to do now\nApply sulfur or liquid lime-sulfur sprays preventatively prior to rain events during primary infection season.\nApply Bacillus subtilis or potassium bicarbonate sprays.\nOrganic options\nApply sulfur or liquid lime-sulfur sprays preventatively prior to rain events during primary infection season.\nApply Bacillus subtilis or potassium bicarbonate sprays.\nChemical options\nRead the label first\n\nRead the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.\n\nAlways read and strictly follow pesticide product label instructions and pre-harvest intervals (PHI).\nWear required Personal Protective Equipment (PPE) including chemical-resistant gloves, goggles, and respirator mask.\nKeep all chemicals out of reach of children and away from livestock and drinking water sources.\nConsult your local agricultural extension officer or call Kisan Call Center (1800-180-1551) for certified advice.\nPreventative protectants: Captan, Mancozeb (FRAC M04, M03).\nSystemic fungicides: DMI fungicides (FRAC 3, e.g., Myclobutanil) or SDHI fungicides (FRAC 7, e.g., Fluopyram) in rotation to avoid resistance.\nPrevention\nRake and destroy fallen leaves in autumn or shred with a flail mower to speed decomposition.\nPrune tree canopies to improve airflow and sunlight penetration.\nPlant scab-resistant cultivars (e.g., Enterprise, GoldRush, Liberty, Prima).\nAsk an expert\nIf leaf lesions cover more than 20% of the canopy before petal fall or if commercial fruit quality is at risk.\nAuthoritative Sources\nPenn State Extension: Tree Fruit Production Guide - Apple Scab (https://extension.psu.edu/apple-scab)\nCornell University Cooperative Extension: Apple Scab Disease Identification and Management (https://cals.cornell.edu)\nUC Davis IPM: Apple Scab Management Guidelines (https://ipm.ucanr.edu/agriculture/apple/apple-scab/)\n\nAdvice needs local expert review\n\nAdd your location to estimate weather-related spread risk.\n\nThe disease advice above is general advice, not a live weather risk.\n\nWeather near your field\nTry again\nSpray Tank & Knapsack Pump Calculator\n\nLoading…\n\nTop three possibilities\nApple: Apple Scab — High (95.0%)\nApple: Black Rot & Frogeye Leaf Spot — Low (2.0%)\nApple: Cedar Apple Rust — Low (2.0%)\nTake leaf photo\nShare on WhatsApp"
+  },
+  {
+    "mode": "MOCKED class response, same sample image",
+    "class": "Apple___Black_rot",
+    "ui": "Apple\n\nBlack Rot & Frogeye Leaf Spot\n\nConfidence: High\n\nListen\n\nReady to Play\n\nMore details\n\nBotryosphaeria obtusa\n\nWhat is this?\nBlack Rot & Frogeye Leaf Spot\nPossible Black Rot & Frogeye Leaf Spot. Compare the symptoms before choosing treatment.\nFrogeye leaf spots (circular brown spots with purple margins). Firm brown rot on fruit starting near calyx, turning black with concentric rings.\nWhat to do now\nCopper-based fungicides applied during early season dormancy.\nSulfur sprays during early cover sprays.\nOrganic options\nCopper-based fungicides applied during early season dormancy.\nSulfur sprays during early cover sprays.\nChemical options\nRead the label first\n\nRead the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.\n\nAlways read and strictly follow pesticide product label instructions and pre-harvest intervals (PHI).\nWear required Personal Protective Equipment (PPE) including chemical-resistant gloves, goggles, and respirator mask.\nKeep all chemicals out of reach of children and away from livestock and drinking water sources.\nConsult your local agricultural extension officer or call Kisan Call Center (1800-180-1551) for certified advice.\nFungicides: Captan, Thiophanate-methyl, or strobilurin fungicides (FRAC 11) applied from silver tip through cover sprays.\nPrevention\nPrune out dead branches, fire blight cankers, and remove all mummified fruit from the orchard.\nBurn or dispose of pruned wood promptly rather than leaving brush piles near orchards.\nAsk an expert\nIf limb cankers girdle main scaffold branches or cause limb dieback.\nAuthoritative Sources\nUniversity of Kentucky Extension: Black Rot of Apple (PPFS-FR-T-02)\nPurdue Extension: Fruit Diseases - Black Rot and Frogeye Leaf Spot (BP-137-W)\n\nAdvice needs local expert review\n\nAdd your location to estimate weather-related spread risk.\n\nThe disease advice above is general advice, not a live weather risk.\n\nWeather near your field\nTry again\nSpray Tank & Knapsack Pump Calculator\n\nLoading…\n\nTop three possibilities\nApple: Black Rot & Frogeye Leaf Spot — High (95.0%)\nApple: Cedar Apple Rust — Low (2.0%)\nApple: Healthy Apple Leaf — Low (2.0%)\nTake leaf photo\nShare on WhatsApp"
+  },
+  {
+    "mode": "MOCKED class response, same sample image",
+    "class": "Apple___Cedar_apple_rust",
+    "ui": "Apple\n\nCedar Apple Rust\n\nConfidence: High\n\nListen\n\nReady to Play\n\nMore details\n\nGymnosporangium juniperi-virginianae\n\nWhat is this?\nCedar Apple Rust\nPossible Cedar Apple Rust. Compare the symptoms before choosing treatment.\nBright yellow-orange circular spots on upper leaf surfaces. Raised tubular structures (aecia) on leaf undersides and fruit.\nWhat to do now\nLiquid sulfur or sulfur-based sprays applied preventatively when cedar galls swell in spring.\nOrganic options\nLiquid sulfur or sulfur-based sprays applied preventatively when cedar galls swell in spring.\nChemical options\nRead the label first\n\nRead the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.\n\nAlways read and strictly follow pesticide product label instructions and pre-harvest intervals (PHI).\nWear required Personal Protective Equipment (PPE) including chemical-resistant gloves, goggles, and respirator mask.\nKeep all chemicals out of reach of children and away from livestock and drinking water sources.\nConsult your local agricultural extension officer or call Kisan Call Center (1800-180-1551) for certified advice.\nSterol inhibitor / DMI fungicides (FRAC 3, e.g., Myclobutanil, Tebuconazole) or Strobilurins (FRAC 11) from pink bud through third cover.\nPrevention\nRemove nearby Eastern red cedar / juniper trees within a 1-2 mile radius where feasible.\nRemove rust galls (cedar apples) from adjacent landscape junipers before spring rains.\nPlant rust-resistant apple varieties (e.g., Liberty, Freedom, Enterprise).\nAsk an expert\nIf premature defoliation exceeds 30% of tree canopy in consecutive seasons.\nAuthoritative Sources\nUniversity of Missouri Extension: Cedar Apple Rust (G6026)\nPenn State Extension: Cedar Apple Rust Biology and Management\n\nAdvice needs local expert review\n\nAdd your location to estimate weather-related spread risk.\n\nThe disease advice above is general advice, not a live weather risk.\n\nWeather near your field\nTry again\nSpray Tank & Knapsack Pump Calculator\n\nLoading…\n\nTop three possibilities\nApple: Cedar Apple Rust — High (95.0%)\nApple: Healthy Apple Leaf — Low (2.0%)\nBlueberry: Healthy Blueberry Leaf — Low (2.0%)\nTake leaf photo\nShare on WhatsApp"
+  }
+]

@@ -58,6 +58,7 @@ class ApiClient {
 
     const response = await fetch(`${API_BASE}${endpoint}`, {
       ...options,
+      cache: 'no-store',
       headers,
     }).catch(() => { throw new Error(tr('ui.s_18fca6cbf7')); });
 
@@ -211,6 +212,10 @@ class ApiClient {
   // --- Weather & Geocode ---
   async getWeather(lat: number, lon: number): Promise<WeatherSummary> {
     return this.request<WeatherSummary>(`/weather?lat=${lat}&lon=${lon}`);
+  }
+
+  async getRisk(classId: string, lat: number, lon: number): Promise<AnalysisResponse['risk_assessment']> {
+    return this.request(`/risk?${new URLSearchParams({ class_id: classId, lat: String(lat), lon: String(lon), lang: this.getCurrentLang() })}`);
   }
 
   async geocode(query: string): Promise<GeocodingResult[]> {

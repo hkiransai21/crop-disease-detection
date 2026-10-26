@@ -46,15 +46,14 @@ def test_negotiation(explicit,header,expected):
  from backend.app.services.i18n import resolve_language
  assert resolve_language(explicit,header)==expected
 
-def test_per_field_fallback(tmp_path,monkeypatch):
+def test_missing_symptoms_fail_closed(tmp_path,monkeypatch):
  from backend.app.services import i18n
  source=read(BASE/'en/diseases.json');target=read(BASE/'kn/diseases.json');target['diseases'][0]['symptoms']=''
  for lang,data in [('en',source),('kn',target)]:
   p=tmp_path/lang;p.mkdir();(p/'diseases.json').write_text(json.dumps(data),encoding='utf-8')
  monkeypatch.setattr(i18n,'_I18N_BASE_DIR',tmp_path);monkeypatch.setattr(i18n,'_KB_LANG_CACHE',{})
- entry=i18n.get_localized_disease_entry(source['diseases'][0]['id'],'kn')
- assert entry.symptoms==source['diseases'][0]['symptoms']
- assert 'symptoms' in entry.fallback_fields
+ with pytest.raises(KeyError):
+  i18n.get_localized_disease_entry(source['diseases'][0]['id'],'kn')
 @pytest.mark.asyncio
 @pytest.mark.parametrize('lang',LANGS)
 async def test_endpoint_language_contract(client,lang):

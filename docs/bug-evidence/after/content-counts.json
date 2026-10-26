@@ -1,0 +1,37 @@
+{
+  "en": {
+    "symptoms": 38,
+    "immediate_actions": 38,
+    "organic_controls": 38,
+    "chemical_controls": 31,
+    "prevention_steps": 38
+  },
+  "hi": {
+    "symptoms": 38,
+    "immediate_actions": 38,
+    "organic_controls": 38,
+    "chemical_controls": 30,
+    "prevention_steps": 38
+  },
+  "ta": {
+    "symptoms": 38,
+    "immediate_actions": 38,
+    "organic_controls": 38,
+    "chemical_controls": 30,
+    "prevention_steps": 38
+  },
+  "te": {
+    "symptoms": 38,
+    "immediate_actions": 38,
+    "organic_controls": 38,
+    "chemical_controls": 30,
+    "prevention_steps": 38
+  },
+  "kn": {
+    "symptoms": 38,
+    "immediate_actions": 38,
+    "organic_controls": 38,
+    "chemical_controls": 31,
+    "prevention_steps": 38
+  }
+}

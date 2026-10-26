@@ -1,0 +1,11 @@
+[
+  "All five native language buttons play bundled audio after a tap",
+  "First-launch choice, skip tutorial, persisted choice on reload",
+  "Home camera gesture to result; one analysis request; local compressed thumbnail",
+  "Result and weather playback coordinate; opening language choice stops playback",
+  "Audio downloads only after explicit tap, for the selected language",
+  "Offline full reload, saved history, thumbnail, route chunks and downloaded narration",
+  "Offline capture clearly explains that a new diagnosis needs a connection",
+  "High contrast persists across an offline reload",
+  "Deleting a local check requires confirmation and survives reload"
+]

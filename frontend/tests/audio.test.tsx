@@ -32,6 +32,16 @@ beforeEach(() => {
 afterEach(() => { vi.unstubAllGlobals(); vi.useRealTimers(); });
 
 describe('useAudio', () => {
+  it('stops narration when another player starts, including weather replay', () => {
+    const first = renderHook(() => useAudio(options));
+    const second = renderHook(() => useAudio({...options,staticUrl:'/voice/risk-kn-high.mp3'}));
+    act(() => first.result.current.play());
+    act(() => instances[0].onplaying?.());
+    expect(first.result.current.state).toBe('playing');
+    act(() => second.result.current.replay());
+    expect(first.result.current.state).toBe('idle');
+    expect(instances[0].pause).toHaveBeenCalled();
+  });
   it('plays static first and supports loading, play, pause, resume, speed, end, replay and stop', async () => {
     const { result } = renderHook(() => useAudio(options));
     expect(result.current.state).toBe('idle');

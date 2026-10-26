@@ -47,7 +47,12 @@ def load_localized_knowledge_base(lang='en'):
     local={x['id']:x for x in json.loads(path.read_text(encoding='utf-8'))['diseases']} if path.exists() else {}
     entries={}
     for source in english:
+        if source['id'] not in local:
+            raise KeyError(f"Missing {lang} disease record: {source['id']}")
         entry=dict(source); translated=local.get(source['id'],{})
+        for field in ('disease_name', 'crop', 'symptoms', 'immediate_actions', 'organic_controls', 'chemical_controls', 'prevention_steps'):
+            if not translated.get(field) or isinstance(translated[field], str) and not translated[field].strip():
+                raise KeyError(f"Missing {lang} {source['id']}.{field}")
         missing=[]
         for key,value in source.items():
             candidate=translated.get(key)
@@ -62,7 +67,19 @@ def load_localized_knowledge_base(lang='en'):
 
 
 def get_localized_disease_entry(disease_id,lang='en'):
-    return load_localized_knowledge_base(lang).get(disease_id)
+    import logging
+    try:
+        return load_localized_knowledge_base(lang)[canonical_class_key(disease_id)]
+    except KeyError:
+        logging.getLogger(__name__).error('Unknown disease class key: %r', disease_id)
+        raise
+
+
+def canonical_class_key(value):
+    """Only exact model labels are accepted. Never guess an alias or a default."""
+    if not isinstance(value, str) or value not in load_localized_knowledge_base('en'):
+        raise KeyError(value)
+    return value
 
 
 def get_localized_glossary(lang='en'):
@@ -108,6 +125,10 @@ def localize_risk_assessment(assessment: RiskAssessment,lang='en'):
     if assessment is None:return None
     data=assessment.model_dump()
     crop=data['crop']
+    if data.get('canonical_key'):
+        entry = get_localized_disease_entry(data['canonical_key'], lang)
+        schedule = 'Re-check in 24 hours and consult the local agriculture office.' if data['risk_score'] >= 50 else 'Re-check in 48 hours.'
+        data['action'] = entry.prevention_steps[0] + ' ' + translate_message(schedule, lang)
     for key in ('crop','target_condition','headline','summary','disclaimer'):
         data[key]=translate_message(data[key],lang,crop)
     data['risk_level_label']=translate_message(data['risk_level'],lang)

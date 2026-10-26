@@ -121,5 +121,14 @@
   "Check the information you entered.": "ನೀವು ನಮೂದಿಸಿದ ಮಾಹಿತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ.",
   "Too many requests. Please wait and try again.": "ತುಂಬಾ ಬೇಡಿಕೆಗಳು. ದಯವಿಟ್ಟು ಕಾಯಿರಿ ಮತ್ತು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
   "The service is unavailable. Please try again later.": "ಸೇವೆ ಲಭ್ಯವಿಲ್ಲ. ದಯವಿಟ್ಟು ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.",
-  "Healthy": "ಆರೋಗ್ಯಕರ"
+  "Healthy": "ಆರೋಗ್ಯಕರ",
+  "Forecast: {{p0}} °C, humidity {{p1}}%.": "ಮುನ್ಸೂಚನೆ: {{p0}} °C, ಆರ್ದ್ರತೆ {{p1}}%.",
+  "Rain: last 72 h {{p0}} mm; next 48 h {{p1}} mm. Wetness proxy: {{p2}} h.": "ಮಳೆ: ಕಳೆದ 72 h {{p0}} mm; ಮುಂದಿನ 48 h {{p1}} mm. ತೇವದ ಅಂದಾಜು: {{p2}} h.",
+  "Forecast wind: {{p0}} km/h. Wind spread modifier: {{p1}} points.": "ಗಾಳಿ ಮುನ್ಸೂಚನೆ: {{p0}} km/h. ಗಾಳಿಯಿಂದ ಹರಡುವ ಅಂಕ: {{p1}}.",
+  "Temperature / humidity": "ತಾಪಮಾನ / ಆರ್ದ್ರತೆ",
+  "Rain / leaf wetness": "ಮಳೆ / ಎಲೆ ತೇವ",
+  "Wind": "ಗಾಳಿ",
+  "Re-check in 24 hours and consult the local agriculture office.": "24 ಗಂಟೆಗಳಲ್ಲಿ ಮತ್ತೆ ಪರಿಶೀಲಿಸಿ ಮತ್ತು ಸ್ಥಳೀಯ ಕೃಷಿ ಕಚೇರಿಯನ್ನು ಸಂಪರ್ಕಿಸಿ.",
+  "Re-check in 48 hours.": "48 ಗಂಟೆಗಳಲ್ಲಿ ಮತ್ತೆ ಪರಿಶೀಲಿಸಿ.",
+  "{{p0}}: forecast {{p1}} °C (favorable {{p2}} to {{p3}} °C); humidity {{p4}}% (threshold {{p5}}%).": "{{p0}}: ಮುನ್ಸೂಚನೆ {{p1}} °C (ಅನುಕೂಲ {{p2}} ರಿಂದ {{p3}} °C); ಆರ್ದ್ರತೆ {{p4}}% (ಮಿತಿ {{p5}}%)."
 }

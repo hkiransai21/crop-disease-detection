@@ -87,7 +87,14 @@ async def test_diseases_api_endpoints(client: AsyncClient):
 
 
 @pytest.mark.asyncio
-async def test_weather_and_geocode_routes(client: AsyncClient):
+async def test_weather_and_geocode_routes(client: AsyncClient, monkeypatch):
+    from backend.app.api.routes import weather
+    from backend.app.services.weather import _parse_open_meteo_response
+    from backend.tests.weather_scenarios import raw_weather
+    async def summary(*args): return _parse_open_meteo_response(raw_weather(18,90,0.2,5))
+    async def places(*args): return []
+    monkeypatch.setattr(weather, 'fetch_weather_summary', summary)
+    monkeypatch.setattr(weather, 'search_locations', places)
     # 1. Weather endpoint with query params
     res = await client.get("/api/v1/weather?lat=37.77&lon=-122.41")
     assert res.status_code == 200

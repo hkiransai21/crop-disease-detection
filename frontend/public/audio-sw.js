@@ -1,20 +1,31 @@
 /* Explicit opt-in audio downloads. Never runtime-cache a playback response. */
 const LANGUAGES = ['en', 'hi', 'ta', 'te', 'kn'];
 const PREFIX = 'agrishield-audio-v2-';
-const FONT_CACHE = 'agrishield-fonts-v1';
-const FONT_URLS = ['devanagari', 'tamil', 'telugu', 'kannada'].map(script => `/fonts/noto-sans-${script}.woff2`);
+importScripts('/precache.js');
+const APP_CACHE = 'leaf-app-' + self.APP_VERSION;
+const FONT_CACHE = 'leaf-fonts-v2';
 self.addEventListener('install', event => event.waitUntil((async () => {
-  const cache = await caches.open(FONT_CACHE);
-  await cache.addAll(FONT_URLS);
-  await self.skipWaiting();
+ const cache=await caches.open(APP_CACHE);
+ await cache.addAll(self.APP_FILES);
+ await self.skipWaiting();
 })()));
-self.addEventListener('fetch', event => {
-  const url = new URL(event.request.url);
-  if (url.origin === self.location.origin && FONT_URLS.includes(url.pathname)) {
-    event.respondWith(caches.open(FONT_CACHE).then(async cache => (await cache.match(url.pathname)) || fetch(event.request)));
-  }
+self.addEventListener('activate',event=>event.waitUntil((async()=>{
+ for(const key of await caches.keys()) if(key.startsWith('leaf-app-') && key!==APP_CACHE) await caches.delete(key);
+ await self.clients.claim();
+})()));
+self.addEventListener('fetch', event=>{
+ const url=new URL(event.request.url);
+ if(url.pathname.startsWith('/api/') && !url.pathname.startsWith('/api/v1/audio/'))return;
+ if(url.origin!==self.location.origin || event.request.method!=='GET')return;
+ if(url.pathname.startsWith('/fonts/') && url.pathname.endsWith('.woff2')) {
+  event.respondWith((async()=>{const cache=await caches.open(FONT_CACHE);const hit=await cache.match(event.request);if(hit)return hit;const response=await fetch(event.request);if(response.ok)await cache.put(event.request,response.clone());return response;})());return;
+ }
+ if(event.request.mode==='navigate') {
+  event.respondWith((async()=>{try{return await fetch(event.request);}catch{const cache=await caches.open(APP_CACHE);return (await cache.match('/index.html')) || Response.error();}})());return;
+ }
+ if(self.APP_FILES.includes(url.pathname))event.respondWith(caches.open(APP_CACHE).then(async cache=>(await cache.match(url.pathname)) || fetch(event.request)));
+ if(url.pathname.startsWith('/voice/'))event.respondWith(caches.match(url.pathname).then(hit=>hit || fetch(event.request)));
 });
-self.addEventListener('activate', event => event.waitUntil(self.clients.claim()));
 self.addEventListener('message', event => {
   if (event.data?.type !== 'DOWNLOAD_AUDIO' || !LANGUAGES.includes(event.data.lang)) return;
   event.waitUntil((async () => {
@@ -32,6 +43,12 @@ self.addEventListener('message', event => {
         const bytes = await response.arrayBuffer();
         if (bytes.byteLength <= 5120) throw new Error(`Invalid audio: ${url}`);
         await cache.put(url, new Response(bytes, { headers: { 'Content-Type': 'audio/mpeg' } }));
+      }
+      for (const suffix of ['', '-low', '-medium', '-high']) {
+        const promptUrl=suffix ? `/voice/risk-${lang}${suffix}.mp3` : `/voice/${lang}.mp3`;
+        const prompt=await fetch(promptUrl);
+        if(!prompt.ok || !prompt.headers.get('content-type')?.startsWith('audio/')) throw new Error('Prompt unavailable');
+        await cache.put(promptUrl,prompt);
       }
       const catalogUrl = `/api/v1/audio/catalog/${lang}`;
       const catalog = await fetch(catalogUrl, { cache: 'no-store' });

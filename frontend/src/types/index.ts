@@ -114,6 +114,7 @@ export interface TopRegionalThreat {
 }
 
 export interface RiskAssessment {
+  action?: string;
   crop: string;
   target_condition: string;
   risk_score: number;
@@ -128,6 +129,9 @@ export interface RiskAssessment {
 }
 
 export interface AnalysisResponse {
+  image_sha256?: string;
+  entropy?: number;
+  weather_status?: 'available' | 'manual' | 'unavailable' | 'location_required';
   language?: string;
   canonical_key?: string;
   scientific_name?: string;

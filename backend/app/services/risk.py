@@ -1,5 +1,7 @@
 """Transparent, rule-based Outbreak Risk Prediction Engine based on agronomic thresholds."""
 import yaml
+import json
+from types import SimpleNamespace
 from pathlib import Path
 from typing import Dict, Any, List, Optional
 from backend.app.core.config import settings
@@ -35,49 +37,16 @@ def evaluate_disease_risk(
 ) -> RiskAssessment:
     """Compute transparent 0-100 outbreak risk score for a diagnosed disease or healthy crop."""
     kb = load_knowledge_base()
-    disease_entry = kb.get(predicted_label)
-    
-    if disease_entry is None:
-        # Fallback entry
-        return RiskAssessment(
-            crop="Unknown Crop",
-            target_condition=predicted_label,
-            risk_score=50,
-            risk_level="MODERATE",
-            risk_color="#f59e0b",
-            headline="Moderate Baseline Risk (Uncataloged Condition)",
-            summary="Standard agronomic monitoring recommended.",
-            contributing_factors=[],
-            daily_outlook=[]
-        )
-
-    # If it's a healthy crop, evaluate all diseases of this crop
+    from backend.app.services.i18n import canonical_class_key
+    disease_entry = kb[canonical_class_key(predicted_label)]
+    if weather is None:
+        return None
     if disease_entry.is_healthy:
         return _evaluate_healthy_crop_threats(disease_entry.crop, weather, kb)
-
-    # For diagnosed disease, evaluate specific favorable rules
-    cond = disease_entry.favorable_conditions
+    rules = json.loads((Path(__file__).resolve().parents[1] / 'data/risk_rules.json').read_text(encoding='utf-8'))
+    cond = SimpleNamespace(**rules['rules'][predicted_label])
+    weights = rules['weights']
     factors: List[ContributingFactor] = []
-    
-    if weather is None:
-        # No weather provided -> return neutral baseline
-        return RiskAssessment(
-            crop=disease_entry.crop,
-            target_condition=disease_entry.disease_name,
-            risk_score=40,
-            risk_level="MODERATE",
-            risk_color="#f59e0b",
-            headline=f"Moderate Spread Potential for {disease_entry.disease_name}",
-            summary="Environmental data unavailable. Standard preventative sanitation recommended.",
-            contributing_factors=[
-                ContributingFactor(
-                    factor_name="Environmental Sensor Data Missing",
-                    impact="NEUTRAL",
-                    explanation="No local weather coordinates supplied. Risk score is computed from baseline crop susceptibility."
-                )
-            ],
-            daily_outlook=[]
-        )
 
     # 1. Temperature Scoring (0 to 35 points)
     # Check if forecast and current temp falls within favorable window
@@ -85,36 +54,36 @@ def evaluate_disease_risk(
     t_mean = weather.forecast_7d_mean_temp_c
     if cond.temp_min_c <= t_mean <= cond.temp_max_c:
         if cond.temp_optimal_c and abs(t_mean - cond.temp_optimal_c) <= 3.0:
-            temp_score = 35
+            temp_score = weights['temperature_optimal']
             factors.append(ContributingFactor(
                 factor_name="Optimal Pathogen Temperature",
                 impact="ELEVATES_RISK",
                 explanation=f"Forecast mean temperature of {t_mean}°C aligns closely with pathogen optimum ({cond.temp_optimal_c}°C)."
             ))
         else:
-            temp_score = 25
+            temp_score = weights['temperature_favorable']
             factors.append(ContributingFactor(
                 factor_name="Favorable Temperature Range",
                 impact="ELEVATES_RISK",
                 explanation=f"Forecast mean temperature ({t_mean}°C) falls inside pathogen activity range ({cond.temp_min_c}°C - {cond.temp_max_c}°C)."
             ))
     elif t_mean < cond.temp_min_c - 5.0 or t_mean > cond.temp_max_c + 5.0:
-        temp_score = 5
+        temp_score = weights['temperature_unfavorable']
         factors.append(ContributingFactor(
             factor_name="Unfavorable Temperature Suppression",
             impact="REDUCES_RISK",
             explanation=f"Forecast mean temperature ({t_mean}°C) is outside favorable development limits."
         ))
     else:
-        temp_score = 15
+        temp_score = weights['temperature_edge']
 
     # 2. Humidity & Leaf Wetness Scoring (0 to 40 points)
     humidity_score = 0
     h_mean = weather.forecast_7d_mean_humidity_pct
-    high_h_hours = weather.past_7d_high_humidity_hours
+    high_h_hours = weather.past_72h_wet_hours if weather.past_72h_wet_hours is not None else weather.past_7d_high_humidity_hours
     
     # Special case: Two-Spotted Spider Mite thrives in low humidity / drought
-    if "Spider_mites" in disease_entry.id:
+    if cond.humidity_mode == 'dry':
         if h_mean <= 45.0:
             humidity_score = 40
             factors.append(ContributingFactor(
@@ -132,28 +101,28 @@ def evaluate_disease_risk(
     else:
         # Standard fungal / bacterial diseases require moisture
         if h_mean >= cond.humidity_min_pct:
-            humidity_score = 30
+            humidity_score = weights['humidity_high']
             factors.append(ContributingFactor(
                 factor_name="High Atmospheric Humidity",
                 impact="ELEVATES_RISK",
                 explanation=f"Forecast humidity of {h_mean}% exceeds minimum infection threshold of {cond.humidity_min_pct}%."
             ))
         elif h_mean >= cond.humidity_min_pct - 15.0:
-            humidity_score = 18
+            humidity_score = weights['humidity_near']
             factors.append(ContributingFactor(
                 factor_name="Moderate Humidity Levels",
                 impact="NEUTRAL",
                 explanation=f"Forecast humidity ({h_mean}%) is moderate but near threshold ({cond.humidity_min_pct}%)."
             ))
         else:
-            humidity_score = 5
+            humidity_score = weights['humidity_low']
             factors.append(ContributingFactor(
                 factor_name="Dry Air Suppresses Spore Germination",
                 impact="REDUCES_RISK",
                 explanation=f"Low humidity ({h_mean}%) significantly impedes fungal spore germination and penetration."
             ))
             
-        if high_h_hours >= 30:
+        if high_h_hours >= cond.leaf_wetness_hours_min and cond.leaf_wetness_hours_min > 0:
             humidity_score = min(40, humidity_score + 10)
             factors.append(ContributingFactor(
                 factor_name="Prolonged Leaf Wetness / High Humidity Hours",
@@ -163,24 +132,24 @@ def evaluate_disease_risk(
 
     # 3. Rainfall & Splash Dispersal (0 to 25 points)
     rain_score = 0
-    rain_total = weather.forecast_7d_total_rain_mm + (weather.past_7d_total_rain_mm * 0.5)
+    rain_total = (weather.forecast_48h_rain_mm + weather.past_72h_rain_mm * 0.5) if weather.forecast_48h_rain_mm is not None and weather.past_72h_rain_mm is not None else weather.forecast_7d_total_rain_mm + weather.past_7d_total_rain_mm * 0.5
     if cond.rainfall_favorable:
         if rain_total >= 20.0:
-            rain_score = 25
+            rain_score = weights['rain_heavy']
             factors.append(ContributingFactor(
                 factor_name="Heavy Rain & Splash Dispersal",
                 impact="ELEVATES_RISK",
                 explanation=f"Cumulative rainfall of {rain_total:.1f} mm facilitates rapid splash dispersal and spore wash."
             ))
         elif rain_total >= 5.0:
-            rain_score = 15
+            rain_score = weights['rain_some']
             factors.append(ContributingFactor(
                 factor_name="Periodic Rainfall",
                 impact="ELEVATES_RISK",
                 explanation=f"Moderate rainfall ({rain_total:.1f} mm) maintains foliar moisture necessary for infection."
             ))
         else:
-            rain_score = 5
+            rain_score = weights['rain_low']
             factors.append(ContributingFactor(
                 factor_name="Minimal Precipitation",
                 impact="REDUCES_RISK",
@@ -203,7 +172,10 @@ def evaluate_disease_risk(
                 explanation="Rainfall physically washes powdery mildew spores and small insect vectors off foliage."
             ))
 
-    total_score = min(100, max(0, temp_score + humidity_score + rain_score))
+    wind_score = weights['wind'] if cond.wind_spread and (weather.forecast_48h_wind_kmh or 0) >= 15 else 0
+    total_score = min(100, max(0, temp_score + humidity_score + rain_score + wind_score))
+    if t_mean < cond.temp_min_c - 5 or t_mean > cond.temp_max_c + 5:
+        total_score = round(total_score * weights['temperature_suppression_factor'])
     
     if total_score >= 75:
         level = "VERY HIGH"
@@ -226,12 +198,18 @@ def evaluate_disease_risk(
         headline = f"Low Outbreak Risk for {disease_entry.disease_name}"
         summary = f"Environmental conditions are currently unfavorable for rapid spread of {disease_entry.disease_name}."
 
+    if weather.past_72h_rain_mm is not None:
+        factors = [
+            ContributingFactor(factor_name='Temperature / humidity', impact='ELEVATES_RISK' if temp_score >= 25 else 'REDUCES_RISK', explanation=f"{disease_entry.disease_name}: forecast {t_mean} °C (favorable {cond.temp_min_c} to {cond.temp_max_c} °C); humidity {h_mean}% (threshold {cond.humidity_min_pct}%)."),
+            ContributingFactor(factor_name='Rain / leaf wetness', impact='ELEVATES_RISK' if rain_score >= 15 else 'REDUCES_RISK', explanation=f"Rain: last 72 h {weather.past_72h_rain_mm} mm; next 48 h {weather.forecast_48h_rain_mm} mm. Wetness proxy: {high_h_hours} h."),
+            ContributingFactor(factor_name='Wind', impact='ELEVATES_RISK' if wind_score else 'NEUTRAL', explanation=f"Forecast wind: {weather.forecast_48h_wind_kmh} km/h. Wind spread modifier: {wind_score} points.")
+        ]
     # Compute 7-day daily outlook
     daily_outlook: List[DailyRiskOutlook] = []
     for day in weather.daily_forecasts:
         day_temp_score = 30 if (cond.temp_min_c <= day.temp_mean_c <= cond.temp_max_c) else 10
         day_hum_score = 35 if day.humidity_mean_pct >= cond.humidity_min_pct else 10
-        day_rain_score = 25 if (cond.rainfall_favorable and day.precipitation_sum_mm > 2.0) else 10
+        day_rain_score = weights['rain_heavy'] if (cond.rainfall_favorable and day.precipitation_sum_mm > 2.0) else 10
         day_score = min(100, day_temp_score + day_hum_score + day_rain_score)
         
         day_level = "HIGH" if day_score >= 60 else ("MODERATE" if day_score >= 35 else "LOW")
@@ -249,6 +227,8 @@ def evaluate_disease_risk(
         ))
 
     return RiskAssessment(
+        canonical_key=predicted_label,
+        action=disease_entry.prevention_steps[0],
         crop=disease_entry.crop,
         target_condition=disease_entry.disease_name,
         risk_score=total_score,
@@ -269,6 +249,8 @@ def _evaluate_healthy_crop_threats(
 ) -> RiskAssessment:
     """For a healthy plant, evaluate regional weather susceptibility to common diseases of that crop."""
     crop_diseases = [d for d in kb.values() if d.crop.lower() in crop_name.lower() and not d.is_healthy]
+    if not crop_diseases or weather is None:
+        return None
     
     threat_scores = []
     for d in crop_diseases:
@@ -327,7 +309,7 @@ def _evaluate_healthy_crop_threats(
         risk_color=color,
         headline=headline,
         summary=summary,
-        contributing_factors=[
+        contributing_factors=evaluate_disease_risk(threat_scores[0]['disease_id'], weather).contributing_factors if threat_scores else [
             ContributingFactor(
                 factor_name="Crop Foliage Verified Healthy",
                 impact="REDUCES_RISK",

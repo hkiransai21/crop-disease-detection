@@ -121,5 +121,14 @@
   "Check the information you entered.": "நீங்கள் உள்ளிட்ட தகவல்களை சரிபார்க்கவும்.",
   "Too many requests. Please wait and try again.": "அதிகமான கோரிக்கைகள். தயவுசெய்து காத்திருந்து மீண்டும் முயற்சிக்கவும்.",
   "The service is unavailable. Please try again later.": "சேவை கிடைக்கவில்லை. தயவுசெய்து பின்னர் மீண்டும் முயற்சிக்கவும்.",
-  "Healthy": "ஆரோக்கியமான"
+  "Healthy": "ஆரோக்கியமான",
+  "Forecast: {{p0}} °C, humidity {{p1}}%.": "முன்னறிவிப்பு: {{p0}} °C, ஈரப்பதம் {{p1}}%.",
+  "Rain: last 72 h {{p0}} mm; next 48 h {{p1}} mm. Wetness proxy: {{p2}} h.": "மழை: கடந்த 72 h {{p0}} mm; அடுத்த 48 h {{p1}} mm. ஈரநிலை மதிப்பீடு: {{p2}} h.",
+  "Forecast wind: {{p0}} km/h. Wind spread modifier: {{p1}} points.": "காற்று முன்னறிவிப்பு: {{p0}} km/h. காற்றுப் பரவல் மதிப்பெண்: {{p1}}.",
+  "Temperature / humidity": "வெப்பநிலை / ஈரப்பதம்",
+  "Rain / leaf wetness": "மழை / இலை ஈரம்",
+  "Wind": "காற்று",
+  "Re-check in 24 hours and consult the local agriculture office.": "24 மணி நேரத்தில் மீண்டும் பார்த்து உள்ளூர் வேளாண்மை அலுவலகத்தை அணுகவும்.",
+  "Re-check in 48 hours.": "48 மணி நேரத்தில் மீண்டும் பார்க்கவும்.",
+  "{{p0}}: forecast {{p1}} °C (favorable {{p2}} to {{p3}} °C); humidity {{p4}}% (threshold {{p5}}%).": "{{p0}}: முன்னறிவிப்பு {{p1}} °C (சாதகமான வரம்பு {{p2}} முதல் {{p3}} °C); ஈரப்பதம் {{p4}}% (வரம்பு {{p5}}%)."
 }

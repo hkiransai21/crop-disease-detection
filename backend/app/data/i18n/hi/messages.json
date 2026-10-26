@@ -121,5 +121,14 @@
   "Check the information you entered.": "आपके द्वारा दर्ज की गई जानकारी की जांच करें।",
   "Too many requests. Please wait and try again.": "बहुत सारे अनुरोध हैं, कृपया प्रतीक्षा करें और फिर से प्रयास करें।",
   "The service is unavailable. Please try again later.": "सेवा अनुपलब्ध है कृपया बाद में पुनः प्रयास करें।",
-  "Healthy": "स्वस्थ"
+  "Healthy": "स्वस्थ",
+  "Forecast: {{p0}} °C, humidity {{p1}}%.": "पूर्वानुमान: {{p0}} °C, नमी {{p1}}%.",
+  "Rain: last 72 h {{p0}} mm; next 48 h {{p1}} mm. Wetness proxy: {{p2}} h.": "बारिश: पिछले 72 h में {{p0}} mm; अगले 48 h में {{p1}} mm। गीलेपन का अनुमान: {{p2}} h।",
+  "Forecast wind: {{p0}} km/h. Wind spread modifier: {{p1}} points.": "हवा का पूर्वानुमान: {{p0}} km/h। हवा से फैलाव के अंक: {{p1}}।",
+  "Temperature / humidity": "तापमान / नमी",
+  "Rain / leaf wetness": "बारिश / पत्तों का गीलापन",
+  "Wind": "हवा",
+  "Re-check in 24 hours and consult the local agriculture office.": "24 घंटे में फिर जाँचें और स्थानीय कृषि कार्यालय से सलाह लें।",
+  "Re-check in 48 hours.": "48 घंटे में फिर जाँचें।",
+  "{{p0}}: forecast {{p1}} °C (favorable {{p2}} to {{p3}} °C); humidity {{p4}}% (threshold {{p5}}%).": "{{p0}}: पूर्वानुमान {{p1}} °C (अनुकूल {{p2}} से {{p3}} °C); नमी {{p4}}% (सीमा {{p5}}%)।"
 }

@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   </React.StrictMode>
 );
 
-// Precache only bundled fonts here. Audio remains opt-in in the player.
+// Production app shell and route chunks work offline. Audio remains opt-in.
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/audio-sw.js').catch(() => {});
 }

@@ -1,0 +1,9 @@
+{
+  "ml\\models\\best_model.pth": "bca901f5013691658bd3a05a7f20077364543f8297c00a621c5dba1a13f6c7ea",
+  "ml\\models\\efficientnet_b0_plantvillage.onnx": "ab74df28523b4c5b74c700f20578e0ebd02cb5251603307609d77f39a563d3f9",
+  "ml\\models\\efficientnet_b0_plantvillage.onnx.data": "599b89812d68139536beb41b843c6969401e5dc54e8828f217fbe243c4b52a8f",
+  "ml\\models\\efficientnet_b0_plantvillage_int8.onnx": "114794b75f1fbbd3b32bab1e4759ca97abc222cb0578f4fbbb5b833dd7473dc6",
+  "ml\\models\\labels.json": "16925c0cb74cd5be219eb9e8cf87f0fa4f5c255f49b8db7c865c55050cb7d307",
+  "ml\\models\\model_version": "2bca554c20c2fc1bb403551282c3f5aede35d8771084aeae8a2c4353b6dc03fb",
+  "ml\\models\\temperature.json": "8b35f8ce177e9315e244e4522c7810868afdf4ac2c17d2ac05e906d1f68f646b"
+}

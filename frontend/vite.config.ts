@@ -22,6 +22,7 @@ export default defineConfig({
       },
     },
   },
+  preview: { host: true, proxy: { '/api': 'http://127.0.0.1:8000', '/uploads': 'http://127.0.0.1:8000', '/static': 'http://127.0.0.1:8000' } },
   test: {
     globals: true,
     environment: 'jsdom',

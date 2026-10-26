@@ -1,0 +1,14 @@
+[
+  {
+    "screen": "home",
+    "lang": "en",
+    "performance": 100,
+    "accessibility": 100
+  },
+  {
+    "screen": "result",
+    "lang": "ta",
+    "performance": 100,
+    "accessibility": 100
+  }
+]

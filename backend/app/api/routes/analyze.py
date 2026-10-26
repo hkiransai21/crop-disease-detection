@@ -1,7 +1,10 @@
 """Crop disease image analysis and outbreak risk diagnosis endpoint."""
 import asyncio
+import hashlib
+import logging
+from uuid import uuid4
 from typing import Optional
-from fastapi import APIRouter, Depends, UploadFile, File, Form, HTTPException, status, Request
+from fastapi import APIRouter, Depends, UploadFile, File, Form, HTTPException, status, Request, Response
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from backend.app.core.config import settings
@@ -24,9 +27,10 @@ router = APIRouter(tags=["Crop Disease Analysis"])
 @limiter.limit(settings.RATE_LIMIT_ANALYZE)
 async def analyze_crop_image(
     request: Request,
+    response: Response,
     image: UploadFile = File(..., description="Crop leaf image file"),
-    latitude: Optional[float] = Form(None, description="GPS Latitude (-90 to 90)"),
-    longitude: Optional[float] = Form(None, description="GPS Longitude (-180 to 180)"),
+    latitude: Optional[float] = Form(None, ge=-90, le=90, description="GPS Latitude (-90 to 90)"),
+    longitude: Optional[float] = Form(None, ge=-180, le=180, description="GPS Longitude (-180 to 180)"),
     location_name: Optional[str] = Form(None, description="Optional city / district name"),
     manual_temp_c: Optional[float] = Form(None, description="Manual temperature fallback"),
     manual_humidity_pct: Optional[float] = Form(None, description="Manual relative humidity fallback"),
@@ -54,17 +58,31 @@ async def analyze_crop_image(
     # 1. Image processing & EXIF stripping
     saved_path, clean_pil_image, width, height = validate_and_process_image(file_bytes, image.filename)
 
+    response.headers['Cache-Control'] = 'no-store'
+    resolved_lang = resolve_language(request.query_params.get("lang") or lang, request.headers.get("Accept-Language"))
+    if (latitude is None) != (longitude is None):
+        raise HTTPException(422, detail='Both latitude and longitude are required')
     # 2. Run ML inference in threadpool
     loop = asyncio.get_running_loop()
-    pred_result = await loop.run_in_executor(None, predict_disease, clean_pil_image, 3)
+    try:
+        pred_result = await loop.run_in_executor(None, predict_disease, clean_pil_image, 3)
+        localized_entry = get_localized_disease_entry(pred_result['predicted_label'], resolved_lang)
+        for item in pred_result['top_k']:
+            get_localized_disease_entry(item['class_id'], resolved_lang)
+    except (KeyError, RuntimeError):
+        logging.getLogger(__name__).exception('Diagnosis pipeline unavailable')
+        raise HTTPException(503, detail=translate_message(UNCERTAINTY, resolved_lang))
 
     # 3. Weather Integration
     weather_summary: Optional[WeatherSummary] = None
+    weather_status = 'location_required'
     if latitude is not None and longitude is not None:
         try:
             weather_summary = await fetch_weather_summary(latitude, longitude)
+            weather_status = 'available'
         except Exception as e:
-            print(f"Weather fetch exception: {e}")
+            logging.getLogger(__name__).warning('Weather unavailable: %s', e)
+            weather_status = 'unavailable'
     elif manual_temp_c is not None and manual_humidity_pct is not None:
         # Construct manual weather summary
         weather_summary = WeatherSummary(
@@ -82,6 +100,7 @@ async def analyze_crop_image(
             data_source="Manual Farmer Input",
             is_live=False
         )
+        weather_status = 'manual'
 
     # 4. Outbreak Risk Assessment
     risk_assessment = evaluate_disease_risk(pred_result["predicted_label"], weather_summary)
@@ -116,7 +135,7 @@ async def analyze_crop_image(
     image_url = f"/static{file_rel}" if not file_rel.startswith("/static") else file_rel
 
     # 6. Persist to Database if user is authenticated (raw canonical prediction persisted)
-    analysis_id = "guest_" + pred_result["model_version"]
+    analysis_id = 'guest_' + uuid4().hex
     if current_user:
         analysis_record = Analysis(
             user_id=current_user.id,
@@ -131,7 +150,7 @@ async def analyze_crop_image(
             longitude=longitude,
             location_name=location_name,
             weather_snapshot=weather_summary.model_dump() if weather_summary else None,
-            risk_assessment=risk_assessment.model_dump()
+            risk_assessment=risk_assessment.model_dump() if risk_assessment else None
         )
         db.add(analysis_record)
         await db.commit()
@@ -140,6 +159,9 @@ async def analyze_crop_image(
 
     from datetime import datetime, timezone
     return AnalysisResponse(
+        image_sha256=hashlib.sha256(file_bytes).hexdigest(),
+        entropy=pred_result.get('entropy'),
+        weather_status=weather_status,
         localization_source={"confidence_display": pred_result["confidence_display"], "risk_assessment": risk_assessment.model_dump() if risk_assessment else None},
         id=analysis_id,
         canonical_key=pred_result["predicted_label"],

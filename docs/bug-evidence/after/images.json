@@ -1,0 +1,438 @@
+[
+  {
+    "image": "sample_leaf_diseased.jpg",
+    "sha256": "8116d51394405e3ff38c3f925c3ea0d5da4047ced2c4eabd10aedd88787385bc",
+    "logits": [
+      1.3970303535461426,
+      1.2679014205932617,
+      -1.1154828071594238,
+      -0.2861243188381195,
+      1.3058061599731445,
+      1.7188111543655396,
+      0.7918387055397034,
+      0.10173308849334717,
+      1.754220962524414,
+      0.6276618242263794,
+      1.1926449537277222,
+      -0.05911850184202194,
+      -1.171168327331543,
+      0.5561254620552063,
+      1.2341277599334717,
+      1.2130030393600464,
+      2.118643283843994,
+      -0.2530827224254608,
+      0.14147064089775085,
+      0.4487608075141907,
+      1.3769468069076538,
+      1.4595184326171875,
+      0.40624046325683594,
+      0.4674474895000458,
+      1.2418917417526245,
+      1.3508862257003784,
+      0.888292670249939,
+      0.004388011991977692,
+      0.044549666345119476,
+      0.8282024264335632,
+      0.21269690990447998,
+      -0.37230417132377625,
+      0.20111820101737976,
+      -0.42259669303894043,
+      -1.216277837753296,
+      0.11791414022445679,
+      1.3908061981201172,
+      0.26741451025009155
+    ],
+    "raw_top3": [
+      {
+        "class": "Peach___Bacterial_spot",
+        "probability": 0.09262394905090332
+      },
+      {
+        "class": "Corn_(maize)___Common_rust_",
+        "probability": 0.0643363893032074
+      },
+      {
+        "class": "Cherry_(including_sour)___Powdery_mildew",
+        "probability": 0.06209811195731163
+      }
+    ],
+    "prediction": {
+      "predicted_label": "Peach___Bacterial_spot",
+      "crop": "Peach",
+      "disease_name": "Bacterial spot",
+      "is_healthy": false,
+      "confidence": 0.26973673701286316,
+      "confidence_display": "Low / Uncertain",
+      "is_uncertain": true,
+      "uncertainty_reason": "Low diagnostic confidence (27.0% < 60% threshold). Leaf may be blurry, occluded, or non-plant.",
+      "entropy": 2.6612,
+      "top_k": [
+        {
+          "class_id": "Peach___Bacterial_spot",
+          "crop": "Peach",
+          "disease_name": "Bacterial spot",
+          "confidence": 0.26973673701286316,
+          "confidence_percentage": 26.97,
+          "is_healthy": false
+        },
+        {
+          "class_id": "Corn_(maize)___Common_rust_",
+          "crop": "Corn",
+          "disease_name": "Common rust",
+          "confidence": 0.11162640154361725,
+          "confidence_percentage": 11.16,
+          "is_healthy": false
+        },
+        {
+          "class_id": "Cherry_(including_sour)___Powdery_mildew",
+          "crop": "Cherry",
+          "disease_name": "Powdery mildew",
+          "confidence": 0.10245542973279953,
+          "confidence_percentage": 10.25,
+          "is_healthy": false
+        }
+      ],
+      "model_version": "v1.0.0_efficientnet_b0_1791304778"
+    },
+    "status": 200,
+    "final_json": {
+      "localization_source": {
+        "confidence_display": "Low / Uncertain",
+        "risk_assessment": null
+      },
+      "image_sha256": "8116d51394405e3ff38c3f925c3ea0d5da4047ced2c4eabd10aedd88787385bc",
+      "entropy": 2.6612,
+      "weather_status": "location_required",
+      "id": "guest_9baf9fcb1b0e4ac188bdd83acf613e53",
+      "canonical_key": "Peach___Bacterial_spot",
+      "scientific_name": "Xanthomonas arboricola pv. pruni",
+      "language": "en",
+      "predicted_label": "Peach___Bacterial_spot",
+      "crop": "Peach",
+      "disease_name": "Bacterial Spot",
+      "confidence": 0.26973673701286316,
+      "confidence_display": "Low / Uncertain",
+      "is_uncertain": true,
+      "uncertainty_reason": "This photo does not give a clear result. Take another photo in good light. Do not choose a pesticide from this result. Ask your local agriculture office to check the plant.",
+      "top_k": [
+        {
+          "class_id": "Peach___Bacterial_spot",
+          "crop": "Peach",
+          "disease_name": "Bacterial Spot",
+          "confidence": 0.26973673701286316,
+          "confidence_percentage": 26.97,
+          "is_healthy": false
+        },
+        {
+          "class_id": "Corn_(maize)___Common_rust_",
+          "crop": "Corn (Maize)",
+          "disease_name": "Common Rust",
+          "confidence": 0.11162640154361725,
+          "confidence_percentage": 11.16,
+          "is_healthy": false
+        },
+        {
+          "class_id": "Cherry_(including_sour)___Powdery_mildew",
+          "crop": "Cherry",
+          "disease_name": "Powdery Mildew",
+          "confidence": 0.10245542973279953,
+          "confidence_percentage": 10.25,
+          "is_healthy": false
+        }
+      ],
+      "model_version": "v1.0.0_efficientnet_b0_1791304778",
+      "image_url": "/static/uploads/d755c977-3eff-4615-94eb-aa2357c6d805.jpg",
+      "location_name": null,
+      "latitude": null,
+      "longitude": null,
+      "weather_summary": null,
+      "risk_assessment": null,
+      "disease_details": {
+        "id": "Peach___Bacterial_spot",
+        "crop": "Peach",
+        "disease_name": "Bacterial Spot",
+        "scientific_name": "Xanthomonas arboricola pv. pruni",
+        "causal_agent_type": "bacterial",
+        "is_healthy": false,
+        "symptoms": "Water-soaked polygonal angular spots on leaves turning purplish-brown, centers drop out giving a 'shot-hole' look. Pitted, gumming lesions on fruit.",
+        "spread_mechanism": "Bacteria splash from twig cankers during wind-driven rain and enter via stomata and wounds.",
+        "favorable_conditions": {
+          "temp_min_c": 20.0,
+          "temp_max_c": 30.0,
+          "temp_optimal_c": 25.0,
+          "humidity_min_pct": 85.0,
+          "leaf_wetness_hours_min": 4.0,
+          "rainfall_favorable": true,
+          "wind_spread": true
+        },
+        "prevention_steps": [
+          "Plant resistant peach cultivars (e.g., Candor, Clayton, Reliance).",
+          "Avoid excessive nitrogen fertilizers that stimulate susceptible young shoot growth.",
+          "Plant windbreaks to reduce windblown sand abrasions that facilitate bacterial entry."
+        ],
+        "organic_controls": [
+          "Dormant copper applications and low-rate copper hydroxide during early cover sprays."
+        ],
+        "chemical_controls": [
+          "Bactericides: Oxytetracycline (Mycoshield) and low-rate copper formulations applied from petal fall through cover sprays."
+        ],
+        "severity": "HIGH",
+        "when_to_consult_expert": "If twig cankers proliferate or fruit drop exceeds 10%.",
+        "safety_notes": [
+          "Always read and strictly follow pesticide product label instructions and pre-harvest intervals (PHI).",
+          "Wear required Personal Protective Equipment (PPE) including chemical-resistant gloves, goggles, and respirator mask.",
+          "Keep all chemicals out of reach of children and away from livestock and drinking water sources.",
+          "Consult your local agricultural extension officer or call Kisan Call Center (1800-180-1551) for certified advice."
+        ],
+        "sources": [
+          "Rutgers NJAES Cooperative Extension: Bacterial Spot of Stone Fruit",
+          "Penn State Extension: Bacterial Spot on Peaches"
+        ],
+        "canonical_key": "Peach___Bacterial_spot",
+        "common_name": "Bacterial Spot",
+        "transliteration": "Bacterial Spot",
+        "summary": "Possible Bacterial Spot. Compare the symptoms before choosing treatment.",
+        "immediate_actions": [
+          "Dormant copper applications and low-rate copper hydroxide during early cover sprays."
+        ],
+        "organic_options": [
+          "Dormant copper applications and low-rate copper hydroxide during early cover sprays."
+        ],
+        "chemical_options": [
+          "Bactericides: Oxytetracycline (Mycoshield) and low-rate copper formulations applied from petal fall through cover sprays."
+        ],
+        "prevention": [
+          "Plant resistant peach cultivars (e.g., Candor, Clayton, Reliance).",
+          "Avoid excessive nitrogen fertilizers that stimulate susceptible young shoot growth.",
+          "Plant windbreaks to reduce windblown sand abrasions that facilitate bacterial entry."
+        ],
+        "when_to_call_expert": "If twig cankers proliferate or fruit drop exceeds 10%.",
+        "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+        "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+        "fallback_fields": [],
+        "canonical_crop": "Peach",
+        "canonical_disease_name": "Bacterial Spot",
+        "review_status": "machine_suggested",
+        "language": "en"
+      },
+      "created_at": "2026-10-26T05:31:48.197023Z"
+    }
+  },
+  {
+    "image": "sample_leaf_healthy.jpg",
+    "sha256": "7fc1ff98f3666e08ff560489c952b356d162bd4d3dfb0e6200dc5a9e20aa3fa1",
+    "logits": [
+      1.023248553276062,
+      -0.24117127060890198,
+      -0.023701809346675873,
+      0.4954679608345032,
+      0.46341466903686523,
+      0.35885465145111084,
+      -0.16754233837127686,
+      -1.0913373231887817,
+      1.4974006414413452,
+      0.08041821420192719,
+      2.609767198562622,
+      -0.30180811882019043,
+      -0.05802455544471741,
+      0.15044040977954865,
+      -0.08730045706033707,
+      0.6218957901000977,
+      -0.38636478781700134,
+      -0.03981968015432358,
+      -0.5487238764762878,
+      -0.663202702999115,
+      0.5762816071510315,
+      1.2453231811523438,
+      1.3007375001907349,
+      1.078792691230774,
+      1.2350257635116577,
+      0.9767786264419556,
+      1.0485336780548096,
+      0.576081395149231,
+      0.6353203058242798,
+      -0.21151311695575714,
+      -0.1910705268383026,
+      -0.2834802269935608,
+      1.349278450012207,
+      1.23013174533844,
+      0.6782013773918152,
+      1.6488531827926636,
+      1.5076905488967896,
+      0.7321470975875854
+    ],
+    "raw_top3": [
+      {
+        "class": "Corn_(maize)___healthy",
+        "probability": 0.15844357013702393
+      },
+      {
+        "class": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+        "probability": 0.06061149388551712
+      },
+      {
+        "class": "Tomato___Tomato_mosaic_virus",
+        "probability": 0.05263186991214752
+      }
+    ],
+    "prediction": {
+      "predicted_label": "Corn_(maize)___healthy",
+      "crop": "Corn",
+      "disease_name": "healthy",
+      "is_healthy": true,
+      "confidence": 0.6226953268051147,
+      "confidence_display": "Moderate Confidence",
+      "is_uncertain": false,
+      "uncertainty_reason": null,
+      "entropy": 1.73,
+      "top_k": [
+        {
+          "class_id": "Corn_(maize)___healthy",
+          "crop": "Corn",
+          "disease_name": "healthy",
+          "confidence": 0.6226953268051147,
+          "confidence_percentage": 62.27,
+          "is_healthy": true
+        },
+        {
+          "class_id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+          "crop": "Tomato",
+          "disease_name": "Tomato Yellow Leaf Curl Virus",
+          "confidence": 0.06080213561654091,
+          "confidence_percentage": 6.08,
+          "is_healthy": false
+        },
+        {
+          "class_id": "Tomato___Tomato_mosaic_virus",
+          "crop": "Tomato",
+          "disease_name": "Tomato mosaic virus",
+          "confidence": 0.04320090636610985,
+          "confidence_percentage": 4.32,
+          "is_healthy": false
+        }
+      ],
+      "model_version": "v1.0.0_efficientnet_b0_1791304778"
+    },
+    "status": 200,
+    "final_json": {
+      "localization_source": {
+        "confidence_display": "Moderate Confidence",
+        "risk_assessment": null
+      },
+      "image_sha256": "7fc1ff98f3666e08ff560489c952b356d162bd4d3dfb0e6200dc5a9e20aa3fa1",
+      "entropy": 1.73,
+      "weather_status": "location_required",
+      "id": "guest_0c1e96162d224cb6b27ec6554fc684de",
+      "canonical_key": "Corn_(maize)___healthy",
+      "scientific_name": "Zea mays",
+      "language": "en",
+      "predicted_label": "Corn_(maize)___healthy",
+      "crop": "Corn (Maize)",
+      "disease_name": "Healthy Corn Leaf",
+      "confidence": 0.6226953268051147,
+      "confidence_display": "Moderate Confidence",
+      "is_uncertain": false,
+      "uncertainty_reason": null,
+      "top_k": [
+        {
+          "class_id": "Corn_(maize)___healthy",
+          "crop": "Corn (Maize)",
+          "disease_name": "Healthy Corn Leaf",
+          "confidence": 0.6226953268051147,
+          "confidence_percentage": 62.27,
+          "is_healthy": true
+        },
+        {
+          "class_id": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+          "crop": "Tomato",
+          "disease_name": "Tomato Yellow Leaf Curl Virus (TYLCV)",
+          "confidence": 0.06080213561654091,
+          "confidence_percentage": 6.08,
+          "is_healthy": false
+        },
+        {
+          "class_id": "Tomato___Tomato_mosaic_virus",
+          "crop": "Tomato",
+          "disease_name": "Tomato Mosaic Virus (ToMV)",
+          "confidence": 0.04320090636610985,
+          "confidence_percentage": 4.32,
+          "is_healthy": false
+        }
+      ],
+      "model_version": "v1.0.0_efficientnet_b0_1791304778",
+      "image_url": "/static/uploads/b026fd03-3898-4103-b28b-aa22a475cbc9.jpg",
+      "location_name": null,
+      "latitude": null,
+      "longitude": null,
+      "weather_summary": null,
+      "risk_assessment": null,
+      "disease_details": {
+        "id": "Corn_(maize)___healthy",
+        "crop": "Corn (Maize)",
+        "disease_name": "Healthy Corn Leaf",
+        "scientific_name": "Zea mays",
+        "causal_agent_type": "none",
+        "is_healthy": true,
+        "symptoms": "Broad, vibrant green leaves with parallel venation and no chlorosis, blight, or pustules.",
+        "spread_mechanism": "None.",
+        "favorable_conditions": {
+          "temp_min_c": 15.0,
+          "temp_max_c": 35.0,
+          "temp_optimal_c": 28.0,
+          "humidity_min_pct": 40.0,
+          "leaf_wetness_hours_min": 0.0,
+          "rainfall_favorable": false,
+          "wind_spread": false
+        },
+        "prevention_steps": [
+          "Maintain optimal soil fertility (N-P-K and micronutrients) and adequate plant population density.",
+          "Scout fields regularly at V6, VT, and R2 growth stages."
+        ],
+        "organic_controls": [
+          "Maintain soil health with cover crops (e.g., rye, clover)."
+        ],
+        "chemical_controls": [
+          "No chemical treatment required."
+        ],
+        "severity": "LOW",
+        "when_to_consult_expert": "Routine agronomic scouting.",
+        "safety_notes": [
+          "Always read and strictly follow pesticide product label instructions and pre-harvest intervals (PHI).",
+          "Wear required Personal Protective Equipment (PPE) including chemical-resistant gloves, goggles, and respirator mask.",
+          "Keep all chemicals out of reach of children and away from livestock and drinking water sources.",
+          "Consult your local agricultural extension officer or call Kisan Call Center (1800-180-1551) for certified advice."
+        ],
+        "sources": [
+          "Purdue Extension: Corn Field Guide (ID-179)"
+        ],
+        "canonical_key": "Corn_(maize)___healthy",
+        "common_name": "Healthy Corn Leaf",
+        "transliteration": "Healthy Corn Leaf",
+        "summary": "Leaves appear healthy. Check regularly for changes.",
+        "immediate_actions": [
+          "Maintain optimal soil fertility (N-P-K and micronutrients) and adequate plant population density.",
+          "Scout fields regularly at V6, VT, and R2 growth stages."
+        ],
+        "organic_options": [
+          "Maintain soil health with cover crops (e.g., rye, clover)."
+        ],
+        "chemical_options": [
+          "No chemical treatment required."
+        ],
+        "prevention": [
+          "Maintain optimal soil fertility (N-P-K and micronutrients) and adequate plant population density.",
+          "Scout fields regularly at V6, VT, and R2 growth stages."
+        ],
+        "when_to_call_expert": "Routine agronomic scouting.",
+        "safety_notice": "Read the product label. Wear the required protective clothing, gloves and mask. Keep pesticides away from children and water sources. Confirm the product, dose and waiting period with your local agriculture office.",
+        "review_notes": "Machine-suggested descriptive label; local common-name usage is NOT verified. Ask a native-speaking farmer/agronomist to confirm the wording and transliteration. Ingredient names, numbers and units are locked to the English source.",
+        "fallback_fields": [],
+        "canonical_crop": "Corn (Maize)",
+        "canonical_disease_name": "Healthy Corn Leaf",
+        "review_status": "machine_suggested",
+        "language": "en"
+      },
+      "created_at": "2026-10-26T05:31:48.231715Z"
+    }
+  }
+]

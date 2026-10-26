@@ -24,6 +24,10 @@ class DailyForecast(BaseModel):
 
 
 class WeatherSummary(BaseModel):
+    past_72h_rain_mm: Optional[float] = None
+    forecast_48h_rain_mm: Optional[float] = None
+    past_72h_wet_hours: Optional[int] = None
+    forecast_48h_wind_kmh: Optional[float] = None
     current_temp_c: float
     current_humidity_pct: float
     current_precipitation_mm: float

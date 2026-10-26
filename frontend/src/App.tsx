@@ -1,114 +1,125 @@
-import { LanguageChoice } from './components/LanguageChoice';
-import { useTranslation } from 'react-i18next';
-import { tr } from './i18n/i18n';
-import React, { useState, useEffect } from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
-import { Navbar } from './components/Navbar';
-import { LandingPage } from './pages/LandingPage';
-import { AnalyzePage } from './pages/AnalyzePage';
-import { ResultPage } from './pages/ResultPage';
-import { HistoryPage } from './pages/HistoryPage';
-import { AuthPage } from './pages/AuthPage';
-import { DiseasesPage } from './pages/DiseasesPage';
-import { AboutPage } from './pages/AboutPage';
-import { api } from './api/client';
-import { User, AnalysisResponse } from './types';
-
+﻿import React, { lazy, Suspense, useEffect, useState } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { Navbar, BottomNav } from "./components/Navbar";
+import { LanguageChoice } from "./components/LanguageChoice";
+import { LandingPage } from "./pages/LandingPage";
+import { Loading } from "./ui/primitives";
+import { api } from "./api/client";
+import { User, AnalysisResponse } from "./types";
+import { saveCheck } from "./storage/checks";
+const AnalyzePage = lazy(() =>
+  import("./pages/AnalyzePage").then((m) => ({ default: m.AnalyzePage })),
+);
+const ResultPage = lazy(() =>
+  import("./pages/ResultPage").then((m) => ({ default: m.ResultPage })),
+);
+const HistoryPage = lazy(() =>
+  import("./pages/HistoryPage").then((m) => ({ default: m.HistoryPage })),
+);
+const SettingsPage = lazy(() => import("./pages/SettingsPage"));
+const AuthPage = lazy(() =>
+  import("./pages/AuthPage").then((m) => ({ default: m.AuthPage })),
+);
+const DiseasesPage = lazy(() =>
+  import("./pages/DiseasesPage").then((m) => ({ default: m.DiseasesPage })),
+);
+const AboutPage = lazy(() =>
+  import("./pages/AboutPage").then((m) => ({ default: m.AboutPage })),
+);
 export const App: React.FC = () => {
-  useTranslation();
+  const { t, i18n } = useTranslation();
   const [user, setUser] = useState<User | null>(null);
-  const [lastAnalysis, setLastAnalysis] = useState<AnalysisResponse | null>(() => {
-    try {
-      const cached = sessionStorage.getItem('agrishield_last_analysis');
-      return cached ? JSON.parse(cached) : null;
-    } catch {
-      return null;
-    }
-  });
-  const [isInitializing, setIsInitializing] = useState(true);
-
-  const handleAnalysisComplete = (result: AnalysisResponse) => {
-    setLastAnalysis(result);
-    try {
-      sessionStorage.setItem('agrishield_last_analysis', JSON.stringify(result));
-    } catch {
-      // ignore quota errors
-    }
-  };
-
+  const [lastAnalysis, setLastAnalysis] = useState<AnalysisResponse | null>(
+    null,
+  );
+  const [saveError, setSaveError] = useState(false);
+  const route = useLocation();
   useEffect(() => {
-    const token = api.getToken();
-    if (token) {
-      api
+    if (api.getToken())
+      void api
         .getMe()
-        .then((userData) => setUser(userData))
-        .catch(() => {
-          api.logout();
-          setUser(null);
-        })
-        .finally(() => setIsInitializing(false));
-    } else {
-      setIsInitializing(false);
-    }
+        .then(setUser)
+        .catch(() => {});
   }, []);
-
-  const handleLogout = () => {
-    api.logout();
-    setUser(null);
+  useEffect(() => {
+    document.documentElement.dataset.contrast =
+      localStorage.getItem("leaf_contrast") || "normal";
+  }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.getElementById("main")?.focus({ preventScroll: true });
+  }, [route.pathname]);
+  useEffect(() => {
+    document.title = t("farmer.brand");
+    document.documentElement.lang = i18n.language;
+  }, [i18n.language, t]);
+  const complete = async (response: AnalysisResponse, file: File) => {
+    const result = {
+      ...response,
+      id: response.id.startsWith("guest_")
+        ? `guest_${crypto.randomUUID()}`
+        : response.id,
+    };
+    setLastAnalysis(result);
+    setSaveError(false);
+    try {
+      sessionStorage.setItem(
+        "agrishield_last_analysis",
+        JSON.stringify(result),
+      );
+      const photo = await api.downscaleImage(file, 480);
+      await saveCheck(result, photo);
+    } catch {
+      setSaveError(true);
+    }
+    return result;
   };
-
-  if (isInitializing) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-slate-50">
-        <div className="w-10 h-10 border-4 border-brand-600 border-t-transparent rounded-full animate-spin"></div>
-      </div>
-    );
-  }
-
   return (
-    <LanguageChoice><div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 selection:bg-brand-500 selection:text-white">
-      <Navbar user={user} onLogout={handleLogout} />
-
-      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route
-            path="/analyze"
-            element={<AnalyzePage onAnalysisComplete={handleAnalysisComplete} />}
-          />
-          <Route
-            path="/result/:id"
-            element={<ResultPage lastAnalysis={lastAnalysis} />}
-          />
-          <Route
-            path="/history"
-            element={<HistoryPage user={user} />}
-          />
-          <Route
-            path="/diseases"
-            element={<DiseasesPage />}
-          />
-          <Route
-            path="/about"
-            element={<AboutPage />}
-          />
-          <Route
-            path="/auth"
-            element={<AuthPage onLoginSuccess={setUser} />}
-          />
-        </Routes>
+    <LanguageChoice>
+      <Navbar />
+      <main id="main" tabIndex={-1} className="page-shell">
+        {saveError && (
+          <p className="notice" role="status">
+            {t("farmer.not_saved")}
+          </p>
+        )}
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route
+              path="/analyze"
+              element={<AnalyzePage onAnalysisComplete={complete} />}
+            />
+            <Route
+              path="/result/:id"
+              element={<ResultPage lastAnalysis={lastAnalysis} />}
+            />
+            <Route path="/history" element={<HistoryPage user={user} />} />
+            <Route
+              path="/settings"
+              element={
+                <SettingsPage
+                  user={user}
+                  onLogout={() => {
+                    api.logout();
+                    setUser(null);
+                  }}
+                />
+              }
+            />
+            <Route
+              path="/auth"
+              element={<AuthPage onLoginSuccess={setUser} />}
+            />
+            <Route path="/diseases" element={<DiseasesPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="*" element={<LandingPage />} />
+          </Routes>
+        </Suspense>
       </main>
-
-      <footer className="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 space-y-2">
-        <div className="max-w-7xl mx-auto px-4">
-          <p className="font-semibold text-slate-700">
-            {tr('ui.s_260c166567')}</p>
-          <p className="text-[11px] text-slate-400 max-w-2xl mx-auto mt-1">
-            {tr('ui.s_71d376d100')}</p>
-        </div>
-      </footer>
-    </div></LanguageChoice>
+      <BottomNav />
+    </LanguageChoice>
   );
 };
-
 export default App;

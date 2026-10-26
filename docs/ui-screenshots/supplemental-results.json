@@ -1,0 +1,182 @@
+[
+  {
+    "lang": "en",
+    "width": 360,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "en",
+    "width": 360,
+    "screen": "uncertain",
+    "passed": true
+  },
+  {
+    "lang": "hi",
+    "width": 360,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "hi",
+    "width": 360,
+    "screen": "uncertain",
+    "passed": true
+  },
+  {
+    "lang": "ta",
+    "width": 360,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "ta",
+    "width": 360,
+    "screen": "uncertain",
+    "passed": true
+  },
+  {
+    "lang": "te",
+    "width": 360,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "te",
+    "width": 360,
+    "screen": "uncertain",
+    "passed": true
+  },
+  {
+    "lang": "kn",
+    "width": 360,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "kn",
+    "width": 360,
+    "screen": "uncertain",
+    "passed": true
+  },
+  {
+    "lang": "en",
+    "width": 412,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "en",
+    "width": 412,
+    "screen": "uncertain",
+    "passed": true
+  },
+  {
+    "lang": "hi",
+    "width": 412,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "hi",
+    "width": 412,
+    "screen": "uncertain",
+    "passed": true
+  },
+  {
+    "lang": "ta",
+    "width": 412,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "ta",
+    "width": 412,
+    "screen": "uncertain",
+    "passed": true
+  },
+  {
+    "lang": "te",
+    "width": 412,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "te",
+    "width": 412,
+    "screen": "uncertain",
+    "passed": true
+  },
+  {
+    "lang": "kn",
+    "width": 412,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "kn",
+    "width": 412,
+    "screen": "uncertain",
+    "passed": true
+  },
+  {
+    "lang": "en",
+    "width": 768,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "en",
+    "width": 768,
+    "screen": "uncertain",
+    "passed": true
+  },
+  {
+    "lang": "hi",
+    "width": 768,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "hi",
+    "width": 768,
+    "screen": "uncertain",
+    "passed": true
+  },
+  {
+    "lang": "ta",
+    "width": 768,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "ta",
+    "width": 768,
+    "screen": "uncertain",
+    "passed": true
+  },
+  {
+    "lang": "te",
+    "width": 768,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "te",
+    "width": 768,
+    "screen": "uncertain",
+    "passed": true
+  },
+  {
+    "lang": "kn",
+    "width": 768,
+    "screen": "tutorial",
+    "passed": true
+  },
+  {
+    "lang": "kn",
+    "width": 768,
+    "screen": "uncertain",
+    "passed": true
+  }
+]

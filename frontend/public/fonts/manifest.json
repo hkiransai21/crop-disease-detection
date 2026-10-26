@@ -22,5 +22,11 @@
     "package": "@fontsource-variable/noto-sans-kannada",
     "version": "5.3.0",
     "source": "https://registry.npmjs.org/@fontsource-variable/noto-sans-kannada/-/noto-sans-kannada-5.3.0.tgz"
+  },
+  {
+    "file": "noto-sans-latin.woff2",
+    "package": "@fontsource-variable/noto-sans",
+    "version": "5.3.0",
+    "source": "https://registry.npmjs.org/@fontsource-variable/noto-sans/-/noto-sans-5.3.0.tgz"
   }
 ]

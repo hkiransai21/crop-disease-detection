@@ -1,0 +1,1241 @@
+[
+  {
+    "language": "en",
+    "width": 360,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 360,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 360,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 360,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 360,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 360,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 360,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 360,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 360,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 360,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 360,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 360,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 360,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 360,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 360,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 360,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 360,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 360,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 360,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 360,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 360,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 360,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 360,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 360,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 360,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 360,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 360,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 360,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 360,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 360,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 360,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 360,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 360,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 360,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 360,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 412,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 412,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 412,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 412,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 412,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 412,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 412,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 412,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 412,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 412,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 412,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 412,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 412,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 412,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 412,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 412,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 412,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 412,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 412,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 412,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 412,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 412,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 412,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 412,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 412,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 412,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 412,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 412,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 412,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 412,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 412,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 412,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 412,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 412,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 412,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 768,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 768,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 768,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 768,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 768,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 768,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "en",
+    "width": 768,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 768,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 768,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 768,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 768,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 768,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 768,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "hi",
+    "width": 768,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoDevanagari"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 768,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 768,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 768,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 768,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 768,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 768,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "ta",
+    "width": 768,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTamil"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 768,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 768,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 768,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 768,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 768,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 768,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "te",
+    "width": 768,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoTelugu"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 768,
+    "screen": "home",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 768,
+    "screen": "capture",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 768,
+    "screen": "result",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 768,
+    "screen": "history",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 768,
+    "screen": "settings",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 768,
+    "screen": "guide",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  },
+  {
+    "language": "kn",
+    "width": 768,
+    "screen": "account",
+    "overflow": [],
+    "smallText": [],
+    "smallTargets": [],
+    "fonts": [
+      "Noto",
+      "NotoKannada"
+    ]
+  }
+]

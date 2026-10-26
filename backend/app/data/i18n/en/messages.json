@@ -121,5 +121,14 @@
   "Check the information you entered.": "Check the information you entered.",
   "Too many requests. Please wait and try again.": "Too many requests. Please wait and try again.",
   "The service is unavailable. Please try again later.": "The service is unavailable. Please try again later.",
-  "Healthy": "Healthy"
+  "Healthy": "Healthy",
+  "Forecast: {{p0}} °C, humidity {{p1}}%.": "Forecast: {{p0}} °C, humidity {{p1}}%.",
+  "Rain: last 72 h {{p0}} mm; next 48 h {{p1}} mm. Wetness proxy: {{p2}} h.": "Rain: last 72 h {{p0}} mm; next 48 h {{p1}} mm. Wetness proxy: {{p2}} h.",
+  "Forecast wind: {{p0}} km/h. Wind spread modifier: {{p1}} points.": "Forecast wind: {{p0}} km/h. Wind spread modifier: {{p1}} points.",
+  "Temperature / humidity": "Temperature / humidity",
+  "Rain / leaf wetness": "Rain / leaf wetness",
+  "Wind": "Wind",
+  "Re-check in 24 hours and consult the local agriculture office.": "Re-check in 24 hours and consult the local agriculture office.",
+  "Re-check in 48 hours.": "Re-check in 48 hours.",
+  "{{p0}}: forecast {{p1}} °C (favorable {{p2}} to {{p3}} °C); humidity {{p4}}% (threshold {{p5}}%).": "{{p0}}: forecast {{p1}} °C (favorable {{p2}} to {{p3}} °C); humidity {{p4}}% (threshold {{p5}}%)."
 }

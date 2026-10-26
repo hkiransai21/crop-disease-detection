@@ -36,7 +36,10 @@ async def get_disease_by_id(
 ):
     """Fetch complete agronomic monograph, symptoms, favorable weather, organic/chemical controls, and cited sources in requested language."""
     resolved_lang = resolve_language(lang, request.headers.get("Accept-Language"))
-    entry = get_localized_disease_entry(disease_id, resolved_lang)
+    try:
+        entry = get_localized_disease_entry(disease_id, resolved_lang)
+    except KeyError:
+        raise HTTPException(404, detail='The requested record was not found.')
 
     if not entry:
         raise HTTPException(
@@ -54,7 +57,12 @@ async def localize_result(result: AnalysisResponse, request: Request, lang: Opti
     from backend.app.services.i18n import translate_message, localize_risk_assessment, UNCERTAINTY
     from backend.app.schemas.risk import RiskAssessment
     resolved = resolve_language(lang, request.headers.get('Accept-Language'))
-    entry = get_localized_disease_entry(result.predicted_label, resolved)
+    try:
+        entry = get_localized_disease_entry(result.predicted_label, resolved)
+        for item in result.top_k:
+            get_localized_disease_entry(item.class_id, resolved)
+    except KeyError:
+        raise HTTPException(422, detail=translate_message(UNCERTAINTY, resolved))
     source = result.localization_source or {}
     if not source and result.language == 'en':
         source = {'confidence_display': result.confidence_display, 'risk_assessment': result.risk_assessment.model_dump() if result.risk_assessment else None}

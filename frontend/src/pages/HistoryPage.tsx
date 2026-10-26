@@ -1,244 +1,177 @@
-import { tr } from '../i18n/i18n';
-import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import { History, Trash2, Calendar, MapPin, AlertCircle, CheckCircle2, Search, Sprout, ArrowRight, ExternalLink } from 'lucide-react';
-import { api } from '../api/client';
-import { AnalysisHistoryItem, User } from '../types';
-
-interface HistoryPageProps {
-  user: User | null;
-}
-
-export const HistoryPage: React.FC<HistoryPageProps> = ({ user }) => {
+import { Modal } from "../ui/Modal";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { Leaf, Trash2, Camera } from "lucide-react";
+import { api } from "../api/client";
+import { AnalysisHistoryItem, User } from "../types";
+import { listChecks, deleteCheck, SavedCheck } from "../storage/checks";
+import { Loading, Retry, usePhoto } from "../ui/primitives";
+type Row = AnalysisHistoryItem & { photo?: Blob };
+function HistoryRow({ item, onDelete }: { item: Row; onDelete: () => void }) {
   const { t, i18n } = useTranslation();
-  const navigate = useNavigate();
-  const [history, setHistory] = useState<AnalysisHistoryItem[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [filterCrop, setFilterCrop] = useState('');
-  const [searchQuery, setSearchQuery] = useState('');
-  const [deleteTargetId, setDeleteTargetId] = useState<string | null>(null);
-
-  useEffect(() => {
-    if (!user) {
-      setLoading(false);
-      return;
-    }
-
-    let cancelled = false;
-    setFilterCrop('');
-    setLoading(true);
-    api
-      .getHistory(100, 0, i18n.language)
-      .then((data) => { if (!cancelled) setHistory(data); })
-      .catch((err) => setError(err.message || tr('ui.s_24c52901bc')))
-      .finally(() => { if (!cancelled) setLoading(false); });
-    return () => { cancelled = true; };
-  }, [user, i18n.language]);
-
-  const handleDelete = async (id: string, e: React.MouseEvent) => {
-    e.stopPropagation();
-    try {
-      await api.deleteHistory(id);
-      setHistory(history.filter((item) => item.id !== id));
-      setDeleteTargetId(null);
-    } catch (err: any) {
-      alert(err.message || tr('ui.s_f30892b2b8'));
-    }
-  };
-
-  if (!user) {
-    return (
-      <div className="max-w-md mx-auto py-16 text-center space-y-4">
-        <div className="w-16 h-16 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center mx-auto">
-          <History className="w-8 h-8" />
-        </div>
-        <h2 className="text-xl font-bold text-slate-900">{t('history.title')}</h2>
-        <p className="text-xs text-slate-500 leading-relaxed">
-          {t('history.subtitle')}
-        </p>
-        <div className="pt-2">
-          <Link
-            to="/auth"
-            className="inline-flex items-center space-x-2 px-6 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold shadow-md shadow-brand-600/20"
-          >
-            <span>{t('nav.login')} / {t('nav.register')}</span>
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
-      </div>
-    );
-  }
-
-  const filteredHistory = history.filter((item) => {
-    const matchesCrop = filterCrop ? item.crop.toLowerCase() === filterCrop.toLowerCase() : true;
-    const matchesQuery = searchQuery
-      ? item.disease_name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        item.crop.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        (item.location_name && item.location_name.toLowerCase().includes(searchQuery.toLowerCase()))
-      : true;
-    return matchesCrop && matchesQuery;
-  });
-
-  const uniqueCrops = Array.from(new Set(history.map((h) => h.crop))).filter(Boolean);
-
+  const src = usePhoto(item.photo, item.image_url);
   return (
-    <div className="max-w-5xl mx-auto py-6 space-y-6">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-        <div>
-          <h1 className="text-2xl font-extrabold text-slate-900">{t('history.title')}</h1>
-          <p className="text-xs text-slate-500">{t('history.subtitle')}</p>
-        </div>
-
-        <Link
-          to="/analyze"
-          className="self-start sm:self-auto inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-bold shadow-sm"
-        >
-          <Sprout className="w-4 h-4" />
-          <span>{t('nav.diagnose')}</span>
-        </Link>
-      </div>
-
-      {/* Filters Bar */}
-      <div className="flex flex-col sm:flex-row gap-3 bg-white p-3 rounded-2xl border border-slate-200 shadow-sm">
-        <div className="relative flex-1">
-          <Search className="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2" />
-          <input
-            type="text"
-            placeholder={t('history.filter_placeholder')}
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full pl-9 pr-3 py-2 rounded-xl border border-slate-200 text-xs text-slate-900 focus:outline-none focus:border-brand-500 bg-slate-50"
-          />
-        </div>
-
-        {uniqueCrops.length > 0 && (
-          <select
-            value={filterCrop}
-            onChange={(e) => setFilterCrop(e.target.value)}
-            className="px-3 py-2 rounded-xl border border-slate-200 text-xs font-semibold text-slate-700 focus:outline-none focus:border-brand-500 bg-slate-50"
-          >
-            <option value="">{t('diseases_page.all_crops')} ({history.length})</option>
-            {uniqueCrops.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
-            ))}
-          </select>
+    <li className="history-row">
+      <Link to={`/result/${item.id}`} className="history-link">
+        {src ? (
+          <img src={src} alt="" loading="lazy" />
+        ) : (
+          <Leaf aria-hidden="true" />
         )}
-      </div>
-
-      {/* History Grid */}
-      {loading ? (
-        <div className="py-20 text-center space-y-2">
-          <div className="w-10 h-10 border-4 border-brand-600 border-t-transparent rounded-full animate-spin mx-auto"></div>
-          <p className="text-xs font-semibold text-slate-500">{t('diseases_page.loading')}</p>
-        </div>
-      ) : filteredHistory.length === 0 ? (
-        <div className="py-16 text-center space-y-3 bg-white rounded-3xl border border-slate-200 p-8">
-          <div className="w-14 h-14 rounded-2xl bg-slate-100 text-slate-400 flex items-center justify-center mx-auto">
-            <Sprout className="w-7 h-7" />
-          </div>
-          <h3 className="text-base font-bold text-slate-800">{t('history.empty')}</h3>
-          <p className="text-xs text-slate-500 max-w-sm mx-auto">
-            {searchQuery || filterCrop
-              ? tr('ui.s_c068a9033c')
-              : tr('ui.s_8f5b156913')}
-          </p>
-          <div className="pt-2">
-            <Link
-              to="/analyze"
-              className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-brand-600 text-white text-xs font-bold"
-            >
-              <span>{t('nav.diagnose')}</span>
-            </Link>
-          </div>
-        </div>
-      ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filteredHistory.map((item) => {
-            const isHealthy = item.predicted_label.toLowerCase().includes('healthy');
-            return (
-              <div
-                key={item.id}
-                onClick={() => navigate(`/result/${item.id}`)}
-                className="bg-white rounded-2xl border border-slate-200/90 hover:border-brand-400 shadow-sm hover:shadow-md transition-all p-4 cursor-pointer flex flex-col justify-between space-y-3 group"
-              >
-                <div className="space-y-3">
-                  {/* Thumbnail & Badges */}
-                  <div className="relative aspect-video rounded-xl overflow-hidden bg-slate-900 flex items-center justify-center">
-                    <img
-                      src={item.image_url}
-                      alt={item.disease_name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-
-                    <div className="absolute top-2 left-2 flex gap-1">
-                      <span className="px-2 py-0.5 rounded-md bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold">
-                        {item.crop}
-                      </span>
-                    </div>
-
-                    <div className="absolute top-2 right-2">
-                      {isHealthy ? (
-                        <span className="px-2 py-0.5 rounded-md bg-emerald-600 text-white text-[10px] font-bold flex items-center space-x-1">
-                          <CheckCircle2 className="w-3 h-3" />
-                          <span>{tr('ui.s_80ea156e1b')}</span>
-                        </span>
-                      ) : item.is_uncertain ? (
-                        <span className="px-2 py-0.5 rounded-md bg-amber-500 text-white text-[10px] font-bold flex items-center space-x-1">
-                          <AlertCircle className="w-3 h-3" />
-                          <span>{tr('ui.s_c6a143441b')}</span>
-                        </span>
-                      ) : (
-                        <span className="px-2 py-0.5 rounded-md bg-slate-900/80 backdrop-blur-sm text-white text-[10px] font-bold">
-                          {Math.round(item.confidence * 100)}{tr('ui.s_b6a5e2d0b5')}</span>
-                      )}
-                    </div>
-                  </div>
-
-                  {/* Disease Details */}
-                  <div>
-                    <h4 className="text-sm font-bold text-slate-900 group-hover:text-brand-700 transition-colors">
-                      {item.disease_name}
-                    </h4>
-                    {item.location_name && (
-                      <p className="text-[11px] text-slate-500 flex items-center space-x-1 mt-1 truncate">
-                        <MapPin className="w-3 h-3 text-slate-400 shrink-0" />
-                        <span className="truncate">{item.location_name}</span>
-                      </p>
-                    )}
-                  </div>
-                </div>
-
-                {/* Footer Sub-bar */}
-                <div className="pt-2 border-t border-slate-100 flex items-center justify-between text-[11px] text-slate-400">
-                  <span className="flex items-center space-x-1">
-                    <Calendar className="w-3 h-3" />
-                    <span>{new Date(item.created_at).toLocaleDateString(i18n.language + '-IN')}</span>
-                  </span>
-
-                  <div className="flex items-center space-x-2">
-                    {item.has_feedback && (
-                      <span className="px-1.5 py-0.5 rounded bg-brand-50 text-brand-700 font-semibold text-[10px]">
-                        {tr('ui.s_aed3b8c6a7')}</span>
-                    )}
-
-                    <button
-                      onClick={(e) => handleDelete(item.id, e)}
-                      className="p-1 text-slate-400 hover:text-rose-600 transition-colors"
-                      title={tr('ui.s_d5c8d25a5d')}
-                    >
-                      <Trash2 className="w-3.5 h-3.5" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      )}
-    </div>
+        <span>
+          <strong>{item.disease_name}</strong>
+          <time dateTime={item.created_at}>
+            {new Date(item.created_at).toLocaleDateString(i18n.language, {
+              day: "numeric",
+              month: "short",
+              year: "numeric",
+            })}
+          </time>
+        </span>
+      </Link>
+      <button className="delete-button" onClick={onDelete}>
+        <Trash2 aria-hidden="true" />
+        {t("farmer.delete")}
+      </button>
+    </li>
   );
-};
+}
+export function HistoryPage({ user }: { user: User | null }) {
+  const { t, i18n } = useTranslation();
+  const [rows, setRows] = useState<Row[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
+  const [attempt, setAttempt] = useState(0);
+  const [target, setTarget] = useState<string>();
+  const [query, setQuery] = useState("");
+  useEffect(() => {
+    let active = true;
+    setLoading(true);
+    setError(false);
+    void (async () => {
+      let local: SavedCheck[] = [];
+      try {
+        local = await listChecks();
+      } catch {}
+      const map = new Map<string, Row>(
+        local.map((c) => [
+          c.id,
+          {
+            ...(c.variants[`${c.result.image_sha256 || c.id}:${i18n.language}`] || c.result),
+            photo: c.photo,
+            has_feedback: false,
+          },
+        ]),
+      );
+      // Local guest records need the same localized names as server history.
+      if (navigator.onLine && local.some((c) => !c.variants[`${c.result.image_sha256 || c.id}:${i18n.language}`])) {
+        try {
+          const names = new Map(
+            (await api.getDiseases(undefined, undefined, i18n.language)).map(
+              (d) => [d.id, d],
+            ),
+          );
+          for (const [id, row] of map) {
+            const disease = names.get(row.predicted_label);
+            if (disease)
+              map.set(id, {
+                ...row,
+                crop: disease.crop,
+                disease_name: disease.disease_name,
+              });
+          }
+        } catch {
+          if (active) setError(true);
+        }
+      }
+      if (user && navigator.onLine) {
+        try {
+          for (const row of await api.getHistory(100, 0, i18n.language))
+            map.set(row.id, { ...map.get(row.id), ...row });
+        } catch {
+          if (active) setError(true);
+        }
+      }
+      if (active)
+        setRows(
+          [...map.values()].sort((a, b) =>
+            b.created_at.localeCompare(a.created_at),
+          ),
+        );
+    })().finally(() => {
+      if (active) setLoading(false);
+    });
+    return () => {
+      active = false;
+    };
+  }, [user, i18n.language, attempt]);
+  async function remove() {
+    if (!target) return;
+    try {
+      if (!target.startsWith("guest_")) await api.deleteHistory(target);
+      await deleteCheck(target);
+      setRows(rows.filter((row) => row.id !== target));
+      setTarget(undefined);
+    } catch {
+      setError(true);
+    }
+  }
+  return (
+    <section className="history-page stack">
+      <h1>{t("farmer.history")}</h1>
+      {error && <Retry onRetry={() => setAttempt((n) => n + 1)} />}
+      <label>
+        {t("history.filter_placeholder")}
+        <input
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </label>
+      {loading ? (
+        <Loading />
+      ) : rows.length ? (
+        <ul className="history-list">
+          {rows
+            .filter((row) =>
+              (row.crop + row.disease_name)
+                .toLocaleLowerCase()
+                .includes(query.toLocaleLowerCase()),
+            )
+            .map((item) => (
+              <HistoryRow
+                key={item.id}
+                item={item}
+                onDelete={() => setTarget(item.id)}
+              />
+            ))}
+        </ul>
+      ) : (
+        <>
+          <Leaf className="empty-leaf" aria-hidden="true" />
+          <p>{t("farmer.empty")}</p>
+          <Link className="primary" to="/analyze">
+            <Camera aria-hidden="true" />
+            {t("farmer.photo")}
+          </Link>
+        </>
+      )}
+      {target && (
+        <Modal
+          title={t("history.delete_confirm")}
+          onClose={() => setTarget(undefined)}
+        >
+          <div className="button-row">
+            <button className="secondary" onClick={() => void remove()}>
+              {t("farmer.confirm")}
+            </button>
+            <button className="secondary" onClick={() => setTarget(undefined)}>
+              {t("farmer.close")}
+            </button>
+          </div>
+        </Modal>
+      )}
+    </section>
+  );
+}
